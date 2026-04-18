@@ -1,0 +1,748 @@
+
+\documentclass[letterpaper,oneside]{book}%
+
+\newif\ifinstructor
+%% uncomment one of the following, depending if you want to include the
+%% instructor notes or not
+%\instructortrue
+\instructorfalse
+
+
+\newif\ifnotes
+%% uncomment one of the following, depending if you want to include the
+%% instructor notes or not
+%\notestrue
+\notesfalse
+
+
+
+\usepackage[left=1in,right=2.75in,top=1in,bottom=1in]{geometry}
+\marginparwidth 1.75in
+
+\usepackage{rotating}
+
+\usepackage{tabls}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{multirow}
+
+\usepackage{comment}
+
+\newcommand{\wrapup}{
+\bmw{\section{Wrap Up}
+Once you have finished the problems in the section and feel comfortable with the ideas, create a short one page lesson plan that contains examples of the key ideas.  You will get a chance to teach from this lesson plan prior to taking the exam. Then log on to I-Learn and download the quiz. Once you have taken the quiz, you can upload your work back to I-Learn and then download the key to see how you did. If you still need to work on mastering some of the ideas, please do so and then demonstrate your mastery though the quiz corrections.}
+}
+\newcommand{\myscale}{1}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dfdx}[1]{\frac{d#1}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+
+
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar{\raggedright\footnotesize #1}}
+%\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]{\raggedright\footnotesize #1}}
+
+
+%\usepackage[12hr]{datetime}
+%\newdateformat{draftdate}{%
+%\shortdayofweekname{\THEDAY}{\THEMONTH}{\THEYEAR}, %
+%\THEDAY\ \shortmonthname[\THEMONTH] \THEYEAR}
+%\draftdate
+%\usepackage{eso-pic}
+%\AddToShipoutPicture{\put(10,10){\small Draft: \today\ at \currenttime }}%--- version: \MakeUppercase{\svnInfoRevision}}}
+
+\newcommand{\bmw}[1]{#1}
+\newcommand{\marginparbmw}[1]{\bmw{\marginpar{#1}}}
+
+% Notes for Larson, 5th edition
+\newcommand{\larsonfive}[1]{}
+
+% Instructor-specific material (answers, helps, etc.)
+\ifinstructor
+  \newcommand{\instructor}[1]{\marginpar{\textbf{Instructor: }#1}}
+\else
+  \newcommand{\instructor}[1]{}
+\fi
+
+\ifnotes
+\renewcommand{\thefootnote}{\roman{footnote}}
+\newcommand{\note}[1]{\footnote{#1}\marginpar{\fbox{\textbf{\thefootnote}}}}
+\else
+\newcommand{\note}[1]{}
+\fi
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+
+\newtheoremstyle{box}%
+{}{}% standard spacing before and after
+{}% Body style
+{}{\bfseries}{.}% Heading indent, font, and punctuation
+{ }% space after heading
+{\thmname{#1}\thmnumber{ #2}\thmnote{: #3}}% head spec
+
+\newtheoremstyle{problem}%
+{}{}% standard spacing before and after
+{}% Body style
+{}{\bfseries}{}% Heading indent, font, and punctuation
+{1em}% space after heading
+{\fbox{\thmname{#1}\thmnumber{ #2}\thmnote{: #3}}}% head spec
+
+\theoremstyle{box}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{dfn}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{prep-problems}{Preparation Problems}
+
+%\newtheorem{problem}[theorem]{Problem}
+\theoremstyle{problem}
+\newtheorem{problemnum}{Problem}[chapter]
+\newtheorem*{problemnum*}{Problem}
+\newenvironment{problem}[1][]{\begin{problemnum}[#1]}{\end{problemnum}\nopagebreak\hrule\bigskip}
+\newenvironment{problem*}[1][]{\begin{problemnum*}[#1]}{\end{problemnum*}\nopagebreak\hrule\bigskip}
+\newtheorem*{reviewnum*}{Review}
+\newenvironment{review*}[1][]{\begin{reviewnum*}[#1]}{\end{reviewnum*}\nopagebreak\hrule\bigskip}
+\newtheorem*{exerciseenum*}{Exercise}
+\newenvironment{exercise*}[1][]{\begin{exerciseenum*}[#1]}{\end{exerciseenum*}\nopagebreak\hrule\bigskip}
+
+
+% Abbreviations
+\newcommand{\ii}{\ensuremath{\vec \imath}}
+\newcommand{\jj}{\ensuremath{\vec \jmath}}
+\newcommand{\kk}{\ensuremath{\vec k}}
+\newcommand{\vv}{\ensuremath{\mathbf{v}}}
+\newcommand{\colvec}[1]{\ensuremath{\begin{bmatrix}#1\end{bmatrix}}}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\rref}{rref}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+% \vp is "vector prime" and corrects spacing when doing something like
+% $\vec r'$ (which has the vector and prime almost touching).
+% Instead, do something like $\vec r\vp$
+\newcommand{\vp}{\ensuremath{^{\,\prime}}}
+
+%The purpose of this code is to allow me to put lines in matrices so that I can create augmented matrices.
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand{\cl}[1]{  \begin{matrix}  #1  \end{matrix}  }
+\newcommand{\bm}[1]{  \begin{bmatrix}  #1  \end{bmatrix}  }
+\newcommand{\inv}{^{-1}}
+\newcommand{\im}{\ensuremath{\text{im }}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\blank}[1]{\raisebox{0pt}[14pt]{\rule{#1}{1pt}}}
+
+%------------------------------------------------------------------------------------------------------------
+
+\usepackage{color}
+\definecolor{darkblue}{rgb}{0, 0, .6}
+\usepackage[breaklinks]{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=darkblue,
+	anchorcolor=darkblue,
+	citecolor=darkblue,
+	pagecolor=darkblue,
+	urlcolor=darkblue,
+}
+
+\begin{document}
+Integration Unit -- FLOW
+\begin{itemize}
+\item Prerequisites (Covered in the Course before this Unit)
+\begin{itemize}
+\item Derivatives (difference quotient, linearization, ...)
+\item Discrete Random Variables (pmf function and calculating probabilities with pmf -- also calculation expected value of pmf could be covered be covered before but does not have to be covered before this unit)
+\item Student knows what an antiderivative is -- purposely AVOID talking about indefinite integrals until after this unit.
+\end{itemize}
+\item Big Ideas
+\begin{itemize}
+\item Day 1 -- Define Cumulative Distribution Function (CDF) and Rectangular Rug Functions\\
+Assumption: The x-axis one sie of each rung.
+The ``Rectangle Map": 
+\begin{itemize}
+\item Upper Right Corner -- $R(x)$, the rug function.
+\item Upper Left Corner -- $F(x)$, the CDF.
+\item Lower Left Corner -- $f(x) = F'(x)$, the pdf.
+\item Lower Right Corner -- $N(x)$, normalized rug function (or ideal rug function).\\
+$N(x) = \frac{R(x)}{\text{total area of rug}}$
+\end{itemize}
+\item Day 2 -- Other Geometric Rug Functions\\
+The ``Rectangle Map" is one way to visualize connections described by the Fundamental Theorem of Calculus. We need area to calculate $N(x)$ and $F(x)$, this motivates the need to find inconvient areas (when rugs are not geometric shapes). 
+\begin{itemize}
+\item Rug function, $R(x)$, divided by area of rug gives Normalized Rug function, $N(x)$.
+\item Using geometry and $R(x)$ we can find the CDF, $F(x)$.
+\item Define the PDF, $f(x) = F'(x)$.
+\item Notice that $F'(x)$ is the same as $N(x)$ (or in other words $f(x) = N(x)$).
+\end{itemize}
+\item Day 3 -- Finding Inconvenient Areas (Focus: Riemann Sums and definition of the definite integral. A definite integral can be used to find area.)
+\item Day 4 -- Making Connections: The Fundamental Theorem.\\
+Back to the ``Rectangle Map". Start with an inconveniently shaped rug function. Find the total area. Calculate the Normalize Rug fuction. Find an antiderivative (NOT an indefinite integral -- we have not made this connection yet). Use the properties of probability distribution to determine the specific antiderivative that is the CDF. Introduce the notation for an accumulation function. Let technology evaluate the accumulation function to verify that going counter-clockwise around the rectangle does indeed produce the CDF.\\
+``We have just observed something fundamental? What shall we call it? -- Let's call it The Fundamental Theorem like the rest of the mathematics community."
+Continue to reinforce the FTC and the connection between derivatives and antiderivatives, antiderivatives and indefinite integrals, and definite integrals and indefinite integrals as we gain experience with each of these mathematical objects.
+\end{itemize}
+\item What's Next?
+\begin{itemize}
+\item Practice calculating indefinite integrals as antiderivatives.
+\item Practice calculating indefinite integrals with CAS.
+\item Practice calculating definite integrals with FTC (and CAS as needed).
+\item Using a computer to approximate a definite integral.
+\item Calculate Expected Value and Variance of Continuous Random Variables.
+\end{itemize}
+\end{itemize}
+
+
+\chapter{Probability and Integration}
+\section{Day 1}
+\subsection{Day 1 -- Prep}
+\begin{problem}
+\label{D1_Coin}
+Suppose we toss a fair coin once, which means the probability that heads or tails appears is equally likely. 
+We will record the number of heads that appears, and let $X$ represent the outcome. 
+ \begin{enumerate}
+  \item What are the possible outcomes?  $X=0$ or $X=1$. 
+  \item What is the probability that $X=0$, $P(X=0)$?   
+  \item What is the probability that $X=1$, $P(X=1)$?   
+  \item What is the probability that $X=2$, $P(X=2)$?  
+  \item What is the probability that $X$ is less than or equal to -1, $P(X\leq -1)$?
+  \item What is the probability that $X$ is not positive, $P(X\leq 0)$?
+  \item What is the probability that $X$ is not more than 0.5, $P(X\leq 0.5)$?
+  \item What is the probability that $X$ is less than or equal to 1, $P(X\leq 1)$
+  \item What is the probability that $X$ is at most 2, $P(X\leq 2)$?
+ \end{enumerate}
+\end{problem}
+
+\begin{problem}
+\label{D1_Die}
+Suppose we toss a fair six-sided die once, which means each number has the same probability of occurring. 
+We will record the value that appears on the die, and let $X$ represent the outcome.
+  \begin{enumerate}
+  \item What are the possible outcomes?  
+  \item Compute each of the following: 
+  \begin{enumerate}
+    \item $P(X=1)$
+    \item $P(X=2)$
+    \item $P(X=9)$
+    \item $P(X\leq 0)$
+    \item $P(X\leq 2)$
+    \item $P(X\leq 4.5)$
+    \item $P(X\leq 5.1)$
+    \item $P(X\leq 8)$
+  \end{enumerate}
+ \end{enumerate}
+\end{problem}
+
+\textcolor{red}{Rug problems inspired by ``Interactive Mathematics Program". Include a reference.}
+\begin{problem}
+\label{D1_Rug}
+Let's suppose for a minute that we have a rug (as shown below) and a trap door on the ceiling above the rug. 
+Each time we open the trap door, a dart falls from above to a random spot on the rug. 
+Assume the rug is oriented on the coordinate plane with the lower left corner at the origin and the bottom side of the rug along the $x$-axis. (We will always think of our rugs as having the bottom side of the rug along the $x$-axis.) Each point on the rug has the same probability of being hit as any other. 
+When a dart falls on the point $(x,y)$,  we'll record just the $x$-coordinate (so a number between 0 and 5), and let $X$ represent this random variable. 
+ 
+ \begin{tikzpicture}
+  \draw (0,0) --node[below]{5 ft} (5,0) -- (5,2) -- (0,2) --node[left]{2ft} (0,0);
+ \end{tikzpicture}
+ 
+ \begin{enumerate}
+  \item Give 10 different possible outcomes for $X$. How many possible outcomes are there?
+  \item Compute each of the following probabilities, and explain how you obtained your answer.
+   \begin{enumerate}
+    \item $P(X \leq 0)$
+    \item $P(X \leq 1)$
+    \item $P(X \leq 2)$
+    \item $P(X \leq 3)$
+    \item $P(X \leq 7)$
+    \item $P(X \leq -1.5)$
+    \item $P(0 \leq X \leq 2)$
+    \item $P(1 \leq X \leq 5)$
+    % \item $P(2 \leq X \leq 6)$
+    % \item $P(2 \leq X \leq 3.5)$
+    % \item $P(1.8 \leq X \leq 5)$
+    % \item $P(2.263 \leq X \leq 3.71)$
+   \end{enumerate}
+  \end{enumerate}
+\end{problem}
+
+
+
+\subsection{Day 1 -- Class}
+\begin{problem}
+\label{D1_CoinContinued}
+Recall from your preparation, Problem \ref{D1_Coin}: Suppose we toss a fair coin once, which means the probability that heads or tails appears is equally likely. 
+We will record the number of heads that appears, and let $X$ represent the outcome. 
+ \begin{enumerate}
+  \item You calculated probabilities for several values of the random variable $X$.
+We can summarize probability information for each possible outcome into a table, when the number of outcome is finite. 
+    $$\begin{array}{|c|c|c|c|}\hline
+    x & 0 & 1 & \text{other values}\\ \hline
+    P(X=x) & & & \\ \hline
+    %P(X=x) & \frac{1}{2} & \frac{1}{2} & 0\\ \hline
+    \end{array}$$
+    \item Recall we call this function a \textbf{probability mass function (PMF)} and we can also write it as a piece-wise function.
+      $$p(x) = 
+    \begin{cases}
+    \frac{1}{2} & x=0 \\
+    \frac{1}{2} & x=1 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+    \item What is the (implied) domain of the pmf of $X$, $p(x)$? 
+    \item What is the range of the pmf $X$, $p(x)$?
+  \item We can graph this information as well, using a point plot. \textcolor{red}{Include a plot here. Work through the steps for graphing the function together.} 
+  \item The pmf above shows the probability of single event occurring. Sometimes we want to know the probability that a given value, or less, will occur. The function that gives the probability that $X$ is a given value, or less, is called the \textbf{cummulative distribution function (CDF)} of $X$. We can write the CFD as a single piecewise defined function, such as
+    $$F(x) = 
+    \begin{cases}
+    0 & x<0 \\
+    \frac{1}{2} &0\leq x<1 \\
+    1 & x \geq 1
+    \end{cases}.$$
+  \item What does the graph of the CDF of $X$, $F(x)$, look like? \textcolor{red}{Include a plot here. Work through the steps for graphing the function together.} 
+  \item What is the (implied) domain of the CDF of $X$ in this case?  
+  \item What is the range of the CDF of $X$ in this case?  
+ \end{enumerate}
+\end{problem}
+
+\begin{problem} \textcolor{red}{(Should this problem be assigned as ``Homework"? or Completed as a second example together in class?)}
+\label{D1_DieContinued}
+Recall from your preparation, Problem \ref{D1_Die}: Suppose we toss a fair six-sided die once, which means each number has the same probability of occurring. 
+We will record the value that appears on the die, and let $X$ represent the outcome. 
+ \begin{enumerate}
+  \item You calculated probabilities for several values of the random variable $X$. Calculate the remaining values needed to fill in the table.
+    $$\begin{array}{|c|c|c|c|c|c|c|c|}\hline
+    x & 1 & 2 & 3 & 4 & 5 & 6 & \text{other values}\\ \hline
+    P(X=x) & & & & & & & \\ \hline
+    \end{array}$$
+  \item Write this PMF as a piece-wise function.
+  % $$p(x) = 
+  %   \begin{cases}
+  %   \frac{1}{6} & x=1 \\
+  %   \frac{1}{6} & x=2 \\
+  %   \frac{1}{6} & x=3 \\
+  %   \frac{1}{6} & x=4 \\
+  %   \frac{1}{6} & x=5 \\
+  %   \frac{1}{6} & x=6
+  %   \end{cases}.$$
+  \item Graph the PMF by hand and using R.
+  \item What is the (implied) domain of the pmf?
+  \item What is the range of the pmf?
+  \item What is the cummulative distribution function (CDF) of $X$ in this case?
+    % $$F(x) = 
+    % \begin{cases}
+    % 0 & x<1 \\
+    % \frac{1}{6} &1\leq x<2 \\
+    % \frac{2}{6} &2\leq x<3 \\
+    % \frac{3}{6} &3\leq x<4 \\
+    % \frac{4}{6} &4\leq x<5 \\
+    % \frac{5}{6} &5\leq x<6 \\
+    % 1 & x \geq 6
+    % \end{cases}.$$
+  \item Graph the CDF of $X$ by hand and using R.
+  \item What is the (implied) domain of the CDF?
+  \item What is the range of the CDF?  
+ \end{enumerate}
+\end{problem}
+
+\begin{problem}
+\label{D1_RugContinued}
+Recall from your preparation, Problem \ref{D1_Rug}: Let's suppose for a minute that we have a rug (as shown below) and a trap door on the ceiling above the rug. 
+Each time we open the trap door, a dart falls from above to a random spot on the rug. 
+Assume the rug is oriented on the coordinate plane with the lower left corner at the origin and the bottom side of the rug along the $x$-axis. (We will always think of our rugs as having the bottom side of the rug along the $x$-axis.) Each point on the rug has the same probability of being hit as any other. 
+When a dart falls on the point $(x,y)$,  we'll record just the $x$-coordinate (so a number between 0 and 5), and let $X$ represent this random variable. 
+ 
+ \begin{tikzpicture}
+  \draw (0,0) --node[below]{5 ft} (5,0) -- (5,2) -- (0,2) --node[left]{2ft} (0,0);
+ \end{tikzpicture}
+ 
+ \begin{enumerate}
+  \item How did you compute $P(0\leq X \leq 2)$? How could you use the probabilities $P(X \leq 0)$ and $P(X \leq 2)$ to calculate $P(0\leq X \leq 2)$? How else could you calculate $P(0 \leq X \leq 2)$?
+  %Encourage students to watch for times when they use each of these ways of calculating probability that $X$ is between two values.
+  \item Explain why $P(a \leq X \leq b) = P(X \leq b)-P(X \leq a)$ (assuming $a$ and $b$ are positive numbers less than 5 with $a<b$).
+  \item Compute each of the following probabilities. What pattern do you notice? 
+   \begin{enumerate}
+    \item $P(2\leq X \leq 2.5)$
+    \item $P(2\leq X \leq 2.1)$
+    \item $P(2\leq X \leq 2.01)$
+    \item $P(2\leq X \leq 2.001)$
+    \item $P(2\leq X \leq 2.0001)$
+   \end{enumerate}
+  \item Based on your computations above, what number would you assign to $P(X=2)$?  Explain.  
+  \item Is it possible that the dart could fall on a spot whose $x$-coordinate is exactly 2? How likely is this to occur?
+   \item Is it possible that the dart could fall on a spot whose $x$-coordinate is exactly 3.224? How likely is this to occur?
+  \item Explain why $P(X\leq 2)$ and $P(X<2)$ are equal (also why $P(X\leq 3.224)$ and $P(X<3.224)$ are equal).
+  \item Write down the function that describes the left side of the rug. Write down the function that describes the right side of the rug. Write down the funtion that describes the bottom of the rug. Write down the function that describes the top of the rug. We will call the function that describes the top of the rug as the rug function, $R(x)$.
+  \item Recall the cummulative distribution function (CDF) is the function that gives the probability that $X$ is a given value, or less. What is the cummulative distribution function (CDF) of $X$ in this case?
+  \begin{enumerate}
+   \item Show that for $0\leq x\leq 5$, we have $F(x) = \frac{1}{5}x$.
+   \item Explain why $$F(x) =\begin{cases}0 & x \leq 0 \\\frac{1}{5}x & 0 < x < 5 \\ 1 & x \geq 5.\end{cases}$$
+   \end{enumerate}
+  \item Graph the CDF for $X$.
+  \item What is the (implied) domain of $F(x)$?
+  \item What is the range of $F(x)$? 
+  \item Explain why $P(a \leq X \leq b) = F(b) - F(a)$.
+  \item Show that $P(a \leq X \leq a +\Delta x) = \frac{1}{5} \Delta x$.\\ 
+  Since $P(a \leq X \leq a +\Delta x) = F(a + \Delta x) - F(a)$, we can rewrite this equation as $F(a + \Delta x) - F(a) = \frac{1}{5} \Delta x$. Notice this last equation is a linearization of the CDF, $F(x)$, at $x = a$.
+  \item We can rewrite $F(a + \Delta x) - F(a) = \frac{1}{5} \Delta x$ as $\frac{F(a + \Delta x) - F(a)}{\Delta x} = \frac{1}{5}$. Does anything about this last equation look familiar?
+  
+Recall, $\lim_{\Delta x \rightarrow 0}\frac{F(a + \Delta x) - F(a)}{\Delta x} = F'(x)$.
+  \item Calculate $F'(x)$.
+  \item The derivative of the CDF $F(x)$ is called the \textbf{probability density function (PDF)} of $X$, $f(x)$. In mathematical symbols, $f(x) = F'(x)$.
+  \item Calculate the total area of the rug.
+  \item Divide the rug function, $R(x)$, by the total area of the rug. Call this new function the normalized rug function, $N(x)$.
+  \item Graph the $N(x)$. Let $N(x)$ describe the top of the normalized rug. What is the area of the normalized rug?
+  \item Compare the normalized rug function, $N(x)$, and the PDF of $X$, $f(x)$. What do you notice?
+ \end{enumerate}
+\end{problem}
+
+
+
+
+
+\section{Day2}
+\subsection{Day 2 -- Prep}
+\begin{problem}
+\label{D2_TriangleRug}
+Imagine now that we have a triangular rug, with a matching triangular trap door above it. Each time we open the trap door, a dart falls from the door onto the rug, and we let $X$ be the random variable that records the $x$-coordinate of the dart's location. 
+ \begin{center}
+ \begin{tikzpicture}
+  \draw (0,0) --node[below]{5 ft} (5,0) --node[right]{5ft} (5,5) -- (0,0);
+ \end{tikzpicture}
+ \end{center}
+ 
+ \begin{enumerate}
+
+  \item Is $X$ a discrete random variable, or a continuous random variable? Explain?
+  \item What is the rug function, $R(x)$?
+  \item What is the area of the entire rug?
+  \item What is the normalized rug function, $N(x)$?
+  \item Compute each of the following probabilities, and explain how you obtained your answer.
+   \begin{enumerate}
+    \item $P(X\leq 1)$
+    \item $P(X\leq 2)$
+    \item $P(1\leq X\leq 2)$
+    \item $P(X\leq 3)$
+    \item $P(2\leq X\leq 3)$
+    \item $P(1\leq X\leq 3)$
+    \item $P(X \leq 6)$
+    %\item $P(1.2 \leq 3.4)$
+   \end{enumerate}
+  \item What is the area of the rug whose $x$-values satisfy $x\leq a$ (assume $a$ is a positive number less than 5).  
+  \item Calculate $P(X \leq a)$ when $0 < a < 5$. 
+  \item Explain why $$F(x) =\begin{cases}0 & x \leq 0\\ \frac{1}{25}x^2 & 0 < x < 5 \\ 1 &5 \leq x\end{cases}.$$
+  \item Compute $F(5)$.  What does this value mean in the context of this rug problem?
+  \item Graph the CDF for $X$.
+  \item Calculate $F'(x)$.
+  \item What is the PDF of $X$, $f(x)$?
+  \item Why do we call $f(x)$ a probability density?
+  \begin{enumerate}
+  \item Recall $P(a\leq X\leq b) = F(b)-F(a)$. Can you explain why this is true? Show that $P(a \leq X \leq a +\Delta x) = \frac{1}{25} (2a + \Delta x) \Delta x$. 
+  
+Since $P(a \leq X \leq a +\Delta x) = F(a + \Delta x) - F(a)$ we can rewrite this equation as $F(a + \Delta x) - F(a) = \frac{1}{25} (2a + \Delta x) \Delta x$. Notice this last equation is almost a linearization of the cdf, $F(x)$, at $x = a$.
+  \item We can rewrite $F(a + \Delta x) - F(a) = \frac{1}{25} (2a + \Delta x) \Delta x$ as $\frac{F(a + \Delta x) - F(a)}{\Delta x} = \frac{1}{25} (2a + \Delta x)$. Does anything about this last equation look familiar?
+  
+  Recall, $\lim_{\Delta x \rightarrow 0}\frac{F(a + \Delta x) - F(a)}{\Delta x} = F'(x)$. Note that $\lim_{\Delta x \rightarrow 0}\frac{1}{25} (2a + \Delta x) = \frac{1}{25}(2a) = \frac{2a}{25}$.
+  \item Calculate $F'(x)$. Did you get $F'(x) = \frac{1}{25}2a = \frac{2a}{25} = \frac{2}{25} a$?
+  \item Notice the left side of the equation $\frac{F(a + \Delta x) - F(a)}{\Delta x}$ has units probability per length. Probability per length is a density, a probability density. So the function $F'(x)$ is usually called a probability density function, $f(x)$. 
+  \end{enumerate}
+  \item What do you notice about the normalized rug function, $N(x)$, and the PDF of $X$, $f(x)$?
+% Notice the function defining the top of the rug is       
+%   $$R(x) = 
+%     \begin{cases}
+%     x & 0 < x < 5 \\
+%     0 & \text{otherwise}
+%     \end{cases}.$$
+%   Notice the total area of the rug (computed in question 5) is $\frac{2}{25}$. How does the function $N(x) = \frac{R(x)}{\text{total rug area}}$ compare to the probability density function $f(x) = F'(x)$?
+ \end{enumerate}
+%I'm thinking of completely changing this section... I think it will be better to show that $P(a\leq x\leq b) = (something)\Delta x$. The width can be factored out, and the term that is left is what we want to talk about.  This motivates introducing the term ``probability density'' naturally, rather than just introducing it artificially. The students can then discover that dividing by the width simplfies things. It also makes the previous problem better. I am liking this. Whe then want to know what happens to the left over terms as we let $\Delta x$ shrink to zero (which we can use software to do if needed, or just do ourselves if it is easy (like a polynomial). ) I don't see any reason to spend gobs of time on limits formally, or even symbolically. We'll be letting things approach zero, and for us in just about all cases that will involve just dropping them off.  Maybe we'll look briefly at the difference quotient for an exponential, and then show how we need a limit of something non-trivial.  But maybe we'll just use software at that point.....  
+%In the above computation we found the density per length from $x$ to $x+\Delta x$ to be ....  (Many people call this ratio a difference quotient). Notice that after simplifying the difference quotient, there are two terms. The first term does not depend on the width $\Delta x$, whereas the other part, if we let $\Delta x$ be a really small number, will be extremely small. The first part of the function $\frac{2x}{25}$ has a graph that is a straight line.  If this line represented the top of a triangluar rug, then notice that the rug would have area $A = \frac{1}{2}bh = \frac{1}{2}(5)(\frac{2(5)}{25}) = 1$. The difference quotient used to find probability per area, if we ignore the term that has the $\Delta x$ in it, returns to us the same ideal rug we began with. (I need a problem before this that introduces an ``ideal rug'', namely a rug that has area 1.)    
+\end{problem}
+
+
+
+\subsection{Day 2 -- Class}
+\begin{problem}
+\label{D2_GeoRugs}
+Let $R(x)$ be a function that defines the top of a rug and each rug have a matching trap door above it. Each time we open the trap door, a dart falls from the door onto the rug, and we let $X$ be the random variable that records the $x$-coordinate of the dart's location. For each of the rug functions, $R(x)$, answer the following questions.
+\begin{enumerate}
+\item What is the total area of the rug?
+\item Find $P(X \leq a)$, assume $0 < a < 5$.
+\item Find the CDF, $F(x)$.
+\item Graph $F(x)$.
+% \item Show that $P(a \leq X \leq a + \Delta x) = (\text{fill in the blank}) \Delta x$ for each piece of the CDF.
+% \item Since $P(a \leq X \leq a + \Delta x) = F(a + \Delta x) - F(a)$, rewrite the above equation and to find $F'(x) = \lim_{\Delta x \rightarrow 0}\frac{F(a + \Delta x) - F(a)}{\Delta x}$.
+\item Find the PDF, $f(x)$. Recall the PDF of $X$ is defined as $f(x) = F'(x)$.
+\item Find the normalized rug function, $N(x)$. Divide the rug function, $R(x)$, by the total area of the rug to get $N(x)$. 
+\item What do you notice about $f(x)$ and $N(x)$?
+\end{enumerate}
+
+Rug Functions:
+$$R_1(x) = 
+    \begin{cases}
+    -x + 5 & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_2(x) = 
+    \begin{cases}
+    2 & 0 < x < 3 \\
+    5 - x & 3 \leq x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_3(x) = 
+    \begin{cases}
+    \frac{2}{5}-\frac{4}{25}x & 0 < x < \frac{5}{2} \\
+    \frac{4}{25}x - \frac{2}{5} & \frac{5}{2} \leq x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+\end{problem}
+
+\begin{itemize}
+\item What is always true about the PDF, $f(x)$, and the normalized rug function, $N(x)$?
+\item Describe two ways to calculate the PDF of $X$ given a rug function $R(x)$.
+\item Why do we call $f(x)$ a \textbf{probability density} function?
+\end{itemize}
+
+
+
+
+
+
+\section{Day 3}
+\subsection{Day 3 -- Prep}
+\begin{problem}
+\label{D3_inconventArea}
+Consider the rug function 
+$$R_8(x) = 
+    \begin{cases}
+    25-x^2 & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+If I told you the total area of the rug in this case is $\frac{250}{3}$, could you tell me the PDF, $f(x)$, and the CDF, $F(x)$?
+\end{problem}
+
+\begin{problem}
+\label{D3_ApproxArea}
+Let $R(x)$ be a function that defines the top of a rug and each rug have a matching trap door above it. Each time we open the trap door, a dart falls from the door onto the rug, and we let $X$ be the random variable that records the $x$-coordinate of the dart's location. For each of the rug functions, $R(x)$, answer the following questions.
+\begin{enumerate}
+\item Graph $R(x)$.
+\item Calculate the total area of the rug.
+\end{enumerate}
+% $$R_4(x) = 
+%     \begin{cases}
+%     5 & 0 < x \leq 1 \\
+%     4 & 1 < x \leq 2 \\
+%     3 & 2 < x \leq 3 \\
+%     2 & 3 < x \leq 4 \\
+%     1 & 4 < x \leq 5 \\
+%     0 & \text{otherwise}
+%     \end{cases}.$$
+% 
+% $$R_5(x) = 
+%     \begin{cases}
+%     1 & 0 < x \leq 1 \\
+%     2 & 1 < x \leq 3 \\
+%     3 & 3 < x \leq 5 \\
+%     0 & \text{otherwise}
+%     \end{cases}.$$
+
+$$R_4(x) = 
+    \begin{cases}
+    4 & 0 < x \leq 1 \\
+    3 & 1 < x \leq 2 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_5(x) = 
+    \begin{cases}
+    3 & 0 < x \leq 1 \\
+    0 & 1 < x \leq 2 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_6(x) = 
+    \begin{cases}
+    4 & 0 < x \leq \frac{1}{2} \\
+    \frac{15}{4} & \frac{1}{2} < x \leq 1 \\
+    3 & 1 < x \leq \frac{3}{2} \\
+    \frac{7}{4} & \frac{3}{2} < x \leq 2 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_7(x) = 
+    \begin{cases}
+    \frac{15}{4} & 0 < x \leq \frac{1}{2} \\
+    3 & \frac{1}{2} < x \leq 1 \\
+    \frac{7}{4} & 1 < x \leq \frac{3}{2} \\
+    0 & \frac{3}{2} < x \leq 2 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_8(x) = 
+    \begin{cases}
+    4-x^2 & 0 < x < 2 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+\end{problem}
+
+
+
+\section{Day 3 -- Class}
+\begin{problem}
+\label{D3_ApproxArea}
+Let $R(x)$ be a function that defines the top of a rug and each rug have a matching trap door above it. Each time we open the trap door, a dart falls from the door onto the rug, and we let $X$ be the random variable that records the $x$-coordinate of the dart's location. For each of the rug functions, $R(x)$, answer the following questions.
+\begin{enumerate}
+\item Graph $R(x)$.
+\item Approximate the total area of the rug. 
+  \begin{itemize}
+  \item Find an approximation for the total area by hand. %Use 2-4 rectangles.
+  \item Find an approximation for the total area using R. %Use at least 100 rectangles.
+  \end{itemize}
+\item How would you improve your approximation of the total area?
+\end{enumerate}
+$$R_1(x) = 
+    \begin{cases}
+    25-x^2 & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_2(x) = 
+    \begin{cases}
+    x^2 - 10x + 25 & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_3
+    \begin{cases}
+    (x-5)^2 & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+\end{problem}
+The symbol $\int_a^b f(x)dx$ is the represents the \textbf{definite integral} of $f$ from $a$ to $b$. We can use a definite integral to calculate the total area of ``inconvenient" shapes.
+
+\begin{definition}
+If $f(x)$ is a function defined on the interval $[a,b]$, the \textbf{definite integral} of $f$ from $a$ to $b$ is given by $$\int_a^b f(x)dx = \lim_{n \rightarrow \infty} \Sigma_{i=1}^n f(x_i^{*})\Delta x,$$ provided the limit exists. If this limit exists, the function $f(x)$ is said to be integrable on $[a,b]$, or is an \textbf{integrable function}.
+\textcolor{red}{This is Definition 5.8 from the Calculus Volume 1 OpenStax Textbook.}
+\end{definition}
+
+\begin{problem}
+\label{D3_totArea}
+\begin{enumerate}
+\item Using Mathematica calculate $\int_0^5 R(x) dx$ for each of the rug functions in Problem \ref{D3_ApproxArea}
+\item How do your approximations compare to the exact total area?
+\end{enumerate}
+\end{problem}
+
+
+
+
+
+\section{Day 4}
+\subsection{Day 4 -- Prep}
+\textcolor{red}{Possibly give the numerical integration assignment and move the next problems to in class.}
+\begin{problem}
+\label{D4_FTC}
+For each of the rug functions in Problem \ref{D3_ApproxArea}, answer the following questions.
+\begin{enumerate}
+\item What is the pdf, $f(x)$?
+\item What is the cdf, $F(x)$?
+\end{enumerate}
+\end{problem}
+
+
+
+\subsection{Day 4 -- Class}
+\textcolor{red}{Like Day 2 but with ``non-geometric" shapes.}
+\begin{problem}
+\label{D4_InconvientRugs}
+Let $R(x)$ be a function that defines the top of a rug and each rug have a matching trap door above it. Each time we open the trap door, a dart falls from the door onto the rug, and we let $X$ be the random variable that records the $x$-coordinate of the dart's location. For each of the rug functions, $R(x)$, answer the following questions.
+\begin{enumerate}
+\item What is the total area of the rug?
+ \begin{itemize}
+ \item Use Mathematica to calculate the total area.
+ \item Use a built in function in R to calculate the the total area.
+ \item Can you write a function to approximate this area numerically using R?
+ \item How does the total area calculated using the above methods compare?
+ \end{itemize}
+\item Find the cdf, $F(x)$.
+\item Graph $F(x)$.
+\item Find the pdf, $f(x)$.
+\end{enumerate}
+
+Rug Functions:
+$$R_1(x) = 
+    \begin{cases}
+     & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+
+$$R_2(x) = 
+    \begin{cases}
+     & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+    
+$$R_3(x) = 
+    \begin{cases}
+     & 0 < x < 5 \\
+    0 & \text{otherwise}
+    \end{cases}.$$
+\end{problem}
+
+\begin{problem}
+Consider the symbol $\int_a^x f(t)dt$ where $f(t)$ is the pdf for the rug described by $R(x)$ and $0 < x < b$ \textbf{color}{use an normalized rug here}.
+\begin{enumerate}
+\item Draw a sketch of what this symbol represents.
+\item Use Mathematica to calculate $\int_a^x f(t)dt$.
+\item What do you notice about the cdf, $F(x)$, of the rug and $\int_a^x f(t)dt$? Do you think this is always true? How could you check?
+\item What is the total area of the rug?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Consider the rug described by $R(x)$ \textcolor{red}{use a non-normalized rug here}, answer the following question.
+\begin{enumerate}
+\item What is the total area of the rug?
+\item Use Mathematica to calculate $\int_a^x f(t)dt$.
+\item What do you notice about the cdf, $F(x)$, of the rug and $\int_a^x f(t)dt$?
+\item Use Mathematica to calculate $\int_a^x R(t)dt$.
+\item What do you notice about the cdf, $F(x)$, of the rug and $\int_a^x R(t)dt$?
+\end{enumerate}
+\end{problem}
+
+The function $A(x) = \int_a^x f(t)dt$ is called an \textbf{accumulation function} and can be used to calculated the area below the function $f$ upto $x$.
+
+\textcolor{red}{Now that we have worked with definite integrals. Define indefinite integrals.}
+
+% \begin{comment}
+% \end{comment}
+\end{document}

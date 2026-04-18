@@ -1,0 +1,139 @@
+---
+title: "MATH 261 Applied Calculus for Data Analysis"
+output:
+  word_document:
+    toc: yes
+    reference_docx: ../../cs_department/CSE250/250.CourseMap.docx
+    keep_md: true
+  html_document: 
+    toc: yes
+    toc_float: 
+      collapsed: false
+      smooth_scroll: false
+params:
+  course_id: "M261"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+pacman::p_load(tidyverse, googlesheets, knitr, flextable, officer)
+big_border = fp_border(color="darkgrey", width = 2)
+std_border = fp_border(color="darkgrey", width = 1)
+gsheet <- gs_title(params$course_id)
+dat <- gs_read(gsheet, ws = "kuali") 
+kuali <- dat$value
+names(kuali) <- dat$type
+outcomes <- gs_read(gsheet, ws = "Outcomes") 
+grading <- gs_read(gsheet, ws = "Grading") 
+  
+```
+
+
+# Overview
+
+## Materials:
+
+There will be `r str_to_lower(kuali["fees"])` student costs.  The course will be `r kuali['credits']` credits with a capacity of `r kuali['enrollment_max']` students.  The textbook is `r kuali["textbook"]`.
+
+## Outcomes:
+
+By the end of the semester, each student will be able to:
+
+```{r, results="asis"}
+outcomes %>% filter(outcome == "course") %>% .$text %>% str_c("1. ", ., "\n") %>% cat()
+```
+
+## Course Description:
+
+`r kuali['course_description']`
+
+# Course Details
+
+## Syllabus
+
+*Offering:* `r kuali['offering']`
+
+*Pre-Requisite:* `r kuali['prereqs']`
+
+*Grading:*
+
+```{r, results="asis"}
+grading %>%
+  mutate(bullets = str_c("\n- ", type, " ", percent, "%: ", "(", text, ")")) %>%
+   .$bullets %>% cat()
+  
+```
+
+*Technology*
+
+`r kuali['technology']`
+
+## Kuali
+
+**Summary of request:** `r kuali['summary_request'] `
+
+**Rationale and supporting data for this request:** `r kuali['rationale'] `
+
+**Request impact?** `r kuali['impact_request']`
+
+**Is this request required in any program?** `r kuali['program_required'] `
+
+**Course Map:** `r kuali['coure_map']`
+
+**Syllabus:** `r kuali['syllabus']`
+
+**Request Type:** `r kuali['request_type']`
+
+**Effective Catalog Year:** `r kuali['catalog_year']`
+
+**Subject Code, Course Number:** `r kuali['course_number']`
+
+**Department:** `r kuali['department']`
+
+**Abbreviated Transcript Title (32 characters):** `r kuali['title_abbr_32']`
+
+**Catalog Course Title (100 characters):** `r kuali['title_long_100']`
+
+**Credits:** `r kuali['credits']`
+
+**Grade Type:** `r kuali['grade_type']`
+
+**Contact Hours:** `r kuali['contact_hours']`
+
+**Repeatable Credit:** `r kuali['repeatable']`
+
+**Anticipated Maximum Enrollment:** `r kuali['enrollment_max']`
+
+**Can this course be audited:** `r kuali['audit']`
+
+**Fees:** `r kuali['fees']`
+
+**Prerequisites:** `r kuali['prereqs']`
+
+**Concurrent Requisites:** `r kuali['coreqs']`
+
+**Course Requirements:** `r kuali['requirements_course']`
+
+**Equivalent Courses:** `r kuali['equivalent_course']`
+
+**Course Description for Catalog:** `r kuali['course_description']`
+
+**Objectives:** `r kuali['objectives']`
+
+**Course Syllabus Summary:** 
+
+*How does this course relate to other courses?*
+
+`r kuali['syllabus_related_courses']`
+
+*What do I need to be able to do before taking this course?*
+
+`r kuali['syllabus_before']`
+
+*What will I be prepared to do after this course?*
+
+`r kuali['syllabus_todo']`
+

@@ -1,0 +1,37 @@
+---
+title: "Syllabus"
+output:
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=FALSE, warning=FALSE)
+```
+
+### Overview
+
+Lorem ipsum dolor sit amet, nam integre aliquando efficiantur te. Sanctus pertinax repudiare has cu, ius no case eruditi accusam. Ex scripta oblique est, ne pri legendos iudicabit deseruisse. Nam electram sapientem ex, est ad natum referrentur. Ne qui fugit concludaturque, ornatus scribentur sit id, vis debitis dignissim scriptorem ne.
+
+Mel summo essent delenit in. Possim mediocrem nam ei, aliquid erroribus cu sed. Duo eius pertinax sadipscing cu, est lorem volumus maluisset at. Has quas deseruisse at. Vim meis percipitur cu, ad sit summo labore. Fuisset scribentur ne nam, pri an enim prima mazim.
+
+Vero erroribus sea ea. Mea te quas error tollit. Ponderum scripserit his ei, eam ei oratio causae indoctum. Nam cu munere propriae delicatissimi, mea dolor virtute offendit ut. Ne affert everti ius, at sit omnis ocurreret, electram instructior ad quo. Civibus elaboraret his ne. Et ius liber integre, sed dicit possim in, cum id facete pertinax.
+
+1.	[Eu quo appetere aliquando efficiendi, vix ei everti offendit rationibus. Eum et sale munere, vix in ludus causae laoreet. Eos tantas vivendo adipiscing an, ea sit oblique splendide. Ut has diam appareat scripserit. Pri autem atqui tractatos ex, no usu mutat percipit suavitate, ut utroque principes usu](convert.html)
+2.	[Duo debet labores te, ad nec etiam graece, quo an primis labitur adversarium. ](clean.html)
+
+### Competency Assumptions
+
+Pro oratio nominati molestiae eu, nostro volumus eleifend ut mel, ad eum agam elitr iisque. Ad sed esse reformidans, ferri causae expetenda ad est. Ne pri aliquip prodesset scribentur. An semper maiorum definitionem eos, et solet vocent ius. Viderer equidem te pro, an eum saepe intellegebat, qui in sale mundi luptatum. Volumus recteque mea eu, eu pro quot tempor tacimates. Perfecto atomorum incorrupte vel ut, eos ne assum invenire consulatu.
+
+Ut sea epicuri facilisis interpretaris. Ea stet tation mediocrem vix, no albucius suscipit inciderint nam. Primis reformidans theophrastus vix id. An probo moderatius accommodare has. Eu suas voluptua concludaturque sit, vocent aperiam omittam no mea.[^1]
+
+### Course Materials
+
+#### Online Books
+
+### Additional Disclaimers
+
+Our class will uphold the [following](http://www.byui.edu/mathematics/policies) as well.
+
+[^1]: https://medium.com/@nikhilbd/what-makes-a-good-data-scientist-engineer-a8b4d7948a86#.jr80wl98y

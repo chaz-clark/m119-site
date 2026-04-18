@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+
+<title>Project 2 Instructions</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Math 119</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="project.html">
+    <span class="fa fa-tachometer"></span>
+     
+    Project
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-book"></span>
+     
+    Readings
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://openstax.org/details/books/calculus-volume-1">OpenStax: Calculus, vol. 1</a>
+    </li>
+    <li>
+      <a href="https://openstax.org/details/books/precalculus">OpenStax: Precalculus</a>
+    </li>
+    <li>
+      <a href="https://openstax.org/details/books/introductory-statistics">OpenStax: Introductory Statistics</a>
+    </li>
+    <li>
+      <a href="https://mathstat.slu.edu/~speegle/_book/prob.html">Probability and Random Variables in 'Foundations of Stats with R'</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    R Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="rstudio_install.html">Install RStudio Instructions</a>
+    </li>
+    <li>
+      <a href="RCommands.html">R Commands</a>
+    </li>
+    <li>
+      <a href="RMarkdownHints.html">R Markdown Hints</a>
+    </li>
+    <li>
+      <a href="RCheatSheets.html">R Cheatsheets</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="class.html">
+    <span class="fa fa-university"></span>
+     
+    Class Meeting
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Project 2 Instructions</h1>
+<h4 class="date">Updated November 16</h4>
+
+</div>
+
+
+<div id="specs-list" class="section level2">
+<h2>Specs List</h2>
+<ul>
+<li>General Specs
+<ul>
+<li>All plots and calculations are introduced, explained, interpreted, and described using complete sentences (and paragraphs). Provide an analysis.</li>
+<li>Mathematical notation and terminology is used properly.</li>
+<li>Project is ready for review.
+<ul>
+<li>Instructions followed.</li>
+<li>Good faith effort evident for all tasks.</li>
+<li>The writing is almost free, if not entirely free, of distracting spelling or grammatical errors (incomplete sentences, subject-verb disagreement, and misuse of punctuation).</li>
+</ul></li>
+<li>Enough information is included so that work is reproducible.
+<ul>
+<li>R code is included in html submission with hide/show button.</li>
+<li>Enough steps of calculations included so that thinking can be traced.</li>
+</ul></li>
+<li>The work was completed by the student.</li>
+</ul></li>
+<li>Project Standards
+<ul>
+<li>Demonstrates understanding of sum notation and almost all, if not all, the requested sums are expanded correctly.</li>
+<li>Demonstrates ability to calculate statistics using R (given a formula and data) and almost all, if not all, the requested statistics are correctly calculated.</li>
+<li>Demonstrates an understanding of the concept of a loglikelihood function by providing the correct formulas for the loglikelihood functions specified (<span class="math inline"><em>f</em><sub>6</sub></span> and <span class="math inline"><em>f</em><sub>5</sub></span>.</li>
+<li>Demonstrates ability to find a partial derivative and the required partial derivatives are correct.</li>
+<li>Demonstrates ability to solve systems of equations <del>using R</del> and the solutions are correct.</li>
+<li>Demonstrates ability to plot functions in R and the required plots of the fitted models show at least a visual fit to the data.</li>
+<li>Demonstrates the ability to use a (fitted) model to answer questions about data and the answers presented are reasonable, consistent, and correct.</li>
+<li>Demonstrates understanding that the information we identify using our data depends on which model (or function family, for example <span class="math inline"><em>f</em><sub>6</sub></span> or <span class="math inline"><em>f</em><sub>5</sub></span> <del><span class="math inline"><em>f</em></span>, <span class="math inline"><em>f</em><sub>0</sub></span>, <span class="math inline"><em>f</em><sub>1</sub></span> or <span class="math inline"><em>f</em><sub>2</sub></span></del>) we assume describes the relationship seen in the data and this understanding is demonstrated by an relevant and consistent comparision.</li>
+</ul></li>
+</ul>
+</div>
+<div id="background-and-data" class="section level2">
+<h2>BackGround and Data</h2>
+<div class="figure">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Philips_LED_bulbs.jpg" width="250" alt="" />
+<p class="caption">Phillips LED Bulbs - <a href="https://en.wikipedia.org/wiki/File:Philips_LED_bulbs.jpg">source</a></p>
+</div>
+<p>How long does an LED light bulb last? The US Department of Energy launched the Bright Tomorrow Lighting Prize (or L Prize) in 2008 to “spur lighting manufacturers to develop high-quality, high-efficiency solid-state lighting products to replace the common incandescent light bulb.” In addition to requiring less than 10 watts, the winning bulb needed to have a lifetime longer than 25,000 hours. Phillips won the prize in 2011, after undergoing 18 months of rigorous testing. Note however that there are only 8760 hours in a year (24 hours a day for 365 days), which means it takes almost 100% uptime for 3 years to hit 25,000 hours. How do we know the bulb met the hours requriment with only 18 months of testing? This is where modeling comes into play.</p>
+<p>It turns out that when you first turn on an LED bulb, the lumen output slightly increases for a while, going above 100% of the initial brightness. After peaking above 100%,the lumen output stays relatively constant before it starts a slow decent downwards.</p>
+<p>In this project, we’ll be using the data to analyze the function <span class="math inline"><em>f</em>(<em>t</em>)</span> that gives the lumen output of LED bulbs (as a percent of the original lumens) after <span class="math inline"><em>t</em></span> hours.</p>
+<p>When you read in the data, one data frame will be created in R. This data frame is called “bulb”. The bulb data frame contains measurements for one randomly selected bulb at many time points.</p>
+<p>You will need to set the seed so that you will have your own random but reproducible data with which to work. Please set the seed as the four digit number corresponding to your birthday month and date, MMDD. You set the seed in code chunk at the top of the template around line 35.</p>
+<p>The data frame named “bulb” includes the columns (1) “id”, the identification number for the bulb, (2) “hours”, the number of hours since the first measurement, (3) “intensity”, the lumen output of the bulb, and (4) “percent_intensity”, the percent light output – recorded as a decimal percent – based on the first measured intensity of the bulb. In order to compare the functions and the data you will need to pay attention to the units of measurements for both the data and the functions.</p>
+</div>
+<div id="project-outline" class="section level2">
+<h2>Project Outline</h2>
+<p>To complete this project you will need to provide an analysis by completing the following tasks. An analysis is a detailed examination of something. In this case the “something” is light bulb data, a question, several assumed models, and the understanding the data and models can provide related to the question including the consequences of assuming a model. As the author it is your job is to create plots, provide detailed calculations, and make connections for your reader. You need to draw your readers’ attention to specific and important details that can be seen in the plots and calculations you provide. You need to tell your reader why these details are important and how they provide information related to the question being explored.</p>
+<p>This outline provides you a structure as you create plots and work through calculations relevant to the question described in the background information above. Make sure you meet <strong>ALL</strong> the specifications (General Specs and Project Standards listed above). If <strong>any</strong> of the specifications are not met you will receive feedback identifying the specification(s) that still require(s) work in order to complete the project.</p>
+<div id="statistic-a-number-that-summarizes-information-from-data." class="section level3">
+<h3>Statistic – A number that summarizes information from data.</h3>
+<ul>
+<li><strong>Task 1a:</strong> Using the data for one light bulb, the data frame named “bulb”, for each of the formulas below write down the expanded sums, both in general and for your specific data. Include at least the first three terms, the ellipsis (…), and at least the last two terms.</li>
+</ul>
+<p>An example of expanding a sum in general is, <img src="1a_ex1_project2.svg" width="450" />. Given a data$input vector, or list, (7.2, 3, 4.22, 1.5, …, 12, 16, 16, 4.152), an example of expanding a sum for specific data is, <img src="1a_ex2_project2.svg" width="450" />.</p>
+<p>Each of these formulas is a formula for a statistic, a number that summarizes information from data. In this project, we are continuing our work with the light bulbs and the L-Prize. We will be fitting models, functions <span class="math inline"><em>f</em>(<em>t</em>)</span> that give the lumen output of LED bulbs (as a percent of the original lumens) after <span class="math inline"><em>t</em></span> hours, to the data. When you see <span class="math inline"><em>x</em><sub><em>i</em></sub></span> it refers to the input variable or the independent variable or the explanitory variable (so <span class="math inline"><em>x</em><sub><em>i</em></sub></span> and <span class="math inline"><em>t</em><sub><em>i</em></sub></span> have the same meaning in this context). When you see <span class="math inline"><em>y</em><sub><em>i</em></sub></span> it refers to the output variable or the dependent variable or the response variable.</p>
+<p><img src="eq1a_project2.svg" width="40" /></p>
+<p><img src="eq1b_project2_updated.svg" width="40" /></p>
+<p><img src="eq1c_project2.svg" width="55" /></p>
+<p><img src="eq1d_project2.svg" width="40" /></p>
+<p><img src="eq1e_project2.svg" width="40" /></p>
+<p><img src="eq1f_project2.svg" width="55" /></p>
+<p><img src="eq1g_project2.svg" width="65" /></p>
+<p><img src="eq1h_project2.svg" width="65" /></p>
+<!-- 
+  - $\displaystyle \sum_{i=1}^{n} x_i$
+  
+  - $\displaystyle \sum_{i=0}^{n} y_i$
+  
+  - $\displaystyle \sum_{i=1}^{n} x_iy_i$
+  
+  - $\displaystyle \sum_{i=1}^{n} x_i^2$
+  
+  - $\displaystyle \sum_{i=1}^{n} y_i^2$
+  
+  - $\displaystyle \frac{1}{n}\sum_{i=1}^{n} x_i$
+  
+  - $\displaystyle \sum_{i=1}^{n} e^{-0.04x_i}$
+  
+  - $\displaystyle \sum_{i=1}^{n} x_ie^{-2x_i}$
+  -->
+<ul>
+<li><strong>Task 1b:</strong> Using the same data, use R to calculate the value for each of the statistics listed in “Task 1a”.</li>
+</ul>
+</div>
+<div id="optimize-likelihood-function" class="section level3">
+<h3>Optimize Likelihood Function</h3>
+<ul>
+<li><strong>Task 2a:</strong> Consider the function <span class="math inline"><em>f</em><sub>6</sub>(<em>t</em>) = (100 − <em>a</em><sub>2</sub>) + <em>a</em><sub>1</sub><em>t</em> + <em>a</em><sub>2</sub><em>e</em><sup> − 0.0003<em>t</em></sup></span>, assume the errors are normally distributed with mean of zero and standard deviation of one, write down the loglikelihood function.</li>
+</ul>
+<p><del>Consider the function <span class="math inline"><em>f</em>(<em>t</em>) = (100 − <em>a</em><sub>1</sub>) + <em>a</em><sub>1</sub><em>e</em><sup> − <em>a</em><sub>2</sub><em>t</em></sup></span>, assume the errors are normally distributed with mean of zero and standard deviation of one, write down the loglikelihood function.</del></p>
+<ul>
+<li><p><strong>Task 2b:</strong> Write down the partial derivatives (with respect to each parameter in the model) of the loglikelihood function. <em>Note, there are two parameters so we are looking for two partial derivatives.</em></p></li>
+<li><p><strong>Task 2c:</strong> Set the partial derivative(s) to zero and <del>use R to numerically</del> solve the resulting system of equations.</p></li>
+</ul>
+<p><del><em>Extension Question: Could this system of equations be solved analytically? (You do not have to answer this question as part of your analysis. It is here to probe your thinking.)</em></del></p>
+</div>
+<div id="using-the-fitted-model" class="section level3">
+<h3>Using the Fitted Model</h3>
+<ul>
+<li><p><strong>Task 3a:</strong> Create a plot with both the data (a time vs. intensity as a percent of original lumens scatterplot) and your fitted model from “Task 2”. Make sure you clearly indicate which parameter values you are using. <em>Make sure the selected model is at least a visual fit to the data.</em></p></li>
+<li><p><strong>Task 3b:</strong> Use the model to predict when the luminescence of given light bulb will be less than 75% of the original luminescence. <em>Note, 75% of the original luminescence means <span class="math inline"><em>f</em>(<em>t</em>) = 75</span> when measuring luminescence as a percent of the original lumens.</em></p></li>
+</ul>
+</div>
+<div id="assume-a-different-functional-form-for-the-model" class="section level3">
+<h3>Assume a Different Functional Form for the Model</h3>
+<ul>
+<li><p><strong>Task 4a:</strong> Repeat “Task 2” and “Task 3” for the <del>3 of the</del> following model.</p>
+<ul>
+<li><p><del><span class="math inline"><em>f</em><sub>0</sub>(<em>t</em>) = (100 + <em>a</em><sub>1</sub><em>t</em>)<em>e</em><sup> − <em>a</em><sub>2</sub><em>t</em></sup></span></del></p></li>
+<li><p><del><span class="math inline"><em>f</em><sub>4</sub>(<em>t</em>) = 100 + <em>a</em><sub>1</sub><em>t</em> + <em>a</em><sub>2</sub>ln (<em>t</em> + 1)</span></del></p></li>
+<li><p><del><span class="math inline"><em>f</em><sub>0</sub>(<em>t</em>) = <em>a</em><sub>1</sub> + <em>a</em><sub>2</sub><em>t</em></span></del></p></li>
+<li><p><del><span class="math inline"><em>f</em><sub>2</sub>(<em>t</em>) = 100 + <em>a</em><sub>2</sub><em>t</em></span></del></p></li>
+<li><p><span class="math inline"><em>f</em><sub>5</sub>(<em>t</em>) = (100 + <em>a</em><sub>1</sub><em>t</em>)<em>e</em><sup> − 0.00005<em>t</em></sup></span></p></li>
+</ul></li>
+<li><p><strong>Task 4b:</strong> Compare and contrast the results from your <span class="math inline"><em>f</em><sub>6</sub></span> and <span class="math inline"><em>f</em><sub>5</sub></span> fitted models <del>your four fitted models</del>. How does the assumption (or choice), you make as a mathematician regarding which model to fit, influence the information you learn from the data. Make sure to explain your observations about the consequences of your model assumption in the context of the light bulbs.</p></li>
+</ul>
+</div>
+<div id="conclusions" class="section level3">
+<h3>Conclusions</h3>
+<ul>
+<li><strong>Task 5:</strong> Answer the question, ``Do these light bulbs appear to meet the requirements for the L Prize?" Make sure to provide support for your answer using the models and your data.</li>
+</ul>
+</div>
+<div id="reflections" class="section level3">
+<h3>Reflections</h3>
+<ul>
+<li><strong>Task 6:</strong> Reflect on your work for this project. In 1-2 paragraphs, identify/explain 2-3 key mathematical ideas you learned (and would like to remember) and 1-3 soft skills you needed/improved/learned while working on the project.</li>
+</ul>
+</div>
+</div>
+<div id="template-file" class="section level2">
+<h2>Template File</h2>
+<ul>
+<li><a href="project2_template.Rmd">Project 2 .Rmd template</a></li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+
+</body>
+</html>

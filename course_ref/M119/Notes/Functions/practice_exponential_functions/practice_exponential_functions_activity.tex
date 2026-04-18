@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\usepackage{rotating}
+
+\usepackage{tabls}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{multirow}
+
+\usepackage{comment}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{box}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{axiom*}{Axiom}
+\newtheorem{dfn}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{exercise*}{Exercise}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{prep-problems}{Preparation Problems}
+
+\newcommand{\pd}[3]{\frac{\partial^{#3} {#1}}{\partial {#2}^{#3}}}
+\newcommand{\fpd}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\diff}[2]{\frac{d {#1}}{d {#2}}}
+
+\begin{document}
+\begin{definition*}[Exponential Function]\hfill
+A function of the form $f(x) = b^x$ where $b>0$ and $b \neq 1$ is an \textbf{exponential function} with base $b$ and exponent $x$.
+\end{definition*}
+
+Remember the definition of function specifies two sets and a rule of assignment so that only one output is assigned to each input (This means given an input we don't have to guess what output we will get because there is only one output matched with each input). The two sets are often clear from context, but exponential functions are new functions to us. How do we know what the input and output sets are in this context? We will use what we know about exponential expressions. As we complete these exercises pay attention to the inputs and the outputs.
+\begin{enumerate}
+\item Let $f(x) = 4^x$.
+	\begin{enumerate}
+	\item Practice evaluating this exponential function.
+		\begin{enumerate}
+		\item Evaluate $f(1)$. \vfill
+		\item Evaluate $f(0)$. \vfill
+		\item Evaluate $f(-1)$. \vfill
+		\item Evaluate $f(-2)$. \vfill
+		\item Evaluate $f \left( \frac{1}{2} \right)$. \vfill
+		\item Evaluate $f(3)$. \vfill
+		\item Are there any real numbers that would cause us a problem when trying to evaluate $f$ at that number? \vfill
+		\item What do you notice about all the outputs of $f$? \vfill
+		\end{enumerate}
+	\item A different kind of question.
+		\begin{enumerate}
+		\item Solve $f(x) = 16$. \vfill
+		\item Solve $f(x) = 1$. \vfill
+		\item Solve $f(x) = 2$. \vfill
+		\item Solve $f(x) = 256$. \vfill
+		\item Explain the difference between part (a) and part (b).\vfill \vfill
+		\end{enumerate}
+	\item Evaluate $f(x+7)$
+		\begin{enumerate}
+		\item Identify the transformation. What does this tell you about the relationship between the graphs of $f(x)$ and $f(x+7)$. \vfill \vfill
+		\end{enumerate}
+	\end{enumerate}
+\item What is the difference between an exponential function and power function?\\
+\textit{Recall:} A \textbf{power function} is any function of the form $f(x) = ax^b$ where $a$ and $b$ are any real numbers. \vfill \vfill \vfill
+\item Let $g(t) = \begin{cases} 
+      4^t - 2 & t \leq 0 \\
+      t^2 - 5 & t > 0
+   \end{cases}.$
+   	\begin{enumerate}
+	\item Evaluate $g(-1)$. \vfill
+	\item Solve $g(t) = -1$. \textit{Hint: You should get two numbers.}
+	\end{enumerate}
+\end{enumerate}
+\end{document}

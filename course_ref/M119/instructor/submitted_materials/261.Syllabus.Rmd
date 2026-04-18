@@ -1,0 +1,172 @@
+---
+title: "MATH 261 Applied Calculus for Data Analysis Syllabus"
+output:
+  word_document:
+    toc: yes
+    reference_docx: ../../cs_department/CSE250/250.Syllabus.docx
+    keep_md: true
+  html_document: 
+    toc: yes
+    toc_float: 
+      collapsed: false
+      smooth_scroll: false
+params:
+  course_id: "M261"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+pacman::p_load(tidyverse, googlesheets, knitr, flextable, officer)
+big_border = fp_border(color="darkgrey", width = 2)
+std_border = fp_border(color="darkgrey", width = 1)
+gsheet <- gs_title(params$course_id)
+Sys.sleep(6)
+
+dat <- gs_read(gsheet, ws = "kuali") 
+kuali <- dat$value
+names(kuali) <- dat$type
+outcomes <- gs_read(gsheet, ws = "Outcomes") 
+grading <- gs_read(gsheet, ws = "Grading") 
+weeks <- gs_read(gsheet, ws = "Weeks")
+  
+```
+
+# Syllabus
+
+## Course Description
+
+*Offering:* `r kuali['offering']`
+   
+*Pre-Requisite:* `r kuali['prereqs']`
+
+## Course Outcomes
+
+By the end of the semester, each student will be able to:
+
+```{r, results="asis"}
+outcomes %>% filter(outcome == "course") %>% .$text %>% str_c("1. ", ., "\n") %>% cat()
+```
+
+# Course Details
+
+## Overview
+
+*How does this course relate to other courses?*
+
+`r kuali['syllabus_related_courses']`
+
+*What do I need to be able to do before taking this course?*
+
+`r kuali['syllabus_before']`
+
+*What will I be prepared to do after this course?*
+
+`r kuali['syllabus_todo']`
+
+## Grading:
+
+```{r, results="asis"}
+grading %>%
+  mutate(bullets = str_c("\n- ", type, " ", percent, "%: ", "(", text, ")")) %>%
+   .$bullets %>% cat()
+  
+```
+
+## Technology and Textbooks
+
+- `r kuali['technology']`
+- `r kuali['textbook']`
+
+## Semester Outline
+
+Below is a 14-week outline of the material we will cover.
+
+```{r, results="asis"}
+weeks %>%
+  mutate(bullets = str_c("\n- **Week ", week, ":** ", description)) %>%
+   .$bullets %>% cat()
+```
+
+## Detailed topics by week
+
+### Week 1 & 2
+
+- Math Bootcamp
+- Installing software
+
+### Week 3
+
+- Derivatives - 1-Dimension
+- Motivate 1: Optimization Problems (least squares regression and maximum likelihood)
+- Polynomials, Exponential, Log
+- Rules: addition, product, chain
+
+### Week 4
+
+- Applications Case Study
+    - Min/Max problems - by hand
+    - Graph Sketching (increasing/decreasing, local extremums, concavity, inflection) All done on computer to save time
+    - 1-Dimensional Hill Climb Case Study - computer
+
+### Week 5
+
+- Derivatives - Theory
+- Limits (computer based application)
+- Implicit Differentiation
+- Higher Order Derivatives
+
+### Week 6
+
+- Applications - Case Study
+  
+### Week 7
+
+- Derivatives - Multivariate
+- Functions of several variables
+- Partial Derivatives
+- Maxima and Minima
+- Optimization with constraints (computer based application) 
+- Applications - Case Study
+    - Least Squares Regression Case Study - theory by hand, computer with data
+
+### Week 8
+
+- Infinite Series
+- Motivate 2: Discrete Probability Distribution (Poisson, Binomial, Geometric)
+- Taylor Polynomials
+- Taylor Series
+- Approximations Using Taylor Series
+- Applications - Case Study
+    - Moment Generating Function for normal distribution -> mean, variance, skewness, kurtosis (high order derivatives application) 
+
+### Week 9
+
+- Integration
+- Motivate 3: Continuous Probability Distributions (Uniform, Exponential, Normal)
+- Antiderivatives and Indefinite Integrals
+- Integration by substitution
+- Integration by parts
+
+### Week 10
+
+- Definite Integral, Riemann Sums
+- Fundamental Theorem of Calculus
+- Improper Integrals
+
+### Week 11
+
+- Applications - Case Study
+- Calculate probability, expectation and variance and cdf from pdf case study
+- Relationship between probability densityfunction and cumulative distribution function case study
+
+### Week 12 - 14
+
+- Integration - Multivariate
+- Double Integrals
+- Applications - Case Study
+    - Joint probability distributions, marginal distributions - by computer
+- Readings on mathematical models in data science and analytics 
+

@@ -1,0 +1,69 @@
+---
+title: "Project 1"
+author: "YOUR NAME"
+date: "Updated October 15"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+
+
+
+
+
+```r
+# Use this R-Chunk to import all your datasets!
+
+#Enter the seed as your birthday MMDD.
+bulb <- led_bulb(1,seed=0123)
+  #The bulb object is a data frame with measurements for one randomly selected bulb at many time points.
+dist <- led_time(2100)
+  #The dist object is a data frame with measurements for all the bulbs at a selected time.
+```
+<!-- #Color Format -->
+
+## BackGround
+
+![Phillips LED Bulbs - [source](https://en.wikipedia.org/wiki/File:Philips_LED_bulbs.jpg)](https://upload.wikimedia.org/wikipedia/commons/4/4e/Philips_LED_bulbs.jpg){width=250px}
+
+How long does an LED light bulb last? The US Department of Energy launched the Bright Tomorrow Lighting Prize (or L Prize) in 2008 to "spur lighting manufacturers to develop high-quality, high-efficiency solid-state lighting products to replace the common incandescent light bulb." In addition to requiring less than 10 watts, the winning bulb needed to have a lifetime longer than 25,000 hours.  Phillips won the prize in 2011, after undergoing 18 months of rigorous testing.  Note however that there are only 8760 hours in a year (24 hours a day for 365 days), which means it takes almost 100% uptime for 3 years to hit 25,000 hours. How do we know the bulb met the hours requriment with only 18 months of testing? This is where modeling comes into play. 
+
+It turns out that when you first turn on an LED bulb, the lumen output slightly increases for a while, going above 100% of the initial brightness. After peaking above 100%,the lumen output stays relatively constant before it starts a slow decent downwards.  
+
+In this project, we'll be using the data to analyze the function $f(t)$ that gives the lumen output of LED bulbs (as a percent of the original lumens) after $t$ hours. 
+
+## Tell A Story With Functions
+
+
+
+
+
+
+## Solving Equations (With Software)
+
+
+
+
+## Modeling Measurement
+
+
+
+
+## Selecting Parameter Values for the Model
+
+
+
+## Conclusions
+
+
+
+## Reflections
+
+

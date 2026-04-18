@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\usepackage{rotating}
+
+\usepackage{tabls}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{multirow}
+
+\usepackage{comment}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{box}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{axiom*}{Axiom}
+\newtheorem{dfn}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{exercise*}{Exercise}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{prep-problems}{Preparation Problems}
+
+\newcommand{\pd}[3]{\frac{\partial^{#3} {#1}}{\partial {#2}^{#3}}}
+\newcommand{\fpd}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\diff}[2]{\frac{d {#1}}{d {#2}}}
+
+
+\begin{document}
+In Project 2 we will be continuing our work with the LED data. To complete this project you will need to complete the following tasks insuring that you meet \textbf{ALL} the specifications. If \textbf{any} of the specification are not met you will receive feedback identifying the specification(s) that still require work in order to complete the project.
+
+\begin{itemize}
+\item Statistic  -- A number that summarizes information from data.
+	\begin{itemize}
+	\item Task 1a: Using the data for one light bulb, write down the expanded sums for each of the following statistics. Include the first three terms, ellipsis, and the last three terms. I  \textcolor{red}{(which light bulb can be randomly generated for each student)}
+		\begin{enumerate}
+		\item $\displaystyle \sum_{i=1}^{n} x_i$
+		\item $\displaystyle \sum_{i=0}^{n} y_i$
+		\item $\displaystyle \sum_{i=1}^{n} x_iy_i$
+		\item $\displaystyle \sum_{i=1}^{n} x_i^2$
+		\item $\displaystyle \sum_{i=1}^{n} y_i^2$
+		\item $\displaystyle \frac{1}{n}\sum_{i=1}^{n} x_i$
+		\item $\displaystyle \sum_{i=1}^{n} e^{-0.04x_i}$
+		\item $\displaystyle \sum_{i=1}^{n} x_ie^{-2x_i}$
+		\end{enumerate}
+	\item Task 1b: Using the same data, calculate the value for each of the statistics listed in ``Task 1a".
+	\end{itemize}
+\item Optimize Likelihood Function
+	\begin{itemize}
+	\item Task 2a: Consider the function $f_1(t) = (100 - a_1) + a_1e^{-a_2t}$, write down the loglikelihood function.
+	\item Task 2b: Write down the partial derivatives (for each parameter in the model) for the loglikelihood function.
+	\item Task 2c: Set each partial derivative to zero and use R to numerically solve the resulting system of equations. Could this system of equations be solved analytically?
+	\end{itemize}
+\item Using the Fitted Model
+	\begin{itemize}
+	\item Task 3a: Create a plot with both the data (the scatterplot) and a fitted model from ``Task 2". Make sure you clearly indicate which parameter values you are using. Does the model visually fit the data?
+	\item Task 3b: Use the model to predict when the luminescence of given light bulb will be less than 75\% of the original luminescence (luminescence at t = 0 hours).
+	\end{itemize}
+\item Assume a Different Functional Form for the Model
+	\begin{itemize}
+	\item Task 4a: Repeat ``Task 2" and ``Task 3" for the following models.
+		\begin{itemize}
+		\item $\displaystyle f_2(t) = (100 + a_1t)e^{-a_2t}$
+		\item $\displaystyle f_0(t) = a_1 + a_2 t$
+		\item $\displaystyle f_3(t) = 100 + a_2 t$
+		\end{itemize}
+	\item Task 4b: Compare and contrast the four fitted models you found.
+	\item Task 4c: Explain your results in the context of the light bulbs.
+	\end{itemize}
+\item Conclusions
+	\begin{itemize}
+	\item Task 5: Answer the question, ``Do these light bulbs appear to meet the requirements for the L Prize?" Make sure to provide support for your answer using the models and your data. 
+	\end{itemize}
+\item Reflection
+	\begin{itemize}
+	\item Task 6: Reflect on your work for this project. In 1-2 paragraphs, identify/explain 2-3 key mathematical  ideas you learned (and would like to remember) and 1-3 soft skills you needed/improved/learned while working on the project.
+	\end{itemize}
+\end{itemize}
+
+
+ 
+\end{document}

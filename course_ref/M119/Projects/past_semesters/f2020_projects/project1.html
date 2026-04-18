@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+
+<title>Project 1 Instructions</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Math 119</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="project.html">
+    <span class="fa fa-tachometer"></span>
+     
+    Project
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-book"></span>
+     
+    Readings
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://openstax.org/details/books/calculus-volume-1">OpenStax: Calculus, vol. 1</a>
+    </li>
+    <li>
+      <a href="https://openstax.org/details/books/precalculus">OpenStax: Precalculus</a>
+    </li>
+    <li>
+      <a href="https://openstax.org/details/books/introductory-statistics">OpenStax: Introductory Statistics</a>
+    </li>
+    <li>
+      <a href="https://mathstat.slu.edu/~speegle/_book/prob.html">Probability and Random Variables in 'Foundations of Stats with R'</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    R Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="rstudio_install.html">Install RStudio Instructions</a>
+    </li>
+    <li>
+      <a href="RCommands.html">R Commands</a>
+    </li>
+    <li>
+      <a href="RMarkdownHints.html">R Markdown Hints</a>
+    </li>
+    <li>
+      <a href="RCheatSheets.html">R Cheatsheets</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="class.html">
+    <span class="fa fa-university"></span>
+     
+    Class Meeting
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Project 1 Instructions</h1>
+<h4 class="date">Updated October 23</h4>
+
+</div>
+
+
+<p>The Project 1 template includes background for the data and question we will be exploring. To complete this project you will need to complete the following tasks insuring that you meet <strong>ALL</strong> the specifications. If <strong>any</strong> of the specifications are not met you will receive feedback identifying the specification(s) that still require work in order to complete the project.</p>
+<div id="project-outline" class="section level2">
+<h2>Project Outline</h2>
+<div id="tell-a-story-with-functions" class="section level3">
+<h3>Tell a Story with Functions</h3>
+<p>When you read in the data, two data frames will be created in R. One of the data frames is called “bulb”. The bulb data frame contains measurements for one randomly selected bulb at many time points. You will need to set the seed so that you will have your own random but reproducible data with which to work. Please set the seed as the four digit number corresponding to your birthday month and date, MMDD. You set the seed in code chunk at the top of the template around line 35. The other data frame is called “dist”. The dist data frame contains measurements for all the bulbs at one selected time. These data frames include the columns (1) “id”, the identification number for the bulb, (2) “hours”, the number of hours since the first measurement, (3) “intensity”, the lumen output of the bulb, and (4) “percent_intensity”, the percent light output – recorded as a decimal percent – based on the first measured intensity of the bulb. In order to compare the functions and the data you will need to pay attention to the units of measurements for both the data and the functions.</p>
+<ul>
+<li><p><strong>Task 1:</strong> Create a scatterplot of <del>the data</del> time vs. bulb intensity (as a percent, not decimal percent, of the original lumens) for one light bulb. Use the bulb data frame.</p></li>
+<li><p><strong>Task 2a:</strong> Plot the five deterministic models for 0 hours to at least 50,000 hours.</p>
+<ul>
+<li><span class="math inline"><em>f</em><sub>1</sub>(<em>t</em>) = 100</span></li>
+<li><span class="math inline"><em>f</em><sub>2</sub>(<em>t</em>) = 100 − 0.003<em>t</em></span></li>
+<li><span class="math inline"><em>f</em><sub>3</sub>(<em>t</em>) = 120 − 20<em>e</em><sup> − 0.0004<em>t</em></sup></span></li>
+<li><span class="math inline"><em>f</em><sub>4</sub>(<em>t</em>) = 95 − 0.002<em>t</em> + 2ln (18<em>t</em> + 100)</span></li>
+<li><span class="math inline"><em>f</em><sub>5</sub>(<em>t</em>) = (100 + 0.007<em>t</em>)<em>e</em><sup> − 0.00005<em>t</em></sup></span></li>
+</ul></li>
+<li><p><strong>Task 2b:</strong> Describe in words the story told by each function in the context of the light bulbs.</p></li>
+</ul>
+</div>
+<div id="solving-equations-with-software" class="section level3">
+<h3>Solving Equations (with Software)</h3>
+<ul>
+<li><p><strong>Task 3a:</strong> Use R to solve each five deterministic functions, <span class="math inline"><em>f</em><sub><em>i</em></sub>(<em>t</em>) = 75</span>.</p></li>
+<li><p><strong>Task 3b:</strong> Identify which of the numeric results (approximate solution, or error message) you can verify analytically (confirm by finding the exact solution, in other words by solving the equation by hand). <em>You can write out your solutions by hand and include a picture of your calculations or you can use the Latex Cheat Sheet posted on the External (not Canvas) website if you would like to try to type out your calculations.</em></p></li>
+<li><p><strong>Task 3c:</strong> Explain your results in the context of the light bulb question.</p></li>
+</ul>
+</div>
+<div id="modeling-measurement" class="section level3">
+<h3>Modeling Measurement</h3>
+<ul>
+<li><p><strong>Task 4a:</strong> Plot a density histogram (not a counts or frequency histogram) of <del>the data</del> the bulb intensity (as a percent, not decimal percent, of the original lumens) for all the light bulbs at a given time. Use the <del>bulb</del> dist data frame.</p></li>
+<li><p><strong>Task 4b:</strong> Select values for <span class="math inline"><em>μ</em></span> and <span class="math inline"><em>σ</em></span> to obtain a visual fit of the normal distribution, <img src="equation_normal_project1.png" width="150" /> to the density histogram of the data.</p></li>
+<li><p><strong>Task 4c:</strong> Create plots with both the data (the histogram) and a selected model (normal distribution with the parameter values you picked). Include your best visual fit and one poor visual fit. Make sure you clearly indicate which parameter values you used in each case and why you selected those particular values.</p></li>
+<li><p><strong>Task 4d:</strong> There is a difference in models of relationships (explored in tasks 1-3 and 5) and models of measurement (explored in task 4). Explain in words how the information gathered from models of measurement (and the corresponding data) is different from the information gather from models of relationship (and the corresponding data). Describe your observations in context of the light bulbs. <del>Explain what your best visual fit parameters mean in the context of the light bulb question.</del></p></li>
+</ul>
+</div>
+<div id="selecting-parameter-values-for-a-visual-fit" class="section level3">
+<h3>Selecting Parameter Values (for a Visual Fit)</h3>
+<p>for the model <span class="math inline"><em>f</em><sub>5</sub>(<em>t</em>) = (<em>a</em> + <em>b</em><em>t</em>)<em>e</em><sup> − <em>c</em><em>t</em></sup></span></p>
+<ul>
+<li><p><strong>Task 5a:</strong> There are three parameter in this model – <span class="math inline"><em>a</em></span>, <span class="math inline"><em>b</em></span>, and <span class="math inline"><em>c</em></span>. Since we know <span class="math inline"><em>f</em><sub>5</sub>(0) = 100</span> this tells us the value for one of these parameters. Identify which parameter we know and give its value.</p></li>
+<li><p><strong>Task 5b:</strong> Substitute in the parameter value we know and then experiment with values for the remaining two parameters. Explain what you learned in your exploration. Include 4-6 key plots (constructed in R) to support your summary.</p>
+<ul>
+<li><strong>Some questions you might consider to help you get started with your exploration include:</strong></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>How will you determine what window to use when making your graphs?</li>
+<li>Can you find any combinations of parameters that result in <span class="math inline"><em>f</em><sub>5</sub></span> only decreasing during the time interval of interest?</li>
+<li>Can you find any combinations of parameters that result in <span class="math inline"><em>f</em><sub>5</sub></span> only increasing during the time interval of interest?</li>
+<li>Can you find any combinations of parameters that result in <span class="math inline"><em>f</em><sub>5</sub></span> increasing and then decreasing during the time interval of interest?</li>
+<li>Can you find any combinations of parameters that result in <span class="math inline"><em>f</em><sub>5</sub></span> decreasing and then increasing during the time interval of interest? What do any of these results mean in the context of the light bulb story?</li>
+<li>Can you find any values of <span class="math inline"><em>b</em></span> where the behavior/characteristics of <span class="math inline"><em>f</em><sub>5</sub></span> are different than for other values of <span class="math inline"><em>b</em></span>?</li>
+<li>Can you find any values of <span class="math inline"><em>c</em></span> where the behavior/characteristics of <span class="math inline"><em>f</em><sub>5</sub></span> are different than for other values of <span class="math inline"><em>c</em></span>?</li>
+<li>Did you find any values of <span class="math inline"><em>b</em></span> or <span class="math inline"><em>c</em></span> (or combinations of values of <span class="math inline"><em>b</em></span> and <span class="math inline"><em>c</em></span>) that don’t make sense in the context of the light bulb story?</li>
+<li>Can you explain any of your observations using what you know about the five building block functions and 5 function operations that were used to build up the function <span class="math inline"><em>f</em><sub>5</sub></span>?</li>
+<li>What did you notice about the values of <span class="math inline"><em>b</em></span> and <span class="math inline"><em>c</em></span> (and their combinations) that you can used to help fine tune the behavior of <span class="math inline"><em>f</em><sub>5</sub></span> to fit the context of the light bulb story?</li>
+</ol></li>
+<li><p><strong>Task 5c:</strong> Create plots with both the data (the scatterplot) and a selected model (<span class="math inline"><em>f</em><sub>5</sub></span> with the parameter values you picked). Include your best visual fit and one poor visual fit. Make sure you clearly indicate which parameter values you used in each case.</p></li>
+<li><p><strong>Task 5d:</strong> Explain in words the story, in context, told by your best visual fit model. <del>Explain what your best visual fit parameters mean in the context of the light bulb question.</del></p></li>
+</ul>
+</div>
+<div id="conclusions" class="section level3">
+<h3>Conclusions</h3>
+<ul>
+<li><strong>Task 6:</strong> Answer the question, “Do these light bulbs meet the requirements for the L Prize?” Make sure to provide support for your <del>answer</del> conclusion by referring to key details from your work in the previous tasks <del>using the models you selected and your data</del>.</li>
+</ul>
+</div>
+<div id="reflection" class="section level3">
+<h3>Reflection</h3>
+<ul>
+<li><strong>Task 7:</strong> Reflect on your work for this project. In 1-2 paragraphs, identify/explain 2-3 key mathematical ideas you learned (and would like to remember) and 1-3 soft skills you needed/improved/learned while working on the project.</li>
+</ul>
+</div>
+</div>
+<div id="template-file" class="section level2">
+<h2>Template File</h2>
+<ul>
+<li><a href="project1_template.Rmd">Project 1 .Rmd template</a></li>
+</ul>
+</div>
+<div id="specs-list" class="section level2">
+<h2>Specs List</h2>
+<ul>
+<li>General Specs
+<ul>
+<li>All plots and calculations are introduced, explained, interpreted, and described using complete sentences (and paragraphs).</li>
+<li>Mathematical notation and terminology is used properly.</li>
+<li>Project is ready for review.
+<ul>
+<li>Instructions followed.</li>
+<li>Good faith effort evident of effort for all tasks.</li>
+<li>The writing is almost free, if not entirely free, of distracting spelling or grammatical errors (incomplete sentences, subject-verb disagreement, and misuse of punctuation).</li>
+</ul></li>
+<li>Enough information is included so that work is reproducible.
+<ul>
+<li>R code is included in html submission with hide/show button.</li>
+<li>Enough steps of calculations included so that thinking can be traced.</li>
+</ul></li>
+<li>The work was completed by the student.</li>
+</ul></li>
+<li>Project Standards
+<ul>
+<li>Demonstrates ability to create scatter plots in R and the required scatter plot is correct.</li>
+<li>Demonstrates ability to plot functions in R and the required plots are correct.</li>
+<li>Demonstrates ability to solve equations using R and the solutions are correct.</li>
+<li>Demonstrates ability to solve simple equations analytically and the solutions are correct.</li>
+<li>Demonstrates ability to plot histograms in R and the require histogram is correct.</li>
+<li>Demonstrates understanding of the relationship between models, data, and parameters with visual fits and the interpretation of plots and calculations are reasonable, consistent, and correct.</li>
+</ul></li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\usepackage{rotating}
+
+\usepackage{tabls}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{multirow}
+
+\usepackage{comment}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{box}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{axiom*}{Axiom}
+\newtheorem{dfn}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{exercise*}{Exercise}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{prep-problems}{Preparation Problems}
+
+\newcommand{\pd}[3]{\frac{\partial^{#3} {#1}}{\partial {#2}^{#3}}}
+\newcommand{\fpd}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\diff}[2]{\frac{d {#1}}{d {#2}}}
+
+\begin{document}
+\begin{definition*}[Describing Functions]\hfill
+\begin{itemize}
+\item We say a function $f$ is \underline{constant on the interval $I$} if for all $x_1, x_2$ in the interval, $f(x_1)=f(x_2)$.
+\item We say a function $f$ is \underline{increasing on the interval $I$} if for all $x_1, x_2$ in the interval, $f(x_1) \leq f(x_2)$ when $x_1 < x_2$.
+\begin{itemize}
+\item We say a function $f$ is \underline{\textbf{strictly} increasing on the interval $I$} if for all $x_1, x_2$ in the interval, $f(x_1) < f(x_2)$ when $x_1 < x_2$.
+\end{itemize}
+\item We say a function $f$ is \underline{decreasing on the interval $I$} if for all $x_1, x_2$ in the interval, $f(x_1) \geq f(x_2)$ when $x_1 < x_2$.
+\begin{itemize}
+\item We say a function $f$ is \underline{\textbf{strictly} decreasing on the interval $I$} if for all $x_1, x_2$ in the interval, $f(x_1) > f(x_2)$ when $x_1 < x_2$.
+\end{itemize}
+\end{itemize}
+\end{definition*}
+%Definitions adapted from OpenStax Calculus Volume 1.
+
+\vfill
+
+\textbf{Exercises}: Practice with these definitions.
+\begin{enumerate}
+\item Draw a picture of a constant function.
+\item Draw a picture of an increasing function.
+\item Draw a picture of an increasing function that is not strictly increasing.
+\item Draw a picture of a decreasing function.
+\item Draw a picture of a decreasing function that is not strictly decreasing.
+\item Write the equation of a constant function.
+\item Write the equation of an increasing function.
+\item Write the equation of a decreasing function.
+\item In 3-5 sentences, describe a constant, decreasing, or increasing function (pick one). Give a specific example, tell a story.
+%\item In 3-5 sentences, describe an increasing function (give a specific example, tell a story).
+%\item In 3-5 sentences, describe a constant function (give a specific example, tell a story).
+\end{enumerate}
+
+\vfill
+
+\textbf{Exercises}: Practice with R and these definitions.\\ 
+Identify the intervals on which the function is increasing, constant, or decreasing.
+(Adapted from Exercises 63-66 page 70, ``Mathematical Modeling and Applied Calculus" by Joel Kilty and Alex M. McAllister)
+\begin{enumerate}
+\item $f(x) = \begin{cases} 
+      -2x + 1 & x < 5 \\
+      4e^x & 5 \leq x
+   \end{cases}.$
+%\item $g(x) = \begin{cases} 
+%      -2e^x & x < 0 \\
+%      2x+7 & 0 \leq x
+%   \end{cases}.$
+\item $g(x) = \begin{cases} 
+      10^{-2x} & x < -1 \\
+      x + 4 & -1 \leq x
+   \end{cases}.$
+\item $h(x) = \begin{cases} 
+      -3x -1 & x \leq 0 \\
+      \frac{1}{2}(4^{-3x}) & 0 < x
+   \end{cases}.$
+\end{enumerate}
+
+\end{document}

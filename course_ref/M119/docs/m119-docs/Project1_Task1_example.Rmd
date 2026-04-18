@@ -1,0 +1,34 @@
+---
+title: "Project 1 -- the Data"
+author: "Sister Johnson"
+date: "7/21/2021"
+output: 
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r class.source = 'fold-hide'}
+#This code was run previously to install the data4led package.
+  #devtools::install_github('byuidatascience/data4led')
+# We only need to install the package once. After that we just call the package using the library() function in R.
+
+library(data4led)
+bulb <- led_bulb(1,seed = 2021)
+```
+
+We are interested in predicting bulb intensity as a function of time. First we will look at the data provided. We use the seed 2021 which gives us the measurements for light bulb 135. The bulb intensity is measured at 44 time points after the light bulb was turned on. The intensity of the bulb as a percent of its original brightness is recorded at each time point. The first measurement is when the light bulb is turned on ($t=0$). The last measurement is taken almost 7 months after the light is turned on ($t=5010$). We would like to predict the brightness of the bulb as a function of how long it has been on. We begin by plotting a scatter plot of measures on bulb 135, shown below.
+
+```{r}
+x <- bulb$hours
+y <- bulb$percent_intensity
+
+par(mar=c(5,5,2.5,0.25))
+plot(x,y,ylim=c(98,102),pch=16,main='Bulb 135',xlab="time (hours)",ylab='Intensity \n (normalized to initial intensity)')
+```
+
+We can see the bulb intensity increases after the light bulb is turned on. And it appears the bulb intensity may be starting to decrease as $t$ approaches 5000 hours.

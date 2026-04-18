@@ -1,0 +1,40 @@
+---
+title: "Projects"
+output:
+  html_document:
+    toc: true
+    keep_md: true
+    variant: markdown_github  
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+$~$  
+
+## Specs List
+- Project is ready for review.
+- Cohesive analysis provided.
+- Work is reproducible.
+- Calculations and plots are correct, or have only minor errors.
+- Mathematical notation and terminology is used correctly, or with only minor errors.
+
+*Please refer to the [Specs Details](specs_detail.html) to help you evaluate your own work with these specs before submitting.*
+
+The list of specifications (or specs) above describe how your assignment will be evaluated. Your work must satisfy **all** the specs. If your work meets all the specs your Project (or Project Task) will be marked as "Complete". If your work does not meet one or more of the specs your Project (or Project Task) will be marked as "Revision Needed" and you can revise and resubmit your work as well as continue to work future tasks.  If your work is not ready for review, it will marked "Not Ready for Review" which means you will need to resubmit work that is ready for review before you can submit future tasks.
+
+$~$  
+$~$
+$~$
+
+## Instructions
+[Example Project](example_project.html) 
+
+- [Project 1](project1.html) 
+
+- [Project 2](project2.html) 
+
+- [Project 3](project3.html)

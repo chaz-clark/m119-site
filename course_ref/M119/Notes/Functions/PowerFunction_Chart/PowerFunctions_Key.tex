@@ -1,0 +1,62 @@
+\documentclass{article}
+%800-999-3436 8:00 - 6:00 EST, Monday through Thursday, 8:00 - 5:00 Friday
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{amsmath}
+
+
+\newcommand{\pd}[3]{\frac{\partial^{#3} {#1}}{\partial {#2}^{#3}}}
+\newcommand{\fpd}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\diff}[2]{\frac{d {#1}}{d {#2}}}
+
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+\setlength\textheight{10in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+\setlength\parindent{0in}
+\setlength\parskip{0.25in}
+
+\begin{document}
+A power function is of the form $f(x) = x^p$.\\
+
+\begin{tabular}{| c | c | c | c | c | c | c |}
+\hline
+ & power fn. & quadratic fn. & square root fn. & polynomial fn. & radical fn. & rational fn. \\
+\hline
+& & & & & &\\
+$y=x^2$ & yes & yes & no & yes & no & (yes) \\
+& & & & & &\\
+\hline
+& & & & & &\\
+$y=\sqrt{x}$ & yes & no & yes & no & yes & no\\
+& & & & & &\\
+\hline
+& & & & & &\\
+$y=x^3$ & yes & no & no & yes & no & (yes)\\
+& & & & & &\\
+\hline
+& & & & & &\\
+$y=\sqrt{3x+1}$ & no & no & yes & no & yes & no\\
+& & & & & &\\
+\hline 
+& & & & & &\\
+$y=x^3 - 3x + 2$ & no & no & no & yes & no & (yes)\\
+& & & & & &\\
+\hline 
+& & & & & &\\
+$y=(x-1)^2$ & no & yes & no & yes & no & (yes)\\
+& & & & & &\\
+\hline 
+& & & & & &\\
+$y=\frac{2x+3}{x^2+1}$ & no & no & no & no & no & yes\\
+& & & & & &\\
+\hline 
+\end{tabular}
+\end{document}

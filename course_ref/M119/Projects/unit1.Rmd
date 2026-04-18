@@ -1,0 +1,206 @@
+---
+title: "Unit 1 Project"
+author: "YOUR NAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:  
+    keep_md: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r load_libraries, include=FALSE}
+# Use this R-Chunk to load all your libraries!
+#install.packages("tidyverse") # run this line once in console to get package
+library(tidyverse)
+
+```
+
+```{r load_data}
+# Use this R-Chunk to import all your datasets!
+set.seed(NULL) #The seed will be different for each student when the student replaces "NULL" with their seed. (each student will have their own data)
+devtools::install_github('byuidatascience/data4led')
+library(data4led)
+
+ids <- unique(led_study$id)
+bulb <- sample(ids,1)
+idx <- which(led_study == bulb)
+bulb.data = 100*led_study$percent_intensity[idx]
+```
+<!-- #Color Format -->
+<!-- colText = function(x,color){ -->
+<!--   outputFormat = knitr::opts_knit$get("rmarkdown.pandoc.to") -->
+<!--   if(outputFormat == 'latex') -->
+<!--     paste("\\textcolor{",color,"}{",x,"}",sep="") -->
+<!--   else if(outputFormat == 'html') -->
+<!--     paste("<font color='",color,"'>",x,"</font>",sep="") -->
+<!--   else -->
+<!--     x -->
+<!-- } -->
+
+
+## BackGround
+![Phillips LED Bulbs - [source](https://en.wikipedia.org/wiki/File:Philips_LED_bulbs.jpg)](https://upload.wikimedia.org/wikipedia/commons/4/4e/Philips_LED_bulbs.jpg){width=250px}
+
+How long does an LED light bulb last? The US Department of Energy launched the Bright Tomorrow Lighting Prize (or L Prize) in 2008 to "spur lighting manufacturers to develop high-quality, high-efficiency solid-state lighting products to replace the common incandescent light bulb." In addition to requiring less than 10 watts, the winning bulb needed to have a lifetime longer than 25,000 hours.  Phillips won the prize in 2011, after undergoing 18 months of rigorous testing.  Note however that there are only 8760 hours in a year (24 hours a day for 365 days), which means it takes almost 100% uptime for 3 years to hit 25,000 hours. How do we know the bulb met the hours requriment with only 18 months of testing? This is where modeling comes into play. 
+
+It turns out that when you first turn on an LED bulb, the lumen output slightly increases for a while, going above 100% of the initial brightness. After peaking above 100%,the lumen output stays relatively constant before it starts a slow decent downwards, as demonstrated by the graph below **INSERT GRAPHIC**.  
+
+In this project, we'll be using the data collected from the **INSERT DATA DESCRIPTION** to analyze the function $f(t)$ that gives the lumen output of LED bulbs (as a percent of the original lumens) after $t$ hours. 
+
+<!-- #Week 1 -->
+##Tell a Story With Functions
+The lab has been collecting data for a while, and has provided your team with a small sample (more details below). 
+In addition, an engineering team at the lab has presented your team with several possible deterministic models $f(t)$ for the lumen output as a percent of the original brightness after $t$ hours. You have two jobs this week.
+
+1. Plot the actual sample data using R's plot function, using lumen output for the vertical axis, and hours for the horizontal axis.  
+2. Analyze each of the 5 possible models by (a) plotting the model $f(t)$ over the domain $0\leq t \leq 50000$, and then (b) writing a brief description of the story told by the model. 
+
+### Plotting Actual Data
+The sample data has been placed in an online R package. 
+INSERT INSTRUCTIONS TO ACCESS THE DATA. 
+
+Construct a scatter plot of the data, showing how the lumen output changes over time. 
+
+```{r week1 sample data}
+xdata = seq(from = 1, to=6000, by=100)
+ydata = rnorm(60,100,3)
+plot(xdata,ydata)
+```
+
+### Analyzing Deterministic Models
+The engineering team proposed the following 5 models. 
+
+1. $f_1(t)=100$
+2. $f_2(t)=100 - 0.003 t$
+3. $f_3(t)=120 - 20 e^{-0.0004 t}$
+4. $f_4(t)=95-0.002t+2 \ln(18t+100)$
+5. $f_5(t)=(100+.007t)e^{-0.00005 t}$
+
+Plot each model. After each plot, give a brief description of the story told by the model. 
+
+```{r week1 model1 plot}
+f1 <- function(t){100*t/t}
+xdata = seq(from = 0, to=50000, by=100)
+ydata = f1(xdata)
+plot(xdata,ydata,type ="l")
+#The constant function is harder to deal with than all the others, as it doesn't vectorize very well. I'd love to discuss this. 
+```
+The model above suggests that the lumen output stays constant at 100% forever. It never rises, nor falls
+
+```{r week1 model2 plot}
+f2 <- function(t){100-0.003*t}
+xdata = seq(from = 0, to=50000, by=100)
+ydata = f2(xdata)
+plot(xdata,ydata,type ="l")
+```
+The model above suggests that the lumen output drops from 100% in a linear fashion.  The lumen output never rises, rather it falls at the same rate constantly.
+
+```{r week1 model3 plot}
+f3 <- function(t){120-20* exp(-0.0004 *t)}
+xdata = seq(from = 0, to=50000, by=100)
+ydata = f3(xdata)
+plot(xdata,ydata,type ="l")
+```
+The model above suggests that the lumen output rises rapidly, and then levels off around 120% of the original lumen.  The lumen level never decreases. 
+
+```{r week1 model4 plot}
+f4 <- function(t){95-0.002*t+2* log(18*t+100)}
+xdata = seq(from = 0, to=50000, by=100)
+ydata = f4(xdata)
+plot(xdata,ydata,type ="l")
+```
+The model above suggests that the lumen output rapidly rises above 100%, stays their briefly, and then starts to drop off linearly. 
+
+```{r week1 model5 plot}
+f5 <- function(t){(100+.007*t)*exp(-0.00005 *t)}
+xdata = seq(from = 0, to=50000, by=100)
+ydata = f5(xdata)
+plot(xdata,ydata,type ="l")
+
+```
+The model above suggests that the lumen output slowly rises above 100%, levels off briefly, and starts dropping (maybe linearly).
+
+
+<!-- #Week 2 -->
+##Solving Equations (with Software)
+
+To win the L prize, a lightbulb needs to have a lumen output greater than 75% of the original lumens for at least 25000 hours.  Your job this week is the following: 
+
+* Use R to solve the equation $f(t) = 75$ for each of the 5 models from last week. 
+* Write a sentence describing what the solution means in the context of the L prize. 
+
+Note:  Some of the functions never hit You'll need the line "error = TRUE" in your r script below to allow R Markdown to knit your file. 
+```{r week2, error=TRUE}
+f1 <- function(t){100*t/t}
+f2 <- function(t){100-0.003*t}
+f3 <- function(t){120-20* exp(-0.0004 *t)}
+f4 <- function(t){95-0.002*t+2* log(18*t+100)}
+f5 <- function(t){(100+.007*t)*exp(-0.00005 *t)}
+
+
+uniroot(function(t){f1(t)-75},c(0,50000))$root
+uniroot(function(t){f2(t)-75},c(0,50000))$root
+uniroot(function(t){f3(t)-75},c(0,50000))$root
+uniroot(function(t){f4(t)-75},c(0,50000))$root
+uniroot(function(t){f5(t)-75},c(0,50000))$root
+
+```
+The first and third models have no solution to $f(t)=75$.  The second model hits 75 at 8333.88 hours. The 4th model at 22930.85 hours, and the fifth model at 26958.81 hours. Only one of these models drops below 75% lumen output after 25000 hours. 
+
+<!-- #Week 3 -->
+<!-- ## Week 3 - Measurement Error -->
+##Modeling Measurement
+
+The models we have been working with for the last few weeks capture a general trend. For example, after 4000 hours, not every bulb has the same lumen output, there is variation in the data. Here is our job this week. 
+
+1. Construct a histogram of the lumen values of all 200 lumen levels at 4000 hours.
+2. Pick values for the parameters $\mu$ and $\sigma$ in the normal distribution $f(t)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{t-\mu}{\sigma}\right)^2}$ to obtain a visual fit for the bulb data. (? SHOULD WE TEACH TIME TO USE THE MEAN AND STD? SHOULD WE HAVE THEM INCLUDED SOME BAD EXAMPLES AS WELL?)
+3. Construct a single plot that includes both the histrogram of the data and the normal distribution, using relative frequencey as the vertical axis.  
+
+```{r week3}
+data = rnorm(200,105,10)
+hist(data,freq = TRUE)
+f <- function(x,mu,sigma) {1/(sigma*sqrt(2*pi))*exp((-1/2)*((x-mu)/sigma)^2)}
+tdata = seq(50,150)
+
+
+my.mu <- mean(data)
+my.sd <- sd(data)
+
+plot(tdata,f(x=tdata,my.mu,my.sd))
+hist(data,freq = FALSE);points(tdata,f(x=tdata,my.mu,my.sd),type="l")
+
+hist(data,freq = FALSE);points(tdata,f(x=tdata,80,30),type="l")
+hist(data,freq = FALSE);points(tdata,f(x=tdata,110,5),type="l")
+
+
+```
+
+<!-- #Week 4 -->
+<!-- ## Week 4 - Varying the Parameters for a Graphical Fit -->
+## Selecting Parameter Values (for a Visual Fit)
+We have explored various deterministic models in the past few weeks. Today, we've decided to focus on the model 
+
+* log linear 
+
+Notice that the parameters above are not yet defined. Our job this week is to pick values for these parameters so that our model provides a visual fit for the actual data we collected. We will describe how changing each parameter affects the model, and then eventually settle on reasonable choices with an argument for why that choice was made.
+
+(Thoughts.  Should they be given some starting values, or pick the values themselves.  Do we want them to describe how chaning different values affects the model? How many plots do we want them to make, and include?  There are 4-5 different parameters - I guess we can keep it to 4....  We'll need to discuss what we want happening here. )
+
+```{r week4}
+
+```
+
+## Conclusions
+The lightbulbs have been tested. You've found a model, visually, to fit the data you've collected.  Summarize your findings, and give your recommendations, about whether or not the data you have demonstrates that the bulbs meet the hourly requirement to win the L Prize. This portion of your project is the part you would submit to a boss, so organize it well, and be professional. 
+
+## Reflection

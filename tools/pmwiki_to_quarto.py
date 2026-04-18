@@ -654,6 +654,7 @@ table {
 }
 
 table td, table th {
+  border: 1px solid #dee2e6 !important;
   white-space: normal;
   word-wrap: break-word;
   min-width: 120px;
@@ -670,27 +671,19 @@ mjx-container[display="true"] {
   margin-left: 0 !important;
 }
 
-/* Schedule table borders */
-.schedule-table {
-  border-collapse: collapse;
+/* Schedule grid: equal column widths */
+.schedule-grid table {
+  display: table !important;
   table-layout: fixed;
   width: 100%;
-  min-width: 600px;
-  display: table;
+  overflow-x: auto;
 }
 
-.schedule-table th,
-.schedule-table td {
-  border: 1px solid #dee2e6;
-  padding: 0.4rem 0.6rem;
-  vertical-align: top;
+.schedule-grid table th,
+.schedule-grid table td {
   min-width: unset;
-  white-space: normal;
-}
-
-.schedule-table thead {
-  background: #e9ecef;
-  font-weight: 600;
+  vertical-align: top;
+  overflow-wrap: break-word;
 }
 """
 

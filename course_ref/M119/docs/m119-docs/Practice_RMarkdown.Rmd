@@ -1,0 +1,99 @@
+---
+title: "Our First RMarkdown File"
+date: "4/21/2021"
+output: 
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Consider the function $h(x) = \sqrt{3-x}$. We would like to compute $h(-4)$ and $h(5)$. We can do this in two ways, (1) using R as a calculator or (2) define a function and then evaluate that function in R.
+To compute $h(-4)$ we calculate $\sqrt{3-(-4)}$.
+```{r, class.source = 'fold-show'}
+sqrt(3-(-4))
+```
+
+To compute $h(5)$ we calculate $\sqrt{3-5}$.
+```{r}
+sqrt(3-5)
+```
+
+We can also program the function $h$ in R and then evaluate.
+```{r class.source = 'fold-show'}
+h <- function(x){
+  sqrt(3-x)
+}
+
+h(-4)
+h(5)
+```
+
+With either method we see $h(-4) \approx 2.65$ and $h(5)$ is not defined.
+
+$~$  
+$~$  
+$~$  
+
+Consider the function $f(x) = 
+\begin{cases}
+x^3 & \quad x < -1 \\  
+-2 & \quad -1 < x < 4. \\  
+\sqrt{x} & \quad x \geq 4
+\end{cases}$
+
+Evaluate $f(-2)$. Since $-2 < -1$ we follow the first rule and $f(-2) = (-2)^3 = -8$. See the calculation in R below.
+```{r class.source = 'fold-show'}
+(-2)^3
+```
+
+Evaluate $f(-0.5)$. Since $-1 < -0.5 < 4$ we follow the middle rule and $f(-0.5) = -2$. (No calculation required.)
+
+Evaluate $f(3)$. Since $-1 < 3 < 4$ we follow the middle rule and $f(3) = -2$. (No calculation required.)
+
+Evaluate $f(0)$. Since $-1 < 0 < 4$ we follow the middle rule and $f(0) = -2$. (No calculation required.)
+
+Evaluate $f(5.2)$. Since $5.2 \geq 4$ we follow the last rule and $f(5.2) = \sqrt{5.2} \approx 2.28$. See the calculation in R below.
+```{r class.source = 'fold-show'}
+sqrt(5.2)
+```
+
+Evaluate $f(-1)$. Since $x=-1$ is not in the domain of $f$, $f(-1)$ is undefined.
+
+Evaluate $f(4)$. Since $4 \geq 4$ we follow the last rule and $f(4) = \sqrt{4} =2$. See the calculation in R below.
+```{r class.source = 'fold-show'}
+sqrt(2)
+```
+
+We can also define our function in R and then evaluate. In the calculations below we see $f(-2)=-8$, $f(-0.5) = -2$, $f(3)=-2$, $f(0)$, $f(5.2) \approx 2.28$, $f(-1)$ is not defined, and $f(4)=2$. Notice these are the same values above when we were using R as a calculator.
+```{r}
+f <- function(x){
+  out <- rep(0,length(x))
+  out[(x < -1)] <- x[(x < -1)]^3
+  out[(x == -1)] <- NaN
+  out[(x > -1) & (x < 4)] <- -2 + 0*x[(x > -1) & (x < 4)]
+  out[(x >= 4)] <- sqrt(x[(x >= 4)])
+  
+  return(out)
+}
+
+f(-2)
+f(-0.5)
+f(3)
+f(0)
+f(5.2)
+f(-1)
+f(4)
+```
+
+We can also plot $f$ using R. A graph of $f$ is shown in the figure below. We create a list of inputs. We evaluate the function at each of the inputs in our list creating a list of outputs. Finally, we plot the inputs and the outputs and connect the ordered pairs or points with a curve.
+```{r}
+x <- seq(-2.5,36,0.01)
+y <- f(x)
+par(mfrow=c(1,1),mar=c(2.5,2.5,1,0.25))
+plot(x,y,type='l')
+abline(v=0,lty=3,col='gray')
+abline(h=0,lty=3,col='gray')
+```
