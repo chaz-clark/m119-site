@@ -126,8 +126,11 @@ def convert_code_blocks(text: str) -> str:
     Bare [@word@] in running text (no newline inside) → `inline`.
     """
     def block_replacer(m):
-        lang = "r" if any(kw in m.group(1) for kw in ["function", "<-", "library", "#"]) else ""
-        return f"\n```{lang}\n{m.group(1).strip()}\n```\n"
+        code = m.group(1).strip()
+        # PMWiki used "1. comment text" as inline comments inside code blocks — convert to #
+        code = re.sub(r'^1\. (?![\[\(])', '# ', code, flags=re.MULTILINE)
+        lang = "r" if any(kw in code for kw in ["function", "<-", "library", "#"]) else ""
+        return f"\n```{lang}\n{code}\n```\n"
 
     # Named block form first: (:code:)[@...@](:codeend:)
     text = re.sub(r'\(:code[^:]*:\)\[@([\s\S]*?)@\]\(:codeend:\)', block_replacer, text)
@@ -448,6 +451,13 @@ def convert_inline(text: str, page_group: str, link_registry: dict) -> str:
     # Bare [[wiki sandbox]] or [[PmWiki/...]] internal links not in registry → plain text
     text = re.sub(r'\[\[([^\]]+)\]\]', lambda m: m.group(1).split('->')[-1].strip(), text)
 
+    # Bare https:// URLs not already inside []() or <>  → <url> autolink
+    text = re.sub(
+        r'(?<!\()(?<!\[)(?<!<)(https?://[^\s\)\]>]+)(?!\))(?!\])(?!>)',
+        r'<\1>',
+        text,
+    )
+
     return text
 
 
@@ -483,7 +493,11 @@ def convert_page(page_name: str, text: str, link_registry: dict) -> str:
     # 7. Ensure blank line before any markdown table (CommonMark requirement)
     text = re.sub(r'(?<=\S)\n(\|)', r'\n\n\1', text)
 
-    # 8. Clean up blank lines (max 2 consecutive)
+    # 8. Blank line between consecutive top-level numbered items for projection readability
+    #    Matches "1. ...\n1. " and inserts a blank line between them
+    text = re.sub(r'(^1\. .+)(\n)(1\. )', r'\1\n\n\3', text, flags=re.MULTILINE)
+
+    # 9. Clean up blank lines (max 2 consecutive)
     text = re.sub(r'\n{3,}', '\n\n', text)
 
     return text.strip()

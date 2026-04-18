@@ -92,13 +92,14 @@ For each function $g(x)$, identify two functions $f(u)$ and $u(x)$ so that $g(x)
 </details>
 
 ### Activity - Graphing a Second Derivative
-For the function below, graph the first and second derivative. 
-https://byuimath.com/bmw/all/119/uploads/Class/Second-Derivative-Exercise.png
+For the function below, graph the first and second derivative.
+
+![](../assets/uploads/Class/Second-Derivative-Exercise.png)
 
 <details>
 <summary>Solution</summary>
 
-See https://www.desmos.com/calculator/nrd4njagea.
+See [solution in Desmos](https://www.desmos.com/calculator/nrd4njagea){target="_blank"}.
 
 </details>
 

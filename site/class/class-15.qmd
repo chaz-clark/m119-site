@@ -4,9 +4,11 @@ title: "Class 15"
 
 # During Class
 ## Brain Gains
-- Critique the following visual fits for $f_5$. 
-    - https://byuimath.com/bmw/all/119/uploads/Class/f5-fit1.png
-    - https://byuimath.com/bmw/all/119/uploads/Class/f5-fit2.png
+- Critique the following visual fits for $f_5$.
+
+![](../assets/uploads/Class/f5-fit1.png)
+
+![](../assets/uploads/Class/f5-fit2.png)
 
 - Write down a formula for the residual, $y - \hat{y}$, given the model $f(x) = b + mx$ and data point $(x,y) = (4,7)$.
 - Write down a formula for the residual, $y - \hat{y}$, given the model $g(x) = c + bx + a\ln(4x)$ and data point $(x,y) = (x_3,y_3)$. 
@@ -24,7 +26,7 @@ In the formula $r=y−f(x)$, we just replace $x$, $y$, and $f(x)$ with what they
 
 ```r
 p3v1 <- function(x,lambda=2){
-1. each element of x must be a whole number
+  # each element of x must be a whole number
   prod((lambda^x/factorial(x))*exp(-lambda))
 }
 

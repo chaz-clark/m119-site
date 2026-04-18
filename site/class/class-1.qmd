@@ -66,13 +66,12 @@ Then work through the following problems.
 - The goal is to ask questions of each other and help each other. 
 - Leave up your work so that you can compare your answers with neighbors. 
 
-1. 
-Let $f(x) = \frac{2x+4}{x^2}$. Find each of the following values.
+1. Let $f(x) = \frac{2x+4}{x^2}$. Find each of the following values.
 <ol type="a">
   <li>$f(-4)$</li>
+  <li>$f(1)$</li>
+  <li>$f(0)$</li>
 </ol>
-1. $f(1)$
-1. $f(0)$
 
 <details>
 <summary>Answers</summary>

@@ -52,7 +52,7 @@ Below is a list of derivative rules (most of which we have seen) that you are we
 1. For $h(r) = \sum_{n=1}^{40} n\ln(r)$, find $h'(r)$. 
 1. For $t(x) = \sum_{m=1}^{40}  m x^m$, find $\frac{dt}{dx}$. 
 
-https://byuistats.github.io/M119/m119-docs/DerRules_Power_Constant_Sum.pdf
+[Derivative Rules — Power, Constant, Sum (PDF)](https://byuistats.github.io/M119/m119-docs/DerRules_Power_Constant_Sum.pdf){target="_blank"}
 
 ## Using a model (practice with Project 1)
 Consider the following fitted models. *These models were fit to the data obtained using seed=123.*

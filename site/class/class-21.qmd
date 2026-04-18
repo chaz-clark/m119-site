@@ -35,13 +35,14 @@ The above is sufficient, though we can also write this as
 
 </details>
 
-1.  Given the graph of a function $h(x)$ below, draw $h'(x)$. 
-https://byuimath.com/bmw/all/119/uploads/Class/Draw-Derivative.png
+1.  Given the graph of a function $h(x)$ below, draw $h'(x)$.
+
+![](../assets/uploads/Class/Draw-Derivative.png)
 
 <details>
 <summary>Solution</summary>
 
-Here is a solution in https://www.desmos.com/calculator/pnwcoyxmry.
+Here is a [solution in Desmos](https://www.desmos.com/calculator/pnwcoyxmry){target="_blank"}.
 Note that the derivative passes through $y=0$ at 3 $x$-values. (We call places where the derivative has an output of zero, critical values). 
 These 3 values correspond precisely to the spots on the function when the function may switch from increasing to decreasing, or vice-versa.
 
@@ -94,12 +95,13 @@ Assume the residuals (errors) are independent and normally distributed (with mea
 
 ## Discussion 
 Let's sketch the derivative of
-https://byuimath.com/bmw/all/119/uploads/Class/Desmos-Graph-Together.png
+
+![](../assets/uploads/Class/Desmos-Graph-Together.png)
 
 <details>
 <summary>Solution</summary>
 
-See https://www.desmos.com/calculator/yzgdfwn6eb.
+See [solution in Desmos](https://www.desmos.com/calculator/yzgdfwn6eb){target="_blank"}.
 
 </details>
 
