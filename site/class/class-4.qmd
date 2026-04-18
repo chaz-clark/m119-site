@@ -56,17 +56,17 @@ plot(x,f(x,0,-2), type = "l")
 
 </details>
 
-## Discussion - Create and Knit an RMarkdown
-- Click the New File icon OR Click File -> New File -> R Markdown
-- Knit the document, so verify you can get HTML output. 
+## Discussion - Create and Render a Quarto Document
+- Click the New File icon OR Click File -> New File -> Quarto Document
+- Render the document to verify you can get HTML output.
     - Typing Math
-      - Not required in Math 119 (You can insert an imagine with handwritten math.) 
+      - Not required in Math 119 (You can insert an image with handwritten math.)
       - But you can copy Latex from our Wiki or Project Instructions.
 
-**Practice creating HTML with RMarkdown**
+**Practice creating HTML with Quarto**
 - Given $h(x) = \sqrt{3-x}$, let's compute $h(-4)$ and $h(5)$ inside an R coding chunk.
-- Now let's write a cohesive analysis to explain what we're doing. 
-- We'll then knit our RMarkdown file, and knit it. 
+- Now let's write a cohesive analysis to explain what we're doing.
+- We'll then render our Quarto file to HTML.
 
 ## Group Meeting 
 Start by giving each person a moment to share what they chose to prepare for class. Help each other address any questions.  When each person has had a chance to share, move on the other activities.
@@ -82,7 +82,7 @@ As a group, discuss each question below.
 - What does the head() command do?
 
 ### Activity - RStudio Practice
-Help each other use RStudio to calculate each value, by first defining a function, and then evaluating the function at various inputs.  Practice putting your work in an RMarkdown file and writing a cohesive analysis to introduce each computation in a code chunk. 
+Help each other use RStudio to calculate each value, by first defining a function, and then evaluating the function at various inputs.  Practice putting your work in a Quarto document and writing a cohesive analysis to introduce each computation in a code chunk. 
 
 - Let $w(v) = v^2 - 5v -6$ Compute the following values.
     - $w(-1)$

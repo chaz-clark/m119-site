@@ -158,8 +158,8 @@ We can examine the mtcars dataset with head(mtcars), and then construct scatterp
 **Evaluate Functions**
 - Given $h(x) = \sqrt{3-x}$, compute $h(-4)$ and $h(5)$.
 
-**Create and Knit a RMarkdown file**
-- Click the New File icon OR Click File -> New File -> R Markdown
+**Create and Render a Quarto file**
+- Click the New File icon OR Click File -> New File -> Quarto Document
 - Typing Math
     - Not required in Math 119 (You can insert an image with handwritten math.)
     - But you can copy Latex from our Wiki or Project Instructions.
