@@ -142,7 +142,7 @@ Solve each system of equations for $x$ and $y$. The variables $a,b,c,d,e,f$ belo
 - $x+by=c, dx+ey=f$
 - $ax+by=c, dx+ey=f$
 
-## Discusion
+## Discussion
 - Reminder of what the parameters in the general transformation form do.
 $$ T(x) = af(b(x-h))+k $$
 - Let's think about the general quadratic $f(x) = a_2x^2 + a_1x + a_0$.
@@ -154,7 +154,7 @@ $$ T(x) = af(b(x-h))+k $$
 
 ## Discussion - Project 1 Task 2 and the Example Project. 
 If you haven't yet found the worked examples in Canvas, note that there are examples for a few tasks in the Additional resources module. Here is an example for project 1 task 2, which shows how you can put multiple plots together in the same figure, using the par(mfrow()) command, something required for the task.  Note that the example below shows far more plots than are required for the actual tasks.   
-- <https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html>
+- [Project 1 Task 2 worked example](https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html)
 
 We'll spend the rest of class examining the example project's Task 2. 
 - Open the [Example Project Instructions](../assets/docs/example_project.html){target="_blank"}, and briefly read Task 2
@@ -197,3 +197,7 @@ y <- f0(x,a,b)
 plot(x,y,type='l',xlim=c(90,110), ylim = c(0,1))
 mtext('change a=100 (keep b=102)', side = 3, line = 0)
 ```
+
+---
+
+*Source: [Class.7 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.7)*

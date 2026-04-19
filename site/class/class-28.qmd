@@ -194,7 +194,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 - [Florida Hurricanes (wikipedia)](https://tinyurl.com/51vyiwjw){target="_blank"} lists the tropical storms in Florida each year from 2000 to 2020.
 
 Let $X_i$ be the stochastic variable that counts the number of tropical storms in Florida during the $i^{\text{th}}$ year (with $i=1$ corresponding to 2000). Assume the $X_i$ are independent Poisson stochastic variables each with the parameter $\lambda$. Previously, we found the likelihood function $L(\lambda; \mathbf{x})$ to be given by 
-->$L(\lambda; \mathbf{x}) = \prod_{i=1}^{21} \frac{ \lambda^{x_i} }{ x_i! }e^{ -\lambda }$ where the $x_i$'s are nonnegative integers for $i = 1, 2, ... 21$ and $\lambda > 0$.
+$L(\lambda; \mathbf{x}) = \prod_{i=1}^{21} \frac{ \lambda^{x_i} }{ x_i! }e^{ -\lambda }$ where the $x_i$'s are nonnegative integers for $i = 1, 2, ... 21$ and $\lambda > 0$.
 The loglikelihood function is given by 
 - $\ell(\lambda; \mathbf{x}) = \ln \left(\prod_{i=1}^{21} \frac{\lambda^{x_i}}{x_i!}e^{-\lambda} \right) = \left(\sum_{i=1}^{21} x_i \right) \ln\lambda - \sum_{i=1}^{21}\ln(x_i!) - 21\lambda$ where the $x_i$'s are nonnegative integers for $i = 1, 2, ... 21$ and $\lambda > 0$.
 
@@ -273,3 +273,7 @@ abline(v=best.l,col=2)
 best.l
 mean(storms)
 ```
+
+---
+
+*Source: [Class.28 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.28)*

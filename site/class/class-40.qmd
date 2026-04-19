@@ -17,7 +17,7 @@ $\ds Var[X] = \int_{-\infty}^\infty (x-E[X]])^2 f(x) dx$.
 We update the bounds 
 $0\leq x<\infty$ 
 and function 
-$f(x) =  \lambda e^(-\lambda x)$ to obtain 
+$f(x) =  \lambda e^{-\lambda x}$ to obtain
 - $\ds E[X] = \int_0^\infty x (\lambda e^{-\lambda x}) dx$ 
 - $\ds Var[X] = \int_{0}^\infty (x-E[X]])^2 (\lambda e^{-\lambda x}) dx$.
 
@@ -218,3 +218,7 @@ Here are the steps:
 Note: 
 - If the distribution (or model) has only one parameter, then skip steps 2 and 4 and solve the equation you find in step 3.
 - If the distribution (or model) has more than two parameters, calculate additional identifying characteristics of the distribution and data and set them equal and then solve the resulting system of equations.
+
+---
+
+*Source: [Class.40 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.40)*

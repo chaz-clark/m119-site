@@ -61,7 +61,7 @@ We'll continue practicing using our new vocabulary.
 1. Give the normalized target function by finding the constant $k$ so that the area under $f(x) = kg(x)$ is 1. 
 1. Compute $P(X\leq 3)$. 
 
-1. Calculate the expected value of $X$. Use this <https://faculty.utrgv.edu/constantine.tarawneh/Fluid%20Mechanics/Centroid%20Locations.pdf.>  
+1. Calculate the expected value of $X$. Use this [Centroid Locations table](https://faculty.utrgv.edu/constantine.tarawneh/Fluid%20Mechanics/Centroid%20Locations.pdf).
 1. Give a formula for $F(x)$, the cumulative distribution function. 
 
 1. Compute $F'(x)$. 
@@ -77,7 +77,7 @@ Compare your work with your group. Put agreed upon solutions on the chalkboard s
 <ol type="a">
   <li>Draw the function. </li>
 </ol>
-1. Find the area under $g$. Use this <https://faculty.utrgv.edu/constantine.tarawneh/Fluid%20Mechanics/Centroid%20Locations.pdf.>
+1. Find the area under $g$. Use this [Centroid Locations table](https://faculty.utrgv.edu/constantine.tarawneh/Fluid%20Mechanics/Centroid%20Locations.pdf).
 
 1. Give the normalized target function by finding the constant $k$ so that the area under $f(x) = kg(x)$ is 1. 
 1. Compute $P(X\leq 3)$. 
@@ -162,5 +162,9 @@ We're ready to apply what we're learning now to any function.
 - Compute $P(X\leq 3)$ (you'll need to compute two areas, and then divide them). 
 - Calculate $E[X] $.
 
-## Discussion 
+## Discussion
 We'll have a wrap up discussion.
+
+---
+
+*Source: [Class.35 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.35)*

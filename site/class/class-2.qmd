@@ -15,7 +15,7 @@ x^3 & \quad x < -1 \\ \\
 <summary>Possible Solution</summary>
 
 - We have $f(-2) = (-2)^3 = -8$ because $x=-2$ satisfies $x<-1$. 
-- Note that $-1$ does not lie in any of the three given regions, which means $f(-1)$ is undefinded.  
+- Note that $-1$ does not lie in any of the three given regions, which means $f(-1)$ is undefined.  
 - We know $f(4) = \sqrt{4} = 2$ as $x=4$ satisfies $x\geq 4$.
 
 </details>
@@ -266,3 +266,7 @@ All of these definitions are correct.
 
 ### Plotting with R
 We'll spend the rest of class time using R to plot functions from the work we've done in class today.
+
+---
+
+*Source: [Class.2 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.2)*

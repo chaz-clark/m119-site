@@ -146,13 +146,13 @@ Note: Make sure you know how to interpret the output from R. The value $f(0)$ is
 
 Compute $f(-2)$
 
-```
+```r
 8*(-2)^2 - 15
 ```
 
 Compute $f(1)$
 
-```
+```r
 8*(1)^2 - 15
 ```
 
@@ -225,3 +225,7 @@ f(x)
 [Project 1](https://chaz-clark.github.io/M119/Projects/index.html){target="_blank"}
 
 We'll have a brief discussion about the project work, and start looking at the example project.
+
+---
+
+*Source: [Class.4 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.4)*

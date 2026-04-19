@@ -14,7 +14,7 @@ Using the general transformation $T(x) = af(b(x+c))+d$, identify the parameters 
 <details>
 <summary>Possible Solutions</summary>
 
-For $g(x) = 8(x+5)^3 - 2$ we can chose $8=2, b=1, c=5, d=-2$.  The function $T(x)$ using $f(u)=u^3$ is $$
+For $g(x) = 8(x+5)^3 - 2$ we can chose $a=8, b=1, c=5, d=-2$.  The function $T(x)$ using $f(u)=u^3$ is $$
 \begin{align*}
 T(x;a,b,c,d) 
 &= af(b(x+c))+d \\
@@ -30,7 +30,7 @@ For $h(x) = 4\sqrt{2x-6} +7$ we can chose $a=4, b=2, c=-3, d=7$. The function $T
 T(x;a,b,c,d) 
 &= af(b(x+c))+d \\
 &= a\sqrt{b(x+c)}+d \\
-&= 4\sqrt{2(x-3)}+7 &&\text{using }a=2, b=1, c=5, d=-2 \\
+&= 4\sqrt{2(x-3)}+7 &&\text{using }a=4, b=2, c=-3, d=7 \\
 &= 4\sqrt{2x-6}+7\\
 &= h(x). 
 \end{align*}$$
@@ -53,7 +53,7 @@ Compare and contrast your Project 1 Task 1 cohesive analyses. Are all plots intr
 1. Let $f(x;a,b) = ax^b$, a generic power function. Consider the transformation $T(x;a,b,A,B,C,D) = Af(B(x-C);a,b)+D$. For each set of values for $a,b,A,B,C,D$ below, do the following. 
     1.  Identify the parent function, $ f(x; a,b) $. For example, if $a=2$ and $b=5$, then the parent function is $f(x;2,5) = f(x) = 2x^5$. 
     1. Write down the specific function $T(x;A,B,C,D)$ produced from the given values for the parameters $A,B,C,D$. 
-    1. Adapt this <https://www.desmos.com/calculator/5jc00j0rpr> to plot and compare the two functions. 
+    1. Adapt this [Desmos calculator](https://www.desmos.com/calculator/5jc00j0rpr) to plot and compare the two functions.
     - $a=1,b=2,A=1,B=1,C=0,D=0$
 
 <details>
@@ -205,4 +205,8 @@ We will complete Example Project Task 1 together and then put together a cohesiv
 1. Give an example of a transformed power function. 
 
 1. Give an example of a transformed exponential function. 
-1. Let's use <https://www.desmos.com/calculator/5jc00j0rpr> and create some examples, exploring how parameters transform a function.
+1. Let's use this [Desmos calculator](https://www.desmos.com/calculator/5jc00j0rpr) and create some examples, exploring how parameters transform a function.
+
+---
+
+*Source: [Class.5 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.5)*

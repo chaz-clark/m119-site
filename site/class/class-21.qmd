@@ -35,13 +35,14 @@ The above is sufficient, though we can also write this as
 
 </details>
 
-1.  Given the graph of a function $h(x)$ below, draw $h'(x)$. 
-<https://byuimath.com/bmw/all/119/uploads/Class/Draw-Derivative.png>
+1.  Given the graph of a function $h(x)$ below, draw $h'(x)$.
+
+![Draw the derivative](https://byuimath.com/bmw/all/119/uploads/Class/Draw-Derivative.png)
 
 <details>
 <summary>Solution</summary>
 
-Here is a solution in <https://www.desmos.com/calculator/pnwcoyxmry.>
+Here is a solution in [Desmos](https://www.desmos.com/calculator/pnwcoyxmry).
 Note that the derivative passes through $y=0$ at 3 $x$-values. (We call places where the derivative has an output of zero, critical values). 
 These 3 values correspond precisely to the spots on the function when the function may switch from increasing to decreasing, or vice-versa.
 
@@ -94,12 +95,13 @@ Assume the residuals (errors) are independent and normally distributed (with mea
 
 ## Discussion 
 Let's sketch the derivative of
-<https://byuimath.com/bmw/all/119/uploads/Class/Desmos-Graph-Together.png>
+
+![Desmos graph](https://byuimath.com/bmw/all/119/uploads/Class/Desmos-Graph-Together.png)
 
 <details>
 <summary>Solution</summary>
 
-See <https://www.desmos.com/calculator/yzgdfwn6eb.>
+See [Desmos](https://www.desmos.com/calculator/yzgdfwn6eb).
 
 </details>
 
@@ -132,3 +134,7 @@ Remember to pass the chalk between each problem.
 
 1. $f(x) = \sqrt[3]{4-x^2}$, $g(x) = 5x + 7$
 1. $f(x) = \frac{x+1}{x-2}$, $g(x) = e^{-x}$
+
+---
+
+*Source: [Class.21 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.21)*

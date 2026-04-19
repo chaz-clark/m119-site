@@ -8,7 +8,7 @@ title: "Class 29"
 <details>
 <summary>Definition: Critical Points (2 dimensions)</summary>
 
-Let $f(x,y)$ be a function of two variables that id defined on an open set containing the point $(x_0,y_0)$. We say that $(x_0,y_0)$ is a **critical point** of $f(x,y)$ if any of the following condition are true. 
+Let $f(x,y)$ be a function of two variables that is defined on an open set containing the point $(x_0,y_0)$. We say that $(x_0,y_0)$ is a **critical point** of $f(x,y)$ if any of the following condition are true. 
 - $\pd{f}{x}{}(x_0,y_0) = 0$ and $\pd{f}{y}{}(x_0,y_0) = 0$ 
 - $f_x(x_0,y_0)$ is undefined
 - $f_y(x_0,y_0)$ is undefined
@@ -208,7 +208,7 @@ abline(h=80,v=burnouttime)
 ## Group Meeting
 
 ### Activity - Maximum likelihood Method for $f_6$
-Work through the computations of the maximum likelihood method for $f_6$. As you work, you can check how you are doing by comparing your work to the complete solution for $f_6$ provided under <https://tinyurl.com/4c5bxady.>
+Work through the computations of the maximum likelihood method for $f_6$. As you work, you can check how you are doing by comparing your work to the complete solution for $f_6$ provided under [this link](https://tinyurl.com/4c5bxady).
  
 1. Consider the model $f_6(t; a_1, a_2)$. Assuming the residuals follow a standard normal distribution (so the probability model is given by $g(r) = \frac{1}{\sqrt{2\pi}}e^{-r^2/2}$, state the loglikelihood function for $f_6$. Discuss any questions. This was part of Project 2 Task 1. 
 
@@ -221,6 +221,10 @@ Work through the computations of the maximum likelihood method for $f_6$. As you
 1. Use the second derivative test to show that the critical point does indeed correspond to maximum likelihood. 
 1. Use what we have done above to state the fitted model, with the maximum likelihood parameters. Then plot the data along with the model on the same viewing window to verify that we have indeed found a reasonable fit. 
 
-When you finish, start working on $f_4$. 
+When you finish, start working on $f_4$.
 
 ## Discussion
+
+---
+
+*Source: [Class.29 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.29)*

@@ -184,3 +184,7 @@ The **probability density function**, $f(x)$, of a *continuous* random variable 
 
 - Any function that is non-negative with a total area of 1 can be interpreted as the probability density function of some random variable.
 - If a function $g(x)$ is non-negative and has a finite total area, we can normalize the function (dividing by the area), like we have been doing with our target functions, to make a PDF.
+
+---
+
+*Source: [Class.34 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.34)*

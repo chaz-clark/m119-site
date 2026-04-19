@@ -119,3 +119,7 @@ Could a dart actually land on $x=3$?  Yes. However, there are infinitely many po
 </details>
 
 Remember that the probability density $f$ does not give us a probability, rather we need an interval of $x$-values (a width $\Delta x$) to get a probability from a probability density function. For a continuous probability distribution, the probability that $X$ takes on a single value will always be zero.
+
+---
+
+*Source: [Class.44 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.44)*

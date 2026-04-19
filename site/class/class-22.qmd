@@ -26,7 +26,8 @@ Let's look at an example that includes the chain rule. Consider the function $S(
 
 2.
 Use the information about $f$ and $f'$ in the table and $g$ to find each of the following values.
- <http://byuimath.com/bmw/all/119/uploads/Class/chain_rule_exercise.png>
+
+![Chain rule exercise](http://byuimath.com/bmw/all/119/uploads/Class/chain_rule_exercise.png)
 
     - Given $h(x) = g(f(x))$, find $h'(3)$.
     - Given $k(x) = f(g(x))$, find $k'(1)$.
@@ -97,13 +98,14 @@ For each function $g(x)$, identify two functions $f(u)$ and $u(x)$ so that $g(x)
 </details>
 
 ### Activity - Graphing a Second Derivative
-For the function below, graph the first and second derivative. 
-<https://byuimath.com/bmw/all/119/uploads/Class/Second-Derivative-Exercise.png>
+For the function below, graph the first and second derivative.
+
+![Second derivative exercise](https://byuimath.com/bmw/all/119/uploads/Class/Second-Derivative-Exercise.png)
 
 <details>
 <summary>Solution</summary>
 
-See <https://www.desmos.com/calculator/nrd4njagea.>
+See [Desmos](https://www.desmos.com/calculator/nrd4njagea).
 
 </details>
 
@@ -147,3 +149,7 @@ Remember to pass the chalk between each problem.
 
 1. $f(x) = \sqrt[3]{4-x^2}$, $g(x) = 5x + 7$
 1. $f(x) = \frac{x+1}{x-2}$, $g(x) = e^{-x}$
+
+---
+
+*Source: [Class.22 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.22)*

@@ -67,11 +67,11 @@ mtext(paste('a =',a1," and b=",b1), side = 3, line = 0)
 plot(x,y2,type='l',xlim=xlimits,ylim=ylimits)
 mtext(paste('a =',a2," and b=",b2), side = 3, line = 0)
 mtext('Plot of f0',side=3,line=0,outer=TRUE)
-@]
-(:codeend:)
+```
 
 For the model $f_0$, introduced in Task 2, we can plot $f_0(L; a, b)$ fitted to the data in the same plot as the histogram using this code.
-(:code:)[@
+
+```r
 f0 <- function(x,a=0,b=1){
   # Make sure a < b when using this function.
   1/(b-a) + 0*x
@@ -142,10 +142,14 @@ lines(x,yM,col=2)
 
 3. What story does the data tell at time 0? Does the story told by the model match the information from the data at time 0?  
 
-4. Update the parameters above to obtain a visual fit that satisfies $f_1(0)=100$.  Then use the <https://shiny.byui.edu/connect/#/apps/0d605bec-7069-4d67-8129-8716269e8816/access> to check your work. 
+4. Update the parameters above to obtain a visual fit that satisfies $f_1(0)=100$.  Then use the [shiny app](https://shiny.byui.edu/connect/#/apps/0d605bec-7069-4d67-8129-8716269e8816/access) to check your work.
 
 5. Using the seed 123, adapt the code above to provide a good fit for model $f_4$. By using the same seed, you can compare your plots and work together to find reasonable values for each parameter. When you complete the project, you'll need to change the seed to yours, and then make some minor modifications to your parameters. 
 
 6. What story is told by the visual fit you found for $f_4$? 
 
 7. With any time remaining, tackle the other models together, obtaining reasonable fits using the seed 123.
+
+---
+
+*Source: [Class.11 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.11)*

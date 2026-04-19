@@ -39,16 +39,16 @@ plot(x,f(x),type = "l")
 <details>
 <summary>Solution</summary>
 
-The function $e^{ ( ) }$ in R is given using the exp() function. 
+The function $e^{ ( ) }$ in R is given using the exp() function.
 
-```
+```r
 exp(2)
 #7.389056
 ```
 
-What is $e$? It's a number. 
+What is $e$? It's a number.
 
-```
+```r
 exp(1)
 #2.718282
 ```
@@ -141,7 +141,7 @@ hist(dist$percent_intensity,probability = TRUE)
 - For each of the 3 functions, use the sliders in Desmos to try and pick reasonable values for the parameters to provide a reasonable visual fit to the probability histogram. 
 
 #### Summary Plots
-We'll spend some time today in class discussing the <../assets/docs/example_project.html.> Here's a quick snippet of code to draw the histogram representing the percent intensity of 202 bulbs after about 2100 hours.  
+We'll spend some time today in class discussing the [Example Project](../assets/docs/example_project.html). Here's a quick snippet of code to draw the histogram representing the percent intensity of 202 bulbs after about 2100 hours.  
 
 ```r
 library(data4led)
@@ -188,20 +188,22 @@ L <- seq(a,b,0.1)
 y <- f0(L,a,b)
 
 plot(L,y,type='l',xlim=c(90,110), ylim = c(0,1))
-mtext('change a= (keep b=)', side = 3, line = 0)@]
-(:codeend:)
+mtext('change a= (keep b=)', side = 3, line = 0)
+```
 
-Now let's look at the second model $f_1$. 
-* What did you notice about the general model $f_1$ and its parameters?
-** What is the domain of $f_1$?
-** What does $h$ do?
-** What does $a$ do?
-** Try to pick some values for the parameters that provide a visual fit to the data. 
-** What story does this model tell, in the context of percent intensities of light bulbs?
+Now let's look at the second model $f_1$.
+
+- What did you notice about the general model $f_1$ and its parameters?
+    - What is the domain of $f_1$?
+    - What does $h$ do?
+    - What does $a$ do?
+    - Try to pick some values for the parameters that provide a visual fit to the data.
+    - What story does this model tell, in the context of percent intensities of light bulbs?
 
 Let's summarize our observations with a few plots.
 Run this code in your Console to plot representative curves for the parameter $h$ in function $f_1$.
-(:code:)[@
+
+```r
 rm(list=ls())
 f1 <- function(L,h=0,a=1){
 #Make sure h > 0 and a > 0.
@@ -318,3 +320,7 @@ y <- f2(L,h,a,b)
 plot(L,y,type='l',xlim=c(80,120))
 mtext('Changing b in f2', side = 3, line = 0, outer = TRUE)
 ```
+
+---
+
+*Source: [Class.8 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.8)*

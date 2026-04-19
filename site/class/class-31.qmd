@@ -5,7 +5,7 @@ title: "Class 31"
 # During Class
 ## Brain Gains
 1. 
-Any questions from <../assets/docs/SecondDerTest_BrianSittinger.pdf>  Any new terms you weren't sure what they meant?
+Any questions from [Second Derivative Test (Brian Sittinger, PDF)](../assets/docs/SecondDerTest_BrianSittinger.pdf)?  Any new terms you weren't sure what they meant?
 Complete as much of the following as you can.
 - Compute all the first and second partial derivatives of $f(x,y,z) = x^2+4xy+y^2+z^2+2yz$. 
 - Show that $(0,0,0)$ is a critical point of this function. 
@@ -199,3 +199,7 @@ plot(x,y,pch=16)
 1.  Select another model and corresponding data set and **repeat**.
 
 ## Discussion
+
+---
+
+*Source: [Class.31 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.31)*

@@ -407,3 +407,7 @@ $f'(x) = \lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h}$.<br>
 </details>
 
 Note that the derivative of a function at a point does not always exist. Two of the examples we saw today have that issue. One had an abrupt change in direction, while the other had a vertical tangent line.
+
+---
+
+*Source: [Class.16 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.16)*

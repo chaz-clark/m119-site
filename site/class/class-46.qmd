@@ -22,23 +22,14 @@ title: "Class 46"
 1. Match the expressions, equations, or functions in column 1 with descriptions in column 2.
 
 | Probability expressions/equations/functions | Descriptions |
-
 | --- | --- |
-
 | **1.** $f(x) = F'(x)$ where $F(x)$ is the CDF of a continuous random variable | **A.** Cumulative Distribution Function (cdf) |
-
 | **2.** $P(a \leq X \leq b) = \int_a^b f(x) dx = F(b) - F(a)$ | **B.** Probability Density Function (pdf) |
-
 | **3.** $F(x) = P(X \leq x)$ | **C.** Accumulation Function |
-
 | **4.** Given $g(x) \geq 0$, we compute $\int_{-\infty}^\infty g(x)dx$. | **D.** Total Area ("of a target" or "under a nonnegative function") |
-
 | **5.** $\int_{-\infty}^x f(s)ds$. | **E.** Fundamental Theorem of Calculus (FTC) |
-
 | **6.** Given $f$ is continuous, then $\diff{}{x}(\int_{-\infty}^x f(t)dt) = f(x)$. |  |
-
 | **7.** $\frac{\int_{-\infty}^x R(t)dt}{\int_{-\infty}^\infty R(x)dx}$ where $R$ is nonnegative |  |
-
 | **8.** Given $h$ is continuous and $H(x) = \int_{-\infty}^x h(t)dt$, then $H'(x) = h(x)$. |  |
 
 <details>
@@ -130,3 +121,7 @@ Calculate each of the following indefinite integrals using Mathematica. When you
 - $\int_1^2 e^{-x^2} dx$ (After typing this in and getting a wierd answer, try using N[ ] to get an approximate answer.)
 - $\int \frac{5}{\sqrt{x^2 + 25}} dx$
 - $\int_{-2}^2 \frac{5}{\sqrt{x^2 + 25}} dx$
+
+---
+
+*Source: [Class.46 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.46)*

@@ -90,9 +90,11 @@ The ACT is a standardized exam offered to US residents at the end of high school
 1. What percent of students score between 11 and 23?
 
 The PDF is given by the following.
-(:codem:)
+
 ```
 f = 1/Sqrt[2 Pi \[Sigma]^2] Exp[-1/2 ((x - \[Mu])/ \[Sigma])^2]
 ```
 
-(:codeend:)
+---
+
+*Source: [Class.42 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.42)*

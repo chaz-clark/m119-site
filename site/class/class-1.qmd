@@ -55,7 +55,7 @@ Find the following values.
   <li>$f(0) = 0$</li>
   <li>$f(\sqrt{3}) = \sqrt{3} \approx 1.732051$</li>
 </ol>
-The number $f(3)$ an irrational number which means any decimal representation of this number is just an approximation. The exact number is represented by the symbol $\sqrt{3}$ which represents the positive real number that when you square it you get exactly 3.
+The number $f(\sqrt{3})$ is an irrational number which means any decimal representation of this number is just an approximation. The exact number is represented by the symbol $\sqrt{3}$ which represents the positive real number that when you square it you get exactly 3.
 
 </details>
 
@@ -197,3 +197,7 @@ Important take away:
         1. Attendance & Preparation - #tasklist
         1. Knewton-Alta
         1. Projects
+
+---
+
+*Source: [Class.1 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.1)*

@@ -164,3 +164,7 @@ $Var[X] = \int_{-\infty}^{\infty} (x - E[X])^2 f(x) dx$.
 Note: The standard deviation is equal to the square root of the variance, $\sigma_X = \sqrt{Var[X]}$.
 
 </details>
+
+---
+
+*Source: [Class.45 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.45)*

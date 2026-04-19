@@ -50,7 +50,7 @@ Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y - b2 == 0}, {x, y}]
 
 When solving this by hand, here's what we obtained.  
 - $y = \frac{c_{1,1}b_2 - c_{2,1}b_1}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
-- $x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1.2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
+- $x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1,2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
 
 <details>
 <summary>Answer</summary>
@@ -135,12 +135,12 @@ my_a
 
 f(4)
 uniroot(function(x){f(x)-5},c(-2,2))$root
-```
 
 f <- function(x,a = my_a){a*exp(x)}
 plot(x,y)
 t <- seq(min(x),max(x),0.1)
 lines(t,f(t))
+```
 
 </details>
 
@@ -155,7 +155,7 @@ y <- data$y
 ```
 
 This time use the model $f(x;b,m) = b+mx$.
-- Fit this model to the data using either the Least Squares or or Maximum Likelihood method.
+- Fit this model to the data using either the Least Squares or Maximum Likelihood method.
 - What is $f(4)$, the value predicted by the model at $x=4$. 
 - Find $x$ so that $f(x) = 5$.
 
@@ -238,3 +238,7 @@ The term "best fit" can be used in multiple context and thus has context specifi
 Important Note: When we use the term "best" in mathematics we have to define precisely what we mean by "best" before we can use the tools of optimization to find the best thing we have defined.
     - Best is defined as the **most** "trusted" parameters given our observed sample when using the Maximum Likelihood method.
     - Best is defined as the **smallest** "collective error" between the observed values in the data and the values predicted from the fitted model.
+
+---
+
+*Source: [Class.32 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.32)*

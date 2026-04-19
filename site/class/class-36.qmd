@@ -407,3 +407,7 @@ kx - k & \quad 1 \leq x \leq 3 \\ \\
 f <- function(x){x-1}
 draw_target(f,1,3)
 ```
+
+---
+
+*Source: [Class.36 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.36)*

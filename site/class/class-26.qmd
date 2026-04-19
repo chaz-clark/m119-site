@@ -51,9 +51,9 @@ Df(cv) #Check we get Df = 0
 Df(1) #Uniroot gives approximates, so we may need to round.
 ```
 
-We now evaluate the second derivative at the critical value to determine if $f''$ is positive or negative at the critical value. This tells us the concavity at the critical value, which let's us quickly state whether there is a local maximum, or local minimum, at the critical value using the second derivative test. 
+We now evaluate the second derivative at the critical value to determine if $f''$ is positive or negative at the critical value. This tells us the concavity at the critical value, which let's us quickly state whether there is a local maximum, or local minimum, at the critical value using the second derivative test.
 
-```
+```r
 D2f(1)
 D2f(cv)
 #OR
@@ -162,9 +162,9 @@ cv <- uniroot(Dg,c(-10,10))$root
 cv
 ```
 
-We evaluate the second derivative at critical values to determine concavity. 
+We evaluate the second derivative at critical values to determine concavity.
 
-```
+```r
 D2g(1/2)
 D2g(cv)
 ```
@@ -222,9 +222,9 @@ my_plot(Dh,-2,2)
 abline(h=0)
 ```
 
-We can solve Dh=0 by hand to get 
+We can solve Dh=0 by hand to get
 
-```
+```r
 -sqrt(1/3)
 sqrt(1/3)
 ```
@@ -244,7 +244,7 @@ sqrt(1/3)
 
 We evaluate the second derivative at each critical value to determine concavity.
 
-```
+```r
 D2h(-sqrt(1/3))
 D2h(cv.1)
 
@@ -261,9 +261,9 @@ We can use R to graph $h$ on $ [-1, 2] $.
 my_plot(h,-1,2)
 ```
 
-There are 4 critical points.  We found approximations to two of these in the previous code chunks.  Let's evaluate $h$ at each critical value to determine the absolute maximum, and absolute minimum. 
+There are 4 critical points.  We found approximations to two of these in the previous code chunks.  Let's evaluate $h$ at each critical value to determine the absolute maximum, and absolute minimum.
 
-```
+```r
 h(-1)
 h(-sqrt(1/3))
 h(cv.1)
@@ -315,6 +315,10 @@ plot(ti,yi)
 
 f1 <- function(t,a1){100+a1*t}
 a1 <- 0.0002 #Will need to be updated
-x <- seq(0,5000,10) 
+x <- seq(0,5000,10)
 lines(x,f1(x,a1))
 ```
+
+---
+
+*Source: [Class.26 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.26)*

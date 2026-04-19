@@ -217,3 +217,7 @@ plot(x,y,type="l",ylim=c(-10,30))
 abline(h=0,col='gray',lty=3)
 abline(v=0,col='gray',lty=3)
 ```
+
+---
+
+*Source: [Class.9 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.9)*

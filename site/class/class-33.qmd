@@ -49,7 +49,7 @@ Complete the exercises in sections 1.8 and 1.9.
 - What is a probability mass function?  What do their graphs look like? 
 - What is the expected value geometrically? How do we interpret an expected value?
 - What is a cumulative distribution function? Must it be increasing/nondecreasing? What is the max? What is the min?
-Let's examine the 3 pmfs we explored above. The draw_pmf function is provided at the start of the reading in <https://chaz-clark.github.io/M119/Projects/probability.html.>
+Let's examine the 3 pmfs we explored above. The draw_pmf function is provided at the start of the reading in <https://chaz-clark.github.io/M119/Projects/probability.html>.
 
 ```r
 #Shades a target diagram for a probability mass function. 
@@ -304,13 +304,13 @@ p <- c(7/9, 2/9)
 sum(p)
 ```
 
-```
+```r
 data.frame(outcome = x, prob = p)
 
 draw_pmf(x,p)
 ```
 
-To use the function draw_pmf(x,p), you'll have to copy the code <https://chaz-clark.github.io/M119/Projects/probability.html.>
+To use the function draw_pmf(x,p), you'll have to copy the code <https://chaz-clark.github.io/M119/Projects/probability.html>.
 
 - We expected $E[X]$ to be closer to -1 than to 3 when we look at the target diagram.
 
@@ -405,3 +405,7 @@ p <- lambda^x *exp(-lambda)/factorial(x)
 ```
 
 1.  Make up your own probability questions about how many tropical storms there might be, and answer them.
+
+---
+
+*Source: [Class.33 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.33)*

@@ -87,7 +87,7 @@ $$y-8=12(x-2).$$
 We can solve for $y$ to obtain 
 $$y=8+12(x-2) \quad\text{or}\quad y=12x-16.$$
 All three of the forms above are correct. 
-We can plot the function along with it's linearization in <https://www.desmos.com/calculator/3bifvksxqy.> 
+We can plot the function along with it's linearization in [Desmos](https://www.desmos.com/calculator/3bifvksxqy).
 
 We can also plot the function along with it's linear approximation (tangent line) in R.
 
@@ -167,7 +167,7 @@ These are the final answers you should obtain after listing out each step.
 Since the derivative of a function is a function, we can find the derivative of a derivative. In fact, we can continue to take derivatives to find the third derivative, fourth derivative, etc. When we take a derivative of a derivative we find a higher order derivative. The second derivative $f$ we can denote with $$f''(x) = \frac{d}{dx}\left(\frac{d}{dx}(f)\right) = \frac{d^2f}{dx^2} = D_x^2 f.$$
 We use similar notation for higher order derivatives, such at $f'''(x)$ for the third derivative and $\frac{d^4f}{dx^4}$ for a 4th derivative. We avoid prime notation and use notation such as $f^{ (7) }(x)$ when the number of derivatives is quite large. 
 
-Open this <../assets/docs/Higher_Order_Derivatives.pdf> worksheet and take turns computing derivatives, passing the chalk after each problem. 
+Open this [Higher Order Derivatives worksheet](../assets/docs/Higher_Order_Derivatives.pdf) and take turns computing derivatives, passing the chalk after each problem.
 
 ## Bonus Problems
 Suppose we know that $f_i(x)$ is a differentiable function and $c_i$ is a constant for each integer $i$ from 1 to 4.
@@ -175,3 +175,7 @@ Suppose we know that $f_i(x)$ is a differentiable function and $c_i$ is a consta
 
 1. Compute $\frac{d}{dx}\left(\prod_{i=1}^{4}c_if_i(x)\right)$.
 1. Let $n$ be a positive integer, and then repeat both of the above after replacing 4 with $n$.
+
+---
+
+*Source: [Class.19 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.19)*

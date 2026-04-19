@@ -234,3 +234,7 @@ How long do people wait in a line when they head to the bank?
 - Find the location of the maximum of the loglikelihood function. 
 
 [This article](https://www.statlect.com/fundamentals-of-statistics/exponential-distribution-maximum-likelihood){target="_blank"} goes through all the computations above.
+
+---
+
+*Source: [Class.27 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.27)*

@@ -243,11 +243,15 @@ The function $A(x) = \int_{-\infty}^x f(t)dt$ is called an **accumulation functi
 1. Use Mathematica to compute the cumulative distribution function $\int_2^x g(x)dx$. 
 1. Compute $P(3\leq X\leq 4)$ using the function $G(x)$. 
 
-6. Consider a random variable $X$ with probability density function $g(x) = \frac{x^2}{39}$ for $2\leq x\leq 5$. 
+6. Consider a random variable $X$ with probability density function $g(x) = \frac{x^2}{39}$ for $2\leq x\leq 5$.
 <ol type="a">
   <li>State a function $G(x)$ whose derivative is $g(x)$. Then state another. Then state another.  How many such functions are there?</li>
 </ol>
-1. Compute $G(x)-G(2)$. 
+1. Compute $G(x)-G(2)$.
 
-1. Use Mathematica to compute the cumulative distribution function $\int_2^x g(x)dx$. 
+1. Use Mathematica to compute the cumulative distribution function $\int_2^x g(x)dx$.
 1. Compute $P(3\leq X\leq 4)$ using the function $G(x)$.
+
+---
+
+*Source: [Class.43 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.43)*

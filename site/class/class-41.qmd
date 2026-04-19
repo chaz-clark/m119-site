@@ -184,3 +184,7 @@ determine whether each statement is true or false. Discuss your reasoning with y
     - $\int_0^5 g(x)dx = \int_{-\infty}^0 g(x)dx + \int_0^5 g(x)dx + \int_5^{\infty} g(x)dx$.
     - $\int_0^5 g(x)dx = \int_0^3 g(x)dx + \int_1^5 g(x)dx$.
     - $\int_0^5 g(x)dx = \int_1^3 g(x)dx + \int_4^5 g(x)dx$.
+
+---
+
+*Source: [Class.41 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.41)*

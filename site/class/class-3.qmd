@@ -250,13 +250,13 @@ Note: Make sure you know how to interpret the output from R. The value $f(0)$ is
 
 Compute $f(-2)$
 
-```
+```r
 8*(-2)^2 - 15
 ```
 
 Compute $f(1)$
 
-```
+```r
 8*(1)^2 - 15
 ```
 
@@ -369,3 +369,7 @@ lines(X,Y2)
 ```
 
 </details>
+
+---
+
+*Source: [Class.3 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.3)*

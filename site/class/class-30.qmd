@@ -359,6 +359,10 @@ y1 <- data$y1
 - Write down the fitted model.
 
 ### Project 2 Task 3 WrapUp
-Check-in with your group. Take a little time to help wrap up any lingering questions related to Project 2 Task 1-3. 
+Check-in with your group. Take a little time to help wrap up any lingering questions related to Project 2 Task 1-3.
 
 ## Discussion
+
+---
+
+*Source: [Class.30 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.30)*

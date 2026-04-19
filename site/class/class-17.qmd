@@ -56,7 +56,7 @@ Below is a list of derivative rules (most of which we have seen) that you are we
 
 1. For $t(x) = \sum_{m=1}^{40}  m x^m$, find $\frac{dt}{dx}$. 
 
-<../assets/docs/DerRules_Power_Constant_Sum.pdf>
+[Derivative rules (power, constant, sum) PDF](../assets/docs/DerRules_Power_Constant_Sum.pdf)
 
 ## Using a model (practice with Project 1)
 Consider the following fitted models. *These models were fit to the data obtained using seed=123.*
@@ -158,3 +158,7 @@ f5(25000)
 ```
 
 </details>
+
+---
+
+*Source: [Class.17 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.17)*

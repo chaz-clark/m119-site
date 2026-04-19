@@ -24,7 +24,7 @@ When a dart hits the point $(x,y)$, we'll record just the $x$-coordinate and let
 1. State $k$ so that $f(x) = k g(x)$ is the probability density function (PDF) of $X$, and then state $f(x)$.
 
 1. Show the expected value of $X$ is $E[X] = \frac{7}{3}$. 
-    - First use <https://faculty.utrgv.edu/constantine.tarawneh/Fluid%20Mechanics/Centroid%20Locations.pdf> to obtain the expected value.
+    - First use the [Centroid Locations table](https://faculty.utrgv.edu/constantine.tarawneh/Fluid%20Mechanics/Centroid%20Locations.pdf) to obtain the expected value.
     - Then use Mathematica to compute the expected value using the formula $\ds E[X]= \int_{-\infty}^{\infty}xf(x)dx$, where you appropriately adapt the bounds of the integral. 
 1. Compute the variance of $X$ in Mathematica by computing $\ds \text{Var}[X]= \int_{-\infty}^{\infty}(x-E[X])^2f(x)dx$.
 
@@ -75,7 +75,7 @@ Note: The standard deviation is equal to the square root of the variance, $\sigm
 
 </details>
 
-You may encounter the expected value, variance, and standard deviation of random variables in future courses. Our present goal is to practice using definite integrals to compute these values. The Methos of Moments compares these values from a distribution to the corresponding values from a distribution, and uses that comparison to fit data to a model.
+You may encounter the expected value, variance, and standard deviation of random variables in future courses. Our present goal is to practice using definite integrals to compute these values. The Method of Moments compares these values from a distribution to the corresponding values from a distribution, and uses that comparison to fit data to a model.
 
 ## Discussion - Method of Moments Big Idea
 The expected value and variance are identifying characteristics of a random variable. We can match these characteristics from the distribution (or model) with these characteristics from the data, and use this to determine unknown parameters in a probability model (or distribution). 
@@ -323,3 +323,7 @@ Here are the steps:
 Note: 
 - If the distribution (or model) has only one parameter, then skip steps 2 and 4 and solve the equation you find in step 3.
 - If the distribution (or model) has more than two parameters, calculate additional identifying characteristics of the distribution and data and set them equal and then solve the resulting system of equations.
+
+---
+
+*Source: [Class.39 on byuimath.com](https://byuimath.com/clarkc/all/119/index.php?n=Class.39)*
