@@ -222,6 +222,6 @@ f(x)
 
 ## Discussion
 ### Prepare for our Project work
-[Project 1](https://byuistats.github.io/M119/project.html){target="_blank"}
+[Project 1](https://chaz-clark.github.io/M119/Projects/index.html){target="_blank"}
 
 We'll have a brief discussion about the project work, and start looking at the example project.

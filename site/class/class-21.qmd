@@ -4,7 +4,7 @@ title: "Class 21"
 
 # During Class
 
-[Derivative Rules](https://byuistats.github.io/M119/m119-docs/119ReferenceSheet.html){target="_blank"}
+[Derivative Rules](https://chaz-clark.github.io/M119/Projects/m119-docs/119ReferenceSheet.html){target="_blank"}
 
 ## Brain Gains
 1.  Let $g(y;a) = a^2+5ay-y^3$.

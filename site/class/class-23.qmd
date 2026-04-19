@@ -97,7 +97,7 @@ If you finish early, pick another function from Project 2, and compute all the p
 ### Activity - Derivative Practice 
 Use the remaining time to practice working with higher order derivatives and the chain rule. Both of these activities are carried over from previous days. Please spend time with each one (maybe half the rest of class on higher order derivatives, and the other half on the chain rule).  
 #### Higher order derivatives
-Open this https://byuistats.github.io/M119/m119-docs/Higher_Order_Derivatives.pdf worksheet and take turns computing derivatives, passing the chalk after each problem. 
+Open this ../assets/docs/Higher_Order_Derivatives.pdf worksheet and take turns computing derivatives, passing the chalk after each problem. 
 #### Activity - Chain Rule Practice
 For each pair of functions $f(x)$ and $g(x)$ below, write out the compositions $f(g(x))$ and $g(f(x))$. 
 Then compute the derivative of each composite function. As a suggestion, compute both $f'(x)$ and $g'(x)$ first, and then show how you can combine $f,g,f',g'$ to get the derivative of each composite function.  

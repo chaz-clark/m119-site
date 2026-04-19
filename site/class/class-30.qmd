@@ -52,7 +52,7 @@ title: "Class 30"
 We would like to fit the model  $h(x) = mx + b$ (or $h(x) = b + mx $) to the following data $(x_i,y_i)$ using the maximum likelihood method, where we will assume the errors are independent and follow a standard normal distribution (this means a normal distribution with mean 0 and standard deviation 1, hence $p(r) = \frac{1}{\sqrt{2\pi}}e^{-r^2/2}$).
 
 ```r
-data <- read.csv(url("https://byuistats.github.io/M119/logLikelihood_practice.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/logLikelihood_practice.csv"))
 
 x <- data$x
 y <- data$y2
@@ -206,7 +206,7 @@ We would like to fit this model to the following data $(x_i,y_i)$ using the maxi
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/logLikelihood_practice.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/logLikelihood_practice.csv"))
 
 x <- data$x
 y1 <- data$y1
@@ -304,7 +304,7 @@ We would like to fit this model to the following data $(x_i,y_i)$ using the maxi
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/logLikelihood_practice2.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/logLikelihood_practice2.csv"))
 
 x <- data$x
 y1 <- data$y1
@@ -325,7 +325,7 @@ As you work on examples in pairs or groups as assigned. Write down your work and
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/logLikelihood_practice2.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/logLikelihood_practice2.csv"))
 
 x <- data$x
 y1 <- data$y1
@@ -346,7 +346,7 @@ As you work on examples in pairs or groups as assigned. Write down your work and
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/logLikelihood_practice2.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/logLikelihood_practice2.csv"))
 
 x <- data$x
 y1 <- data$y1

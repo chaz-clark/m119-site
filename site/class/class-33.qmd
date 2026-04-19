@@ -5,11 +5,11 @@ title: "Class 33"
 # During Class
 ## Group Meeting 
 
-- The prep involved reading https://byuistats.github.io/M119/unit3/probability.html and completing some of the exercises there. 
+- The prep involved reading https://chaz-clark.github.io/M119/Projects/probability.html and completing some of the exercises there. 
 
 The following problem builds upon and use the ideas from the reading. 
 ### Activity - Balls in a Bag
-As you work through the problems below, please refer to https://byuistats.github.io/M119/unit3/probability.html as needed. 
+As you work through the problems below, please refer to https://chaz-clark.github.io/M119/Projects/probability.html as needed. 
 Work on the chalkboard as you complete these problems, and pass the chalk as you finish each one. 
 Leave up your work so that you can compare your answers with your neighbors. 
 If you notice an answer differs from a neighboring group's, then have a discussion with them.  
@@ -42,13 +42,13 @@ $$
 
 ### Activity - Complete Exercises in 1.8 and 1.9
 Complete the exercises in sections 1.8 and 1.9. 
-- https://byuistats.github.io/M119/unit3/probability.html
+- https://chaz-clark.github.io/M119/Projects/probability.html
 
 ## Discussion 
 - What is a probability mass function?  What do their graphs look like? 
 - What is the expected value geometrically? How do we interpret an expected value?
 - What is a cumulative distribution function? Must it be increasing/nondecreasing? What is the max? What is the min?
-Let's examine the 3 pmfs we explored above. The draw_pmf function is provided at the start of the reading in https://byuistats.github.io/M119/unit3/probability.html.
+Let's examine the 3 pmfs we explored above. The draw_pmf function is provided at the start of the reading in https://chaz-clark.github.io/M119/Projects/probability.html.
 
 ```r
 1. Shades a target diagram for a probability mass function. 
@@ -108,7 +108,7 @@ The **cumulative distribution function** of a random variable $X$ is the functio
 </details>
 
 ### Exercises 1.1 - Averaging Test Scores
-- https://byuistats.github.io/M119/unit3/probability.html#Exercises
+- https://chaz-clark.github.io/M119/Projects/probability.html#exercises
 
 1.  Consider the vector of integers c(2,2,2,3,3,5,5,5,5,7,8,8,9,9,9).
     - Find the mean of the values by summing the values and then dividing by the number of values.
@@ -174,7 +174,7 @@ sum(val.y*prop.y)
 </details>
 
 ### Exercises 1.4 - Tossing a coin three times and counting heads
-- https://byuistats.github.io/M119/unit3/probability.html#Exercises9
+- https://chaz-clark.github.io/M119/Projects/probability.html#Exercises9
 
  Suppose we toss a coin three times and record the number of heads. Let the random variable $X$ represent this total number of heads. Note that possible outcomes of counting the number of heads are 0,1,2,3 (these are discrete values, hence we call this a discrete random variable). These outcomes arise from the 8 possible results of tossing a coin three times (TTT,TTH,THT, THH,HTT,HTH,HHT, HHH).
 1. Verify by hand that F(1)=0.5.
@@ -200,7 +200,7 @@ sum(val.y*prop.y)
 </details>
 
 ### Exercises 1.5 - Rolling two dice and summing them
-- https://byuistats.github.io/M119/unit3/probability.html#Exercises11
+- https://chaz-clark.github.io/M119/Projects/probability.html#Exercises11
 
 We now let $X$ be the discrete random variable obtained by rolling two 6-sided dice and recording their sum. The possible outcomes are the integers from 2 up to 12. (If you’ve played Settler’s of Catan before, then the dots on the number cards provide a visual of the probability mass function). There are 36 results for rolling two six-sided fair dice, and the probability mass function for $X$ is given below.
 
@@ -259,7 +259,7 @@ cumsum(p)
 </details>
 
 ### Exercises 1.6 - Avoid Gambling
-- https://byuistats.github.io/M119/unit3/probability.html#Exercises13
+- https://chaz-clark.github.io/M119/Projects/probability.html#Exercises13
 
 Here’s a simple gambling game we’ll explore. You pay 1 dollar to play. Your roll two dice and multiply the result together. If you roll a product of 20 or more, you get \$4 (your dollar back, plus 3 more). Otherwise, you get nothing (you lost a dollar). There are two outcomes, namely you lose a buck, or you gain 3 bucks. We’ll let $X$ be the random variable with outcomes of −1 and 3 resulting from this game.
 
@@ -300,7 +300,7 @@ data.frame(outcome = x, prob = p)
 draw_pmf(x,p)
 ```
 
-To use the function draw_pmf(x,p), you'll have to copy the code https://byuistats.github.io/M119/unit3/probability.html.
+To use the function draw_pmf(x,p), you'll have to copy the code https://chaz-clark.github.io/M119/Projects/probability.html.
 
 - We expected $E[X]$ to be closer to -1 than to 3 when we look at the target diagram.
 
@@ -319,7 +319,7 @@ abline(v=E.Y, col=2)
 </details>
 
 ### Exercises 1.7 - How many tropical storms - Poisson
-- https://byuistats.github.io/M119/unit3/probability.html#Exercises15
+- https://chaz-clark.github.io/M119/Projects/probability.html#Exercises15
 
 We’ll look at another example related to the tropical storms example we did earlier this semester. Let $X$ represent the number of hurricane’s in a year that make landfall in Florida. We already saw that this discrete random variable follows a Poison distribution $f(x;\lambda)=\frac{\lambda^xe^{-\lambda}}{x!}$ where $x = 0, 1, 2, 3, ...$, and we estimated the parameter to be $\lambda \approx 5.904762$.
 

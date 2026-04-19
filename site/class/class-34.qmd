@@ -40,7 +40,7 @@ draw_pmf(x,p)
 
 ## Group Discussion
 Give each group member 1-2 minutes to share what they prepared from the between class work.
-- [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"}
+- [Rectangles, Targets, and Sums](https://chaz-clark.github.io/M119/Projects/probability.html){target="_blank"}
 
 ### Activity - Targets for Continuous Random Variables
 Work on the chalkboard as you complete these problems, and pass the chalk as you finish each part. Leave up your work so that you can compare your answers with your neighbors. If you notice an answer differs from a neighboring group's, then have a discussion with them.
@@ -154,7 +154,7 @@ When a dart falls on the point $(x,y)$, we'll record just the $x$-coordinate and
 1. State the expected value $E[X]$. Remember the expected value of $X$ is the $x$-value of the centroid of the right triangular target.
 
 #### A Parabolic Spandrel target
-Head to section 2.3 of [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} and complete the exercises together. 
+Head to section 2.3 of [Rectangles, Targets, and Sums](https://chaz-clark.github.io/M119/Projects/probability.html){target="_blank"} and complete the exercises together. 
 
 ## Discussion 
 ### Key Ideas (Targets & Continuous Random Variables)

@@ -87,7 +87,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 ### Activity - Computing Derivatives Practice
 Below is a list of derivative rules (most of which we have seen) that you are welcome to use as you complete this activity and any homework in Knewton Alta. It's not crucial that you memorize all these rules. Some you will memorize from just using them each time.  
 
-[Derivative Rules](https://byuistats.github.io/M119/m119-docs/119ReferenceSheet.html){target="_blank"}
+[Derivative Rules](https://chaz-clark.github.io/M119/Projects/m119-docs/119ReferenceSheet.html){target="_blank"}
 
 - Are there any exercises from your homework you would like to revisit with your group? Take turns at the chalk board solving theses problems.
 - After you've discussed any problems from the homework, continue taking turns at the chalkboard to compute the derivative of each of the following functions (remember to *pass the chalk* after each problem). Explain which rules you used to complete each step. Whenever we work on problems at the chalk boards we are practicing our communication and use of mathematical notation.

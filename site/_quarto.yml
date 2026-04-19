@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/docs/**
+    - assets/data/**
 
 website:
   title: "Math 119 — Applied Calculus for Data Analysis"

@@ -90,7 +90,7 @@ Assuming[c11 c22 - c21 c12 != 0, Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y -
 Start by reading in the data below.
 (:code:)[@
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data4_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data4_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -145,7 +145,7 @@ Reading in the data below.
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data2_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data2_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -162,7 +162,7 @@ The code below gives $y = 2.79 + 6.48x$ (rounded to 3 sig figures) as the model,
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data2_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data2_ls.csv"))
 x <- data$x
 y <- data$y
 

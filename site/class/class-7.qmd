@@ -106,10 +106,10 @@ $$ T(x) = af(b(x-h))+k $$
 
 ## Discussion - Project 1 Task 2 and the Example Project. 
 If you haven't yet found the worked examples in Canvas, note that there are examples for a few tasks in the Additional resources module. Here is an example for project 1 task 2, which shows how you can put multiple plots together in the same figure, using the par(mfrow()) command, something required for the task.  Note that the example below shows far more plots than are required for the actual tasks.   
-- https://byuistats.github.io/M119/m119-docs/Project1_Task2_f2_example.html
+- https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html
 
 We'll spend the rest of class examining the example project's Task 2. 
-- Open the [Example Project Instructions](https://byuistats.github.io/M119/example_project.html){target="_blank"}, and briefly read Task 2
+- Open the [Example Project Instructions](../assets/docs/example_project.html){target="_blank"}, and briefly read Task 2
 - Use the Desmos links to explore the three probability density models $f_0$, $f_1$, and $f_2$.
     - Use the slider to alter the values of $a$ and $b$. Discuss how these parameters alter the graph of $f_0$.
     - Use the slider to alter the values of $h$ and $a$. Discuss how these parameters alter the graph of $f_1$.

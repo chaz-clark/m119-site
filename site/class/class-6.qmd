@@ -38,7 +38,7 @@ Compare your answers in the prep and discuss any questions. Then at the boards, 
 ### Activity - Transformations of a function
 Last time in class we worked with the transformation $T(x;A,B,C,D) = Af(B(x-C))+D$. Each parameter ( $A$, $B$, $C$, and $D$ ) controls some aspect of the graph of the function. Let $f(x) = 3\sqrt{x}$ and use this https://www.desmos.com/calculator/5jc00j0rpr to explore changing these parameters and write a description of what each parameter controls. 
 
-Open https://byuistats.github.io/M119/project1.html#Task_2:_Models_and_Parameter_Exploration. There are 6 functions we'll be exploring.  Use the Desmos links provided there, and for each function spend time together as a group discussing how each parameter changes the behavior of the function. Write a description of what each parameter controls. 
+Open https://chaz-clark.github.io/M119/Projects/unit1.html#task-2-models-and-parameter-exploration. There are 6 functions we'll be exploring.  Use the Desmos links provided there, and for each function spend time together as a group discussing how each parameter changes the behavior of the function. Write a description of what each parameter controls. 
 
 ### Activity - Defining and Plotting Functions in R
 Run the following code in your Console to clear the environment.

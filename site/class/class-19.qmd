@@ -4,7 +4,7 @@ title: "Class 19"
 
 # During Class
 
-[Derivative Rules](https://byuistats.github.io/M119/m119-docs/119ReferenceSheet.html){target="_blank"}
+[Derivative Rules](https://chaz-clark.github.io/M119/Projects/m119-docs/119ReferenceSheet.html){target="_blank"}
 
 ## Brain Gains 
 
@@ -120,7 +120,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 
 ### Activity - Compute derivatives
 
-[Derivative Rules](https://byuistats.github.io/M119/m119-docs/119ReferenceSheet.html){target="_blank"}
+[Derivative Rules](https://chaz-clark.github.io/M119/Projects/m119-docs/119ReferenceSheet.html){target="_blank"}
 
 Take turns at the chalkboard computing the derivative of each function below. Show your work, step-by-step, listing the rules you use at each stage. Remember to pass the chalk after each problem. 
 1. $f(x) = (3x-2x^2)(5+4x)$. Remember to **list each rule you used**. Then pass the chalk (PTC)
@@ -157,7 +157,7 @@ These are the final answers you should obtain after listing out each step.
 Since the derivative of a function is a function, we can find the derivative of a derivative. In fact, we can continue to take derivatives to find the third derivative, fourth derivative, etc. When we take a derivative of a derivative we find a higher order derivative. The second derivative $f$ we can denote with $$f''(x) = \frac{d}{dx}\left(\frac{d}{dx}(f)\right) = \frac{d^2f}{dx^2} = D_x^2 f.$$
 We use similar notation for higher order derivatives, such at $f'''(x)$ for the third derivative and $\frac{d^4f}{dx^4}$ for a 4th derivative. We avoid prime notation and use notation such as $f^{ (7) }(x)$ when the number of derivatives is quite large. 
 
-Open this https://byuistats.github.io/M119/m119-docs/Higher_Order_Derivatives.pdf worksheet and take turns computing derivatives, passing the chalk after each problem. 
+Open this ../assets/docs/Higher_Order_Derivatives.pdf worksheet and take turns computing derivatives, passing the chalk after each problem. 
 
 ## Bonus Problems
 Suppose we know that $f_i(x)$ is a differentiable function and $c_i$ is a constant for each integer $i$ from 1 to 4.

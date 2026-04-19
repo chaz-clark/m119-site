@@ -78,13 +78,13 @@ Assume the residuals (errors) are independent and normally distributed (with mea
 1. Write the loglikelihood function for the errors in this situation.
 1. Rewrite the loglikelihood function using the properties of logs and sums.
 1. Compute the first partial derivatives of the loglikelihood function.  (We'll do one together.  The solutions for all three of them are in the file below.)
-[Elves-R-Us loglikelihood derivatives (PDF)](https://byuistats.github.io/M119/m119-docs/ElvesRUs-loglikelihood-derivatives.pdf){target="_blank"}
+[Elves-R-Us loglikelihood derivatives (PDF)](../assets/docs/ElvesRUs-loglikelihood-derivatives.pdf){target="_blank"}
 
 ## Group Meeting 
 Start by giving each person a moment to share what they chose to prepare for class. Help each other address any questions.  When each person has had a chance to share, move on the other activities.
 
 ### Activity - Loglikelihood Practice, Derivatives, Optimization, and Project 2
-You will be working together to revisit Task 1 and complete part of Task 2 for [Project 2](https://byuistats.github.io/M119/project2.html){target="_blank"}.  The prep for today asked you to watch some videos related to $f_2$. 
+You will be working together to revisit Task 1 and complete part of Task 2 for [Project 2](https://chaz-clark.github.io/M119/Projects/unit2.html){target="_blank"}.  The prep for today asked you to watch some videos related to $f_2$. 
 
 Consider the model $f_1(t; a_1) = 100 + a_1t$. 
 1. On the chalk board, as a group, go through the computations needed to obtain the loglikelihood function. Your job is to perform the needed computations and include enough explanations to show that $$\ell_1(a_1; \mathbf{t},\mathbf{y}) =

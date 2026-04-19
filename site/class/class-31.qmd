@@ -5,7 +5,7 @@ title: "Class 31"
 # During Class
 ## Brain Gains
 1. 
-Any questions from https://byuistats.github.io/M119/m119-docs/SecondDerTest_BrianSittinger.pdf?  Any new terms you weren't sure what they meant?
+Any questions from ../assets/docs/SecondDerTest_BrianSittinger.pdf  Any new terms you weren't sure what they meant?
 Complete as much of the following as you can.
 - Compute all the first and second partial derivatives of $f(x,y,z) = x^2+4xy+y^2+z^2+2yz$. 
 - Show that $(0,0,0)$ is a critical point of this function. 
@@ -55,7 +55,7 @@ Consider the model $f_5(x; a) = ae^{-x}$ and data set given below.
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data3_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data3_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -92,7 +92,7 @@ Using R, we can compute $a$ (as well as plot the original data) as given below.
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data3_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data3_ls.csv"))
 x <- data$x
 y <- data$y
 plot(x,y)
@@ -130,7 +130,7 @@ Data Set 1
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data1_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data1_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -139,7 +139,7 @@ Data Set 2
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data2_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data2_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -148,7 +148,7 @@ Data Set 3
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data3_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data3_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -157,7 +157,7 @@ Data Set 4
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data4_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data4_ls.csv"))
 x <- data$x
 y <- data$y
 ```
@@ -166,7 +166,7 @@ Data Set 5
 
 ```r
 rm(list=ls())
-data <- read.csv(url("https://byuistats.github.io/M119/data5_ls.csv"))
+data <- read.csv(url("https://chaz-clark.github.io/M119/data5_ls.csv"))
 x <- data$x
 y <- data$y
 ```

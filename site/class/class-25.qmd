@@ -20,7 +20,7 @@ The base has area $x^2$. Letting $h$ be the height of the box, the volume of the
 Start by giving each person a moment to share what they chose to prepare for class. Help each other address any questions.  When each person has had a chance to share, move on the other activities.
 
 ### Activity - Comparing Solutions
-Our goal today is to dig into the derivative relationships and associated vocabulary. Your assignment before class was to fill in as many of the blanks, as possible, from the [Derivative Relationships worksheet (PDF)](https://byuistats.github.io/M119/m119-docs/DerivativeRelationship_FillBlank.pdf){target="_blank"}. Compare your answers, discuss any questions, and have a scribe write your solutions on the board (so you can compare with other groups).
+Our goal today is to dig into the derivative relationships and associated vocabulary. Your assignment before class was to fill in as many of the blanks, as possible, from the [Derivative Relationships worksheet (PDF)](../assets/docs/DerivativeRelationship_FillBlank.pdf){target="_blank"}. Compare your answers, discuss any questions, and have a scribe write your solutions on the board (so you can compare with other groups).
 
 You may need some of definitions, theorem, or tests below as you complete the next activity. Take a moment to open each item and review it.
 #### Theorems - Tests - Definitions
@@ -152,7 +152,7 @@ Number your graphs, keep them small-ish, and try to fill your board with example
 1. $f$ so that $f'=0$ and $f''<0$ at $x=1$.
 1. $f$ so that -$f$ is concave down everywhere.
 
-When you finish, work on [this worksheet](https://byuistats.github.io/M119/m119-docs/GraphingUsingSigns.pdf){target="_blank"} together (remember to take turns).
+When you finish, work on [this worksheet](../assets/docs/GraphingUsingSigns.pdf){target="_blank"} together (remember to take turns).
 
 ## Class Discussion
 ### ElvesRUs Extended
@@ -162,7 +162,7 @@ Last time we worked on a ElvesRUs loglikelihood (full problem statement included
 
 Today let's compute the following second partial derivatives: $\frac{\partial^2\ell}{\partial A^2}$, $\frac{\partial^2 \ell}{\partial b \partial A}$, $\frac{\partial^2 \ell}{\partial k \partial A}$, $\frac{\partial^2 \ell}{\partial A \partial b}$, $\frac{\partial^2\ell}{\partial b^2}$, and $\frac{\partial^2 \ell}{\partial k \partial b}$ Is this all the partials? (No!)
 Turn back in your notes (or use the following link) to get the first partials.
-[Elves-R-Us loglikelihood derivatives (PDF)](https://byuistats.github.io/M119/m119-docs/ElvesRUs-loglikelihood-derivatives.pdf){target="_blank"}
+[Elves-R-Us loglikelihood derivatives (PDF)](../assets/docs/ElvesRUs-loglikelihood-derivatives.pdf){target="_blank"}
 
 <details>
 <summary>Answers</summary>

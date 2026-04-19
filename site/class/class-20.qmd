@@ -4,7 +4,7 @@ title: "Class 20"
 
 # During Class
 
-[Derivative Rules](https://byuistats.github.io/M119/m119-docs/119ReferenceSheet.html){target="_blank"}
+[Derivative Rules](https://chaz-clark.github.io/M119/Projects/m119-docs/119ReferenceSheet.html){target="_blank"}
 
 ## Brain Gains
 
@@ -54,7 +54,7 @@ Compute the derivative of each function below, by first identifying $y(u)$ and $
 Since the derivative of a function is a function, we can find the derivative of a derivative. In fact, we can continue to take derivatives to find the third derivative, fourth derivative, etc. When we take a derivative of a derivative we find a higher order derivative. The second derivative $f$ we can denote with $$f''(x) = \frac{d}{dx}\left(\frac{d}{dx}(f)\right) = \frac{d^2f}{dx^2}.$$
 We use similar notation for higher order derivatives, such at $f'''(x)$ for the third derivative and $\frac{d^4f}{dx^4}$ for a 4th derivative. We avoid prime notation and use notation such as $f^{ (7) }(x)$ when the number of derivatives is quite large. 
 
-Open this https://byuistats.github.io/M119/m119-docs/Higher_Order_Derivatives.pdf worksheet and take turns computing derivatives, passing the chalk after each problem. 
+Open this ../assets/docs/Higher_Order_Derivatives.pdf worksheet and take turns computing derivatives, passing the chalk after each problem. 
 
 ### Activity - Derivative Practice with Parameters
 Find the derivatives described below.

@@ -93,7 +93,7 @@ Examples:
 
 </details>
 
-- Consider the 6 functions you have been fitting in https://byuistats.github.io/M119/project1.html. 
+- Consider the 6 functions you have been fitting in https://chaz-clark.github.io/M119/Projects/unit1.html. 
     - On the chalkboard, write down a formula for the residual given the general model $f_4$ and data point $(x_i,y_i)$.
     - On the chalkboard, write down a formula for the residual given the general model $f_5$ and data point $(x_j,y_j)$.
 
