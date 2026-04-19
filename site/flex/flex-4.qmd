@@ -54,19 +54,6 @@ Give each group member 1-2 minutes to share what they prepared from the between 
 
 Work on the chalkboard as you complete these activities and exercises, and pass the chalk as you finish each one. Leave up your work so that you can compare your answers with your neighbors. If you notice an answer differs from a neighboring group's, then have a discussion with them.
 
-### Activity - Integration Practice
-Evaluate each indefinite integral (the complete "list" of antiderivatives or the most general antiderivative). When you are writing your answers **don't for get your "+C"**. Then check your answer with Mathematica. 
-1. $\int (3x^2 + 1)^3 6x dx$
-
-1. $\int x^2\sqrt{x^3 + 1} dx$
-1. $\int (5-2x)^2 dx$
-
-1. $\int x(x+2)^3 dx$
-1. $\int \frac{y}{(y-3)^2} dy$
-
-1. $\int \frac{5}{x^2 + 25} dx$ 
-1. $\int \frac{5x}{x^2 + 25} dx$ 
-
 ### Computing Integrals with a CAS (Computer Algebra System)
 Calculate each of the following indefinite integrals using Mathematica. When you are writing answers for indefinite integrals, **don't for get your "+C"**. Along the way, you should encounter some new functions you've never seen before. 
 - $\int \frac{dx}{x^3 + 4x} = \int \frac{1}{x^3 + 4x} dx$

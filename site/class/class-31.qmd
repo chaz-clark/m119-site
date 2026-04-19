@@ -198,6 +198,4 @@ plot(x,y,pch=16)
 
 1.  Select another model and corresponding data set and **repeat**.
 
-## Discussion 
-
-**Wrap up class by directing attention to code in prep.**
+## Discussion

@@ -149,8 +149,9 @@ def resolve_includes(text: str, wiki_dir: Path) -> str:
 
 def strip_directives(text: str) -> str:
     """Remove server-side PMWiki directives that have no static equivalent."""
-    # (:if false:)...(:if:) — hidden conditional blocks
-    text = re.sub(r'\(:if false:\)[\s\S]*?\(:if:\)', '', text)
+    # (:if <cond>:)...(:if:) — hidden conditional blocks (false, auth admin, etc.)
+    # These never render for public viewers; strip entire block + guards.
+    text = re.sub(r'\(:if\s+[^)]*:\)[\s\S]*?\(:if:\)', '', text)
     # (:pagelist ...:) — dynamic page lists
     text = re.sub(r'\(:pagelist[^:]*:\)', '', text)
     # (:Summary:...:) — metadata

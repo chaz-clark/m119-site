@@ -129,19 +129,4 @@ $$\ell_4(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\righ
 and compute the two first partial derivatives as well as all second partial derivatives. A full solution for $\ell_6$ is provided for you, and may help you with $\ell_4$. 
 The solutions are provided in the task instructions. 
 
-### Activity - Derivative Matching
-Your task in this activity is to match the graph of each function $ f(x) $ (pink cards) with that of its derivative $ f'(x) $ (yellow cards). Thus, when you have completed the activity, you will have fifteen matched function/derivative pairs.
-
-These [tiles](http://math.colorado.edu/activecalc1/DerivativeMatchingRevised.pdf){target="_blank"} can be printed and cut out if you are completing the activity on your own. You will only need the first two pages of the file.
-
-*Source: University of Colorado and BOALA (Active Calculus)*
-
-[Tiles](http://math.colorado.edu/activecalc1/DerivativeMatchingRevised.pdf){target="_blank"}
-
-->[User's Guide](http://math.colorado.edu/activecalc1/Derivative_matching_guide.pdf){target="_blank"}
-
-[My electronic adaptation of this activity](https://docs.google.com/presentation/d/1YWrE5RVdg6rNlB8MJ41ckWWz0kkVIStqHJJZVmj0QhE/edit#slide=id.gba65dd33e3_0_77){target="_blank"}
-
-->[Instructor copy with key](https://docs.google.com/presentation/d/1x2UH5BmZQY_olf8ZSh5xzGFrBXTRlLpO9wLGWIB0J4U/edit#slide=id.gba65dd33e3_0_77){target="_blank"}
-
 ## Discussion
