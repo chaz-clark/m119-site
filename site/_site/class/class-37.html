@@ -263,7 +263,7 @@ window.Quarto = {
   <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
-  <li><a href="#dicsussion" id="toc-dicsussion" class="nav-link" data-scroll-target="#dicsussion">Dicsussion</a>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a>
   <ul class="collapse">
   <li><a href="#riemann-sums-with-r-definite-integrals-with-mathematica" id="toc-riemann-sums-with-r-definite-integrals-with-mathematica" class="nav-link" data-scroll-target="#riemann-sums-with-r-definite-integrals-with-mathematica">Riemann Sums with R, Definite integrals with Mathematica</a></li>
   </ul></li>
@@ -272,7 +272,7 @@ window.Quarto = {
   <li><a href="#practice-with-some-other-functions" id="toc-practice-with-some-other-functions" class="nav-link" data-scroll-target="#practice-with-some-other-functions">Practice with some other functions</a></li>
   <li><a href="#computing-probabilities-using-a-probability-density-function" id="toc-computing-probabilities-using-a-probability-density-function" class="nav-link" data-scroll-target="#computing-probabilities-using-a-probability-density-function">Computing Probabilities using a Probability Density function</a></li>
   </ul></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#discussion-1" id="toc-discussion-1" class="nav-link" data-scroll-target="#discussion-1">Discussion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -334,8 +334,8 @@ kx - k &amp; \quad 1 \leq x \leq 3 \\ \\
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){x<span class="dv">-1</span>}</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_target</span>(f,<span class="dv">1</span>,<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="dicsussion" class="level2">
-<h2 class="anchored" data-anchor-id="dicsussion">Dicsussion</h2>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <section id="riemann-sums-with-r-definite-integrals-with-mathematica" class="level3">
 <h3 class="anchored" data-anchor-id="riemann-sums-with-r-definite-integrals-with-mathematica">Riemann Sums with R, Definite integrals with Mathematica</h3>
 <details>
@@ -462,10 +462,7 @@ f - D[F, x] // FullSimplify (*See if the difference is zero*)</code></pre>
 <h3 class="anchored" data-anchor-id="practice-with-some-other-functions">Practice with some other functions</h3>
 <p>Work together on your computers to help one another complete the following problems.</p>
 <p>For each function below, use Mathematica to compute - the area <span class="math inline">\(A = \int_a^b g(x) dx\)</span>, - the value <span class="math inline">\(k\)</span> so that <span class="math inline">\(f=kg\)</span> is a PDF for a random variable, - the expected value <span class="math inline">\(E[X] =\int_a^b xf(x)dx\)</span>, and - the variance <span class="math inline">\(\text{Var}[X]=\int_a^b (x-E[X])^2f(x)dx\)</span>.<br>
-1. Let <span class="math inline">\(g(x) = \sqrt{49-x^2}\)</span> for <span class="math inline">\(0\leq x\leq 7\)</span> - use ”</p>
-<pre><code>g=Sqrt[49-x^2]@]". The region under $g(x)$ is a quarter of the circle $x^2+y^2=49$. You will see $\pi$ show up in lots of answers in Mathematica. Use "[@%//N@]" to approximate the output. 
-# Let $g(x) = \frac{\ln(x+1)}{x^2}$ for $1\leq x\leq 5$ - use "[@g=Log[x+1]/x^2</code></pre>
-<p>“. 1. Let <span class="math inline">\(g(x) = e^{-3x}\)</span> for <span class="math inline">\(0\leq x\leq \infty\)</span> - use”<code>g=Exp[-3x]</code>“. You can enter <code>Infinity</code> as a value for the upper bound.</p>
+1. Let <span class="math inline">\(g(x) = \sqrt{49-x^2}\)</span> for <span class="math inline">\(0\leq x\leq 7\)</span> - use “<code>g=Sqrt[49-x^2]</code>”. The region under <span class="math inline">\(g(x)\)</span> is a quarter of the circle <span class="math inline">\(x^2+y^2=49\)</span>. You will see <span class="math inline">\(\pi\)</span> show up in lots of answers in Mathematica. Use “<code>%//N</code>” to approximate the output. 1. Let <span class="math inline">\(g(x) = \frac{\ln(x+1)}{x^2}\)</span> for <span class="math inline">\(1\leq x\leq 5\)</span> - use “<code>g=Log[x+1]/x^2</code>”. 1. Let <span class="math inline">\(g(x) = e^{-3x}\)</span> for <span class="math inline">\(0\leq x\leq \infty\)</span> - use “<code>g=Exp[-3x]</code>”. You can enter <code>Infinity</code> as a value for the upper bound.</p>
 <details>
 <summary>
 Some Solutions
@@ -506,9 +503,11 @@ Some Solutions
 </ol>
 </section>
 </section>
-<section id="discussion" class="level2">
-<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<section id="discussion-1" class="level2">
+<h2 class="anchored" data-anchor-id="discussion-1">Discussion</h2>
 <p>We’ll discuss some of the above, if/as needed.</p>
+<hr>
+<p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.37">Class.37 on byuimath.com</a></em></p>
 
 
 </section>

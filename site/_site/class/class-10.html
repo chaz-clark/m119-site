@@ -354,7 +354,7 @@ window.Quarto = {
 <section id="solving-equations-with-uniroot" class="level3">
 <h3 class="anchored" data-anchor-id="solving-equations-with-uniroot">Solving equations with uniroot</h3>
 <p>What does uniroot do?</p>
-<pre><code>?uniroot</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>?uniroot</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The key to using uniroot is to pick two <span class="math inline">\(x\)</span>-values where you know the values of the function differ in sign. If needed, construct a plot to help you pick them. Let’s look at a few code examples.</p>
 <ul>
 <li>Solve <span class="math inline">\(h(x) = 0\)</span> given <span class="math inline">\(h(x) = 3x - 15\)</span>.</li>
@@ -474,7 +474,7 @@ Expand to see an attempt at solving <span class="math inline">\(f(x_0) = 5\)</sp
 <summary>
 Expand for the solution to <span class="math inline">\(f(x_0) = 5\)</span> using uniroot.
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>I may call on people to the share <span class="cf">in</span> class.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I may call on people to share in class.</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">2.5</span>,<span class="fl">2.5</span>,<span class="fl">0.5</span>,<span class="fl">0.5</span>))</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">f</span>(x), <span class="at">type=</span><span class="st">'l'</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>,<span class="at">lty=</span><span class="dv">3</span>)</span>
@@ -492,6 +492,8 @@ Expand for the solution to <span class="math inline">\(f(x_0) = 5\)</span> using
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>x0</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
+<hr>
+<p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.10">Class.10 on byuimath.com</a></em></p>
 
 
 </section>

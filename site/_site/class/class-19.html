@@ -366,7 +366,7 @@ Answers
 <summary>
 Solution
 </summary>
-<p>We know <span class="math inline">\(f'(x) = 3x^2\)</span>, and so the slope of this line is <span class="math inline">\(f'(2) = 12\)</span>. The linearization (tangent line) passes through the point <span class="math inline">\((2,f(2))=(2,8)\)</span>. This gives an equation of the linearlization as <span class="math display">\[y-8=12(x-2).\]</span> We can solve for <span class="math inline">\(y\)</span> to obtain <span class="math display">\[y=8+12(x-2) \quad\text{or}\quad y=12x-16.\]</span> All three of the forms above are correct. We can plot the function along with it’s linearization in <a href="https://www.desmos.com/calculator/3bifvksxqy." class="uri">https://www.desmos.com/calculator/3bifvksxqy.</a></p>
+<p>We know <span class="math inline">\(f'(x) = 3x^2\)</span>, and so the slope of this line is <span class="math inline">\(f'(2) = 12\)</span>. The linearization (tangent line) passes through the point <span class="math inline">\((2,f(2))=(2,8)\)</span>. This gives an equation of the linearlization as <span class="math display">\[y-8=12(x-2).\]</span> We can solve for <span class="math inline">\(y\)</span> to obtain <span class="math display">\[y=8+12(x-2) \quad\text{or}\quad y=12x-16.\]</span> All three of the forms above are correct. We can plot the function along with it’s linearization in <a href="https://www.desmos.com/calculator/3bifvksxqy">Desmos</a>.</p>
 <p>We can also plot the function along with it’s linear approximation (tangent line) in R.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">4</span>,<span class="fl">0.001</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,x<span class="sc">^</span><span class="dv">3</span>,<span class="at">type=</span><span class="st">'l'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">15</span>),<span class="at">ylab=</span><span class="st">"y"</span>)</span>
@@ -428,7 +428,7 @@ Final Answers
 <section id="activity---higher-order-derivatives" class="level3">
 <h3 class="anchored" data-anchor-id="activity---higher-order-derivatives">Activity - Higher Order Derivatives</h3>
 <p>Since the derivative of a function is a function, we can find the derivative of a derivative. In fact, we can continue to take derivatives to find the third derivative, fourth derivative, etc. When we take a derivative of a derivative we find a higher order derivative. The second derivative <span class="math inline">\(f\)</span> we can denote with <span class="math display">\[f''(x) = \frac{d}{dx}\left(\frac{d}{dx}(f)\right) = \frac{d^2f}{dx^2} = D_x^2 f.\]</span> We use similar notation for higher order derivatives, such at <span class="math inline">\(f'''(x)\)</span> for the third derivative and <span class="math inline">\(\frac{d^4f}{dx^4}\)</span> for a 4th derivative. We avoid prime notation and use notation such as <span class="math inline">\(f^{ (7) }(x)\)</span> when the number of derivatives is quite large.</p>
-<p>Open this &lt;../assets/docs/Higher_Order_Derivatives.pdf&gt; worksheet and take turns computing derivatives, passing the chalk after each problem.</p>
+<p>Open this <a href="../assets/docs/Higher_Order_Derivatives.pdf">Higher Order Derivatives worksheet</a> and take turns computing derivatives, passing the chalk after each problem.</p>
 </section>
 </section>
 <section id="bonus-problems" class="level2">
@@ -438,6 +438,8 @@ Final Answers
 <li>Compute <span class="math inline">\(\frac{d}{dx}\left(\prod_{i=1}^{4}c_if_i(x)\right)\)</span>.</li>
 <li>Let <span class="math inline">\(n\)</span> be a positive integer, and then repeat both of the above after replacing 4 with <span class="math inline">\(n\)</span>.</li>
 </ol>
+<hr>
+<p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.19">Class.19 on byuimath.com</a></em></p>
 
 
 </section>

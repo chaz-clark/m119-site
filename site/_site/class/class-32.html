@@ -340,7 +340,7 @@ c_{2,1}x + c_{2,2}y - b_2 &amp;= 0
 </ol>
 <pre><code>Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y - b2 == 0}, {x, y}]</code></pre>
 <p>When solving this by hand, here’s what we obtained.<br>
-- <span class="math inline">\(y = \frac{c_{1,1}b_2 - c_{2,1}b_1}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}\)</span> - <span class="math inline">\(x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1.2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}\)</span></p>
+- <span class="math inline">\(y = \frac{c_{1,1}b_2 - c_{2,1}b_1}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}\)</span> - <span class="math inline">\(x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1,2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}\)</span></p>
 <details>
 <summary>
 Answer
@@ -406,8 +406,12 @@ Solutions
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>my_a  </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="dv">4</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">uniroot</span>(<span class="cf">function</span>(x){<span class="fu">f</span>(x)<span class="sc">-</span><span class="dv">5</span>},<span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">2</span>))<span class="sc">$</span>root</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>f &lt;- function(x,a = my_a){a*exp(x)} plot(x,y) t &lt;- seq(min(x),max(x),0.1) lines(t,f(t))</p>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">uniroot</span>(<span class="cf">function</span>(x){<span class="fu">f</span>(x)<span class="sc">-</span><span class="dv">5</span>},<span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">2</span>))<span class="sc">$</span>root</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a =</span> my_a){a<span class="sc">*</span><span class="fu">exp</span>(x)}</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fu">min</span>(x),<span class="fu">max</span>(x),<span class="fl">0.1</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(t,<span class="fu">f</span>(t))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </section>
 </section>
@@ -418,7 +422,7 @@ Solutions
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">url</span>(<span class="st">"https://chaz-clark.github.io/M119/data2_ls.csv"</span>))</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> data<span class="sc">$</span>x</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> data<span class="sc">$</span>y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This time use the model <span class="math inline">\(f(x;b,m) = b+mx\)</span>. - Fit this model to the data using either the Least Squares or or Maximum Likelihood method. - What is <span class="math inline">\(f(4)\)</span>, the value predicted by the model at <span class="math inline">\(x=4\)</span>. - Find <span class="math inline">\(x\)</span> so that <span class="math inline">\(f(x) = 5\)</span>.</p>
+<p>This time use the model <span class="math inline">\(f(x;b,m) = b+mx\)</span>. - Fit this model to the data using either the Least Squares or Maximum Likelihood method. - What is <span class="math inline">\(f(4)\)</span>, the value predicted by the model at <span class="math inline">\(x=4\)</span>. - Find <span class="math inline">\(x\)</span> so that <span class="math inline">\(f(x) = 5\)</span>.</p>
 <details>
 <summary>
 Solution
@@ -493,6 +497,8 @@ Solution
 <h3 class="anchored" data-anchor-id="using-the-term-the-best-fit">Using the term the “best fit”</h3>
 <p>The term “best fit” can be used in multiple context and thus has context specific meaning. - When we use the loglikelihood method (or least squares method) to fit a model to data, we are looking for the “best fit” of a deterministic model to data. - We are looking for the “best” choice of parameters out of all possible values for the parameters that could be used in the general form of the deterministic model. - We are <strong>not</strong> looking for the “best” choice out of all possible deterministic models, because we have made an assumption about the form for the deterministic model we are fitting when we wrote down the error term formula. - Fitting different deterministic models to data and then determining which out of all those fitted model “best fits” the data is another question. - How to use the combine information when fitting different deterministic models to data is also another question.</p>
 <p>Important Note: When we use the term “best” in mathematics we have to define precisely what we mean by “best” before we can use the tools of optimization to find the best thing we have defined. - Best is defined as the <strong>most</strong> “trusted” parameters given our observed sample when using the Maximum Likelihood method. - Best is defined as the <strong>smallest</strong> “collective error” between the observed values in the data and the values predicted from the fitted model.</p>
+<hr>
+<p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.32">Class.32 on byuimath.com</a></em></p>
 
 
 </section>

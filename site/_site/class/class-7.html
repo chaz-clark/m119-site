@@ -269,7 +269,7 @@ window.Quarto = {
   <li><a href="#sum-and-product-notation" id="toc-sum-and-product-notation" class="nav-link" data-scroll-target="#sum-and-product-notation">Sum and Product Notation</a></li>
   <li><a href="#systems-of-equations-videos" id="toc-systems-of-equations-videos" class="nav-link" data-scroll-target="#systems-of-equations-videos">Systems of Equations (videos)</a></li>
   </ul></li>
-  <li><a href="#discusion" id="toc-discusion" class="nav-link" data-scroll-target="#discusion">Discusion</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
   <li><a href="#discussion---project-1-task-2-and-the-example-project." id="toc-discussion---project-1-task-2-and-the-example-project." class="nav-link" data-scroll-target="#discussion---project-1-task-2-and-the-example-project.">Discussion - Project 1 Task 2 and the Example Project.</a></li>
   </ul></li>
   </ul>
@@ -393,8 +393,8 @@ Definition: <strong>Negative</strong> on the interval <span class="math inline">
 <p>Solve each system of equations for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. The variables <span class="math inline">\(a,b,c,d,e,f\)</span> below are constants. - <span class="math inline">\(3x + 2y = -4, -x + 7y = 9\)</span> - <span class="math inline">\(x+2y=3, 4x+5y=6\)</span> - <span class="math inline">\(x+by=3, 4x+5y=6\)</span> - <span class="math inline">\(x+by=c, 4x+5y=6\)</span> - <span class="math inline">\(x+by=c, dx+5y=6\)</span> - <span class="math inline">\(x+by=c, dx+ey=6\)</span> - <span class="math inline">\(x+by=c, dx+ey=f\)</span> - <span class="math inline">\(ax+by=c, dx+ey=f\)</span></p>
 </section>
 </section>
-<section id="discusion" class="level2">
-<h2 class="anchored" data-anchor-id="discusion">Discusion</h2>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <ul>
 <li>Reminder of what the parameters in the general transformation form do. <span class="math display">\[ T(x) = af(b(x-h))+k \]</span></li>
 <li>Let’s think about the general quadratic <span class="math inline">\(f(x) = a_2x^2 + a_1x + a_0\)</span>.
@@ -412,7 +412,7 @@ Definition: <strong>Negative</strong> on the interval <span class="math inline">
 <section id="discussion---project-1-task-2-and-the-example-project." class="level2">
 <h2 class="anchored" data-anchor-id="discussion---project-1-task-2-and-the-example-project.">Discussion - Project 1 Task 2 and the Example Project.</h2>
 <p>If you haven’t yet found the worked examples in Canvas, note that there are examples for a few tasks in the Additional resources module. Here is an example for project 1 task 2, which shows how you can put multiple plots together in the same figure, using the par(mfrow()) command, something required for the task. Note that the example below shows far more plots than are required for the actual tasks.<br>
-- <a href="https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html" class="uri">https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html</a></p>
+- <a href="https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html">Project 1 Task 2 worked example</a></p>
 <p>We’ll spend the rest of class examining the example project’s Task 2. - Open the <a href="../assets/docs/example_project.html" target="_blank">Example Project Instructions</a>, and briefly read Task 2 - Use the Desmos links to explore the three probability density models <span class="math inline">\(f_0\)</span>, <span class="math inline">\(f_1\)</span>, and <span class="math inline">\(f_2\)</span>. - Use the slider to alter the values of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. Discuss how these parameters alter the graph of <span class="math inline">\(f_0\)</span>. - Use the slider to alter the values of <span class="math inline">\(h\)</span> and <span class="math inline">\(a\)</span>. Discuss how these parameters alter the graph of <span class="math inline">\(f_1\)</span>. - Use the slider to alter the values of <span class="math inline">\(h\)</span>, <span class="math inline">\(a\)</span>, and <span class="math inline">\(b\)</span>. Discuss how these parameters alter the graph of <span class="math inline">\(f_2\)</span>.</p>
 <p>We’ll have a discussion in class about what you observed.<br>
 Our goal is to understand enough about the general functions <span class="math inline">\(f_0\)</span>, <span class="math inline">\(f_1\)</span>, and <span class="math inline">\(f_2\)</span> and their parameters to be able to identify specific functions (so specified parameters) of the forms <span class="math inline">\(f_0\)</span>, <span class="math inline">\(f_1\)</span>, and <span class="math inline">\(f_2\)</span> that looks like the density histogram of our light bulb data. The code below will regenerate this histogram for us.</p>
@@ -441,6 +441,8 @@ Our goal is to understand enough about the general functions <span class="math i
 <span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">type=</span><span class="st">'l'</span>,<span class="at">xlim=</span><span class="fu">c</span>(<span class="dv">90</span>,<span class="dv">110</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))</span>
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">'change a=100 (keep b=102)'</span>, <span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+<p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.7">Class.7 on byuimath.com</a></em></p>
 
 
 </section>

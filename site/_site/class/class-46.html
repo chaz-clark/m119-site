@@ -317,16 +317,52 @@ window.Quarto = {
 <li><p>Use your understanding of derivatives to find the indefinite integral <span class="math inline">\(\int e^{3-4x} dx\)</span>. Use Mathematica to check your answer.</p></li>
 <li><p>Match the expressions, equations, or functions in column 1 with descriptions in column 2.</p></li>
 </ol>
-<div class="line-block">Probability expressions/equations/functions | Descriptions |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block"><strong>1.</strong> <span class="math inline">\(f(x) = F'(x)\)</span> where <span class="math inline">\(F(x)\)</span> is the CDF of a continuous random variable | <strong>A.</strong> Cumulative Distribution Function (cdf) |</div>
-<div class="line-block"><strong>2.</strong> <span class="math inline">\(P(a \leq X \leq b) = \int_a^b f(x) dx = F(b) - F(a)\)</span> | <strong>B.</strong> Probability Density Function (pdf) |</div>
-<div class="line-block"><strong>3.</strong> <span class="math inline">\(F(x) = P(X \leq x)\)</span> | <strong>C.</strong> Accumulation Function |</div>
-<div class="line-block"><strong>4.</strong> Given <span class="math inline">\(g(x) \geq 0\)</span>, we compute <span class="math inline">\(\int_{-\infty}^\infty g(x)dx\)</span>. | <strong>D.</strong> Total Area (“of a target” or “under a nonnegative function”) |</div>
-<div class="line-block"><strong>5.</strong> <span class="math inline">\(\int_{-\infty}^x f(s)ds\)</span>. | <strong>E.</strong> Fundamental Theorem of Calculus (FTC) |</div>
-<div class="line-block"><strong>6.</strong> Given <span class="math inline">\(f\)</span> is continuous, then <span class="math inline">\(\diff{}{x}(\int_{-\infty}^x f(t)dt) = f(x)\)</span>. | |</div>
-<div class="line-block"><strong>7.</strong> <span class="math inline">\(\frac{\int_{-\infty}^x R(t)dt}{\int_{-\infty}^\infty R(x)dx}\)</span> where <span class="math inline">\(R\)</span> is nonnegative | |</div>
-<div class="line-block"><strong>8.</strong> Given <span class="math inline">\(h\)</span> is continuous and <span class="math inline">\(H(x) = \int_{-\infty}^x h(t)dt\)</span>, then <span class="math inline">\(H'(x) = h(x)\)</span>. | |</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Probability expressions/equations/functions</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1.</strong> <span class="math inline">\(f(x) = F'(x)\)</span> where <span class="math inline">\(F(x)\)</span> is the CDF of a continuous random variable</td>
+<td><strong>A.</strong> Cumulative Distribution Function (cdf)</td>
+</tr>
+<tr class="even">
+<td><strong>2.</strong> <span class="math inline">\(P(a \leq X \leq b) = \int_a^b f(x) dx = F(b) - F(a)\)</span></td>
+<td><strong>B.</strong> Probability Density Function (pdf)</td>
+</tr>
+<tr class="odd">
+<td><strong>3.</strong> <span class="math inline">\(F(x) = P(X \leq x)\)</span></td>
+<td><strong>C.</strong> Accumulation Function</td>
+</tr>
+<tr class="even">
+<td><strong>4.</strong> Given <span class="math inline">\(g(x) \geq 0\)</span>, we compute <span class="math inline">\(\int_{-\infty}^\infty g(x)dx\)</span>.</td>
+<td><strong>D.</strong> Total Area (“of a target” or “under a nonnegative function”)</td>
+</tr>
+<tr class="odd">
+<td><strong>5.</strong> <span class="math inline">\(\int_{-\infty}^x f(s)ds\)</span>.</td>
+<td><strong>E.</strong> Fundamental Theorem of Calculus (FTC)</td>
+</tr>
+<tr class="even">
+<td><strong>6.</strong> Given <span class="math inline">\(f\)</span> is continuous, then <span class="math inline">\(\diff{}{x}(\int_{-\infty}^x f(t)dt) = f(x)\)</span>.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>7.</strong> <span class="math inline">\(\frac{\int_{-\infty}^x R(t)dt}{\int_{-\infty}^\infty R(x)dx}\)</span> where <span class="math inline">\(R\)</span> is nonnegative</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>8.</strong> Given <span class="math inline">\(h\)</span> is continuous and <span class="math inline">\(H(x) = \int_{-\infty}^x h(t)dt\)</span>, then <span class="math inline">\(H'(x) = h(x)\)</span>.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <details>
 <summary>
 Answers (for matching exercise)
@@ -403,6 +439,8 @@ FullSimplify[D[MyAnswer - MathmaticaAnswer, x] == 0]</code></pre>
 <section id="computing-integrals-with-a-cas-computer-algebra-system" class="level3">
 <h3 class="anchored" data-anchor-id="computing-integrals-with-a-cas-computer-algebra-system">Computing Integrals with a CAS (Computer Algebra System)</h3>
 <p>Calculate each of the following indefinite integrals using Mathematica. When you are writing answers for indefinite integrals, <strong>don’t for get your “+C”</strong>. Along the way, you should encounter some new functions you’ve never seen before. - <span class="math inline">\(\int \frac{5}{x^2 + 25} dx\)</span> - <span class="math inline">\(\int \frac{dx}{x^3 + 4x} = \int \frac{1}{x^3 + 4x} dx\)</span> - <span class="math inline">\(\int \frac{x^2}{2+4x} dx\)</span> - <span class="math inline">\(\int x^2 \ln x dx\)</span> - <span class="math inline">\(\int_{-2}^2 \frac{1}{x^2 + 25} dx\)</span> - <span class="math inline">\(\int_4^6 \frac{3}{32}x^2(x-4) dx\)</span> - <span class="math inline">\(\int_1^2 e^{-x^2} dx\)</span> (After typing this in and getting a wierd answer, try using N[ ] to get an approximate answer.) - <span class="math inline">\(\int \frac{5}{\sqrt{x^2 + 25}} dx\)</span> - <span class="math inline">\(\int_{-2}^2 \frac{5}{\sqrt{x^2 + 25}} dx\)</span></p>
+<hr>
+<p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.46">Class.46 on byuimath.com</a></em></p>
 
 
 </section>
