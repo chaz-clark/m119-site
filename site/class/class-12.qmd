@@ -32,6 +32,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 ### See the Pieces
 For each function given below, identify power functions and operations used to build (or construct) the function.
 1. $f(x) = 7\sqrt[5]{4x-6}$
+
 1. $g(x) = \frac{7x^2 + 42x +63}{3x-5}$
 1. $h(x) = \frac{4}{x-1}$
 
@@ -54,10 +55,13 @@ Now practice using uniroot to solve some of the equations below.
 Remember, we start by defining the function that you wish to equal zero (you might need to subtract), and then use uniroot. 
 If needed, make a plot first to figure out an interval where the zero should appear. 
 1. $3x-5=0$
+
 1. $3x-5=7$
 1. $3x-5=e^{-x}$  (Remember to use exp(-x)) for $e^{-x}$ )
+
 1. $3x-5=\ln(x)$ (Remember to use log(x) for $\ln(x)$). 
 1. $x^2+x-6=0$.  There are two different solutions. See if you can capture both by choosing different lower and upper limits. 
+
 1. $x^2-8x+12=0$.  There are two different solutions. See if you can capture both by choosing different lower and upper limits. 
 
 - What happens when we try to solve something impossible, such as $\frac{1}{x} = 0$.
@@ -149,8 +153,10 @@ lines(x,y5,col=2)
 The code above provides, for each model, a plot of the data along with the model (similar to Task 3) and the line $y=80$ in light gray. As a group, answer the following questions. For some of these questions, you will need to use uniroot. 
 
 1. Use the model $f_4$ to answer the question, What is the intensity of the bulb after 12000 hours?
+
 1. Use the model $f_3$ to answer the question, When is the intensity of the bulb 90% of its original intensity?
 1. Use the model $f_2$ to answer the question, When is the intensity of the bulb 97% of its original intensity?
+
 1. Use the model $f_5$ to answer the question, When is the intensity of the bulb 95% of its original intensity?
 1. Use the model $f_5$ to answer the question, What is the intensity of the bulb after 25000 hours?
 

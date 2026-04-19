@@ -14,13 +14,14 @@ The base has area $x^2$. Letting $h$ be the height of the box, the volume of the
 </details>
 
 1.  Use R to plot the function above, and then guess the maximum possible volume along with the dimensions that correspond to this volume.
+
 1. Compute the derivative of the function above, and use it to find the maximum possible volume.
 
 ## Group Meeting 
 Start by giving each person a moment to share what they chose to prepare for class. Help each other address any questions.  When each person has had a chance to share, move on the other activities.
 
 ### Activity - Comparing Solutions
-Our goal today is to dig into the derivative relationships and associated vocabulary. Your assignment before class was to fill in as many of the blanks, as possible, from the [Derivative Relationships worksheet (PDF)](../assets/docs/DerivativeRelationship_FillBlank.pdf){target="_blank"}. Compare your answers, discuss any questions, and have a scribe write your solutions on the board (so you can compare with other groups).
+Our goal today is to dig into the derivative relationships and associated vocabulary. Your assignment before class was to fill in as many of the blanks, as possible, from <../assets/docs/DerivativeRelationship_FillBlank.pdf.> Compare your answers, discuss any questions, and have a scribe write your solutions on the board (so you can compare with other groups).
 
 You may need some of definitions, theorem, or tests below as you complete the next activity. Take a moment to open each item and review it.
 #### Theorems - Tests - Definitions
@@ -142,14 +143,19 @@ To help us understand derivative relationships and associated vocabulary, let's 
 At the chalk boards, take turns providing a rough sketch of a function with the properties listed (also sketch the derivative and/or second derivative if this helps you make sense of the properties).
 Number your graphs, keep them small-ish, and try to fill your board with examples that we can compare with others. Use the information above for reference. 
 1. $f$ is increasing and concave up for all $x$.
+
 1. $f$ so that $f'(x) > 0$ and $f''(x)<0$ for all $x$.
 1. $f$ has an inflection point at $x=4$.
+
 1. $f$ has a horizontal tangent line when $x=3$.
 1. $f$ so that $f'=0$ for all $x$.
+
 1. $f$ so that $f'=0$ and $f''>0$ at $x=-2$.
 1. $f$ is decreasing and concave down on the interval $ (-3,5) $.
+
 1. $f$ so that $f'$ has at least one change of sign and is always defined.
 1. $f$ so that $f'=0$ and $f''<0$ at $x=1$.
+
 1. $f$ so that -$f$ is concave down everywhere.
 
 When you finish, work on [this worksheet](../assets/docs/GraphingUsingSigns.pdf){target="_blank"} together (remember to take turns).
@@ -162,7 +168,7 @@ Last time we worked on a ElvesRUs loglikelihood (full problem statement included
 
 Today let's compute the following second partial derivatives: $\frac{\partial^2\ell}{\partial A^2}$, $\frac{\partial^2 \ell}{\partial b \partial A}$, $\frac{\partial^2 \ell}{\partial k \partial A}$, $\frac{\partial^2 \ell}{\partial A \partial b}$, $\frac{\partial^2\ell}{\partial b^2}$, and $\frac{\partial^2 \ell}{\partial k \partial b}$ Is this all the partials? (No!)
 Turn back in your notes (or use the following link) to get the first partials.
-[Elves-R-Us loglikelihood derivatives (PDF)](../assets/docs/ElvesRUs-loglikelihood-derivatives.pdf){target="_blank"}
+<../assets/docs/ElvesRUs-loglikelihood-derivatives.pdf>
 
 <details>
 <summary>Answers</summary>

@@ -44,9 +44,10 @@ c_{1,1}x + c_{1,2}y - b_1 &= 0 \\
 c_{2,1}x + c_{2,2}y - b_2 &= 0
 \end{align*} 
 
-```r
+```
 Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y - b2 == 0}, {x, y}]
-@](:codemend:)
+```
+
 When solving this by hand, here's what we obtained.  
 - $y = \frac{c_{1,1}b_2 - c_{2,1}b_1}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
 - $x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1.2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
@@ -57,7 +58,7 @@ When solving this by hand, here's what we obtained.
 The solutions are the same, though you'll have to distribute the negative into the denominator of the Mathematica solution to get the same solution as we got by hand. 
 
 As reminder, here's the R code we've been using to get the solution.  
-(:code:)
+
 ```r
 c11 <- 
 c12 <- 
@@ -77,10 +78,9 @@ sol
 
 In Mathematica, sometimes we will have to make assumptions before we compute something (like assuming a parameter is positive). Here's an example that assumes the denominator is not zero. 
 
-```r
+```
 Assuming[c11 c22 - c21 c12 != 0, Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y - b2 == 0}, {x, y}]]
 ```
-(:codemend:)
 
 </details>
 
@@ -88,7 +88,8 @@ Assuming[c11 c22 - c21 c12 != 0, Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y -
  
 ### Activity - Compare loglikelihood and least squares
 Start by reading in the data below.
-(:code:)[@
+
+```r
 rm(list=ls())
 data <- read.csv(url("https://chaz-clark.github.io/M119/data4_ls.csv"))
 x <- data$x
@@ -98,6 +99,7 @@ y <- data$y
 Consider the model $f(x; a) = a e^x$. We will fit this model to our data.
 Work with your group on the chalkboard to obtain the best fit parameters for this model using both 
 1. the maximum likelihood method, and
+
 1. least squares. 
 
 #### Using the Maximum Likelihood Method
@@ -116,6 +118,7 @@ Note the sum of squared errors of $f$ is $$S(a; \mathbf{x},\mathbf{y}) = \sum_{i
 #### Answer questions with the Model
 Once you have your model, you can use it to answer questions.  
 1. What is $f(4)$, the value predicted by the model at $x=4$. 
+
 1. Find $x$ so that $f(x) = 5$. 
 
 <details>
@@ -123,6 +126,7 @@ Once you have your model, you can use it to answer questions.
 
 Using $f(x) = 3.187972 e^x$, we have
 1. $f(4) = 174.0574$
+
 1. uniroot yields about $x = 0.45$.
 
 ```r

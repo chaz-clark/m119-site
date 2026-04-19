@@ -53,10 +53,10 @@ Df(1) #Uniroot gives approximates, so we may need to round.
 
 We now evaluate the second derivative at the critical value to determine if $f''$ is positive or negative at the critical value. This tells us the concavity at the critical value, which let's us quickly state whether there is a local maximum, or local minimum, at the critical value using the second derivative test. 
 
-```r
+```
 D2f(1)
 D2f(cv)
-1. OR
+#OR
 -2*exp(-1) + 1*exp(-1)
 ```
 
@@ -171,7 +171,7 @@ D2g(cv)
 
 Let's use our custom my_plot function to graph $g$ along with the critical value and maximum. 
 
-```
+```r
 my_plot(g,-2,2)
 points(cv,g(cv))
 ```
@@ -210,14 +210,14 @@ D2h <- function(x){6*x}
 
 Let's plot the function. Update the bounds if needed.
 
-```
+```r
 my_plot(h,-2,2)
 ```
 
 There appear to be two spots where there is a horizontal tangent line. Let's locate them visually first.  
 We can graph the first derivative, as well as $y=0$, to visually see the two critical points. 
 
-```
+```r
 my_plot(Dh,-2,2)
 abline(h=0)
 ```
@@ -257,7 +257,7 @@ This is almost the same as the previous problem, except that now the function's 
 
 We can use R to graph $h$ on $ [-1, 2] $. 
 
-```
+```r
 my_plot(h,-1,2)
 ```
 
@@ -291,12 +291,15 @@ We see there is an absolute maximum of 6 at $x=2$, $h(2)=6$. We see there is an 
 We'll spend the day working through various parts of Project 2. The work below was part of the prep for today. It's crucial, so we'll work through it together. The point is to help each other by asking and answering questions. We'll focus on the first model $f_1(t; a_1) = 100 + a_1t$. 
 
 1. Assume the errors are independent and normally distributed (with mean of 0 and standard deviation of 1). Assume $(t_i,y_i)$ is a list of 44 data points to be provided. Show that the loglikelihood function for the errors when fitting $f_1$ to the 44 data points is $$ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2.$$  This was part of Task 1, so please revisit the computation together. 
+
 1. Compute the first derivative of $\ell_1$ with respect to $a_1$ and show that it can be written in the form $$\frac{d\ell_1}{da_1} = \left(\sum_{i=1}^{44} t_i(y_i-100)\right) - \left(\sum_{i=1}^{44} t_i^2\right) a_1.$$
 1. Compute the second derivative of $\ell_1$ with respect to $a_1$ and show that it can be written in the form $$\frac{d^2\ell_1}{da_1^2} = -\sum_{i=1}^{44} t_i^2.$$
+
 1. Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Use the sum function.) Check that you obtain the following:
     - $ \frac{d\ell_1}{da_1} = 172746.8 - 328767530 a_1 $
     - $ \frac{d^2\ell_1}{da_1^2} = -328767530 $
 1. Find the critical points of $\ell_1$, so set the first derivative equal to zero and solve. 
+
 1. Use the second derivative test to determine if the critical points are locations of maxima or minima.
 1. State the value of $a_1$ that gives the location of maximum loglikelihood.
     - Note: This is the same value that give the location maximum likelihood.

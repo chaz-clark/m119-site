@@ -8,11 +8,11 @@ title: "Class 36"
 <summary>Code chunks from Rectangles, Targets, and Sums</summary>
 
 ```r
-1. Shades a target diagram for a probability mass function. 
-1. Inputs: 
-1. x - a vector of data points
-1. p - a corresponding vector of probabilities or frequencies
-1. All widths are 1 unit wide. 
+#Shades a target diagram for a probability mass function. 
+#Inputs: 
+#  x - a vector of data points
+#  p - a corresponding vector of probabilities or frequencies
+#All widths are 1 unit wide. 
 draw_pmf <- function(x,p){
   xs <- c(rbind(x-1/2,x-1/2,x+1/2,x+1/2))
   px <- c(rbind(0,p,p,0))
@@ -22,12 +22,12 @@ draw_pmf <- function(x,p){
   polygon(xs,px,col="gray")
 }
 
-1. Shades a target diagram (shades area under) for a function f from a to b. 
-1. Inputs: 
-1. f - a function f(x)
-1. a - left end of the target
-1. b - right end of the target
-1. num_points - how many point are sent into f for plotting. 
+#Shades a target diagram (shades area under) for a function f from a to b. 
+#Inputs: 
+#  f - a function f(x)
+#  a - left end of the target
+#  b - right end of the target
+#  num_points - how many point are sent into f for plotting. 
 draw_target <- function(f,a,b,num_points=100){
   x <- c(a,seq(a,b,(b-a)/num_points),b,a)
   y <- c(0,f(seq(a,b,(b-a)/num_points)),0,0)
@@ -36,13 +36,13 @@ draw_target <- function(f,a,b,num_points=100){
   polygon(x,y,col="gray")
 }
 
-1. Draws rectangles over the top of a given function.
-1. The midpoint of top of each rectangle passes through the function. 
-1. f - a function f(x)
-1. a - left end of graph
-1. b - right end of graph
-1. num_rectangles - how many rectangles to plot.
-1. method - One of "left", "right", or "mid".  Defaults to mid.
+#Draws rectangles over the top of a given function.
+#The midpoint of top of each rectangle passes through the function. 
+#  f - a function f(x)
+#  a - left end of graph
+#  b - right end of graph
+#  num_rectangles - how many rectangles to plot.
+#  method - One of "left", "right", or "mid".  Defaults to mid.
 draw_rect_approx <- function(f,a,b,num_rectangles, method = "mid"){
   n <- num_rectangles
   dx <- (b-a)/n
@@ -189,7 +189,7 @@ n <- 10
 dx <- (b-a)/n
 draw_rect_approx(g,a,b,n) 
 
-1. Start at half of dx to the right of a, and then step by dx.
+#Start at half of dx to the right of a, and then step by dx.
 xi <- seq(a+dx/2,b,dx)
 points(xi,g(xi),pch=16,col=2)
 segments(xi,rep(0,length(xi)),xi,g(xi),col=2)
@@ -203,7 +203,7 @@ sum(Ai)
 ```r
 draw_rect_approx(g,a,b,n,method='left') 
 
-1. Start a, and then step by dx.
+#Start a, and then step by dx.
 xi <- seq(a,b-dx,dx)
 points(xi,g(xi),pch=16,col=2)
 segments(xi,rep(0,length(xi)),xi,g(xi),col=2)
@@ -217,7 +217,7 @@ sum(Ai)
 ```r
 draw_rect_approx(g,a,b,n,method='right') 
 
-1. Start a plus dx, and then step by dx.
+#Start a plus dx, and then step by dx.
 xi <- seq(a+dx,b,dx)
 points(xi,g(xi),pch=16,col=2)
 segments(xi,rep(0,length(xi)),xi,g(xi),col=2)
@@ -236,11 +236,11 @@ b <- 2
 n <- 10
 dx <- (b-a)/n
 
-1. Mid: Start at half of dx to the right of a, and then step by dx.
+#Mid: Start at half of dx to the right of a, and then step by dx.
 xi.m <- seq(a+dx/2,b,dx)
-1. Left: Start a, and then step by dx.
+#Left: Start a, and then step by dx.
 xi.L <- seq(a,b-dx,dx)
-1. Start a plus dx, and then step by dx.
+#Start a plus dx, and then step by dx.
 xi.R <- seq(a+dx,b,dx)
 
 Ai.m <- g(xi.m)*dx
@@ -274,9 +274,9 @@ provided the limit exists. If the limit exists, we say that $f$ is integrable on
 - Compute $\int_{-1}^{2} 4 - x^2 dx$ using Mathematica.
 *(Remember to use shift + enter to run the command in Mathematica.)*
 
-```r
+```
 Integrate[4-x^2,{x,-1,2}]
-@](:codemend:)
+```
 
 - Is $g$ the PDF of some random variable? If so, explain. If not, then find a value $k$ so that $f(x) = k g(x)$ is the PDF of some random variable. 
 
@@ -296,7 +296,7 @@ The function $g$ is nonnegative, but the area under $g$ and above the $x$-axis i
 <summary>Solution</summary>
 
 We can use the formula $\frac{\sum{x_iA_i}}{\sum{A_i}} = \frac{\sum{x_if(x_i)dx}}{\sum{f(x_i)dx}}$ from Section 1.2 to compute the expected value, which is done below. 
-(:code:)
+
 ```r
 f <- function(x){(1/2)*(x-1)}
 a <- 1
@@ -320,10 +320,9 @@ sum(xi*Ai)/sum(Ai)
 - Compute exactly the limit of this Riemann sum (the definite integral) using Mathematica.
 *(Remember to use shift + enter to run the command in Mathematica.)*
 
-```r
+```
 Integrate[(1/2)*(x-1)*x,{x,1,3}]
 ```
-(:codemend:)
 
 ### Practice with identifying PDFs
 Work on the chalkboard as you complete these problems, and pass the chalk as you finish each one. Leave up your work so that you can compare your answers with your neighbors. If you notice an answer differs from a neighboring group's, then have a discussion with them.
@@ -334,7 +333,8 @@ $f(x) =
 x & \quad 0 \leq x \leq 3 \\ \\
 0 & \text{otherwise}.
 \end{cases}$
-(:code:)[@
+
+```r
 f <- function(x){x}
 draw_target(f,0,3)
 ```

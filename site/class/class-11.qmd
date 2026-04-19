@@ -5,8 +5,10 @@ title: "Class 11"
 # During Class - Day 11
 ## Brain Gains
 1. Suppose $f(x;a,b) = a e^{b x}$. If $f(0)=7$, then what must $a$ equal?
+
 1. Suppose $f(x;a,b) = a+b e^{x}$. If $f(0)=7$, then what must $a$ equal?
 1. Use uniroot to solve for $x$ in $7 = 5+3 e^{2 x}$. Check your solution by finding the exact solution, if possible.
+
 1. Use uniroot to solve for $x$ in $(-13 + 2x)e^{-0.05x} = 0$. Check your solution by finding the exact solution, if possible.
     - Use uniroot to solve for $x$ in $(-13 + 2x)e^{-0.05x} = 5$. Check your solution by finding the exact solution, if possible.
 
@@ -45,7 +47,7 @@ f0 <- function(x,a=0,b=1){
   ifelse((a < x) & (x < b), 1/(b-a) + 0*x[(a < x) & (x < b)],NaN)
 }
 
-1. Change these values as needed to compare plots. 
+#Change these values as needed to compare plots. 
 a1 <- 92
 a2 <- 98
 
@@ -140,7 +142,7 @@ lines(x,yM,col=2)
 
 3. What story does the data tell at time 0? Does the story told by the model match the information from the data at time 0?  
 
-4. Update the parameters above to obtain a visual fit that satisfies $f_1(0)=100$.  Then use the https://shiny.byui.edu/connect/#/apps/0d605bec-7069-4d67-8129-8716269e8816/access to check your work. 
+4. Update the parameters above to obtain a visual fit that satisfies $f_1(0)=100$.  Then use the <https://shiny.byui.edu/connect/#/apps/0d605bec-7069-4d67-8129-8716269e8816/access> to check your work. 
 
 5. Using the seed 123, adapt the code above to provide a good fit for model $f_4$. By using the same seed, you can compare your plots and work together to find reasonable values for each parameter. When you complete the project, you'll need to change the seed to yours, and then make some minor modifications to your parameters. 
 

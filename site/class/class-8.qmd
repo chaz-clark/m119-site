@@ -41,16 +41,16 @@ plot(x,f(x),type = "l")
 
 The function $e^{ ( ) }$ in R is given using the exp() function. 
 
-```r
+```
 exp(2)
-1. 7.389056
+#7.389056
 ```
 
 What is $e$? It's a number. 
 
-```r
+```
 exp(1)
-1. 2.718282
+#2.718282
 ```
 
 The number arises from calculus, and we'll see in a few weeks why $e$ is special.
@@ -141,7 +141,7 @@ hist(dist$percent_intensity,probability = TRUE)
 - For each of the 3 functions, use the sliders in Desmos to try and pick reasonable values for the parameters to provide a reasonable visual fit to the probability histogram. 
 
 #### Summary Plots
-We'll spend some time today in class discussing the ../assets/docs/example_project.html. Here's a quick snippet of code to draw the histogram representing the percent intensity of 202 bulbs after about 2100 hours.  
+We'll spend some time today in class discussing the <../assets/docs/example_project.html.> Here's a quick snippet of code to draw the histogram representing the percent intensity of 202 bulbs after about 2100 hours.  
 
 ```r
 library(data4led)
@@ -192,19 +192,19 @@ mtext('change a= (keep b=)', side = 3, line = 0)@]
 (:codeend:)
 
 Now let's look at the second model $f_1$. 
-- What did you notice about the general model $f_1$ and its parameters?
-    - What is the domain of $f_1$?
-    - What does $h$ do?
-    - What does $a$ do?
-    - Try to pick some values for the parameters that provide a visual fit to the data. 
-    - What story does this model tell, in the context of percent intensities of light bulbs?
+* What did you notice about the general model $f_1$ and its parameters?
+** What is the domain of $f_1$?
+** What does $h$ do?
+** What does $a$ do?
+** Try to pick some values for the parameters that provide a visual fit to the data. 
+** What story does this model tell, in the context of percent intensities of light bulbs?
 
 Let's summarize our observations with a few plots.
 Run this code in your Console to plot representative curves for the parameter $h$ in function $f_1$.
 (:code:)[@
 rm(list=ls())
 f1 <- function(L,h=0,a=1){
-1. Make sure h > 0 and a > 0.
+#Make sure h > 0 and a > 0.
 1/sqrt(2*pi*a)*exp(-(L-h)^2/(2*a))
 }
 
@@ -255,7 +255,7 @@ Run this code in your Console to plot representative curves for the parameter $h
 ```r
 rm(list=ls())
 f2 <- function(L,h=0,a=1,b=5){
-1. Make sure a > 0 and b > 0.
+# Make sure a > 0 and b > 0.
 
 out <- rep(-1,length(L))
 out[(L < h)] <- 0*L[(L < h)]

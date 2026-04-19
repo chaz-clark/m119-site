@@ -33,16 +33,20 @@ p(20,5,10)
   <li>$2^x=8$</li>
 </ol>
 1. $2^x = \frac{1}{16}$
+
 1. $2^x = 17$
 1. $e^x = 1$
+
 1. $e^x = 2$
 
 <details>
 <summary>Solutions</summary>
 
 1. Because $2^3=8$, we know $x=3$.
+
 1. Because $2^{-4}=\frac{1}{16}$, we know $x=-4$.
 1. This one isn't guessable.  We know $2^4=16$ and $2^5=32$, so we know $4<x<5$. How do we get the solution?  This is what logarithms are for.  We'll discuss a guessing approach in class, and then define logarithms as the way to tell the computer to preform this guessing approach.  We can rewrite the exponential form $2^x = 17$  in the log form $x = \log_2(17)$, which is the solution. 
+
 1. Anything nonzero, raised to the zero, is 1, so the solution is $x=0$. 
 1. Rewriting in log form gives us $\log_e(2)=x$.  We use $\ln$ as shorthand for $\log_e$. 
 

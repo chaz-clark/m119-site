@@ -37,12 +37,16 @@ An **antiderivative** is a function that reverses what the derivative did, the r
 Drawing on your knowledge of derivatives, for each expression below, please "undo" the derivative. 
 In other words answer the question, "What function did we take the derivative of to get this function?"
 1. $3x^2$
+
 1. $4e^{x}$
 1. $4e^{4x}$
+
 1. $5x^{-2}$
 1. $x^{-3} + x - 1$
+
 1. $x^7 - 4x + 2$
 1. $\sqrt[7]{x} + \frac{1}{\sqrt[7]{x}}$
+
 1. $x^{-1}$
 
 ### Fundamental Theorem of Calculus
@@ -55,10 +59,13 @@ Combining the above facts, we see that $ \int_a^b f(x) dx = F(b) - F(a) $ provid
 
 Compute each definite integral in 2 ways, namely (1) use Mathematica and then (2) find an antiderivative $G$ of the integrand $g$ and then evaluate $G(b)-G(a)$. Show your work for the second part on the chalkboard. 
 1. Compute $\int_1^4 5 dx$.
+
 1. Compute $\int_1^4 x dx$.
 1. Compute $\int_1^4 x^2 dx$.
+
 1. Compute $\int_1^4 e^{-2x} dx$.
 1. Compute $\int_0^5 e^{-7x} dx$.
+
 1. Compute $\int_2^5 \frac{1}{x} dx$.
 1. Compute $\int_1^2 4-2x+3x^2 dx$.
 

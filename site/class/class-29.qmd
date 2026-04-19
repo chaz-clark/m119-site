@@ -90,7 +90,7 @@ $$\ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\righ
 \right.$$ Feel free to appropriately adapt the code below. 
 
 ```r
-1. Make sure you've loaded the data from above. 
+# Make sure you've loaded the data from above. 
 
 c11 <- 
 c12 <- 
@@ -99,12 +99,12 @@ c21 <-
 c22 <- 
 b2 <- 
 
-1. Create a function to solve a system of equations. 
+# Create a function to solve a system of equations. 
 solvesystem <- function(c11, c12,b1,c21,c22,b2){ 
   c((b1*c22 - c12*b2)/(c11*c22 - c21*c12),
     (c11*b2 - b1*c21)/(c11*c22 - c21*c12))
 }
-1. Check the function. The solution to 2x+3y=4, 5x+6y=7 is simple. 
+# Check the function. The solution to 2x+3y=4, 5x+6y=7 is simple. 
 solvesystem(2,3,4,5,6,7)
 
 sol <- solvesystem(c11, c12, b1, c21, c22, b2)
@@ -208,13 +208,16 @@ abline(h=80,v=burnouttime)
 ## Group Meeting
 
 ### Activity - Maximum likelihood Method for $f_6$
-Work through the computations of the maximum likelihood method for $f_6$. As you work, you can check how you are doing by comparing your work to the complete solution for $f_6$ provided under https://tinyurl.com/4c5bxady.
+Work through the computations of the maximum likelihood method for $f_6$. As you work, you can check how you are doing by comparing your work to the complete solution for $f_6$ provided under <https://tinyurl.com/4c5bxady.>
  
 1. Consider the model $f_6(t; a_1, a_2)$. Assuming the residuals follow a standard normal distribution (so the probability model is given by $g(r) = \frac{1}{\sqrt{2\pi}}e^{-r^2/2}$, state the loglikelihood function for $f_6$. Discuss any questions. This was part of Project 2 Task 1. 
+
 1. Obtain the partial derivatives of $\ell_6$. Discuss any questions. This was part of Project 2 Task 2. 
 1. Obtain the second partial derivatives of $\ell_6$. Discuss any questions. This was part of Project 2 Task 2. 
+
 1. To find the critical points of $\ell_6$, write the system of equations you will need to solve. Give names to all the coefficients and organize your work so that you can use `solvesystem` function.
 1. Find the critical points of $\ell_6$. So that you can compare results, use seed 123 for all remaining parts of this activity. 
+
 1. Use the second derivative test to show that the critical point does indeed correspond to maximum likelihood. 
 1. Use what we have done above to state the fitted model, with the maximum likelihood parameters. Then plot the data along with the model on the same viewing window to verify that we have indeed found a reasonable fit. 
 

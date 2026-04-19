@@ -56,8 +56,10 @@ If $f$ is continuous over the interval $ [ a, b ] $ and $F(x)$ is any antideriva
     1. Verify that $\int_1^5 f(x) dx = F(5)-F(1)$.
 
 1. Let $F(x) = \int_2^x \ln(t^4+5)\frac{3}{\ln(t^5)}dt$.  Compute $F'(x)$. (Check part 1 of the FTC if needed). 
+
 1. Let $G(x) = \int_0^x \sqrt{5+e^{3t}}dt$.  Compute $G'(x)$. (Check part 1 of the FTC if needed). 
 1. Let $h(x) = x^3$.  Find an antiderivative of $h$, and then use that antiderivative to compute $\int_1^2 x^3dx$. Check your answer with Mathematica. 
+
 1. Compute $\int \frac{2}{t^2} dt = \int 2t^{-2} dt$. (In other words find the collection of all antiderivatives of $\frac{2}{t^2}$.)
 1. Compute $\int_1^2 \frac{2}{t^2} dt$.
 
@@ -102,6 +104,7 @@ If $f$ is continuous over the interval $ [ a, b ] $ and $F(x)$ is any antideriva
 <summary>Finding a CDF</summary>
 
 1. Calculate $F(x) = P(X \leq x) = \frac{1}{\int_{-\infty}^\infty g(x) dx}\int_{-\infty}^x g(t)dt$.
+
 1. Find the PDF, $f(x)$, and undo the derivative to find $F(x)$.
     - $F(x) = \int_{-\infty}^x f(s)ds$
       - Normalize a nonnegative function so the total area is one to find the PDF, e.g. $f(x) = \frac{1}{\int_{-\infty}^\infty g(x) dx}g(x) = kg(x)$.

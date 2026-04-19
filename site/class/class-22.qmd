@@ -26,7 +26,7 @@ Let's look at an example that includes the chain rule. Consider the function $S(
 
 2.
 Use the information about $f$ and $f'$ in the table and $g$ to find each of the following values.
- http://byuimath.com/bmw/all/119/uploads/Class/chain_rule_exercise.png
+ <http://byuimath.com/bmw/all/119/uploads/Class/chain_rule_exercise.png>
 
     - Given $h(x) = g(f(x))$, find $h'(3)$.
     - Given $k(x) = f(g(x))$, find $k'(1)$.
@@ -71,14 +71,18 @@ Start by giving each person a moment to share what they chose to prepare for cla
 ### Activity - Chain Rule Practice
 For each function $g(x)$, identify two functions $f(u)$ and $u(x)$ so that $g(x) = f(u(x))$ and  then compute $\frac{dg}{dx} = \frac{df}{du}\frac{du}{dx}$. 
 1. $g(x) = (x^2-3)^4$
+
 1. $g(x) = \ln(4x+3)$
 1. $g(x) = e^{4x+3}$
+
 1. $g(x) = (x^3+\ln x)^2$
 1. $g(x) = \ln (e^{2x} + 1)$
+
 1. $g(x) = e^{4\ln{5x}+3}$
 
 ### Activity - Partial Derivatives with the Chain Rule
 1. Given $S(x, y; a, b) = 3(ax + by)^{-3}$, find $\diff{S}{x}$ assuming all other variables and parameters are constant then find $\diff{S}{y}$ assuming all other variables and parameters are constant. (Yes, these are long-winded ways of saying compute  $\frac{\partial S}{\partial x}$ and  $\frac{\partial S}{\partial y}$.)
+
 1. Given $g(a_1, a_2; \textbf{x},\textbf{y}) = \sum_{i=1}^{7} \sqrt{a_1x_i + a_2y_i}$, find $\frac{\partial g}{\partial a_1}$ and $\frac{\partial g}{\partial a_2}$.
 1. Given $h(x, y; \textbf{a}, \textbf{b}) = \sum_{i=1}^{21} 3(a_ix + b_iy)^{-3}$, find $\frac{\partial h}{\partial x}$ and $\frac{\partial h}{\partial y}$.
 
@@ -86,20 +90,20 @@ For each function $g(x)$, identify two functions $f(u)$ and $u(x)$ so that $g(x)
 <summary>Answer</summary>
 
 1. We have $\frac{\partial S}{\partial x}(x, y; a, b) = -9a(ax + by)^{-4}$ and $\frac{\partial S}{\partial y}(x, y; a, b) = -9b(ax + by)^{-4}$.
+
 1. We find $\frac{\partial g}{\partial a_1} = \sum_{i=1}^7 \frac{x_i}{2\sqrt{a_1x_i + a_2y_i}}$ and $\frac{\partial g}{\partial a_2} = \sum_{i=1}^7 \frac{y_i}{2\sqrt{a_1x_i + a_2y_i}}$.
 1. We compute $\frac{\partial h}{\partial x} = \sum_{i=1}^{21} -9a_i(a_ix + b_iy)^{-4}$ and $\frac{\partial h}{\partial y} = \sum_{i=1}^{21} -9b_i(a_ix + b_iy)^{-4}$
 
 </details>
 
 ### Activity - Graphing a Second Derivative
-For the function below, graph the first and second derivative.
-
-![](../assets/uploads/Class/Second-Derivative-Exercise.png)
+For the function below, graph the first and second derivative. 
+<https://byuimath.com/bmw/all/119/uploads/Class/Second-Derivative-Exercise.png>
 
 <details>
 <summary>Solution</summary>
 
-See [solution in Desmos](https://www.desmos.com/calculator/nrd4njagea){target="_blank"}.
+See <https://www.desmos.com/calculator/nrd4njagea.>
 
 </details>
 
@@ -122,17 +126,24 @@ For each pair of functions $f(x)$ and $g(x)$ below, write out the compositions $
 Then compute the derivative of each composite function. As a suggestion, compute both $f'(x)$ and $g'(x)$ first, and then show how you can combine $f,g,f',g'$ to get the derivative of each composite function.  
 Remember to pass the chalk between each problem. 
 1. $f(x) = 3x + 4$, $g(x) = x^2 + 1$
+
 1. $f(x) = e^x$, $g(x) = \sqrt{2x-5}$
 1. $f(x) = \frac{1}{x}$, $g(x) = 2\ln(x)$
+
 1. $f(x) = (x-5)^4$, $g(x) = \sqrt[3]{x^2}$
 1. $f(x) = e^{3x}$, $g(x) = x^4 - 1$
+
 1. $f(x) = \frac{x}{x-3}$, $g(x) = \ln(5x)$
 1. $f(x) = 2x^3 - 10x^2 + 2x$, $g(x) = \sqrt{\frac{x-4}{2}}$
+
 1. $f(x) = \frac{1}{x^5}$, $g(x) = 4e^x$
 1. $f(x) = \sqrt{8-x}$, $g(x) = (2x-1)(x+5)$
+
 1. $f(x) = e^{x/2}$, $g(x) = 5x^3$
 1. $f(x) = 1 - \frac{3}{x^4}$, $g(x) = 2 - \sqrt{x}$
+
 1. $f(x) = \frac{3}{x^2}$, $g(x) = \ln(x)$
 1. $f(x) = 27 - x^3$, $g(x) = x^2 - x - 12$
+
 1. $f(x) = \sqrt[3]{4-x^2}$, $g(x) = 5x + 7$
 1. $f(x) = \frac{x+1}{x-2}$, $g(x) = e^{-x}$

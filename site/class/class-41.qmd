@@ -26,17 +26,18 @@ These problems are a continuation from what we did last time in groups.
 
 2. 
 Let $g(x) = \begin{cases}e^{-\lambda x} & x \geq 0\\ 0 & \text{otherwise}\end{cases}$ with $\lambda >0$. In Mathematica, the following code tells the computer that $\lambda$ is positive, which will simplifies the output quite a bit. 
-(:codem:)
+
 ```
 g = Exp[-\[Lambda] x]
 $Assumptions = \[Lambda] > 0
 ```
-(:codemend:)
+
 <ol type="a">
   <li>Find $k$ so that $f(x) = k g(x)$ is a PDF for a random variable $X$. We call this an exponential random variable. </li>
 </ol>
 
 1. Write down the definite integrals that give the expected value and variance of $X$. Then use Mathematica to compute the expected value and variance of $X$.
+
 1. Write down the definite integral that gives $F(x)$, the cumulative distribution function for $X$. Then use Mathematica to compute $F(x)$ for $x\geq 0$.
 1. By hand, compute $F'(x)$ and compare it to $f(x)$.  
 
@@ -71,7 +72,7 @@ Let $g(x) = \begin{cases}3 & -2 \leq x < 1\\ 5 & 1 \leq x \leq 5\\ 0 & \text{oth
 <summary>Solution</summary>
 
 We can use piecewise function notation in Mathematica. Here is an example. We need the assumptions command that $x$ is a real number to compute the CDF $F$ and actually have Mathematica do the integral. 
-(:codem:)
+
 ```
 $Assumptions = x \[Element] Reals
 g = Piecewise[{{3, -2 <= x && x < 1}, {5, 1 <= x <= 5}, {0, True}}]
@@ -85,7 +86,6 @@ Var = Integrate[(x - EV)^2 f, {x, -Infinity, Infinity}]
 F = Integrate[ f, {x, -Infinity, x}]
 D[F, x]
 ```
-(:codemend:)
 
 </details>
 

@@ -15,11 +15,11 @@ $$f(x) = \begin{cases}
 The code below constructs a graphical representation of this pmf. 
 
 ```r
-1. Shades a target diagram for a probability mass function. 
-1. Inputs: 
-1. x - a vector of data points
-1. p - a corresponding vector of probabilities or frequencies
-1. All widths are 1 unit wide. 
+#Shades a target diagram for a probability mass function. 
+#Inputs: 
+#  x - a vector of data points
+#  p - a corresponding vector of probabilities or frequencies
+#All widths are 1 unit wide. 
 draw_pmf <- function(x,p){
   xs <- c(rbind(x-1/2,x-1/2,x+1/2,x+1/2))
   px <- c(rbind(0,p,p,0))
@@ -35,6 +35,7 @@ draw_pmf(x,p)
 ```
 
 1. Estimate the $x$-coordinate of the geometric center of the target. In particular, is it above or below 2.5?
+
 1. Compute $E[X]$, the expected value of $X$. 
 1. Interpret the expected value by writing a sentence that explain what this value means. 
 
@@ -49,12 +50,12 @@ Work on the chalkboard as you complete these problems, and pass the chalk as you
 Let's suppose for a minute that we have a target, as shown using the code below.
 
 ```r
-1. Shades a target diagram (shades area under) for a function f from a to b. 
-1. Inputs: 
-1. f - a function f(x)
-1. a - left end of the target
-1. b - right end of the target
-1. num_points - how many point are sent into f for plotting. 
+#Shades a target diagram (shades area under) for a function f from a to b. 
+#Inputs: 
+#  f - a function f(x)
+#  a - left end of the target
+#  b - right end of the target
+#  num_points - how many point are sent into f for plotting. 
 draw_target <- function(f,a,b,num_points=100){
   x <- c(a,seq(a,b,(b-a)/num_points),b,a)
   y <- c(0,f(seq(a,b,(b-a)/num_points)),0,0)
@@ -78,6 +79,7 @@ $$g(x) =
 0 & \quad \text{otherwise}.
 \end{cases}.$$
 1. Find the total area of the target. 
+
 1. Compute the probability that a dart will land with an $x$ coordinate at most 4, so compute $P(X\leq 4)$. 
 1. Recall that the cumulative distribution function of $X$ is the function $F(x)= P(X\leq x)$.  Above we computed $F(4)$. 
     - Compute $F(1)$, so compute $P(X\leq 1)$.
@@ -87,6 +89,7 @@ $$g(x) =
     - Compute $F(10)$.  
     - Compute $F(-3)$.  
 1. Obtain a formula that gives $F(x)$ for any real number $x$. You can check work work in the solution box below. 
+
 1. Find a constant $k$ so that the area under $f(x) = k g(x)$ is 1, in other words find the normalized target function. 
 1. Compute the derivative of $F(x)$, and then compare it to the normalized target function.  
 
@@ -135,9 +138,11 @@ draw_target(g,0,6)
 When a dart falls on the point $(x,y)$, we'll record just the $x$-coordinate and let $X$ represent this random variable.
 
 1. What is the total area of this target?
+
 1. Explain why $x$-values on the right side of the target are more frequent outcomes than $x$-values on the left side of the target?
     - Calculate $P(X \leq 3)$. Then calculate $P(X > 3)$.
 1. Find $k$ so that the area under the normalized target function $f(x) = kg(x)$ is 1. How does $k$ compare to the total area of the target?
+
 1. Remember $F(x) = P(X \leq x)$.
     - What is $F(2.5)$?
     - Calculate $F(1)$, $F(4)$, and $F(5)$.
@@ -151,6 +156,7 @@ When a dart falls on the point $(x,y)$, we'll record just the $x$-coordinate and
 1. Calculate the derivative of $F(x)$ with respect to $x$.
     - How does $F'(x)$ compare to the normalized target function $f(x)$ where $k$ is $\frac{1}{\text{area of the target}}$?
 1. Use this [link](https://en.wikipedia.org/wiki/List_of_centroids){target="_blank"} to look up the formula for the $x$-coordinate of the centroid of a right triangle. Explain why the $x$-coordinate of the centroid of this right triangular target is $4$.
+
 1. State the expected value $E[X]$. Remember the expected value of $X$ is the $x$-value of the centroid of the right triangular target.
 
 #### A Parabolic Spandrel target

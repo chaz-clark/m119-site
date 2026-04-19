@@ -96,17 +96,26 @@ An exponential function is any function of the form $f(x) = b^x$ where $b > 0$ a
 
 </details>
 
-As a group, discuss whether each function is a power function, quadratic function, polynomial function, root function, and/or a rational function. Record your solutions in a table similar to the following. Note a function can be classified as multiple types.
+As a group, discuss whether each function is a power function, quadratic function, polynomial function, root function, and/or a rational function. Record your solutions in a table similar to the following. Note a function can be classified as multiple types. 
 
 |  | power fn. | quadratic fn. | polynomial fn. | root fn. | rational fn. |
+
 | --- | --- | --- | --- | --- | --- |
+
 | $f(x) = x^2$ |  |  |  |  |  |
+
 | $g(x) = \sqrt{x}$ |  |  |  |  |  |
+
 | $h(x) = x^3$ |  |  |  |  |  |
+
 | $p(x) = \sqrt{3x+1}$ |  |  |  |  |  |
+
 | $q(x) = x^3 - 3x + 2$ |  |  |  |  |  |
+
 | $A(x) = (x-1)^2$ |  |  |  |  |  |
+
 | $r(x) = \frac{2x+3}{x^2+1}$ |  |  |  |  |  |
+
 | $w(x) = 5^x$ |  |  |  |  |  |
 
 After you've finished classifying the functions, first compare your results with the other groups in class.  Discuss any changes you believe need to be made.  Then expand the solution below and discuss any questions you have. 
@@ -115,15 +124,25 @@ After you've finished classifying the functions, first compare your results with
 <summary>Answer</summary>
 
 |  | power fn. | quadratic fn. | polynomial fn. | root fn. | rational fn. |
+
 | --- | --- | --- | --- | --- | --- |
+
 | $f(x) = x^2$ | X | X | X |  | X |
+
 | $g(x) = \sqrt{x}$ | X |  |  | X |  |
+
 | $h(x) = x^3$ | X |  | X |  | X |
+
 | $p(x) = \sqrt{3x+1}$ |  |  |  |  |  |
+
 | $q(x) = x^3 - 3x + 2$ |  |  | X |  | X |
+
 | $A(x) = (x-1)^2$ |  | X | X |  | X |
+
 | $r(x) = \frac{2x+3}{x^2+1}$ |  |  |  |  | X |
+
 | $w(x) = 5^x$ |  |  |  |  |  |
+
 The function $w(x) = 5^x$ is an exponential function.
 
 </details>
@@ -152,35 +171,56 @@ Let $f(x) = x^2$. Complete each of the following exercises below.
 1. Complete each table below.
 
 | $x$ | $f(x)$ |
+
 | --- | --- |
+
 | -2 |  |
+
 | -1 |  |
+
 | 0 |  |
+
 | 1 |  |
+
 | 2 |  |
 
 | $x$ | $g(x) = f(x) + 2$ |
+
 | --- | --- |
+
 | -2 |  |
+
 | -1 |  |
+
 | 0 |  |
+
 | 1 |  |
+
 | 2 |  |
 
 | $x$ | $h(x) = f(x+2)$ |
+
 | --- | --- |
+
 |  | 4 |
+
 |  | 1 |
+
 |  | 0 |
+
 |  | 1 |
+
 |  | 4 |
 
 1.  Graph each of the functions from part 1. 
+
 1. The graph of $g$ is the same as the graph of $f$ but shifted _________________.
 1. The graph of $h$ is the same as the graph of $f$ but shifted _________________.
+
 1. (True or False) Given $a$ and $b$ are constants, is the statement $f(a+b) = f(a) + f(b)$ true or false.
 
 1. Repeat parts 1-5 for $f_2(x) = \sqrt{x}$ 
+
 1. Repeat parts A-E for $f_3(x) = \frac{1}{x}$.
 
 ## Class Discussion

@@ -4,11 +4,9 @@ title: "Class 15"
 
 # During Class
 ## Brain Gains
-- Critique the following visual fits for $f_5$.
-
-![](../assets/uploads/Class/f5-fit1.png)
-
-![](../assets/uploads/Class/f5-fit2.png)
+- Critique the following visual fits for $f_5$. 
+    - <https://byuimath.com/bmw/all/119/uploads/Class/f5-fit1.png>
+    - <https://byuimath.com/bmw/all/119/uploads/Class/f5-fit2.png>
 
 - Write down a formula for the residual, $y - \hat{y}$, given the model $f(x) = b + mx$ and data point $(x,y) = (4,7)$.
 - Write down a formula for the residual, $y - \hat{y}$, given the model $g(x) = c + bx + a\ln(4x)$ and data point $(x,y) = (x_3,y_3)$. 
@@ -22,11 +20,11 @@ In the formula $r=y−f(x)$, we just replace $x$, $y$, and $f(x)$ with what they
 
 </details>
 
-- The number of tropical storms observed in Florida during the years 2019, 2020, and 2021 was 7, 13, and then 3 (see https://en.wikipedia.org/wiki/List_of_Florida_hurricanes_(200080%93present)#2019). In the prep we used the Poisson distribution to compute a probability, for various values of $\lambda$, of observing some number of tropical storms over a 3 year period. Adapt the code from the prep (see below) to construct a plot of $\lambda$ versus the probability of seeing 7, 13, and then 3 storms, for that value of $\lambda$. What is your guess for the best choice of parameter $\lambda$?
+- The number of tropical storms observed in Florida during the years 2019, 2020, and 2021 was 7, 13, and then 3 (see <https://en.wikipedia.org/wiki/List_of_Florida_hurricanes_(200080%93presen>t)#2019). In the prep we used the Poisson distribution to compute a probability, for various values of $\lambda$, of observing some number of tropical storms over a 3 year period. Adapt the code from the prep (see below) to construct a plot of $\lambda$ versus the probability of seeing 7, 13, and then 3 storms, for that value of $\lambda$. What is your guess for the best choice of parameter $\lambda$?
 
 ```r
 p3v1 <- function(x,lambda=2){
-  # each element of x must be a whole number
+# each element of x must be a whole number
   prod((lambda^x/factorial(x))*exp(-lambda))
 }
 
@@ -93,13 +91,13 @@ Examples:
 
 </details>
 
-- Consider the 6 functions you have been fitting in https://chaz-clark.github.io/M119/Projects/unit1.html. 
+- Consider the 6 functions you have been fitting in <https://chaz-clark.github.io/M119/Projects/unit1.html.> 
     - On the chalkboard, write down a formula for the residual given the general model $f_4$ and data point $(x_i,y_i)$.
     - On the chalkboard, write down a formula for the residual given the general model $f_5$ and data point $(x_j,y_j)$.
 
 ### Activity - Likelihood Practice
 
-Use the storms listed on Wikipedia's https://tinyurl.com/51vyiwjw page to answer the questions below. Feel free to head to yesterday's page to grab code examples to help you work on the things below. 
+Use the storms listed on Wikipedia's <https://tinyurl.com/51vyiwjw> page to answer the questions below. Feel free to head to yesterday's page to grab code examples to help you work on the things below. 
 
 - Using the data from 2005-2009, what is the likelihood that $\lambda =2$?
     - Define the likelihood function for this 5 year time period and plot it in R.
@@ -133,29 +131,29 @@ We can use the following code to plot this function in R.
 ```r
 rm(list=ls())
 
-    1. #Define the distribution###
+###Define the distribution###
 p <- function(x,lambda=1){
-1. x must be a whole number
+# x must be a whole number
   (lambda^x/factorial(x))*exp(-lambda)
 }
 
-    1. #Define the likelihood function###
+###Define the likelihood function###
 LP <- function(lambda,x){
-1. The element of x must be a whole numbers.
+# The element of x must be a whole numbers.
   prod(p(x,lambda))
 }
 
-    1. #Possible Parameter Values###
+###Possible Parameter Values###
 lambda <- seq(0,10,0.001)
 
-    1. #Data###
-1. Florida Hurricane Data (2000-2022)
+###Data###
+# Florida Hurricane Data (2000-2022)
 data <- c(4,4,8,8,6,8,2,8,8,4,8,6,4,3,2,4,6,7,4,7,13,3,3)
 
-1. Here we calculate the output from the likelihood function given the observed data.
+#Here we calculate the output from the likelihood function given the observed data.
 y <- sapply(lambda,FUN=LP,x=data)
 
-1. We plot the likelihood function.
+#We plot the likelihood function.
 par(mar=c(2.5,2.5,3,0.25))
 plot(lambda,y,type='l',main='Poisson Likelihood')
 ```
@@ -178,29 +176,29 @@ We can use the following code to plot this function in R.
 <summary>Click to view the code.</summary>
 
 ```r
-    1. #Define the distribution###
+###Define the distribution###
 f2 <- function(x,lambda=1){
-1. x and lambda must be positive
+# x and lambda must be positive
   lambda*exp(-lambda*x)
 }
 
-    1. #Define the Likelihood function###
+###Define the Likelihood function###
 LE <- function(lambda,x){
-1. The elements of x must be positive.
+# The elements of x must be positive.
   prod(f2(x,lambda))
 }
 
-    1. #Possible Parameter Values###
+###Possible Parameter Values###
 lambda <- seq(0,10,0.001)
 
-    1. #Data###
-1. Some Simulated Data (This is data from an Exponential random variable.)
+###Data###
+# Some Simulated Data (This is data from an Exponential random variable.)
 data <- c(0.45729967, 0.47156107, 1.21461705, 0.20539769, 1.78975399, 0.09095850, 0.64675475, 1.60109333, 1.57752679, 0.01238945)
 
-1. Here we calculate the output from the likelihood function given the observed data.
+#Here we calculate the output from the likelihood function given the observed data.
 y <- sapply(lambda,FUN=LE,x=data)
 
-1. We plot the likelihood function.
+#We plot the likelihood function.
 par(mar=c(2.5,2.5,3,0.25))
 plot(lambda,y,type='l',main='Exponential Likelihood')
 ```
@@ -223,28 +221,28 @@ We can use the following code to plot this function in R.
 <summary>Click to view the code.</summary>
 
 ```r
-    1. #Define the distribution###
+###Define the distribution###
 f3 <- function(x,mu=0,s=1){
   (1/sqrt(2*pi*s^2))*exp(-(x-mu)^2/(2*s^2))
 }
 
-    1. #Define the likelihood function###
-1. For simplicity, we'll assume sigma is 1.
+###Define the likelihood function###
+# For simplicity, we'll assume sigma is 1.
 LN <- function(mu,sigma=1,x){
   prod(f3(x,mu,sigma))
 }
 
-    1. #Possible Parameter Values###
+###Possible Parameter Values###
 mu <- seq(-10,10,0.001)
 
-    1. #Data###
-1. Some more Simulated Data (This is data from a Normal random variable.)
+###Data###
+# Some more Simulated Data (This is data from a Normal random variable.)
 data <- c(-3.77117676, -2.91429587, -2.02774901, -0.23984575, -1.41960740, -3.17490528, -3.21755276, -0.06442566, -1.92134953, -0.93160739)
 
-1. Here we calculate the output from the likelihood function given the observed data.
+#Here we calculate the output from the likelihood function given the observed data.
 y <- sapply(mu,FUN=LN,x=data,sigma=1)
 
-1. We plot the likelihood function.
+#We plot the likelihood function.
 par(mar=c(2.5,2.5,3,0.25))
 plot(mu,y,type='l',main='Normal Likelihood')
 ```

@@ -39,13 +39,13 @@ The solution is simply $b/d$ where $b = \left(\sum_{i}^{44} (y_i - 100)t_i\right
 The code below computes this value, obtaining $a_1 = 0.0005254377$. 
 
 ```r
-    1. If not done already, load the data. 
+## If not done already, load the data. 
 library(data4led)
 bulb <- led_bulb(1,seed=123)
 t <- bulb$hours
 y <- bulb$percent_intensity
 
-    1. Solve the system
+## Solve the system
 b <- sum((y-100)*t)
 d <- sum(t^2)
 b/d
@@ -96,17 +96,17 @@ whose solution we can quickly find using the results of our previous work. Solve
 We have to identify the coefficients and enter them into R.  We'll do that together in class, and fill in the code below. 
 
 ```r
-    1. Let's create a function to solve this system of equations. 
+## Let's create a function to solve this system of equations. 
 solvesystem <- function(c11, c12,b1,c21,c22,b2){ 
   c((b1*c22 - c12*b2)/(c11*c22 - c21*c12),
     (c11*b2 - b1*c21)/(c11*c22 - c21*c12))
 }
-    1. Before moving forward, let's verify that the function works.
-    1. The solution to $2x+3y=4$, $5x+6y=7$ is $(-1,2)$.  
-    1. Does this function yield the same result?
+## Before moving forward, let's verify that the function works.
+## The solution to $2x+3y=4$, $5x+6y=7$ is $(-1,2)$.  
+## Does this function yield the same result?
 solvesystem(2,3,4,5,6,7)
 
-    1. Now we can solve the problem at hand. 
+## Now we can solve the problem at hand. 
 c11 <- 
 c12 <- 
 b1 <- 
@@ -129,13 +129,13 @@ We have now maximized the loglikelihood function.  Use R to plot the data, along
 <summary>Solution</summary>
 
 ```r
-    1. If not done already, you'll need to load the data. 
+## If not done already, you'll need to load the data. 
 library(data4led)
 bulb <- led_bulb(1,seed=123)
 t <- bulb$hours
 y <- bulb$percent_intensity
 
-    1. If not done already, define the solvesystem function and find the critical values. 
+## If not done already, define the solvesystem function and find the critical values. 
 solvesystem <- function(c11, c12,b1,c21,c22,b2){ 
   c((b1*c22 - c12*b2)/(c11*c22 - c21*c12),
     (c11*b2 - b1*c21)/(c11*c22 - c21*c12))
@@ -149,7 +149,7 @@ b2 <- sum((y-100)*t^2)
 sol <- solvesystem(c11,c12,b1,c21,c22,b2)
 sol
 
-    1. Define the model f2, and and create the plot. 
+## Define the model f2, and and create the plot. 
 f2 <- function(x, a1 = sol[1], a2 = sol[2]){100 + a1*x + a2*x^2}
 x <- seq(0,5000,10)
 plot(t,y)
@@ -165,6 +165,7 @@ lines(x,f2(x),type = "l")
 1. Identify the deterministic model $f$ and stochasitic model $p$.
     - Given data of the form $(x,y)$, the residuals (or errors) will be $r_i = y_i - f(x_i)$. 
 1. Assume the residuals (errors) are independent so that the joint probability function, and likelihood function, are obtain as $J = L = \prod_i p(r_i)$. 
+
 1. The loglikelihood function is $\ell = \ln(\prod_i p(r_i))$. 
 
 ### Summary: Steps of Optimization
@@ -180,7 +181,7 @@ lines(x,f2(x),type = "l")
 How long do people wait in a line when they head to the bank?  
 - We'll use the deterministic model $f(x) = 0$ to predict how long someone has to wait (where $x$ represents the time of day). What does this model really say in plain english? 
     - What are your thoughts about our choice of models?
-- We'll use the https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution $p(r) = \lambda e^{-\lambda r}$ to model the residuals. 
+- We'll use the <https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution> $p(r) = \lambda e^{-\lambda r}$ to model the residuals. 
 - Find the loglikelihood function given 100 data points $ (x_i,y_i) $ (where $x_i$ is the time of day the $i^{\text{th}}$ person comes into the bank and $y_i$ is the amount of time that person waits in line).
 - Find the location of the maximum of the loglikelihood function. 
 
@@ -202,14 +203,14 @@ We can rewrite
 $$\begin{align*}\ell(\lambda; \mathbf{x}) &= \left(\sum_{i=1}^{21} x_i \right) \ln\lambda - \sum_{i=1}^{21}\ln(x_i!) - 21\lambda\\ &= a\ln\lambda - b-21\lambda\end{align*}$$ for with $a=\sum_{i=1}^{21} x_i$ and $b=\sum_{i=1}^{21}\ln(x_i!)$ being just constants. Use R to compute these constants.
 
 ```r
-1. Florida Tropical Storm Data (2000-2020) from Wikipedia
+# Florida Tropical Storm Data (2000-2020) from Wikipedia
 year <- seq(2000,2020,1)
 storms <- c(4,4,8,8,6,8,2,8,8,4,8,6,4,3,3,4,5,7,4,7,13)
 
 a <-
 b <- 
-1. You should get a=124 and b=144.5211. 
-1. You'll need the factorial() when entering x! into R.
+# You should get a=124 and b=144.5211. 
+# You'll need the factorial() when entering x! into R.
 ```
 
 2. 
@@ -233,6 +234,7 @@ Find the value for $a_1$ that maximizes the loglikelihood.
 In project 2 Task 1 we obtained 
 $$\ell_6(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i - a_2(1-e^{-0.0003t_i}))^2.$$
 1. Compute $\frac{\partial\ell_6}{\partial a_1}$ and $\frac{\partial\ell_6}{\partial a_2}$.
+
 1. Use seed 123 to solve the system of equations $\frac{\partial\ell_6}{\partial a_1} = 0$ and $\frac{\partial\ell_6}{\partial a_2} = 0$.  You should obtain $a_1=-0.0008219878$ and $a_2=7.442637$.  
 
 ## Discussion 
@@ -241,7 +243,7 @@ We can use the following code to visually show the location for the maximum of t
 
 ```r
 rm(list=ls())
-1. Florida Tropical Storm Data (2000-2020)
+# Florida Tropical Storm Data (2000-2020)
 storms <- c(4,4,8,8,6,8,2,8,8,4,8,6,4,3,3,4,5,7,4,7,13)
 
 L <- function(lambda,x){

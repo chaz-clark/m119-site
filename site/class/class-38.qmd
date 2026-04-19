@@ -126,14 +126,19 @@ We'll complete this as groups at the boards.
 
 Consider the function $g(x) = 9-x^2$ for $0\leq x\leq 3$ and 0 otherwise. As you complete each exercise below, first write on the board any integral you need to compute. Then use Mathematica to compute it. 
 1. Draw the function $g$. 
+
 1. Is $g(x)$ the PDF of a random variable $X$?  Explain.
 1. Find a constant $k$ so that $f(x) = k g(x)$ is the PDF of a random variable $X$.
+
 1. Compute $P(X\leq 1)$. 
 1. Compute $P(X\leq 2)$. 
+
 1. Compute $P(1<X\leq 2)$. 
 1. Compute the cumulative distribution function (CDF), so find $F(x) = P(X\leq x)$. [You found $F(1)$ and $F(2)$ above.]
+
 1. Compute the expected value $E[X]$. 
 1. Compute the variance $Var[X]$. 
+
 1. Compute the standard deviation of $X$. 
 1. Pick another function $g(x)$ and bounds for $x$, and then repeat the above.
 
@@ -142,80 +147,75 @@ Consider the function $g(x) = 9-x^2$ for $0\leq x\leq 3$ and 0 otherwise. As you
 
 1. It's a parabola open downwards starting at height 9. The following code plots $g$ with Mathematica. 
 
-```r
+```
 Plot[9-x^2,{x,0,3}]
-@](:codemend:)
+```
 
 1.  $\int_{-\infty}^{\infty} g(x) dx = \int_0^3 9-x^2 = 18 \neq 1$, so $g$ is not a probability density function.
-(:codem:)
+
 ```
 Integrate[9-x^2,{x,0,3}]
 ```
-(:codemend:)
 
 1.  $k = \frac{1}{18}$.
 
 1.  $\int_{-\infty}^{1} f(x)dx = \int_0^1 \frac{1}{18}(9-x^2)dx = \frac{13}{27} \approx 0.481$
-(:codem:)
+
 ```
 Integrate[(1/18)*(9-x^2),{x,0,1}]
 ```
-(:codemend:)
+
 Note that $\int_{-\infty}^{1} f(x)dx \neq \int_{-\infty}^1 \frac{1}{18}(9-x^2)dx$, as you MUST change the $-\infty$ to 0 to capture the domain of $f$. 
 Note also that we computed the CDF at 1 and have $F(1) = P(X \leq 1) = \frac{13}{27}$. 
 
 1.  $\int_{-\infty}^{2} f(x)dx = \int_0^2 \frac{1}{18}(9-x^2)dx = \frac{23}{27} \approx 0.852$ which means $F(2) = \frac{23}{27}$.
-(:codem:)
+
 ```
 Integrate[(1/18)*(9-x^2),{x,0,2}]
 ```
-(:codemend:)
 
 1.  $\int_1^2 \frac{1}{18}(9-x^2)dx = \frac{10}{27} \approx 0.370$
-(:codem:)
+
 ```
 Integrate[(1/18)*(9-x^2),{x,1,2}]
 ```
-(:codemend:)
+
 Note that $P(1\leq X\leq 2) = F(2) - F(1)$
 
 1.  There 3 regions to consider. First, when $x<0$. Second, when $0\leq x \leq 3$. And third, when $x>3$.<br>
 When $x<0$, $F(x) = 0$ (since $\int_{-\infty}^x f(x)dx = \int_{-\infty}^x 0 dx = 0$).<br>
 When $x>3$, $F(x) = 1$ (since $\int_{-\infty}^x f(x)dx = \int_{-\infty}^0 0dx + \int_0^3 \frac{1}{18}(9-x^2)dx + \int_3^x 0 dx = 0+1+0=1$).<br>
 When $0\leq x\leq 3$, $F(x) = \int_{-\infty}^x f(x) dx = \int_0^x \frac{1}{18}(9-t^2)dt = \frac{1}{2}x - \frac{1}{54}x^3$.
-(:codem:)
+
 ```
 Integrate[(1/18)*(9-t^2),{t,0,x}]
 ```
-(:codemend:)
+
 OR
-(:codem:)
+
 ```
 Integrate[(1/18)*(9-x^2),{x,0,x}]
 ```
-(:codemend:)
+
 Note: $F'(x) = f(x)$
 
 1.  $E[X] = \int_{-\infty}^{\infty} xf(x)dx = \int_0^3 x(\frac{1}{18}(9-x^2)) dx = \frac{9}{8} = 1.125$
-(:codem:)
+
 ```
 Integrate[x*(1/18)*(9-x^2),{x,0,3}]
 ```
-(:codemend:)
 
 1.  $Var[X] = \int_{-\infty}^{\infty} (x - E[X])^2f(x)dx = \int_0^3 (x-\frac{9}{8})^2(\frac{1}{18}(9-x^2)) dx = \frac{171}{320} \approx 0.534$
-(:codem:)
+
 ```
 Integrate[(x-9/8)^2*(1/18)(9-x^2),{x,0,3}]
 ```
-(:codemend:)
 
 1.  $\sigma_X = \sqrt{Var[X]} = \sqrt{\frac{171}{320}} \approx 0.731$
-(:codem:)
+
 ```
 N[Sqrt[171/320]]
 ```
-(:codemend:)
 
 </details>
 
@@ -230,12 +230,12 @@ Consider the random variable $X$ with the PDF $$f(x) =
 - Why do we know the area under the "infinite" target is 1?
 
 Let's approximate the area under $f$ using rectangles (so a Riemann sum).
-(:code:)
+
 ```r
 f <- function(x){5*exp(-5*x)}
 
 a <- 0
-1. b should be infinity, but infinity is a concept (not a number) and the computer program needs a number to complete the calculation... so we pick a large but finite value for b
+#b should be infinity, but infinity is a concept (not a number) and the computer program needs a number to complete the calculation... so we pick a large but finite value for b
 b <- 30 
 n <- 1000
 dx <- (b-a)/n
@@ -261,17 +261,16 @@ The "target" seems to have more weight on the left, so $E[X]\approx 0.2003749$ s
 
 We now compute $A=\int_0^{\infty}f(x) dx$, $E[X]=\int_0^{\infty}xf(x) dx$, and $\text{Var}[X]=\int_0^{\infty}(x-E[X])^2f(x) dx$ with Mathematica.  
 
-```r
+```
 f = 5 Exp[-5 x]
 A = Integrate[f, {x, 0, Infinity}]
 EV = Integrate[x*f, {x, 0, Infinity}]
 Var = Integrate[(x - EV)^2*f, {x, 0, Infinity}]
 ```
-(:codemend:)
 
 ### Project 3 and Knewton Alta Tips
 - Let's plot some of the probability models from Project 3.
-(:code:)
+
 ```r
 f0 <- function(x,a=0,b=1){1/(b-a)+0*x}
 
@@ -325,7 +324,8 @@ lines(x1,y,col=4)
     - 3 -- Calculate Parameters of Continuous Random Variables Identifying Expected Value and Variance
 
 - Let's calculate $\int_{-\infty}^\infty f(x) dx $, $ E[X] $, $ Var[X] $, and standard deviation of X for $f_3$ and $f_1$.
-(:codem:)[@
+
+```
 $Assumptions = \[Lambda] > 0;
 Integrate[\[Lambda]*Exp[-\[Lambda]*x],{x,0,Infinity}]
 Integrate[x*\[Lambda]*Exp[-\[Lambda]*x],{x,0,Infinity}]
@@ -335,9 +335,7 @@ Integrate[(x-m)^2*\[Lambda]*Exp[-\[Lambda]*x],{x,0,Infinity}]
 
 Sqrt[Integrate[(x-m)^2*\[Lambda]*Exp[-\[Lambda]*x],{x,0,Infinity}]]
 ```
-(:codemend:)
 
-(:codem:)
 ```
 $Assumptions = \[Sigma] > 0;
 Integrate[1/Sqrt[2*\[Pi]*\[Sigma]^2]*Exp[-1/2*((x - \[Mu])/\[Sigma])^2],{x,-Infinity,Infinity}]
@@ -349,4 +347,3 @@ Integrate[(x-m)^2*1/Sqrt[2*\[Pi]*\[Sigma]^2]*Exp[-1/2*((x - \[Mu])/\[Sigma])^2],
 V = Integrate[(x-m)^2*1/Sqrt[2*\[Pi]*\[Sigma]^2]*Exp[-1/2*((x - \[Mu])/\[Sigma])^2],{x,-Infinity,Infinity}];
 Simplify[Sqrt[V]]
 ```
-(:codemend:)

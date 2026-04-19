@@ -84,15 +84,15 @@ c2 <- sum(n^2)
 x <- (c1*b22 - b12*c2)/(b11*b22 - b12*b21)
 y <- (b11*c2 - c1*b21)/(b11*b22 - b12*b21)
 
-1. Check
+#Check
 b11*x+b12*y == c1
 b21*x+b22*y == c2
 
-1. Remember floating point arithmetic can cause a problem with the logic checks above. 
+#Remember floating point arithmetic can cause a problem with the logic checks above. 
 b11*x+b12*y - c1
 b21*x+b22*y - c2
 
-1. R has a function to help with this, called all.equal()
+#R has a function to help with this, called all.equal()
 all.equal(b11*x+b12*y,c1)
 all.equal(b21*x+b22*y,c2)
 ```
@@ -162,13 +162,16 @@ A company is building square-bottomed boxes with no tops. The material for the b
 We'll spend some time working through parts of project 2. The point is to help each other by asking and answering questions. We'll focus on the first model $f_1(t; a_1) = 100 + a_1t$. The loglikelihood function, which task 1 has you derive, is 
 $$ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2.$$ 
 1. Compute the first derivative of $\ell_1$ with respect to $a_1$ and show that it can be written in the form $$\frac{d\ell_1}{da_1} = \left(\sum_{i=1}^{44} t_i(y_i-100)\right) - \left(\sum_{i=1}^{44} t_i^2\right) a_1.$$
+
 1. Compute the second derivative of $\ell_1$ with respect to $a_1$ and show that it can be written in the form $$\frac{d^2\ell_1}{da_1^2} = -\sum_{i=1}^{44} t_i^2.$$
 1. Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Use the sum function.) Check that you obtain the following:
     - $ \frac{d\ell_1}{da_1} = 172746.8 - 328767530 a_1 $
     - $ \frac{d^2\ell_1}{da_1^2} = -328767530 $
 1. Find the critical points of $\ell_1$. This means you must set the first derivative equal to zero and solve for $a_1$. 
+
 1. Use the second derivative test to determine if the critical point is the location of maxima or minima.
 1. State the value of $a_1$ that gives the location of maximum loglikelihood.
+
 1. Use the code below to plot the lightbulb data (using the seed 123) along with the fitted model $ f_1(t) $ on the same axes, updating the value you obtained for $ a_1 $.
 
 ```r
@@ -193,19 +196,23 @@ $$ \ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) =
 - 100 - a_1t_i - a_2t_i^2)^2.$$
 
 1. Compute the both first partials $\frac{partial \ell_2}{\partial a_1}$ and $\frac{partial \ell_2}{\partial a_2}$. Simplify your work to match the values given in Project 2 Task 2. 
+
 1. Compute and correctly label all 4 second partials, namely $\frac{\partial^ \ell_2}{\partial a_1^2}$, $\frac{\partial^ \ell_2}{\partial a_2\partial a_1}$, $\frac{\partial^2 \ell_2}{\partial a_1\partial a_2}$, and $\frac{\partial^ \ell_2}{\partial a_2^2}$. Simplify your work to match the values given in Project 2 Task 2.
 1. Use the seed 123 to compute all of the coefficients in the first and second partials. We'll compare answers in class to see how we did. 
+
 1. Find the critical values by letting both first partials equal zero.  You will obtain a system of equations.  Solve that system using the code from the brain gains. 
 
 We have not yet discussed a second derivative test when there is more than one variable.  We'll be doing that next week. 
 
 ### Activity - Reflection on Loglikelihood and Optimization
 1. What are the steps needed to obtain the loglikelihood function given some data $(x_i,y_i)$, a deterministic model $f(x)$, and a probability model $g(r)$ for the residuals. This is precisely part of what you did for Project 2 Task 1.
+
 1. What are the steps needed to locate and classify extrema for a function, so what are the steps to optimization? This is part of what you did for Project 2 Task 2 and what you will do for Project 2 Task 3.
 
 ## Discussion 
 ### Summary: Steps to obtain loglikelihood.
 1. Identify the deterministic model $f$ and stochasitic model $p$. 
+
 1. Assume the residuals (errors) are independent so that the joint probability function, and likelihood function, are obtain as $L = \prod_i p(r_i)$. 
 1. The loglikelihood function is $\ell = \ln(\prod_i p(r_i))$. 
 
@@ -222,7 +229,7 @@ We have not yet discussed a second derivative test when there is more than one v
 How long do people wait in a line when they head to the bank?  
 - We'll use the deterministic model $f(x) = 0$ to predict how long someone has to wait (where $x$ represents the time of day). What does this model really say in plain english? 
     - What are your thoughts about our choice of models?
-- We'll use the https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution $p(r) = \lambda e^{-\lambda r}$ to model the residuals. 
+- We'll use the <https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution> $p(r) = \lambda e^{-\lambda r}$ to model the residuals. 
 - Find the loglikelihood function given 100 data points $ (x_i,y_i) $ (where $x_i$ is the time of day the $i^{\text{th}}$ person comes into the bank and $y_i$ is the amount of time that person waits in line).
 - Find the location of the maximum of the loglikelihood function. 
 

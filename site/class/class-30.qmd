@@ -140,7 +140,7 @@ c22 <- sum(x^2)
 b1 <- sum(y)
 b2 <- sum(x*y)
 
-    1. Create a function to solve a system of equations. 
+## Create a function to solve a system of equations. 
 solvesystem <- function(c11, c12,b1,c21,c22,b2){ 
   c((b1*c22 - c12*b2)/(c11*c22 - c21*c12),
     (c11*b2 - b1*c21)/(c11*c22 - c21*c12))

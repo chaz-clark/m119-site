@@ -93,13 +93,18 @@ Below is a list of derivative rules (most of which we have seen) that you are we
 - After you've discussed any problems from the homework, continue taking turns at the chalkboard to compute the derivative of each of the following functions (remember to *pass the chalk* after each problem). Explain which rules you used to complete each step. Whenever we work on problems at the chalk boards we are practicing our communication and use of mathematical notation.
 
 1. For $f(x) = (3x^2-7x+5)\ln(x)$, find $f'(x)$. Remember to **identify which rules** you used at each step (on this and each problem). 
+
 1. For $g(x) = \frac{3}{x}e^x$, find $g'(x)$. 
 1. For $h(x) = \frac{6\ln(x)}{5\sqrt{x}}$, find $\frac{dh}{dx}$. 
+
 1. For $r(t) = 7\ln t - \frac{3}{t^2}$, find $\frac{dr}{dt}$. 
 1. For $f(p) = \sum_{j=3}^7 4^jp^2$, find $f'(p)$. 
+
 1. For $h(r) = \sum_{n=1}^{40} n\ln(r)$, find $h'(r)$. 
 1. For $t(x) = \sum_{m=1}^{40}  m x^m$, find $\frac{dt}{dx}$. 
+
 1. For $p(x) = ax^2+be^x+c\ln(x)$, find $\frac{dp}{dx}$ assuming that $a,b,c$ are constants.
 1. For $p(a) = ax^2+be^x+c\ln(x)$, find $\frac{dp}{da}$ assuming that $x,b,c$ are constants.
+
 1. For $r(y) = \frac{6y^2e^y}{5\sqrt{y}}$, find $\frac{dr}{dy}$.
 1. For $q(t) = (3x+1)(x^2-4)(5x-3\sqrt{x})(1-e^x)$ find $D_t q$.
