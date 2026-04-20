@@ -55,10 +55,20 @@ Our first Unit is focused on expanding our knowledge and understanding of functi
 1. Install [R](https://www.r-project.org/){target="_blank"}.
 2. Install an editor to work with R:
     - **Recommended:** [RStudio](https://www.rstudio.com/products/rstudio/download/){target="_blank"} — purpose-built for R and the easiest path for this course. Course examples, screenshots, and troubleshooting assume RStudio.
-    - **Alternative:** [VS Code](https://code.visualstudio.com/){target="_blank"} — fine if you already use VS Code for other courses, but it requires extra setup. See the note below.
+    - **Alternative:** [VS Code](https://code.visualstudio.com/){target="_blank"} — fine if you already use VS Code for other courses, but it requires extra setup. See the VS Code setup note at the end of this section.
+3. Open a new file and use it to perform a few computations in R. One option is to repeat some of the computations you did during class in groups, but this time using R. Or pick something else of interest. Feel free to search the web for a short R tutorial.
+4. Construct the plot of a function (either one from part 2 above, from class, or one of your choice).
+
+You could play with and adjust the code below as a starting point.
+
+```r
+x <- c(1,2,3,4,5)
+y <- c(1,4,9,16,25)
+plot(x,y,type='l')
+```
 
 <details>
-<summary>Setting up R in VS Code (click to expand)</summary>
+<summary>Note for step 2 — Setting up R in VS Code (click to expand)</summary>
 
 If you pick VS Code instead of RStudio, here's what you'll need beyond the editor itself:
 
@@ -83,17 +93,6 @@ If you pick VS Code instead of RStudio, here's what you'll need beyond the edito
 Because course materials assume RStudio, if you're on VS Code you'll sometimes need to translate pane names (e.g. "Plots tab" → the httpgd browser window, "Environment" → the R Side Bar).
 
 </details>
-
-3. Open a new file and use it to perform a few computations in R. One option is to repeat some of the computations you did during class in groups, but this time using R. Or pick something else of interest. Feel free to search the web for a short R tutorial.
-4. Construct the plot of a function (either one from part 2 above, from class, or one of your choice).
-
-You could play with and adjust the code below as a starting point.
-
-```r
-x <- c(1,2,3,4,5)
-y <- c(1,4,9,16,25)
-plot(x,y,type='l')
-```
 
 ### (4) Pick something to share
 Remember to pick something from the above that you can share with your peers tomorrow.  What could that be?
