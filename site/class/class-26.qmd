@@ -58,13 +58,13 @@ lines(ti,f1(ti,a1))
 - Review your calculation of the first derivative and second derivative of $ \ell_5 $.
     - Note: This is part of the required work for Project 2 Task 2.
 - Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Try using the sum function.) Check that you obtain the following:
-    - $ \frac{d\ell_1}{da_1} = 1386372 - 225775231a_1 $
-    - $ \frac{d^2\ell_1}{da_1^2} = -225775231 $
-- Find the critical points of $\ell_1$.
+    - $ \frac{d\ell_5}{da_1} = 1386372 - 225775231a_1 $
+    - $ \frac{d^2\ell_5}{da_1^2} = -225775231 $
+- Find the critical points of $\ell_5$.
 - Use the second derivative test to determine if the critical points are locations of maxima or minima.
 - State the value of $a_1$ that gives the location of the maximum of loglikelihood (or maximum loglikelihood).
     - Note: This is the same value that give the location of the maximum of the likelihood (or maximum likelihood).
-- Plot the lightbulb data (using the seed 123) along with the fitted model $ f_1(t) $ on the same axes, updating the value you obtained for $ a_1 $. The code below may help you get started.
+- Plot the lightbulb data (using the seed 123) along with the fitted model $ f_5(t) $ on the same axes, updating the value you obtained for $ a_1 $. The code below may help you get started.
 
 ```r
 rm(list=ls())
