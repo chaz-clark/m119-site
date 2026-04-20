@@ -89,8 +89,8 @@ If you pick VS Code instead of RStudio, here's what you'll need beyond the edito
 
     Then in VS Code settings search for "R plot" and enable **R > Plot: Use Httpgd**.
 
-4. For knitting R Markdown files, install the [**Quarto CLI**](https://quarto.org/docs/get-started/){target="_blank"} plus the Quarto VS Code extension — or run `rmarkdown::render("file.Rmd")` from the R terminal.
-5. Open an `.R` or `.Rmd` file and use **Cmd/Ctrl + Enter** to run the line at your cursor.
+4. For rendering Quarto documents, install the [**Quarto CLI**](https://quarto.org/docs/get-started/){target="_blank"} plus the Quarto VS Code extension — then run `quarto render file.qmd` (or use the Quarto preview command from VS Code's command palette).
+5. Open an `.R` or `.qmd` file and use **Cmd/Ctrl + Enter** to run the line at your cursor.
 
 Because course materials assume RStudio, if you're on VS Code you'll sometimes need to translate pane names (e.g. "Plots tab" → the httpgd browser window, "Environment" → the R Side Bar).
 

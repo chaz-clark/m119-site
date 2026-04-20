@@ -22,8 +22,8 @@ Take a look at this [html file](https://chaz-clark.github.io/M119/Projects/m119-
 - You can download the Quarto source file used to create this html [here](https://chaz-clark.github.io/M119/Projects/m119-docs/Practice_QMD.qmd).
 
 ### (2) Create your own Cohesive Analysis
-- Complete Project 1 Task 1 by creating your own RMarkdown file (feel free to download and modify the one above), and in that file give a short cohesive analysis with the required scatterplot. In other words, take the work you already did and covert it into a short cohesive analysis.
-- For some additional practice with RMarkdown and writing cohesive analysis, create your own RMarkdown file (feel free to download and modify the one above), and in that file give a short cohesive analysis that computes the several values of a function taken from one of the exercises we did today. In other words, take the work you've already done in a script file in R, and convert it into a short cohesive analysis.
+- Complete Project 1 Task 1 by creating your own Quarto document (feel free to download and modify the one above), and in that file give a short cohesive analysis with the required scatterplot. In other words, take the work you already did and convert it into a short cohesive analysis.
+- For some additional practice with Quarto and writing cohesive analysis, create your own Quarto document (feel free to download and modify the one above), and in that file give a short cohesive analysis that computes the several values of a function taken from one of the exercises we did today. In other words, take the work you've already done in a script file in R, and convert it into a short cohesive analysis.
 
 <a id="PP"></a>
 
