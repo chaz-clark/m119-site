@@ -534,8 +534,18 @@ e^{-\lambda x} &amp; x \geq 0 \\ \\
 <summary>
 Summary: Calculating Probability with the PDF and CDF
 </summary>
-<p>To calculate a probability with the PDF of a continuous random variable, we use the following: - <span class="math inline">\(P(X \leq a) = \int_{-\infty}^a f(x)dx\)</span>, - <span class="math inline">\(P(a \leq X \leq b) = \int_a^b f(x)dx\)</span>, - <span class="math inline">\(P(X \geq a) = \int_a^\infty f(x)dx\)</span>.</p>
-<p>To calculate a probability with the CDF of a continuous random variable, we use the following: - <span class="math inline">\(P(X \leq a) = F(a)\)</span> - <span class="math inline">\(P(a \leq X \leq b) = F(b) - F(a)\)</span> - <span class="math inline">\(P(X \geq a) = 1 - F(a)\)</span></p>
+<p>To calculate a probability with the PDF of a continuous random variable, we use the following:</p>
+<ul>
+<li><span class="math inline">\(P(X \leq a) = \int_{-\infty}^a f(x)dx\)</span>,</li>
+<li><span class="math inline">\(P(a \leq X \leq b) = \int_a^b f(x)dx\)</span>,</li>
+<li><span class="math inline">\(P(X \geq a) = \int_a^\infty f(x)dx\)</span>.</li>
+</ul>
+<p>To calculate a probability with the CDF of a continuous random variable, we use the following:</p>
+<ul>
+<li><span class="math inline">\(P(X \leq a) = F(a)\)</span></li>
+<li><span class="math inline">\(P(a \leq X \leq b) = F(b) - F(a)\)</span></li>
+<li><span class="math inline">\(P(X \geq a) = 1 - F(a)\)</span></li>
+</ul>
 </details>
 <details>
 <summary>
@@ -658,8 +668,13 @@ Fundamental Theorem of Calculus (FTC)
 <summary>
 Definition: Percentile
 </summary>
-<p>Let <span class="math inline">\(X\)</span> be a random variable. - A percentile is a number <span class="math inline">\(x_p\)</span> that satisfies the equation <span class="math inline">\(P(X \leq x_p) = \frac{p}{100}\)</span>. - This means <span class="math inline">\(x_p\)</span> satisfies the equation <span class="math inline">\(F(x_p) = \frac{p}{100}\)</span> where <span class="math inline">\(F(x)\)</span> is the cumulative distribution function for <span class="math inline">\(X\)</span>. - This means <span class="math inline">\(x_p\)</span> satisfies the equation <span class="math inline">\(\int_{-\infty}^{x_p}f(t)dt = \frac{p}{100}\)</span> where <span class="math inline">\(f(x)\)</span> is the probability density function for <span class="math inline">\(X\)</span>.</p>
+<p>Let <span class="math inline">\(X\)</span> be a random variable.</p>
 <ul>
+<li>A percentile is a number <span class="math inline">\(x_p\)</span> that satisfies the equation <span class="math inline">\(P(X \leq x_p) = \frac{p}{100}\)</span>.
+<ul>
+<li>This means <span class="math inline">\(x_p\)</span> satisfies the equation <span class="math inline">\(F(x_p) = \frac{p}{100}\)</span> where <span class="math inline">\(F(x)\)</span> is the cumulative distribution function for <span class="math inline">\(X\)</span>.</li>
+<li>This means <span class="math inline">\(x_p\)</span> satisfies the equation <span class="math inline">\(\int_{-\infty}^{x_p}f(t)dt = \frac{p}{100}\)</span> where <span class="math inline">\(f(x)\)</span> is the probability density function for <span class="math inline">\(X\)</span>.</li>
+</ul></li>
 <li>A percentile divides probability into 100 equal groups (per 100).</li>
 <li>A percentile is a number <span class="math inline">\(x_p\)</span> such that <span class="math inline">\(p\)</span>% of the probability is at or below this number.</li>
 </ul>

@@ -491,7 +491,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="compare-maximum-likelihood-fit-to-your-visual-fit" class="level3">
 <h3 class="anchored" data-anchor-id="compare-maximum-likelihood-fit-to-your-visual-fit">(1) Compare Maximum Likelihood fit to your Visual fit</h3>
-<p>Today in class we fitted <span class="math inline">\(f_2\)</span> and <span class="math inline">\(f_6\)</span> to the seed 123. Let’s now adapt what we did in class and the code to fit <span class="math inline">\(f_2\)</span> and <span class="math inline">\(f_6\)</span> to your seed. - Adapt the code from class to fit <span class="math inline">\(f_2\)</span> to your data (the data obtained when using your assigned seed to select a light bulb). - On the same graph plot (1) your data, (2) your visually fitted model (from Project 1), and (3) the fitted model you just found using the maximum likelihood method. You’ll need to use the lines command twice, once for your visually fitted model, and once for the model we got from the maximum likelihood method. - What do you notice? - How do the fitted models compare? - Solve <span class="math inline">\(f_2(t) = 80\)</span> for your visually fitted model (Project 1 Task 4). - Solve <span class="math inline">\(f_2(t) = 80\)</span> for the fitted model you found using the maximum likelihood method. - What do you notice? - How do the fitted models compare?</p>
+<p>Today in class we fitted <span class="math inline">\(f_2\)</span> and <span class="math inline">\(f_6\)</span> to the seed 123. Let’s now adapt what we did in class and the code to fit <span class="math inline">\(f_2\)</span> and <span class="math inline">\(f_6\)</span> to your seed.</p>
+<ul>
+<li>Adapt the code from class to fit <span class="math inline">\(f_2\)</span> to your data (the data obtained when using your assigned seed to select a light bulb).
+<ul>
+<li>On the same graph plot (1) your data, (2) your visually fitted model (from Project 1), and (3) the fitted model you just found using the maximum likelihood method. You’ll need to use the lines command twice, once for your visually fitted model, and once for the model we got from the maximum likelihood method.
+<ul>
+<li>What do you notice?</li>
+<li>How do the fitted models compare?</li>
+</ul></li>
+</ul></li>
+<li>Solve <span class="math inline">\(f_2(t) = 80\)</span> for your visually fitted model (Project 1 Task 4).</li>
+<li>Solve <span class="math inline">\(f_2(t) = 80\)</span> for the fitted model you found using the maximum likelihood method.
+<ul>
+<li>What do you notice?</li>
+<li>How do the fitted models compare?</li>
+</ul></li>
+</ul>
 <p><a id="PP"></a></p>
 </section>
 </section>
@@ -598,14 +614,30 @@ Properties of Sum
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> data<span class="sc">$</span>x</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> data<span class="sc">$</span>y2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>[Identify the Function of Interest] (Project 2 Task 1) - Write down and simplify the loglikelihood function. Explain your steps. Be explicit. - Where did you use the assumption that the errors are normal with mean 0 and standard deviation 1? - Where did you use the assumption that the errors are independent? - What properties of logarithms did you use to simplify? - What properties of sums did you use to simplify?</p>
+<p>[Identify the Function of Interest] (Project 2 Task 1)</p>
+<ul>
+<li>Write down and simplify the loglikelihood function. Explain your steps. Be explicit.
+<ul>
+<li>Where did you use the assumption that the errors are normal with mean 0 and standard deviation 1?</li>
+<li>Where did you use the assumption that the errors are independent?</li>
+<li>What properties of logarithms did you use to simplify?</li>
+<li>What properties of sums did you use to simplify?</li>
+</ul></li>
+</ul>
 <details>
 <summary>
 Check Your Answer
 </summary>
 <p><span class="math inline">\(\ell(m, b; \mathbf{x}, \mathbf{y}) = \ln\left(\prod_{i=1}^{50} \frac{1}{\sqrt{2\pi}}e^{-(y_i - mx_i - b)^2/2}\right) = 50\ln(\frac{1}{\sqrt{2\pi}}) + \sum_{i=1}^{50} -\frac{1}{2}(y_i - mx_i - b)^2\)</span></p>
 </details>
-<p>[Optimize] – Find the first and second derivatives of <span class="math inline">\(\ell\)</span>. (Project 2 Task 2) - Write down and simplify the first and second partial derivatives of <span class="math inline">\(\ell\)</span>. Each of first partial derivatives should be of the form <span class="math inline">\(c_1 - c_2b - c_3m\)</span>. Each of the second partial derivatives should be a constant. - What derivative rules did you use? - What sum rules did you use?</p>
+<p>[Optimize] – Find the first and second derivatives of <span class="math inline">\(\ell\)</span>. (Project 2 Task 2)</p>
+<ul>
+<li>Write down and simplify the first and second partial derivatives of <span class="math inline">\(\ell\)</span>. Each of first partial derivatives should be of the form <span class="math inline">\(c_1 - c_2b - c_3m\)</span>. Each of the second partial derivatives should be a constant.
+<ul>
+<li>What derivative rules did you use?</li>
+<li>What sum rules did you use?</li>
+</ul></li>
+</ul>
 <details>
 <summary>
 Check Your Answer
@@ -618,7 +650,10 @@ Check Your Answer
 <li><p><span class="math inline">\(\frac{\partial^2 \ell}{\partial b \partial m} = -\sum_{i=1}^{50} x_i\)</span></p></li>
 </ul>
 </details>
-<p>[Optimize] – Find any critical point(s) of <span class="math inline">\(\ell\)</span>. (Project 2 Task 3) - Solve the system that results from setting the partial derivatives equal to zero.</p>
+<p>[Optimize] – Find any critical point(s) of <span class="math inline">\(\ell\)</span>. (Project 2 Task 3)</p>
+<ul>
+<li>Solve the system that results from setting the partial derivatives equal to zero.</li>
+</ul>
 <details>
 <summary>
 Check Your Answer
@@ -639,7 +674,14 @@ Check Your Answer
 b_1 - c_{11}b - c_{12}m &amp;= 0 \\
 b_2 - c_{21}b - c_{22}m &amp;= 0,
 \end{array}
-\right.\]</span> with - <span class="math inline">\(b_1 = \sum_{i=1}^{50} y_i\)</span>, - <span class="math inline">\(c_{11} = 50\)</span>, - <span class="math inline">\(c_{12} = c_{21} = \sum_{i=1}^{50} x_i\)</span>, - <span class="math inline">\(b_2 = \sum_{i=1}^{50} x_iy_i\)</span>, and - <span class="math inline">\(c_{22} = \sum_{i=1}^{50} x_i^2\)</span>.</p>
+\right.\]</span> with</p>
+<ul>
+<li><span class="math inline">\(b_1 = \sum_{i=1}^{50} y_i\)</span>,</li>
+<li><span class="math inline">\(c_{11} = 50\)</span>,</li>
+<li><span class="math inline">\(c_{12} = c_{21} = \sum_{i=1}^{50} x_i\)</span>,</li>
+<li><span class="math inline">\(b_2 = \sum_{i=1}^{50} x_iy_i\)</span>, and</li>
+<li><span class="math inline">\(c_{22} = \sum_{i=1}^{50} x_i^2\)</span>.</li>
+</ul>
 <p>From previous work we know the solution to this system of equations is <span class="math inline">\(m = \frac{c_{11}b_2 - c_{12}b_1}{c_{11}c_{22} - c_{12}^2}\)</span> and <span class="math inline">\(b = \frac{b_1 - c_{12}m}{c_{11}}\)</span>.</p>
 <p>When we substitute in the formulas for the constants <span class="math inline">\(c_{11}\)</span>, <span class="math inline">\(c_{12}\)</span>, <span class="math inline">\(c_{22}\)</span>, <span class="math inline">\(b_1\)</span>, and <span class="math inline">\(b_2\)</span> we see <span class="math inline">\(m = \frac{50\sum_{i=1}^{50} x_iy_i - \sum_{i=1}^{50} x_i\sum_{i=1}^{50} y_i}{50\sum_{i=1}^{50} x_i^2 - \left(\sum_{i=1}^{50} x_i\right)^2} = \frac{\left(\sum_{i=1}^{50} x_iy_i\right) - 50\overline{x}\overline{y}}{\sum_{i=1}^{50} x_i^2 - 50\overline{x}^2}\)</span> and <span class="math inline">\(b = \frac{b_1 - c_2m}{c_1} = \frac{\sum_{i=1}^{50} y_i - \left(\sum_{i=1}^{50} x_i\right)m}{50} = \overline{y} -  m\overline{x}\)</span>.</p>
 <p>We can use the following code to calculate <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>.</p>
@@ -678,7 +720,15 @@ Check Your Answer
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>fxx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Since <span class="math inline">\(D &gt; 0\)</span> and <span class="math inline">\(\frac{\partial^2 \ell}{\partial b^2} &lt; 0\)</span>, we know we have found the the location of a local maximum.</p>
 </details>
-<p>[Answer the Question] (Project 2 Task 3 &amp; Project 2) - Write down your fitted model. - Plot your model. - We could use this function to answer a question or make a prediction based on the data and the assumption that the process can be described by the general model <span class="math inline">\(f(x) = mx + b\)</span>. - Use R to graph your fitted model with the data.</p>
+<p>[Answer the Question] (Project 2 Task 3 &amp; Project 2)</p>
+<ul>
+<li>Write down your fitted model.
+<ul>
+<li>Plot your model.</li>
+<li>We could use this function to answer a question or make a prediction based on the data and the assumption that the process can be described by the general model <span class="math inline">\(f(x) = mx + b\)</span>.</li>
+</ul></li>
+<li>Use R to graph your fitted model with the data.</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>h <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">b =</span> best_b, <span class="at">m =</span> best_m){b <span class="sc">+</span> m<span class="sc">*</span>x}</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>x_in <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fu">min</span>(x),<span class="fu">max</span>(x),<span class="fl">0.01</span>)</span>
@@ -695,7 +745,10 @@ Check Your Answer
 <p>Our goal is to practice fitting deterministic models to data using the maximum likelihood method (an optimization method). We will assume the errors are independent and normally distributed with mean 0 and standard deviation 1.</p>
 <section id="consider-the-model-fx-mx." class="level4">
 <h4 class="anchored" data-anchor-id="consider-the-model-fx-mx.">Consider the model <span class="math inline">\(f(x) = mx\)</span>.</h4>
-<p>We would like to fit this model to the following data <span class="math inline">\((x_i,y_i)\)</span> using the maximum likelihood method. - Read in the data with the following code.</p>
+<p>We would like to fit this model to the following data <span class="math inline">\((x_i,y_i)\)</span> using the maximum likelihood method.</p>
+<ul>
+<li>Read in the data with the following code.</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">url</span>(<span class="st">"https://chaz-clark.github.io/M119/logLikelihood_practice.csv"</span>))</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>

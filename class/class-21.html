@@ -512,7 +512,11 @@ Solution
 Solution
 </summary>
 <p>The derivative is <span class="math inline">\(f'(x) = 2x-1\)</span>.<br>
-At <span class="math inline">\(x=-2\)</span>, this gives the slope of the linearization as <span class="math inline">\(f'(-2) = -5\)</span>. The value of the function at <span class="math inline">\(x=-2\)</span> is <span class="math inline">\(f(-2) = 4+2 = 6\)</span>. An equation of the line that passes through the point <span class="math inline">\((-2,6)\)</span> and has slope <span class="math inline">\(-5\)</span> is <span class="math display">\[y-6=(-5)(x+2).\]</span> The above is sufficient, though we can also write this as - <span class="math inline">\(y=6+(-5)(x+2)\)</span> or - <span class="math inline">\(y=-5x-4\)</span>.</p>
+At <span class="math inline">\(x=-2\)</span>, this gives the slope of the linearization as <span class="math inline">\(f'(-2) = -5\)</span>. The value of the function at <span class="math inline">\(x=-2\)</span> is <span class="math inline">\(f(-2) = 4+2 = 6\)</span>. An equation of the line that passes through the point <span class="math inline">\((-2,6)\)</span> and has slope <span class="math inline">\(-5\)</span> is <span class="math display">\[y-6=(-5)(x+2).\]</span> The above is sufficient, though we can also write this as</p>
+<ul>
+<li><span class="math inline">\(y=6+(-5)(x+2)\)</span> or</li>
+<li><span class="math inline">\(y=-5x-4\)</span>.</li>
+</ul>
 </details>
 <ol type="1">
 <li>Given the graph of a function <span class="math inline">\(h(x)\)</span> below, draw <span class="math inline">\(h'(x)\)</span>.</li>
@@ -573,8 +577,21 @@ Solutions
 </section>
 <section id="activity---loglikelihood" class="level3">
 <h3 class="anchored" data-anchor-id="activity---loglikelihood">Activity - Loglikelihood</h3>
-<p>You have been given a list of 44 data points, <span class="math inline">\((t_i, y_i)\)</span>, were <span class="math inline">\(t_i\)</span> is the time in hours since the light was turned on and <span class="math inline">\(y_i\)</span> is the percent intensity of the bulb after <span class="math inline">\(t_i\)</span> hours. A model for the percent intensity of the bulb is <span class="math inline">\(f(x;m,b) = mx+b\)</span>, where <span class="math inline">\(t\)</span> is the time in hours since the light was turned on. - Write the formula for the residuals.</p>
-<p>Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1). - Write down the probability model we are using for one of the residuals. - What does knowing the residuals are independent allow us to do? - Use the assumption of independent residuals to write the joint probability function. - Write the likelihood function for the residuals in this situation. - Write the loglikelihood function for the errors in this situation. - Rewrite the loglikelihood function using the properties of logs and sums.</p>
+<p>You have been given a list of 44 data points, <span class="math inline">\((t_i, y_i)\)</span>, were <span class="math inline">\(t_i\)</span> is the time in hours since the light was turned on and <span class="math inline">\(y_i\)</span> is the percent intensity of the bulb after <span class="math inline">\(t_i\)</span> hours. A model for the percent intensity of the bulb is <span class="math inline">\(f(x;m,b) = mx+b\)</span>, where <span class="math inline">\(t\)</span> is the time in hours since the light was turned on.</p>
+<ul>
+<li>Write the formula for the residuals.</li>
+</ul>
+<p>Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1).</p>
+<ul>
+<li>Write down the probability model we are using for one of the residuals.</li>
+<li>What does knowing the residuals are independent allow us to do?
+<ul>
+<li>Use the assumption of independent residuals to write the joint probability function.</li>
+</ul></li>
+<li>Write the likelihood function for the residuals in this situation.</li>
+<li>Write the loglikelihood function for the errors in this situation.</li>
+<li>Rewrite the loglikelihood function using the properties of logs and sums.</li>
+</ul>
 </section>
 </section>
 <section id="discussion" class="level2">

@@ -548,7 +548,10 @@ window.Quarto = {
 </section>
 <section id="applied-practice-project-work" class="level3">
 <h3 class="anchored" data-anchor-id="applied-practice-project-work">Applied Practice (Project Work)</h3>
-<p>We have discussed in class all the information you need to complete Project 3. - Continue working on Project 3</p>
+<p>We have discussed in class all the information you need to complete Project 3.</p>
+<ul>
+<li>Continue working on Project 3</li>
+</ul>
 </section>
 </section>
 </section>
@@ -702,11 +705,18 @@ Graph <span class="math inline">\(F(x)\)</span>.
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <section id="antiderivatives-indefinite-integrals-accumulation-functions" class="level3">
 <h3 class="anchored" data-anchor-id="antiderivatives-indefinite-integrals-accumulation-functions">Antiderivatives, Indefinite Integrals, Accumulation Functions</h3>
-<p>Consider the pdf $f(x) = e^{-x} $ for <span class="math inline">\(x \geq 0\)</span> and zero otherwise. - We can verify that <span class="math inline">\(F_1(x) = -e^{-x}\)</span>, $F_2(x) = 5 - e^{-x} $, and <span class="math inline">\(F_3(x) = -e^{-x} - 2\)</span> are all antiderivatives of <span class="math inline">\(f\)</span>. Are any of these function the CDF of the random variable <span class="math inline">\(X\)</span>? - Find the cdf of <span class="math inline">\(X\)</span>. - We know <span class="math inline">\(F(x) = P(X \leq x) = \int_{-\infty}^x f(t)dt\)</span>. <span class="math display">\[F(x) = \int_{-\infty}^x f(t)dt =
+<p>Consider the pdf $f(x) = e^{-x} $ for <span class="math inline">\(x \geq 0\)</span> and zero otherwise.</p>
+<ul>
+<li>We can verify that <span class="math inline">\(F_1(x) = -e^{-x}\)</span>, $F_2(x) = 5 - e^{-x} $, and <span class="math inline">\(F_3(x) = -e^{-x} - 2\)</span> are all antiderivatives of <span class="math inline">\(f\)</span>. Are any of these function the CDF of the random variable <span class="math inline">\(X\)</span>?</li>
+<li>Find the cdf of <span class="math inline">\(X\)</span>.
+<ul>
+<li>We know <span class="math inline">\(F(x) = P(X \leq x) = \int_{-\infty}^x f(t)dt\)</span>. <span class="math display">\[F(x) = \int_{-\infty}^x f(t)dt =
 \begin{cases}
 \int_{-\infty}^x 0dt = 0 &amp; x &lt; 0 \\ \\
 \int_{0}^x e^{-t}dt = 1-e^{-x} &amp; x \geq 0
-\end{cases}.\]</span></p>
+\end{cases}.\]</span></li>
+</ul></li>
+</ul>
 <pre><code>$Assumptions = x &gt; 0;
 Integrate[Exp[-t],{t,0,x}]
 

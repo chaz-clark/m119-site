@@ -624,8 +624,15 @@ Possible Visually Fitted Models (click to expand)
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data4led)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>dist <span class="ot">&lt;-</span> <span class="fu">led_time</span>(<span class="dv">2100</span>)</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(dist<span class="sc">$</span>percent_intensity,<span class="at">probability =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>By identifying the characteristics we see in the data we know what behavior we would like the function curve to have. - What characteristics do you notice about the density histogram of our data? - What is the smallest value? - What is the largest value? - What is the location of the peak? - What is the width of the peak?</p>
+<p>By identifying the characteristics we see in the data we know what behavior we would like the function curve to have.</p>
 <ul>
+<li>What characteristics do you notice about the density histogram of our data?
+<ul>
+<li>What is the smallest value?</li>
+<li>What is the largest value?</li>
+<li>What is the location of the peak?</li>
+<li>What is the width of the peak?</li>
+</ul></li>
 <li>What did you notice about the general model <span class="math inline">\(f_0\)</span> and its parameters?<br> <span class="math inline">\(f_0(x;a,b) = \frac{1}{b-a}\)</span> with $ -&lt; a &lt; x &lt; b &lt; $
 <ul>
 <li>What is the domain of <span class="math inline">\(f_0\)</span>? <a href="https://www.desmos.com/calculator/is6afqy4yd" target="_blank">Desmos file for function <span class="math inline">\(f_0\)</span> (Example Project)</a></li>
@@ -690,8 +697,19 @@ Possible Visually Fitted Models (click to expand)
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>),<span class="at">mar=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="fl">0.25</span>),<span class="at">oma=</span><span class="fu">rep</span>(<span class="fl">0.5</span>,<span class="dv">4</span>))</span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(t,y1,<span class="at">xlab=</span><span class="st">"Hour"</span>, <span class="at">ylab=</span><span class="st">"Intensity(%) "</span>, <span class="at">pch=</span><span class="dv">16</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>By identifying the characteristics we see in the data we know what behavior we would like the function curve to have. - What characteristics do you notice about the scatter plot of our data? - What is the range of values for the intensities? - What is the range of times? - What behaviors do you see in the data?</p>
-<p>The prep for today had you try visually fitting parameters to function <span class="math inline">\(f_5\)</span>. Let’s head up to the prep, rerun the relevant code, and discuss what you tried. Then we’ll spend the rest of the hour, in groups, trying to obtain a reasonably good visual fit for the other models, using the seed 123. This is precisely what Project 1 Task 3 has you do. - If using Desmos to help you make choices, realize you can change the range and step size for each slider.</p>
+<p>By identifying the characteristics we see in the data we know what behavior we would like the function curve to have.</p>
+<ul>
+<li>What characteristics do you notice about the scatter plot of our data?
+<ul>
+<li>What is the range of values for the intensities?</li>
+<li>What is the range of times?</li>
+<li>What behaviors do you see in the data?</li>
+</ul></li>
+</ul>
+<p>The prep for today had you try visually fitting parameters to function <span class="math inline">\(f_5\)</span>. Let’s head up to the prep, rerun the relevant code, and discuss what you tried. Then we’ll spend the rest of the hour, in groups, trying to obtain a reasonably good visual fit for the other models, using the seed 123. This is precisely what Project 1 Task 3 has you do.</p>
+<ul>
+<li>If using Desmos to help you make choices, realize you can change the range and step size for each slider.</li>
+</ul>
 </section>
 </section>
 <section id="group-meeting" class="level2">

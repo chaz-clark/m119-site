@@ -507,8 +507,9 @@ Loglikelihood Function
 <p>The <strong>loglikelihood function</strong> is the natural log of the likelihood function.</p>
 <p><strong>Useful Fact:</strong> The loglikelihood will have a maximum at the same location (i.e.&nbsp;for the same parameter value, or collection of parameter values for multidimensional likelihood functions) as the likelihood function.</p>
 </details>
-<p>For each of the likelihood functions below, write the corresponding loglikelihood function. - <span class="math inline">\(L_1(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> with <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt; 0\)</span>.</p>
+<p>For each of the likelihood functions below, write the corresponding loglikelihood function.</p>
 <ul>
+<li><p><span class="math inline">\(L_1(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> with <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt; 0\)</span>.</p></li>
 <li><p><span class="math inline">\(L_2(\lambda; \mathbf{x}) = \prod_{i=1}^n \lambda e^{-\lambda x_i}\)</span> with <span class="math inline">\(x_i &gt; 0\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt;0\)</span>.</p></li>
 <li><p><span class="math inline">\(L_3(\mu, \sigma; \mathbf{x}) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}},\)</span> where <span class="math inline">\(\mu\)</span> is a real number and <span class="math inline">\(\sigma &gt; 0\)</span>.</p></li>
 </ul>
@@ -617,7 +618,13 @@ Answers
 </section>
 <section id="using-a-model-practice-with-project-1" class="level2">
 <h2 class="anchored" data-anchor-id="using-a-model-practice-with-project-1">Using a model (practice with Project 1)</h2>
-<p>Consider the following fitted models. <em>These models were fit to the data obtained using seed=123.</em> - <span class="math inline">\(f_2(x) = 100 + 0.0011x - 0.00000015x^2\)</span> where <span class="math inline">\(x \geq 0\)</span> - <span class="math inline">\(f_3(x) = 101.9 - 1.9e^{-0.00114x}\)</span> where <span class="math inline">\(x \geq 0\)</span> - <span class="math inline">\(f_4(x) = 100 - 0.000181x + 0.83\ln(0.005x+1)\)</span> where <span class="math inline">\(x \geq 0\)</span> - <span class="math inline">\(f_5(x) = (100 + 0.00623x)e^{-0.0000506x}\)</span> where <span class="math inline">\(x \geq 0\)</span></p>
+<p>Consider the following fitted models. <em>These models were fit to the data obtained using seed=123.</em></p>
+<ul>
+<li><span class="math inline">\(f_2(x) = 100 + 0.0011x - 0.00000015x^2\)</span> where <span class="math inline">\(x \geq 0\)</span></li>
+<li><span class="math inline">\(f_3(x) = 101.9 - 1.9e^{-0.00114x}\)</span> where <span class="math inline">\(x \geq 0\)</span></li>
+<li><span class="math inline">\(f_4(x) = 100 - 0.000181x + 0.83\ln(0.005x+1)\)</span> where <span class="math inline">\(x \geq 0\)</span></li>
+<li><span class="math inline">\(f_5(x) = (100 + 0.00623x)e^{-0.0000506x}\)</span> where <span class="math inline">\(x \geq 0\)</span></li>
+</ul>
 <details>
 <summary>
 Graphs of these Functions

@@ -582,7 +582,11 @@ Some Solutions
 <p>Remember to <strong>Pass The Chalk</strong> between each problem, giving everyone a chance to act as scribe. When you are the scribe, it’s fine to not know exactly how to proceed. The goal is to ask questions of each other and help each other. Leave up your work so that you can compare your answers with your neighbors. If you notice an answer differs from a neighboring group’s, then have a discussion with them.</p>
 <section id="plotting-in-r" class="level3">
 <h3 class="anchored" data-anchor-id="plotting-in-r">Plotting in R</h3>
-<p>Help each other plot the following functions in R. - <span class="math inline">\(f(x) = x^2+3x\)</span> for <span class="math inline">\(-3\leq x \leq 3\)</span>. - <span class="math inline">\(g(x) = \sqrt{x+4}-\sqrt{x+1}\)</span> over a reasonable domain.</p>
+<p>Help each other plot the following functions in R.</p>
+<ul>
+<li><span class="math inline">\(f(x) = x^2+3x\)</span> for <span class="math inline">\(-3\leq x \leq 3\)</span>.</li>
+<li><span class="math inline">\(g(x) = \sqrt{x+4}-\sqrt{x+1}\)</span> over a reasonable domain.</li>
+</ul>
 </section>
 <section id="solving-equations-1" class="level3">
 <h3 class="anchored" data-anchor-id="solving-equations-1">Solving Equations</h3>
@@ -602,27 +606,96 @@ Some Solutions
 <ol type="1">
 <li>Complete each table below.</li>
 </ol>
-<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(f(x)\)</span> |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block">-2 | |</div>
-<div class="line-block">-1 | |</div>
-<div class="line-block">0 | |</div>
-<div class="line-block">1 | |</div>
-<div class="line-block">2 | |</div>
-<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(g(x) = f(x) + 2\)</span> |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block">-2 | |</div>
-<div class="line-block">-1 | |</div>
-<div class="line-block">0 | |</div>
-<div class="line-block">1 | |</div>
-<div class="line-block">2 | |</div>
-<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(h(x) = f(x+2)\)</span> |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block">&nbsp;| 4 |</div>
-<div class="line-block">&nbsp;| 1 |</div>
-<div class="line-block">&nbsp;| 0 |</div>
-<div class="line-block">&nbsp;| 1 |</div>
-<div class="line-block">&nbsp;| 4 |</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(f(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(g(x) = f(x) + 2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(h(x) = f(x+2)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
 <ol type="1">
 <li><p>Graph each of the functions from part 1.</p></li>
 <li><p>The graph of <span class="math inline">\(g\)</span> is the same as the graph of <span class="math inline">\(f\)</span> but shifted _________________.</p></li>
@@ -662,7 +735,16 @@ Some Solutions
 <h3 class="anchored" data-anchor-id="rstudio-practice">RStudio Practice</h3>
 <p><strong>Evaluate Functions</strong> - Given <span class="math inline">\(h(x) = \sqrt{3-x}\)</span>, compute <span class="math inline">\(h(-4)\)</span> and <span class="math inline">\(h(5)\)</span>.</p>
 <p><strong>Create and Knit a RMarkdown file</strong> - Click the New File icon OR Click File -&gt; New File -&gt; R Markdown - Typing Math - Not required in Math 119 (You can insert an image with handwritten math.) - But you can copy Latex from our Wiki or Project Instructions.</p>
-<p>We’ll now use RStudio to calculate each value. - Let <span class="math inline">\(w(v) = v^2 - 5v -6\)</span> Compute the following values. - <span class="math inline">\(w(-1)\)</span> - <span class="math inline">\(w(-3)\)</span> - <span class="math inline">\(w(6)\)</span> - <span class="math inline">\(w(4)\)</span></p>
+<p>We’ll now use RStudio to calculate each value.</p>
+<ul>
+<li>Let <span class="math inline">\(w(v) = v^2 - 5v -6\)</span> Compute the following values.
+<ul>
+<li><span class="math inline">\(w(-1)\)</span></li>
+<li><span class="math inline">\(w(-3)\)</span></li>
+<li><span class="math inline">\(w(6)\)</span></li>
+<li><span class="math inline">\(w(4)\)</span></li>
+</ul></li>
+</ul>
 <details>
 <summary>
 Answers

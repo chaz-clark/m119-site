@@ -560,7 +560,19 @@ Answer
 </section>
 <section id="reading-practice" class="level3">
 <h3 class="anchored" data-anchor-id="reading-practice">(3) Reading Practice</h3>
-<p>Below is a list of properties of Definite Integrals. Read through the properties. Then consider the questions below. What other thoughts, connections, or questions did you identify? - How would you describe any of these properties with words? - Definite Integral can be thought of as “infinite sums”. - Can you identify any properties that sums and integrals share? - Discrete things are different from infinite things. - Can you identify any properties highlight any of these difference (highlighting a difference between sums and integrals)? - Can you find an example of any of these properties used in our <a href="https://byuistats.github.io/M119/unit3/probability.html" target="_blank">Rectangles, Targets, and Sums</a> work?</p>
+<p>Below is a list of properties of Definite Integrals. Read through the properties. Then consider the questions below. What other thoughts, connections, or questions did you identify?</p>
+<ul>
+<li>How would you describe any of these properties with words?</li>
+<li>Definite Integral can be thought of as “infinite sums”.
+<ul>
+<li>Can you identify any properties that sums and integrals share?</li>
+</ul></li>
+<li>Discrete things are different from infinite things.
+<ul>
+<li>Can you identify any properties highlight any of these difference (highlighting a difference between sums and integrals)?</li>
+</ul></li>
+<li>Can you find an example of any of these properties used in our <a href="https://byuistats.github.io/M119/unit3/probability.html" target="_blank">Rectangles, Targets, and Sums</a> work?</li>
+</ul>
 <section id="properties-of-the-definite-integral" class="level4">
 <h4 class="anchored" data-anchor-id="properties-of-the-definite-integral">Properties of the Definite Integral</h4>
 <ul>
@@ -605,9 +617,35 @@ Answer
 The cumulative distribution function (CDF) of a random variable
 </summary>
 <p>The <strong>cumulative distribution function</strong> of a random variable <span class="math inline">\(X\)</span> is the function <span class="math inline">\(F(x) = P(X \leq x)\)</span>.</p>
-<p>The following statements are true of cumulative distribution functions (CDF). - If <span class="math inline">\(f\)</span> is a PDF, then <span class="math inline">\(F(x) = P(X \leq x) = \int_{-\infty}^x f(x)dx\)</span>. - It is not required that <span class="math inline">\(F\)</span> is continuous. - Every cumulative distribution function is nondecreasing. - When we look at the graph of <span class="math inline">\(F\)</span>, as we move to the left, the outputs will get closer and closer to 0. - Sometimes we write this idea with the following notation, <span class="math inline">\(F(x) \rightarrow 0\)</span> as <span class="math inline">\(x \rightarrow -\infty\)</span>. - It is not required that 0 is in the range of <span class="math inline">\(F(x)\)</span>. - When we look at the graph of <span class="math inline">\(F\)</span>, as we move to the right, the outputs will get closer and closer to 1. - Sometimes we write this idea with the following notation, <span class="math inline">\(F(x) \rightarrow 1\)</span> as <span class="math inline">\(x \rightarrow \infty\)</span>. - It is not required that 1 is in the range of <span class="math inline">\(F(x)\)</span>. - We know the range of <span class="math inline">\(F(x)\)</span> will be a subset of $ [ 0, 1 ] $. - In other words, we know the outputs of a CDF will only include values between 0 and 1. Sometimes we write this idea with the following notation, <span class="math inline">\(0 \leq F(x) \leq 1\)</span>.</p>
+<p>The following statements are true of cumulative distribution functions (CDF).</p>
+<ul>
+<li>If <span class="math inline">\(f\)</span> is a PDF, then <span class="math inline">\(F(x) = P(X \leq x) = \int_{-\infty}^x f(x)dx\)</span>.</li>
+<li>It is not required that <span class="math inline">\(F\)</span> is continuous.</li>
+<li>Every cumulative distribution function is nondecreasing.
+<ul>
+<li>When we look at the graph of <span class="math inline">\(F\)</span>, as we move to the left, the outputs will get closer and closer to 0.
+<ul>
+<li>Sometimes we write this idea with the following notation, <span class="math inline">\(F(x) \rightarrow 0\)</span> as <span class="math inline">\(x \rightarrow -\infty\)</span>.</li>
+<li>It is not required that 0 is in the range of <span class="math inline">\(F(x)\)</span>.</li>
+</ul></li>
+<li>When we look at the graph of <span class="math inline">\(F\)</span>, as we move to the right, the outputs will get closer and closer to 1.
+<ul>
+<li>Sometimes we write this idea with the following notation, <span class="math inline">\(F(x) \rightarrow 1\)</span> as <span class="math inline">\(x \rightarrow \infty\)</span>.</li>
+<li>It is not required that 1 is in the range of <span class="math inline">\(F(x)\)</span>.</li>
+</ul></li>
+<li>We know the range of <span class="math inline">\(F(x)\)</span> will be a subset of $ [ 0, 1 ] $.
+<ul>
+<li>In other words, we know the outputs of a CDF will only include values between 0 and 1. Sometimes we write this idea with the following notation, <span class="math inline">\(0 \leq F(x) \leq 1\)</span>.</li>
+</ul></li>
+</ul></li>
+</ul>
 </details>
-<p>We can calculate probabilities (using the CDF). Below are three examples. - $ P(X ) = F(2) $ - $ P(X &gt; 3) = 1 - P(X ) = 1 - F(3) $ - $ P(2 &lt; X ) = P(X ) - P(X ) = F(3) - F(2) $</p>
+<p>We can calculate probabilities (using the CDF). Below are three examples.</p>
+<ul>
+<li>$ P(X ) = F(2) $</li>
+<li>$ P(X &gt; 3) = 1 - P(X ) = 1 - F(3) $</li>
+<li>$ P(2 &lt; X ) = P(X ) - P(X ) = F(3) - F(2) $</li>
+</ul>
 <p>Rectangular approximations for expected value (and area) give us Riemann sums and the definite integral.</p>
 <details>
 <summary>
@@ -619,24 +657,48 @@ Riemann sum for <span class="math inline">\(f\)</span>
 <summary>
 Definite Integral (a number, the limit of a Riemann Sum)
 </summary>
-<p>For a function <span class="math inline">\(f(x)\)</span> defined on <span class="math inline">\(a \leq x \leq b\)</span>, <strong>the definite integral of <span class="math inline">\(f\)</span> from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span></strong> is <span class="math display">\[\int_a^b f(x) dx = \lim_{n\to \infty }\sum_{i=1}^nf(x_i)\Delta x,\]</span> provided the limit exists. If the limit exists, we say that <span class="math inline">\(f\)</span> is integrable on $ [ a, b ] $. - <span class="math inline">\(f(x)\)</span> is the integrand - <span class="math inline">\(x\)</span> is the variable of integration - <span class="math inline">\(a\)</span> is the lower bound (or lower limit of integration) - <span class="math inline">\(b\)</span> is the upper bound (or upper limit of integration)</p>
+<p>For a function <span class="math inline">\(f(x)\)</span> defined on <span class="math inline">\(a \leq x \leq b\)</span>, <strong>the definite integral of <span class="math inline">\(f\)</span> from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span></strong> is <span class="math display">\[\int_a^b f(x) dx = \lim_{n\to \infty }\sum_{i=1}^nf(x_i)\Delta x,\]</span> provided the limit exists. If the limit exists, we say that <span class="math inline">\(f\)</span> is integrable on $ [ a, b ] $.</p>
+<ul>
+<li><span class="math inline">\(f(x)\)</span> is the integrand</li>
+<li><span class="math inline">\(x\)</span> is the variable of integration</li>
+<li><span class="math inline">\(a\)</span> is the lower bound (or lower limit of integration)</li>
+<li><span class="math inline">\(b\)</span> is the upper bound (or upper limit of integration)</li>
+</ul>
 </details>
 <p>The derivative of a cumulative distribution function of a continuous random variable is a probability density function (PDF).</p>
 <details>
 <summary>
 The probability density function of a continuous random variable with cumulative distribution function <span class="math inline">\(F(x)\)</span>.
 </summary>
-<p>The <strong>probability density function</strong> <span class="math inline">\(f(x)\)</span> of a <em>continuous</em> random variable <span class="math inline">\(X\)</span> with cumulative distribution function <span class="math inline">\(F(x)\)</span> is the derivative of <span class="math inline">\(F(x)\)</span>, <span class="math inline">\(f(x) = F'(x)\)</span>. - Every probability density function is nonnegative, in other words <span class="math inline">\(f(x) \geq 0\)</span>. - The total area under a probability density function always equals 1.</p>
+<p>The <strong>probability density function</strong> <span class="math inline">\(f(x)\)</span> of a <em>continuous</em> random variable <span class="math inline">\(X\)</span> with cumulative distribution function <span class="math inline">\(F(x)\)</span> is the derivative of <span class="math inline">\(F(x)\)</span>, <span class="math inline">\(f(x) = F'(x)\)</span>.</p>
+<ul>
+<li>Every probability density function is nonnegative, in other words <span class="math inline">\(f(x) \geq 0\)</span>.</li>
+<li>The total area under a probability density function always equals 1.</li>
+</ul>
 </details>
 <details>
 <summary>
 Probability Density Function (PDF)
 </summary>
-<p>A <strong>probability density function</strong> <span class="math inline">\(f(x)\)</span> is a nonnegative function that satisfies <span class="math inline">\(\displaystyle\int_{-\infty}^{\infty}f(x)dx = 1\)</span>. - Remember the description “nonnegative function” means all the outputs of <span class="math inline">\(f\)</span> are positive or zero, so <span class="math inline">\(f(x) \geq 0\)</span>. - Important note: If a function is zero everywhere except on an interval <span class="math inline">\(a \leq x \leq b\)</span>, then <span class="math inline">\(\int_{-\infty}^{\infty}f(x)dx = \int_{a}^{b}f(x)dx = 1\)</span>.</p>
+<p>A <strong>probability density function</strong> <span class="math inline">\(f(x)\)</span> is a nonnegative function that satisfies <span class="math inline">\(\displaystyle\int_{-\infty}^{\infty}f(x)dx = 1\)</span>.</p>
+<ul>
+<li>Remember the description “nonnegative function” means all the outputs of <span class="math inline">\(f\)</span> are positive or zero, so <span class="math inline">\(f(x) \geq 0\)</span>.</li>
+<li>Important note: If a function is zero everywhere except on an interval <span class="math inline">\(a \leq x \leq b\)</span>, then <span class="math inline">\(\int_{-\infty}^{\infty}f(x)dx = \int_{a}^{b}f(x)dx = 1\)</span>.</li>
+</ul>
 </details>
 <p>Any nonnegative function with finite area can be normalized to make a pdf, $f(x) = kg(x) $ where $k = = $.</p>
-<p>We can calculating probabilities (using the PDF). Below are several examples. - $ P(X ) = <em>{-}^2 f(x) dx $ - $ P(X &gt; 3) = </em>{3}^{} f(x) dx $ - $ P(2 &lt; X ) = _2^3 f(x) dx$ And notice that we can obtain the CDF from the PDF using - <span class="math inline">\(F(x) = P(X \leq x) = \int_{-\infty}^x f(x) dx\)</span>.</p>
-<p>Look above at how we computed <span class="math inline">\(P(a &lt; X \leq b)\)</span>. - We have $ P(a &lt; X b) = _a^b f(x) dx$ using the PDF. - We have $ P(a &lt; X b) = F(b) - F(a) $ using the CDF. Combining these facts gives <span class="math display">\[\int_a^b f(x) dx = F(b) - F(a).\]</span> This fact, where <span class="math inline">\(F'=f\)</span>, is “The Fundamental Theorem of Calculus” (part 2). We’ll see part 1 later.</p>
+<p>We can calculating probabilities (using the PDF). Below are several examples.</p>
+<ul>
+<li><p>$ P(X ) = _{-}^2 f(x) dx $</p></li>
+<li><p>$ P(X &gt; 3) = _{3}^{} f(x) dx $</p></li>
+<li><p>$ P(2 &lt; X ) = _2^3 f(x) dx$ And notice that we can obtain the CDF from the PDF using</p></li>
+<li><p><span class="math inline">\(F(x) = P(X \leq x) = \int_{-\infty}^x f(x) dx\)</span>.</p></li>
+</ul>
+<p>Look above at how we computed <span class="math inline">\(P(a &lt; X \leq b)\)</span>.</p>
+<ul>
+<li>We have $ P(a &lt; X b) = _a^b f(x) dx$ using the PDF.</li>
+<li>We have $ P(a &lt; X b) = F(b) - F(a) $ using the CDF. Combining these facts gives <span class="math display">\[\int_a^b f(x) dx = F(b) - F(a).\]</span> This fact, where <span class="math inline">\(F'=f\)</span>, is “The Fundamental Theorem of Calculus” (part 2). We’ll see part 1 later.</li>
+</ul>
 <p>Given a probability model for a continuous random variable, we’ll use the expected value and variance to help us fit data to the model.</p>
 <details>
 <summary>
@@ -661,7 +723,11 @@ Expected Value (continuous random variable)
 <summary>
 Variance (continuous random variable)
 </summary>
-<p>The <strong>variance</strong> of a <em>continuous</em> random variable <span class="math inline">\(X\)</span> with probability density function <span class="math inline">\(f(x)\)</span> is <span class="math display">\[Var[X] = \int_{-\infty}^{\infty} (x - E[X])^2 f(x) dx.\]</span> The standard deviation is equal to the square root of the variance, which we write as <span class="math inline">\(\sigma_X = \sqrt{Var[X]}\)</span>. - The variance is characteristic of a random variable. - The variance is a measure of how spread out the data is. The more spread out the data is, the larger the variance.</p>
+<p>The <strong>variance</strong> of a <em>continuous</em> random variable <span class="math inline">\(X\)</span> with probability density function <span class="math inline">\(f(x)\)</span> is <span class="math display">\[Var[X] = \int_{-\infty}^{\infty} (x - E[X])^2 f(x) dx.\]</span> The standard deviation is equal to the square root of the variance, which we write as <span class="math inline">\(\sigma_X = \sqrt{Var[X]}\)</span>.</p>
+<ul>
+<li>The variance is characteristic of a random variable.</li>
+<li>The variance is a measure of how spread out the data is. The more spread out the data is, the larger the variance.</li>
+</ul>
 </details>
 </section>
 <section id="brain-gains" class="level2">

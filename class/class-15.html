@@ -614,9 +614,19 @@ window.Quarto = {
 Residuals
 </summary>
 <p>The <strong>residual</strong> for an observation is defined as the vertical distance between the observed value, <span class="math inline">\(y\)</span>, and value predicted by a fitted model, represented with a <span class="math inline">\(\hat{y}\)</span> (read “y hat”).</p>
-<p>Examples: - Given the model <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c.\)</span> - Given the model <span class="math inline">\(g(x) = k\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - g(x) = y - k.\)</span> - Given the model <span class="math inline">\(h(x) = ae^{-bx} + cxe^{-bx}\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.\)</span></p>
+<p>Examples:</p>
+<ul>
+<li>Given the model <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c.\)</span></li>
+<li>Given the model <span class="math inline">\(g(x) = k\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - g(x) = y - k.\)</span></li>
+<li>Given the model <span class="math inline">\(h(x) = ae^{-bx} + cxe^{-bx}\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.\)</span></li>
+</ul>
 </details>
-<p>Consider the 6 functions you have been fitting in Project 1. - Write down a formula for the residual given model <span class="math inline">\(f_1\)</span>. - Write down a formula for the residual given model <span class="math inline">\(f_2\)</span>. - Write down a formula for the residual given model <span class="math inline">\(f_3\)</span>.</p>
+<p>Consider the 6 functions you have been fitting in Project 1.</p>
+<ul>
+<li>Write down a formula for the residual given model <span class="math inline">\(f_1\)</span>.</li>
+<li>Write down a formula for the residual given model <span class="math inline">\(f_2\)</span>.</li>
+<li>Write down a formula for the residual given model <span class="math inline">\(f_3\)</span>.</li>
+</ul>
 <p><a id="PP"></a></p>
 </section>
 </section>
@@ -679,8 +689,14 @@ Answers
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <section id="likelihood" class="level3">
 <h3 class="anchored" data-anchor-id="likelihood">Likelihood</h3>
-<p>The <strong>Poisson distribution</strong> is modeled using the function (called a <em>probability mass function</em>) - <span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> for every <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</p>
-<p>The likelihood function for the Poisson distribution is the function - <span class="math inline">\(L_1(\lambda; x) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> for every <span class="math inline">\(\lambda &gt; 0\)</span>, for some <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span>.</p>
+<p>The <strong>Poisson distribution</strong> is modeled using the function (called a <em>probability mass function</em>)</p>
+<ul>
+<li><span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> for every <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</li>
+</ul>
+<p>The likelihood function for the Poisson distribution is the function</p>
+<ul>
+<li><span class="math inline">\(L_1(\lambda; x) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> for every <span class="math inline">\(\lambda &gt; 0\)</span>, for some <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span>.</li>
+</ul>
 <p>What do you notice about <span class="math inline">\(L_1\)</span> and <span class="math inline">\(p\)</span>? What are the similarities? What are the differences?</p>
 <ul>
 <li>Each value of <span class="math inline">\(\lambda\)</span> gives a specific probability function <span class="math inline">\(p\)</span>.</li>
@@ -689,10 +705,16 @@ Answers
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
-<td>We created the <em>joint probability mass function</em> for three independent Poisson Random variables by multiplying three functions together to obtain - <span class="math inline">\(p_3(x_1, x_2, x_3; \lambda) = \frac{\lambda^{x_1 + x_2 + x_3}}{x_1!x_2!x_3!}e^{-3\lambda}\)</span> for every <span class="math inline">\(x_1 = 0, 1, 2, 3, ...\)</span>, <span class="math inline">\(x_2 = 0, 1, 2, 3, ...\)</span>, and <span class="math inline">\(x_3 = 0, 1, 2, 3, ...\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</td>
+<td>We created the <em>joint probability mass function</em> for three independent Poisson Random variables by multiplying three functions together to obtain</td>
 </tr>
 <tr class="even">
-<td>Consider the function - <span class="math inline">\(L_3(\lambda; x_1, x_2, x_3) = \frac{\lambda^{x_1 + x_2 + x_3}}{x_1!x_2!x_3!}e^{-3\lambda}\)</span> for every <span class="math inline">\(\lambda &gt; 0\)</span>, for some <span class="math inline">\(x_1 = 0, 1, 2, 3, ...\)</span>, <span class="math inline">\(x_2 = 0, 1, 2, 3, ...\)</span>, and <span class="math inline">\(x_3 = 0, 1, 2, 3, ...\)</span>.</td>
+<td>- <span class="math inline">\(p_3(x_1, x_2, x_3; \lambda) = \frac{\lambda^{x_1 + x_2 + x_3}}{x_1!x_2!x_3!}e^{-3\lambda}\)</span> for every <span class="math inline">\(x_1 = 0, 1, 2, 3, ...\)</span>, <span class="math inline">\(x_2 = 0, 1, 2, 3, ...\)</span>, and <span class="math inline">\(x_3 = 0, 1, 2, 3, ...\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</td>
+</tr>
+<tr class="odd">
+<td>Consider the function</td>
+</tr>
+<tr class="even">
+<td>- <span class="math inline">\(L_3(\lambda; x_1, x_2, x_3) = \frac{\lambda^{x_1 + x_2 + x_3}}{x_1!x_2!x_3!}e^{-3\lambda}\)</span> for every <span class="math inline">\(\lambda &gt; 0\)</span>, for some <span class="math inline">\(x_1 = 0, 1, 2, 3, ...\)</span>, <span class="math inline">\(x_2 = 0, 1, 2, 3, ...\)</span>, and <span class="math inline">\(x_3 = 0, 1, 2, 3, ...\)</span>.</td>
 </tr>
 <tr class="odd">
 <td>What do you notice about <span class="math inline">\(L_3\)</span> and <span class="math inline">\(p_3\)</span>? What are the similarities? What are the differences?</td>
@@ -734,43 +756,55 @@ Answers
 <td>The <strong>residual</strong> for an observation is defined as the vertical distance between the observed value, <span class="math inline">\(y\)</span>, and value predicted by a fitted model, represented with a <span class="math inline">\(\hat{y}\)</span> (read “y hat”).</td>
 </tr>
 <tr class="even">
-<td>Examples: - Given the model <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c).\)</span> - Given the model <span class="math inline">\(g(x) = k\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - g(x) = y - k.\)</span> - Given the model <span class="math inline">\(h(x) = ae^{-bx} + cxe^{-bx}\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.\)</span></td>
+<td>Examples:</td>
 </tr>
 <tr class="odd">
+<td>- Given the model <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c).\)</span> - Given the model <span class="math inline">\(g(x) = k\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - g(x) = y - k.\)</span> - Given the model <span class="math inline">\(h(x) = ae^{-bx} + cxe^{-bx}\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.\)</span></td>
+</tr>
+<tr class="even">
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>- Consider the 6 functions you have been fitting in <a href="https://chaz-clark.github.io/M119/Projects/unit1.html">Project Unit 1</a>. - On the chalkboard, write down a formula for the residual given the general model <span class="math inline">\(f_4\)</span> and data point <span class="math inline">\((x_i,y_i)\)</span>. - On the chalkboard, write down a formula for the residual given the general model <span class="math inline">\(f_5\)</span> and data point <span class="math inline">\((x_j,y_j)\)</span>.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>### Activity - Likelihood Practice</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Use the storms listed on Wikipedia’s <a href="https://tinyurl.com/51vyiwjw">List of Florida hurricanes</a> page to answer the questions below. Feel free to head to yesterday’s page to grab code examples to help you work on the things below.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>- Using the data from 2005-2009, what is the likelihood that <span class="math inline">\(\lambda =2\)</span>? - Define the likelihood function for this 5 year time period and plot it in R.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>- Using the data from 2010-2016, what is the likelihood that <span class="math inline">\(\lambda =5\)</span>? - Define the likelihood function for this 7 year time period and plot it in R.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Work together to develop code in R that will allow you to quickly use any given time period of <span class="math inline">\(k\)</span> years to construct a graph of the likelihood function for <span class="math inline">\(k\)</span> Poisson random variables.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>## Discussion ### Likelihood (not just for Poisson Random Variables) <strong>Key Idea:</strong> We can use the likelihood function to answer the question, “What is the most likely parameter value(s) given the data?” or “Which parameter value(s) should we trust the most given what we have observed?”</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Likelihood is <em>not</em> probability but it is related to probability.</td>
 </tr>
+<tr class="odd">
+<td>#### Poisson Distribution This is a <strong>Poisson distribution</strong>. (A common probability model.)</td>
+</tr>
 <tr class="even">
-<td>#### Poisson Distribution This is a <strong>Poisson distribution</strong>. (A common probability model.) - <span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> for every <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</td>
+<td>- <span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> for every <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</td>
 </tr>
 <tr class="odd">
-<td>If we have more than one observation and we assume the observations come from independent random variables, we can multiply the probability functions to find the joint probability function. This is a probability model, <em>the joint probability mass function for <span class="math inline">\(n\)</span> <strong>Poisson</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>)</em>. - <span class="math inline">\(F_P(\mathbf{x}; \lambda) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> for every <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</td>
+<td>If we have more than one observation and we assume the observations come from independent random variables, we can multiply the probability functions to find the joint probability function. This is a probability model, <em>the joint probability mass function for <span class="math inline">\(n\)</span> <strong>Poisson</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>)</em>.</td>
 </tr>
 <tr class="even">
-<td>How do we go from a distribution to a likelihood function? We reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for <span class="math inline">\(n\)</span> <strong>Poisson</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>). - <span class="math inline">\(L_P(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> for every <span class="math inline">\(\lambda &gt; 0\)</span>, for some <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>.</td>
+<td>- <span class="math inline">\(F_P(\mathbf{x}; \lambda) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> for every <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>, for some <span class="math inline">\(\lambda &gt; 0\)</span>.</td>
+</tr>
+<tr class="odd">
+<td>How do we go from a distribution to a likelihood function? We reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for <span class="math inline">\(n\)</span> <strong>Poisson</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>).</td>
+</tr>
+<tr class="even">
+<td>- <span class="math inline">\(L_P(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> for every <span class="math inline">\(\lambda &gt; 0\)</span>, for some <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>.</td>
 </tr>
 <tr class="odd">
 <td>We can use the following code to plot this function in R.</td>
@@ -803,49 +837,67 @@ Answers
 <td></td>
 </tr>
 <tr class="odd">
-<td>#### Exponential Distribution This is an <strong>Exponential distribution</strong>. (A common probability model.) - <span class="math inline">\(f_2(x; \lambda) = \lambda e^{-\lambda x}\)</span> for every <span class="math inline">\(x &gt; 0\)</span>, for some <span class="math inline">\(\lambda &gt;0\)</span>.</td>
+<td>#### Exponential Distribution This is an <strong>Exponential distribution</strong>. (A common probability model.)</td>
 </tr>
 <tr class="even">
-<td>When we have more than one observation, and we assume the observations come from independent random variables, then we can multiply the probability functions to find the joint probability function. This is a probability model, <em>the joint probability density function for <span class="math inline">\(n\)</span> <strong>Exponential</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>)</em>. - <span class="math inline">\(F_E(\mathbf{x}; \lambda) = \prod_{i=1}^n \lambda e^{-\lambda x_i}\)</span> for every <span class="math inline">\(x_i &gt; 0\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>, for some <span class="math inline">\(\lambda &gt;0\)</span>.</td>
+<td>- <span class="math inline">\(f_2(x; \lambda) = \lambda e^{-\lambda x}\)</span> for every <span class="math inline">\(x &gt; 0\)</span>, for some <span class="math inline">\(\lambda &gt;0\)</span>.</td>
 </tr>
 <tr class="odd">
-<td>How do we go from a distribution to a likelihood function? Reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for <span class="math inline">\(n\)</span> <strong>Exponential</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>). - <span class="math inline">\(L_E(\lambda; \mathbf{x}) = \prod_{i=1}^n \lambda e^{-\lambda x_i}\)</span> for every <span class="math inline">\(\lambda &gt;0\)</span>, for some <span class="math inline">\(x_i &gt; 0\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>.</td>
+<td>When we have more than one observation, and we assume the observations come from independent random variables, then we can multiply the probability functions to find the joint probability function. This is a probability model, <em>the joint probability density function for <span class="math inline">\(n\)</span> <strong>Exponential</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>)</em>.</td>
 </tr>
 <tr class="even">
+<td>- <span class="math inline">\(F_E(\mathbf{x}; \lambda) = \prod_{i=1}^n \lambda e^{-\lambda x_i}\)</span> for every <span class="math inline">\(x_i &gt; 0\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>, for some <span class="math inline">\(\lambda &gt;0\)</span>.</td>
+</tr>
+<tr class="odd">
+<td>How do we go from a distribution to a likelihood function? Reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for <span class="math inline">\(n\)</span> <strong>Exponential</strong> random variables (all with the same <span class="math inline">\(\lambda\)</span>).</td>
+</tr>
+<tr class="even">
+<td>- <span class="math inline">\(L_E(\lambda; \mathbf{x}) = \prod_{i=1}^n \lambda e^{-\lambda x_i}\)</span> for every <span class="math inline">\(\lambda &gt;0\)</span>, for some <span class="math inline">\(x_i &gt; 0\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>.</td>
+</tr>
+<tr class="odd">
 <td>We can use the following code to plot this function in R.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>```r ###Define the distribution### f2 &lt;- function(x,lambda=1){ # x and lambda must be positive lambda<em>exp(-lambda</em>x) }</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>###Define the Likelihood function### LE &lt;- function(lambda,x){ # The elements of x must be positive. prod(f2(x,lambda)) }</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>###Possible Parameter Values### lambda &lt;- seq(0,10,0.001)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>###Data### # Some Simulated Data (This is data from an Exponential random variable.) data &lt;- c(0.45729967, 0.47156107, 1.21461705, 0.20539769, 1.78975399, 0.09095850, 0.64675475, 1.60109333, 1.57752679, 0.01238945)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>#Here we calculate the output from the likelihood function given the observed data. y &lt;- sapply(lambda,FUN=LE,x=data)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>#We plot the likelihood function. par(mar=c(2.5,2.5,3,0.25)) plot(lambda,y,type=‘l’,main=‘Exponential Likelihood’) ```</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 </tr>
+<tr class="even">
+<td>#### Normal Distribution This is a <strong>Normal distribution</strong>. (A common probability model.)</td>
+</tr>
 <tr class="odd">
-<td>#### Normal Distribution This is a <strong>Normal distribution</strong>. (A common probability model.) - <span class="math inline">\(f_3(x; \mu, \sigma) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)</span> for every real number <span class="math inline">\(x\)</span>, for some real number <span class="math inline">\(\mu\)</span> and real number <span class="math inline">\(\sigma &gt; 0\)</span>.</td>
+<td>- <span class="math inline">\(f_3(x; \mu, \sigma) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)</span> for every real number <span class="math inline">\(x\)</span>, for some real number <span class="math inline">\(\mu\)</span> and real number <span class="math inline">\(\sigma &gt; 0\)</span>.</td>
 </tr>
 <tr class="even">
-<td>If we have more than one observation and we assume the observations come from independent random variables, we can multiply the probability functions to find the joint probability function. This is a probability model, <em>the joint probability density function for <span class="math inline">\(n\)</span> <strong>Normal</strong> random variables (all with the same <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>).</em> - <span class="math inline">\(F_N(\mathbf{x}; \mu, \sigma) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}\)</span> for every real number <span class="math inline">\(x_i\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>, for some real number <span class="math inline">\(\mu\)</span> and real number <span class="math inline">\(\sigma &gt; 0\)</span>.</td>
+<td>If we have more than one observation and we assume the observations come from independent random variables, we can multiply the probability functions to find the joint probability function. This is a probability model, <em>the joint probability density function for <span class="math inline">\(n\)</span> <strong>Normal</strong> random variables (all with the same <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>).</em></td>
 </tr>
 <tr class="odd">
-<td>How do we go from a distribution to a likelihood function? Reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for <span class="math inline">\(n\)</span> <strong>Normal</strong> random variables (all with the same <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>). - <span class="math inline">\(L_N(\mu, \sigma; \mathbf{x}) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}\)</span> for every real number <span class="math inline">\(\mu\)</span> and real number <span class="math inline">\(\sigma &gt; 0\)</span>, for some real numbers <span class="math inline">\(x_i\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>.</td>
+<td>- <span class="math inline">\(F_N(\mathbf{x}; \mu, \sigma) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}\)</span> for every real number <span class="math inline">\(x_i\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>, for some real number <span class="math inline">\(\mu\)</span> and real number <span class="math inline">\(\sigma &gt; 0\)</span>.</td>
+</tr>
+<tr class="even">
+<td>How do we go from a distribution to a likelihood function? Reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for <span class="math inline">\(n\)</span> <strong>Normal</strong> random variables (all with the same <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>).</td>
+</tr>
+<tr class="odd">
+<td>- <span class="math inline">\(L_N(\mu, \sigma; \mathbf{x}) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}\)</span> for every real number <span class="math inline">\(\mu\)</span> and real number <span class="math inline">\(\sigma &gt; 0\)</span>, for some real numbers <span class="math inline">\(x_i\)</span> with <span class="math inline">\(i = 1, 2, ... n\)</span>.</td>
 </tr>
 <tr class="even">
 <td>We can use the following code to plot this function in R.</td>
@@ -875,10 +927,16 @@ Answers
 <td></td>
 </tr>
 <tr class="odd">
-<td>### Deterministic vs Probability Models Deterministic models describe relationships between quantities. - time a light bulb is on (quantity 1) and the brightness of the bulb (quantity 2) - number of months since purchase (quantity 1) and the thickness of a shoe tread (quantity 2) - number of years (quantity 1) and number of elves (quantity 2) - distance travel (quantity 2) and wear on vehicle (quantity 2) - money spent (quantity 1) and money earned (quantity 2) - time spent studying (quantity 1) and skills learned (quantity 2) - amount of butter (quantity 1) and chewiness of cookie (quantity 2)</td>
+<td>### Deterministic vs Probability Models Deterministic models describe relationships between quantities.</td>
 </tr>
 <tr class="even">
-<td>Probability models describe probability information for a measurement.<br> Measurements have variation. There is always some uncertainty in measurement. Even if we are capable of measuring precisely there can still be variation. For example, we can count with precision how many heads there are in 100 coin flips. But if we repeat the experiment (flipping a coin 100 more times and counting) we could get a different number of heads. If we are measuring the weight of an object, there can be variation in the weights based on precision of the scale and other factors (which scale is used, calibration, temperature, vibrations, user error,…). Because there is variation in measurement we often think of measurements as random (or stochastic) variables and use probability distributions to describe the values and associated probabilities. - Some Common Probability Models - Poisson distribution (discrete) - the number of events that occur during a fixed time interval - Normal distribution (continuous) - Exponential distribution (continuous) - Binomial distribution (discrete) - Uniform distribution (continuous) - Gamma distribution (continuous)</td>
+<td>- time a light bulb is on (quantity 1) and the brightness of the bulb (quantity 2) - number of months since purchase (quantity 1) and the thickness of a shoe tread (quantity 2) - number of years (quantity 1) and number of elves (quantity 2) - distance travel (quantity 2) and wear on vehicle (quantity 2) - money spent (quantity 1) and money earned (quantity 2) - time spent studying (quantity 1) and skills learned (quantity 2) - amount of butter (quantity 1) and chewiness of cookie (quantity 2)</td>
+</tr>
+<tr class="odd">
+<td>Probability models describe probability information for a measurement.<br> Measurements have variation. There is always some uncertainty in measurement. Even if we are capable of measuring precisely there can still be variation. For example, we can count with precision how many heads there are in 100 coin flips. But if we repeat the experiment (flipping a coin 100 more times and counting) we could get a different number of heads. If we are measuring the weight of an object, there can be variation in the weights based on precision of the scale and other factors (which scale is used, calibration, temperature, vibrations, user error,…). Because there is variation in measurement we often think of measurements as random (or stochastic) variables and use probability distributions to describe the values and associated probabilities.</td>
+</tr>
+<tr class="even">
+<td>- Some Common Probability Models - Poisson distribution (discrete) - the number of events that occur during a fixed time interval - Normal distribution (continuous) - Exponential distribution (continuous) - Binomial distribution (discrete) - Uniform distribution (continuous) - Gamma distribution (continuous)</td>
 </tr>
 <tr class="odd">
 <td>Our focus in Math 119 will be fitting models (extracting information from data and encoding it into parameter values) and using fitted models to answer questions. We will only touch briefly the lowest level of evaluating models (does the story the fitted model tells match already known information).</td>

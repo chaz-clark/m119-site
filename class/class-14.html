@@ -505,7 +505,12 @@ Definition: Poisson Random Variable
 </summary>
 <p>A <strong>Poisson random variable (or Poisson distribution)</strong> is a model for the number of events that occur during a fixed time interval. See <a href="https://en.wikipedia.org/wiki/Poisson_distribution">Poisson distribution on Wikipedia</a>.</p>
 <p>The probability mass function (pmf) for the Poisson distribution is <span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> when <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span> and zero otherwise where <span class="math inline">\(\lambda &gt; 0\)</span>.</p>
-<p>Examples: - Let <span class="math inline">\(X\)</span> be the random variable that counts the number of hurricanes in Florida in a given year. - Let <span class="math inline">\(Y\)</span> be the random variable that counts the number of hits on BYU-Idaho’s website in a given minute. - Let <span class="math inline">\(W\)</span> be the random variable that counts the number of cars that go through an intersection in a given hour. The random variables <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, and <span class="math inline">\(W\)</span> are Poisson random variables.</p>
+<p>Examples:</p>
+<ul>
+<li>Let <span class="math inline">\(X\)</span> be the random variable that counts the number of hurricanes in Florida in a given year.</li>
+<li>Let <span class="math inline">\(Y\)</span> be the random variable that counts the number of hits on BYU-Idaho’s website in a given minute.</li>
+<li>Let <span class="math inline">\(W\)</span> be the random variable that counts the number of cars that go through an intersection in a given hour. The random variables <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, and <span class="math inline">\(W\)</span> are Poisson random variables.</li>
+</ul>
 </details>
 <p>The number of <a href="https://en.wikipedia.org/wiki/List_of_Florida_hurricanes_(2000%E2%80%93present)">Florida hurricanes (2000–present)</a> can be thought of as a Poisson random variable, which means we can model the probabilty of having <span class="math inline">\(x\)</span> tropical storms in a year using <span class="math display">\[p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\text{ with }x = 0, 1, 2, 3, ...\text{ where }\lambda &gt; 0.\]</span> The parameter <span class="math inline">\(\lambda\)</span> is a value we would like to determine. The code chunk below defines this probability mass function in R, using a default value of <span class="math inline">\(\lambda = 2\)</span>. Start by exploring the function <span class="math inline">\(p(x; \lambda)\)</span> and how the parameter <span class="math inline">\(\lambda\)</span> affects the plot.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">2</span>){</span>
@@ -517,7 +522,15 @@ Definition: Poisson Random Variable
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,<span class="fu">p</span>(x))</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,<span class="fu">p</span>(x,<span class="at">lambda=</span><span class="dv">5</span>))</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,<span class="fu">p</span>(x,<span class="at">lambda=</span><span class="fl">2.4</span>)) <span class="co"># lambda just needs to be positive.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Assuming the parameter <span class="math inline">\(\lambda = 2\)</span>, calculate the following and check your answers. - The probability of 4 Florida tropical storms this year. - The probability of 5 Florida tropical storms this year. - The probability of 2 Florida tropical storms this year. - The probability of 3 or more Florida tropical storms this year. - The probability of more than 10 Florida tropical storms this year. - The probability of 2 or less Florida tropical storms this year.</p>
+<p>Assuming the parameter <span class="math inline">\(\lambda = 2\)</span>, calculate the following and check your answers.</p>
+<ul>
+<li>The probability of 4 Florida tropical storms this year.</li>
+<li>The probability of 5 Florida tropical storms this year.</li>
+<li>The probability of 2 Florida tropical storms this year.</li>
+<li>The probability of 3 or more Florida tropical storms this year.</li>
+<li>The probability of more than 10 Florida tropical storms this year.</li>
+<li>The probability of 2 or less Florida tropical storms this year.</li>
+</ul>
 <details>
 <summary>
 Answers
@@ -544,7 +557,13 @@ Answers
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">p</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">2</span>))</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span><span class="sc">-</span>(<span class="dv">1</span> <span class="sc">-</span> (<span class="fu">p</span>(<span class="dv">0</span>) <span class="sc">+</span> <span class="fu">p</span>(<span class="dv">1</span>) <span class="sc">+</span> <span class="fu">p</span>(<span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<p>Now answer the following and come with answers to compare with your group in class. - The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 3\)</span>. - The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>. - The probability of at least 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>. - The probability of more than 12 Florida tropical storms this year using <span class="math inline">\(\lambda  = 5\)</span>.</p>
+<p>Now answer the following and come with answers to compare with your group in class.</p>
+<ul>
+<li>The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 3\)</span>.</li>
+<li>The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>.</li>
+<li>The probability of at least 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>.</li>
+<li>The probability of more than 12 Florida tropical storms this year using <span class="math inline">\(\lambda  = 5\)</span>.</li>
+</ul>
 <p><a id="PP"></a></p>
 </section>
 </section>
@@ -568,7 +587,16 @@ Answers
 <h1>During Class</h1>
 <section id="brain-gains" class="level2">
 <h2 class="anchored" data-anchor-id="brain-gains">Brain Gains</h2>
-<p>Let $ h(t) = $. - Compute $ h(2) $. - Solve $ h(t) = 2 $ for $ t $. Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, and <span class="math inline">\(X_3\)</span> be independent random variables which each return the value of a single toss of one fair six-sided die. - Compute <span class="math inline">\(P(X_1 = 1, X_2 = 4, \text{ and } X_3 = 5)\)</span>. - Compute <span class="math inline">\(P(X_1 \leq 3, X_2\leq 3,\text{ and }X_3\leq 3)\)</span>. Recall that the probability mass function (pmf) for a Poisson distribution is <span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> with <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span> where <span class="math inline">\(\lambda &gt; 0\)</span>. Suppose that <span class="math inline">\(Y\)</span> is a random variable with a Poisson distribution with <span class="math inline">\(\lambda = 1\)</span>. - Compute <span class="math inline">\(P(Y=1)\)</span>. - Compute <span class="math inline">\(P(Y=0)\)</span>. - Compute <span class="math inline">\(P(Y&gt;1)\)</span>.</p>
+<p>Let $ h(t) = $.</p>
+<ul>
+<li><p>Compute $ h(2) $.</p></li>
+<li><p>Solve $ h(t) = 2 $ for $ t $. Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, and <span class="math inline">\(X_3\)</span> be independent random variables which each return the value of a single toss of one fair six-sided die.</p></li>
+<li><p>Compute <span class="math inline">\(P(X_1 = 1, X_2 = 4, \text{ and } X_3 = 5)\)</span>.</p></li>
+<li><p>Compute <span class="math inline">\(P(X_1 \leq 3, X_2\leq 3,\text{ and }X_3\leq 3)\)</span>. Recall that the probability mass function (pmf) for a Poisson distribution is <span class="math inline">\(p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span> with <span class="math inline">\(x = 0, 1, 2, 3, ...\)</span> where <span class="math inline">\(\lambda &gt; 0\)</span>. Suppose that <span class="math inline">\(Y\)</span> is a random variable with a Poisson distribution with <span class="math inline">\(\lambda = 1\)</span>.</p></li>
+<li><p>Compute <span class="math inline">\(P(Y=1)\)</span>.</p></li>
+<li><p>Compute <span class="math inline">\(P(Y=0)\)</span>.</p></li>
+<li><p>Compute <span class="math inline">\(P(Y&gt;1)\)</span>.</p></li>
+</ul>
 <p>You may use the code below to help you code in the Poisson distribution.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">2</span>){</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># x must be a whole number</span></span>
@@ -602,7 +630,13 @@ p(0,1)
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># x must be a whole number</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  (lambda<span class="sc">^</span>x<span class="sc">/</span><span class="fu">factorial</span>(x))<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>lambda)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Compare your answers that you got for the last 4 questions of yesterday’s prep work. These 4 problems asked you to compute each of the things below. - The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 3\)</span>. - The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>. - The probability of at least 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>. - The probability of more than 12 Florida tropical storms this year using <span class="math inline">\(\lambda  = 5\)</span>.</p>
+<p>Compare your answers that you got for the last 4 questions of yesterday’s prep work. These 4 problems asked you to compute each of the things below.</p>
+<ul>
+<li>The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 3\)</span>.</li>
+<li>The probability of less than 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>.</li>
+<li>The probability of at least 8 Florida tropical storms this year using <span class="math inline">\(\lambda = 6\)</span>.</li>
+<li>The probability of more than 12 Florida tropical storms this year using <span class="math inline">\(\lambda  = 5\)</span>.</li>
+</ul>
 </section>
 <section id="activity---florida-tropical-storms-revisited" class="level3">
 <h3 class="anchored" data-anchor-id="activity---florida-tropical-storms-revisited">Activity - Florida Tropical Storms Revisited</h3>
@@ -684,7 +718,14 @@ p(0,1)
 <span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="fu">p3v2</span>(<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">1</span>)</span>
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">p3v2</span>(<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If we know there will be 4 Florida tropical storms this year, 4 Florida tropical storms next year, and 8 Florida tropical storms the year after, then our calculations above can help us determine a good value for the parameter <span class="math inline">\(\lambda\)</span>. The value <span class="math inline">\(\lambda=10\)</span> is a better option that <span class="math inline">\(\lambda = 1\)</span> because <span class="math inline">\(p3(4,4,8,10) = 4.029234e-05 &gt; 2.143747e-09 = p3(4,4,8,1)\)</span>. - Try various other values for <span class="math inline">\(\lambda\)</span> and calculate the probability of 4 Florida tropical storms this year, 4 Florida tropical storms next year, and 8 Florida tropical storms the year after. - What criteria would you use to decide “what is the best value for the parameter <span class="math inline">\(\lambda\)</span>?” - Construct a plot (use p3v2) that has <span class="math inline">\(\lambda\)</span> on the horizontal(<span class="math inline">\(x\)</span>) axis, and on the vertical(<span class="math inline">\(y\)</span>) axis we place the probability of 4, then 4, then 8 Florida tropical storms for the next three years assuming that value for <span class="math inline">\(\lambda\)</span>. Describe the shape of this plot, and how can we use it to find the “best value” for <span class="math inline">\(\lambda\)</span>. - In the plot you made, update your code to use p3v1 instead of p3v2. If you notice an error, that’s OK. The problem is that R does not know how to use two vectors as an input to <span class="math inline">\(p\)</span> without more information. The sapply function deals with this and shows up in the prep tomorrow. - Use the data from the <a href="https://en.wikipedia.org/wiki/List_of_Florida_hurricanes_(2000%E2%80%93present)">List of Florida hurricanes (2000–present)</a> for the years 2000-2005 (6 years) to estimate a good value for lambda (you’ll need to use p3v1 now, as there are 6 data points instead of 3).</p>
+<p>If we know there will be 4 Florida tropical storms this year, 4 Florida tropical storms next year, and 8 Florida tropical storms the year after, then our calculations above can help us determine a good value for the parameter <span class="math inline">\(\lambda\)</span>. The value <span class="math inline">\(\lambda=10\)</span> is a better option that <span class="math inline">\(\lambda = 1\)</span> because <span class="math inline">\(p3(4,4,8,10) = 4.029234e-05 &gt; 2.143747e-09 = p3(4,4,8,1)\)</span>.</p>
+<ul>
+<li>Try various other values for <span class="math inline">\(\lambda\)</span> and calculate the probability of 4 Florida tropical storms this year, 4 Florida tropical storms next year, and 8 Florida tropical storms the year after.</li>
+<li>What criteria would you use to decide “what is the best value for the parameter <span class="math inline">\(\lambda\)</span>?”</li>
+<li>Construct a plot (use p3v2) that has <span class="math inline">\(\lambda\)</span> on the horizontal(<span class="math inline">\(x\)</span>) axis, and on the vertical(<span class="math inline">\(y\)</span>) axis we place the probability of 4, then 4, then 8 Florida tropical storms for the next three years assuming that value for <span class="math inline">\(\lambda\)</span>. Describe the shape of this plot, and how can we use it to find the “best value” for <span class="math inline">\(\lambda\)</span>.</li>
+<li>In the plot you made, update your code to use p3v1 instead of p3v2. If you notice an error, that’s OK. The problem is that R does not know how to use two vectors as an input to <span class="math inline">\(p\)</span> without more information. The sapply function deals with this and shows up in the prep tomorrow.</li>
+<li>Use the data from the <a href="https://en.wikipedia.org/wiki/List_of_Florida_hurricanes_(2000%E2%80%93present)">List of Florida hurricanes (2000–present)</a> for the years 2000-2005 (6 years) to estimate a good value for lambda (you’ll need to use p3v1 now, as there are 6 data points instead of 3).</li>
+</ul>
 <hr>
 <p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.14">Class.14 on byuimath.com</a></em></p>
 

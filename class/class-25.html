@@ -492,7 +492,11 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="extrema-vocabulary" class="level3">
 <h3 class="anchored" data-anchor-id="extrema-vocabulary">(1) Extrema Vocabulary</h3>
-<p>Answer as many of the questions from <a href="https://byuistats.github.io/M119/m119-docs/DerivativeRelationship_FillBlank.pdf" target="_blank">Derivative Relationships Fill in the Blank</a> as possible. Use sections 4.3 and 4.5 from the OpenStax Calculus Volume 1 as a resource. - <a href="https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima" target="_blank">Section 4.3 OpenStax Calculus Volume 1</a> - <a href="https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph" target="_blank">Section 4.5 OpenStax Calculus Volume 1</a></p>
+<p>Answer as many of the questions from <a href="https://byuistats.github.io/M119/m119-docs/DerivativeRelationship_FillBlank.pdf" target="_blank">Derivative Relationships Fill in the Blank</a> as possible. Use sections 4.3 and 4.5 from the OpenStax Calculus Volume 1 as a resource.</p>
+<ul>
+<li><a href="https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima" target="_blank">Section 4.3 OpenStax Calculus Volume 1</a></li>
+<li><a href="https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph" target="_blank">Section 4.5 OpenStax Calculus Volume 1</a></li>
+</ul>
 </section>
 <section id="writing-equations-still-practicing" class="level3">
 <h3 class="anchored" data-anchor-id="writing-equations-still-practicing">(2) Writing Equations (still practicing)</h3>
@@ -506,7 +510,18 @@ window.Quarto = {
 </section>
 <section id="making-connections" class="level3">
 <h3 class="anchored" data-anchor-id="making-connections">(3) Making Connections</h3>
-<p>Open <a href="https://byuistats.github.io/M119/project2.html">Project 2 instructions</a>. - Consider the model <span class="math inline">\(f_5\)</span>. Review your computations to obtain the loglikelihood function (or complete the computations now). The answer is provided to you in the Task 1 Instructions. Your job is to perform the needed computations and include explanations of each of the steps. - Note: This is part of the required work for Project 2 Task 1. - Now compute the first and second derivative of this loglikelihood function. - Note: This is part of the required work for Project 2 Task 2. - Adapt the following code (from class today) to plot this loglikelihood function.</p>
+<p>Open <a href="https://byuistats.github.io/M119/project2.html">Project 2 instructions</a>.</p>
+<ul>
+<li>Consider the model <span class="math inline">\(f_5\)</span>. Review your computations to obtain the loglikelihood function (or complete the computations now). The answer is provided to you in the Task 1 Instructions. Your job is to perform the needed computations and include explanations of each of the steps.
+<ul>
+<li>Note: This is part of the required work for Project 2 Task 1.</li>
+</ul></li>
+<li>Now compute the first and second derivative of this loglikelihood function.
+<ul>
+<li>Note: This is part of the required work for Project 2 Task 2.</li>
+</ul></li>
+<li>Adapt the following code (from class today) to plot this loglikelihood function.</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#clear the environment</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#load the library</span></span>
@@ -611,13 +626,23 @@ Extreme Value Theorem
 <summary>
 First Derivative Test
 </summary>
-<p>Suppose that <span class="math inline">\(f\)</span> is a continuous function over an interval <span class="math inline">\(I\)</span> containing a critical point <span class="math inline">\(c\)</span>. If <span class="math inline">\(f\)</span> is differentiable over <span class="math inline">\(I\)</span>, except possibly at point <span class="math inline">\(c\)</span>, then <span class="math inline">\(f(c)\)</span> satisfies one of the following descriptions: - If <span class="math inline">\(f'\)</span> changes sign from positive when <span class="math inline">\(x &lt; c\)</span> to negative when <span class="math inline">\(x &gt; c\)</span>, then <span class="math inline">\(f(c)\)</span> is a local maximum of <span class="math inline">\(f\)</span>. - If <span class="math inline">\(f'\)</span> changes sign from negative when <span class="math inline">\(x &lt; c\)</span> to positive when <span class="math inline">\(x &gt; c\)</span>, then <span class="math inline">\(f(c)\)</span> is a local minimum of <span class="math inline">\(f\)</span>. - If <span class="math inline">\(f'\)</span> has the same sign for <span class="math inline">\(x &lt; c\)</span> and <span class="math inline">\(x &gt; c\)</span>, then <span class="math inline">\(f(c)\)</span> is neither a local maximum nor a local minimum of <span class="math inline">\(f\)</span>.</p>
+<p>Suppose that <span class="math inline">\(f\)</span> is a continuous function over an interval <span class="math inline">\(I\)</span> containing a critical point <span class="math inline">\(c\)</span>. If <span class="math inline">\(f\)</span> is differentiable over <span class="math inline">\(I\)</span>, except possibly at point <span class="math inline">\(c\)</span>, then <span class="math inline">\(f(c)\)</span> satisfies one of the following descriptions:</p>
+<ul>
+<li>If <span class="math inline">\(f'\)</span> changes sign from positive when <span class="math inline">\(x &lt; c\)</span> to negative when <span class="math inline">\(x &gt; c\)</span>, then <span class="math inline">\(f(c)\)</span> is a local maximum of <span class="math inline">\(f\)</span>.</li>
+<li>If <span class="math inline">\(f'\)</span> changes sign from negative when <span class="math inline">\(x &lt; c\)</span> to positive when <span class="math inline">\(x &gt; c\)</span>, then <span class="math inline">\(f(c)\)</span> is a local minimum of <span class="math inline">\(f\)</span>.</li>
+<li>If <span class="math inline">\(f'\)</span> has the same sign for <span class="math inline">\(x &lt; c\)</span> and <span class="math inline">\(x &gt; c\)</span>, then <span class="math inline">\(f(c)\)</span> is neither a local maximum nor a local minimum of <span class="math inline">\(f\)</span>.</li>
+</ul>
 </details>
 <details>
 <summary>
 Second Derivative Test
 </summary>
-<p>Suppose that <span class="math inline">\(f'(c) = 0\)</span>, <span class="math inline">\(f''\)</span> is continuous over an interval containing <span class="math inline">\(c\)</span>. - If <span class="math inline">\(f''(c) &gt; 0\)</span>, then <span class="math inline">\(f\)</span> has a local minimum at <span class="math inline">\(x=c\)</span>. - If <span class="math inline">\(f''(c) &lt; 0\)</span>, then <span class="math inline">\(f\)</span> has a local maximum at <span class="math inline">\(x=c\)</span>. - If <span class="math inline">\(f''(c) = 0\)</span>, then the test is inconclusive.</p>
+<p>Suppose that <span class="math inline">\(f'(c) = 0\)</span>, <span class="math inline">\(f''\)</span> is continuous over an interval containing <span class="math inline">\(c\)</span>.</p>
+<ul>
+<li>If <span class="math inline">\(f''(c) &gt; 0\)</span>, then <span class="math inline">\(f\)</span> has a local minimum at <span class="math inline">\(x=c\)</span>.</li>
+<li>If <span class="math inline">\(f''(c) &lt; 0\)</span>, then <span class="math inline">\(f\)</span> has a local maximum at <span class="math inline">\(x=c\)</span>.</li>
+<li>If <span class="math inline">\(f''(c) = 0\)</span>, then the test is inconclusive.</li>
+</ul>
 </details>
 <details>
 <summary>
@@ -636,7 +661,11 @@ Definition: Decreasing (reminder)
 Definition: Concavity
 </summary>
 <p>Let <span class="math inline">\(f\)</span> be a function that is differentiable over an open interval <span class="math inline">\(I\)</span>.<br> If <span class="math inline">\(f'\)</span> is increasing over <span class="math inline">\(I\)</span>, we say <span class="math inline">\(f\)</span> is <strong>concave up</strong> over <span class="math inline">\(I\)</span>.<br> If <span class="math inline">\(f'\)</span> is decreasing over <span class="math inline">\(I\)</span>, we say <span class="math inline">\(f\)</span> is <strong>concave down</strong> over <span class="math inline">\(I\)</span>.</p>
-<p>Let <span class="math inline">\(f\)</span> be a function that is twice differentiable of an interval <span class="math inline">\(I\)</span>. - If <span class="math inline">\(f''(x) &gt; 0\)</span> for all <span class="math inline">\(x \in I\)</span>, then <span class="math inline">\(f\)</span> is concave up over <span class="math inline">\(I\)</span>. - If <span class="math inline">\(f''(x) &lt; 0\)</span> for all <span class="math inline">\(x \in I\)</span>, then <span class="math inline">\(f\)</span> is concave down over <span class="math inline">\(I\)</span>.</p>
+<p>Let <span class="math inline">\(f\)</span> be a function that is twice differentiable of an interval <span class="math inline">\(I\)</span>.</p>
+<ul>
+<li>If <span class="math inline">\(f''(x) &gt; 0\)</span> for all <span class="math inline">\(x \in I\)</span>, then <span class="math inline">\(f\)</span> is concave up over <span class="math inline">\(I\)</span>.</li>
+<li>If <span class="math inline">\(f''(x) &lt; 0\)</span> for all <span class="math inline">\(x \in I\)</span>, then <span class="math inline">\(f\)</span> is concave down over <span class="math inline">\(I\)</span>.</li>
+</ul>
 </details>
 <details>
 <summary>

@@ -621,7 +621,11 @@ draw_rect_approx() code
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span>A</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){k<span class="sc">*</span><span class="fu">g</span>(x)}</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">f</span>(xi)<span class="sc">*</span>dx) <span class="co">#Should be 1.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>We now approximate the expected value and variance of <span class="math inline">\(X\)</span> using - <span class="math inline">\(E[X]\approx \sum x_if(x_i)\Delta x\)</span> and - <span class="math inline">\(\text{Var}[X]\approx\sum (x_i-E[X])^2f(x_i)\Delta x\)</span>. Variance is a measure of how spread out a distribution is.</p>
+<p>We now approximate the expected value and variance of <span class="math inline">\(X\)</span> using</p>
+<ul>
+<li><span class="math inline">\(E[X]\approx \sum x_if(x_i)\Delta x\)</span> and</li>
+<li><span class="math inline">\(\text{Var}[X]\approx\sum (x_i-E[X])^2f(x_i)\Delta x\)</span>. Variance is a measure of how spread out a distribution is.</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>EV <span class="ot">&lt;-</span> <span class="fu">sum</span>(xi<span class="sc">*</span><span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>EV</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Var <span class="ot">&lt;-</span> <span class="fu">sum</span>((xi<span class="sc">-</span>EV)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
@@ -688,8 +692,19 @@ f - D[F, x] // FullSimplify (*See if the difference is zero*)</code></pre>
 <section id="practice-with-some-other-functions" class="level3">
 <h3 class="anchored" data-anchor-id="practice-with-some-other-functions">Practice with some other functions</h3>
 <p>Work together on your computers to help one another complete the following problems.</p>
-<p>For each function below, use Mathematica to compute - the area <span class="math inline">\(A = \int_a^b g(x) dx\)</span>, - the value <span class="math inline">\(k\)</span> so that <span class="math inline">\(f=kg\)</span> is a PDF for a random variable, - the expected value <span class="math inline">\(E[X] =\int_a^b xf(x)dx\)</span>, and - the variance <span class="math inline">\(\text{Var}[X]=\int_a^b (x-E[X])^2f(x)dx\)</span>.<br>
-1. Let <span class="math inline">\(g(x) = \sqrt{49-x^2}\)</span> for <span class="math inline">\(0\leq x\leq 7\)</span> - use “<code>g=Sqrt[49-x^2]</code>”. The region under <span class="math inline">\(g(x)\)</span> is a quarter of the circle <span class="math inline">\(x^2+y^2=49\)</span>. You will see <span class="math inline">\(\pi\)</span> show up in lots of answers in Mathematica. Use “<code>%//N</code>” to approximate the output. 1. Let <span class="math inline">\(g(x) = \frac{\ln(x+1)}{x^2}\)</span> for <span class="math inline">\(1\leq x\leq 5\)</span> - use “<code>g=Log[x+1]/x^2</code>”. 1. Let <span class="math inline">\(g(x) = e^{-3x}\)</span> for <span class="math inline">\(0\leq x\leq \infty\)</span> - use “<code>g=Exp[-3x]</code>”. You can enter <code>Infinity</code> as a value for the upper bound.</p>
+<p>For each function below, use Mathematica to compute</p>
+<ul>
+<li>the area <span class="math inline">\(A = \int_a^b g(x) dx\)</span>,</li>
+<li>the value <span class="math inline">\(k\)</span> so that <span class="math inline">\(f=kg\)</span> is a PDF for a random variable,</li>
+<li>the expected value <span class="math inline">\(E[X] =\int_a^b xf(x)dx\)</span>, and</li>
+<li>the variance <span class="math inline">\(\text{Var}[X]=\int_a^b (x-E[X])^2f(x)dx\)</span>.<br>
+</li>
+</ul>
+<ol type="1">
+<li>Let <span class="math inline">\(g(x) = \sqrt{49-x^2}\)</span> for <span class="math inline">\(0\leq x\leq 7\)</span> - use “<code>g=Sqrt[49-x^2]</code>”. The region under <span class="math inline">\(g(x)\)</span> is a quarter of the circle <span class="math inline">\(x^2+y^2=49\)</span>. You will see <span class="math inline">\(\pi\)</span> show up in lots of answers in Mathematica. Use “<code>%//N</code>” to approximate the output.</li>
+<li>Let <span class="math inline">\(g(x) = \frac{\ln(x+1)}{x^2}\)</span> for <span class="math inline">\(1\leq x\leq 5\)</span> - use “<code>g=Log[x+1]/x^2</code>”.</li>
+<li>Let <span class="math inline">\(g(x) = e^{-3x}\)</span> for <span class="math inline">\(0\leq x\leq \infty\)</span> - use “<code>g=Exp[-3x]</code>”. You can enter <code>Infinity</code> as a value for the upper bound.</li>
+</ol>
 <details>
 <summary>
 Some Solutions

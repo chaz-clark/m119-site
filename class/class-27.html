@@ -509,14 +509,15 @@ b_{2,1}x +b_{2,2}y &amp;= c_2
 \end{array}
 \right.\]</span> If you feel comfortable solving the system above for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, without any extra directions, then feel free to just start right in. If that tasks seems a little daunting, then instead use the help below.</p>
 <p>Because there are so many variables involved, solving this system can be difficult. The problems that follow are designed to help guide you to solving this system. Get as far as you can today, and come with questions.</p>
-<p>One problem solving strategy we often use in mathematics is when a problem is challenging and we are not sure how to move forward, we look for a similar (but “easier”) problem we know how to solve and use that to help us move forward on the more difficult problem we are working on. Designing problems we know the answer to helps us step forward to more difficult problems. - Let’s start with a problem that seems more familiar (level 0): Solve the system <span class="math display">\[\left\{
+<p>One problem solving strategy we often use in mathematics is when a problem is challenging and we are not sure how to move forward, we look for a similar (but “easier”) problem we know how to solve and use that to help us move forward on the more difficult problem we are working on. Designing problems we know the answer to helps us step forward to more difficult problems.</p>
+<ul>
+<li><p>Let’s start with a problem that seems more familiar (level 0): Solve the system <span class="math display">\[\left\{
 \begin{array}{ll}
 3x + 2y &amp;= 7 \\
 2x + 5y &amp;= 12
 \end{array}
-\right.\]</span></p>
-<ul>
-<li>Now we will step up the difficulty (level 1 problems):
+\right.\]</span></p></li>
+<li><p>Now we will step up the difficulty (level 1 problems):</p>
 <ul>
 <li>Solve the system <span class="math display">\[\left\{
 \begin{array}{ll}
@@ -537,7 +538,7 @@ b_{2,1}x +b_{2,2}y &amp;= c_2
 <li>Note your answer is not a pair of numbers but a pair of formulas that depend on <span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span>. Check your work by plugging in <span class="math inline">\(c_1 = 7\)</span> and <span class="math inline">\(c_2 = 12\)</span> to the formulas you found, your answer should be the same as the level 0 problem. But note that when you change the values of <span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span> and you have the solution to <strong>a different</strong> level 0 problem.</li>
 </ul></li>
 </ul></li>
-<li>Now we will step up the difficulty (level 2 problems):
+<li><p>Now we will step up the difficulty (level 2 problems):</p>
 <ul>
 <li>Solve the system <span class="math display">\[\left\{
 \begin{array}{ll}
@@ -558,7 +559,7 @@ b_{1,1}x + 2y &amp;= c_1 \\
 <li>Note your answer is not a pair of numbers but a pair of formulas that depend on <span class="math inline">\(c_1\)</span>, <span class="math inline">\(c_2\)</span>, <span class="math inline">\(b_{1,1}\)</span>, and <span class="math inline">\(b_{2,2}\)</span>. Check your work by plugging in the values from our level 0 problem to the formulas you found.</li>
 </ul></li>
 </ul></li>
-<li>Let’s step up the difficulty again (level 3 problems):
+<li><p>Let’s step up the difficulty again (level 3 problems):</p>
 <ul>
 <li>Solve the systems <span class="math display">\[\left\{
 \begin{array}{ll}
@@ -741,11 +742,19 @@ Solution
 (\sum_{n=1}^{44}n)x+(\sum_{n=1}^{44}3)y&amp;=(\sum_{n=1}^{44}7)\\
 (\sum_{n=1}^{44}5)x+(\sum_{n=1}^{44}n)y&amp;=(\sum_{n=1}^{44}n^2)
 \end{align*}
-\]</span> The solution then takes the same from as the previous solutions, with - <span class="math inline">\(b_{1,1}=(\sum_{n=1}^{44}n)\)</span>, - <span class="math inline">\(b_{1,2}=(\sum_{n=1}^{44}3)\)</span>, - <span class="math inline">\(c_{1}=(\sum_{n=1}^{44}7)\)</span>, - <span class="math inline">\(b_{2,1}=(\sum_{n=1}^{44}5)\)</span>, - <span class="math inline">\(b_{2,2}=(\sum_{n=1}^{44}n)\)</span>, - <span class="math inline">\(c_{2}=(\sum_{n=1}^{44}n^2)\)</span>. This means the solution is <span class="math display">\[
+\]</span> The solution then takes the same from as the previous solutions, with</p>
+<ul>
+<li><span class="math inline">\(b_{1,1}=(\sum_{n=1}^{44}n)\)</span>,</li>
+<li><span class="math inline">\(b_{1,2}=(\sum_{n=1}^{44}3)\)</span>,</li>
+<li><span class="math inline">\(c_{1}=(\sum_{n=1}^{44}7)\)</span>,</li>
+<li><span class="math inline">\(b_{2,1}=(\sum_{n=1}^{44}5)\)</span>,</li>
+<li><span class="math inline">\(b_{2,2}=(\sum_{n=1}^{44}n)\)</span>,</li>
+<li><span class="math inline">\(c_{2}=(\sum_{n=1}^{44}n^2)\)</span>. This means the solution is <span class="math display">\[
 x = \dfrac{ (\sum_{n=1}^{44}7)(\sum_{n=1}^{44}n) - (\sum_{n=1}^{44}3)(\sum_{n=1}^{44}n^2) }{ (\sum_{n=1}^{44}n)(\sum_{n=1}^{44}n) - (\sum_{n=1}^{44}3)(\sum_{n=1}^{44}5) }
 \quad\text{and}\quad
 y = \dfrac{ (\sum_{n=1}^{44}n)(\sum_{n=1}^{44}n^2) - (\sum_{n=1}^{44}7)(\sum_{n=1}^{44}5) }{ (\sum_{n=1}^{44}n)(\sum_{n=1}^{44}n) - (\sum_{n=1}^{44}3)(\sum_{n=1}^{44}5) }.
-\]</span> We can use R to compute the solution, using</p>
+\]</span> We can use R to compute the solution, using</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">44</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>b11 <span class="ot">&lt;-</span> <span class="fu">sum</span>(n)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>b12 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="dv">3</span><span class="sc">+</span><span class="dv">0</span><span class="sc">*</span>n) <span class="co">#Why have 0*n?</span></span>
@@ -865,9 +874,10 @@ Answers
 </section>
 <section id="activity---project-2-practice-with-f_2" class="level3">
 <h3 class="anchored" data-anchor-id="activity---project-2-practice-with-f_2">Activity - Project 2 Practice with <span class="math inline">\(f_2\)</span></h3>
-<p>Now focus on <span class="math inline">\(f_2(t; a_1,a_2) = 100 + a_1t +a_2t^2\)</span>. The loglikelihood function is <span class="math display">\[ \ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) =
-44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i
-- 100 - a_1t_i - a_2t_i^2)^2.\]</span></p>
+<p>Now focus on <span class="math inline">\(f_2(t; a_1,a_2) = 100 + a_1t +a_2t^2\)</span>. The loglikelihood function is $$ <em>2(a_1,a_2; ,) = 44() - </em>{i}^{44} (y_i</p>
+<ul>
+<li>100 - a_1t_i - a_2t_i<sup>2)</sup>2.$$</li>
+</ul>
 <ol type="1">
 <li><p>Compute the both first partials <span class="math inline">\(\frac{partial \ell_2}{\partial a_1}\)</span> and <span class="math inline">\(\frac{partial \ell_2}{\partial a_2}\)</span>. Simplify your work to match the values given in Project 2 Task 2.</p></li>
 <li><p>Compute and correctly label all 4 second partials, namely <span class="math inline">\(\frac{\partial^ \ell_2}{\partial a_1^2}\)</span>, <span class="math inline">\(\frac{\partial^ \ell_2}{\partial a_2\partial a_1}\)</span>, <span class="math inline">\(\frac{\partial^2 \ell_2}{\partial a_1\partial a_2}\)</span>, and <span class="math inline">\(\frac{\partial^ \ell_2}{\partial a_2^2}\)</span>. Simplify your work to match the values given in Project 2 Task 2.</p></li>
@@ -912,8 +922,16 @@ Answers
 </section>
 <section id="analyzing-waiting-times---using-the-exponential-distribution-for-our-stochastic-model." class="level3">
 <h3 class="anchored" data-anchor-id="analyzing-waiting-times---using-the-exponential-distribution-for-our-stochastic-model.">Analyzing Waiting times - Using the exponential distribution for our stochastic model.</h3>
-<p>How long do people wait in a line when they head to the bank?<br>
-- We’ll use the deterministic model <span class="math inline">\(f(x) = 0\)</span> to predict how long someone has to wait (where <span class="math inline">\(x\)</span> represents the time of day). What does this model really say in plain english? - What are your thoughts about our choice of models? - We’ll use the <a href="https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution" class="uri">https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution</a> <span class="math inline">\(p(r) = \lambda e^{-\lambda r}\)</span> to model the residuals. - Find the loglikelihood function given 100 data points $ (x_i,y_i) $ (where <span class="math inline">\(x_i\)</span> is the time of day the <span class="math inline">\(i^{\text{th}}\)</span> person comes into the bank and <span class="math inline">\(y_i\)</span> is the amount of time that person waits in line). - Find the location of the maximum of the loglikelihood function.</p>
+<p>How long do people wait in a line when they head to the bank?</p>
+<ul>
+<li>We’ll use the deterministic model <span class="math inline">\(f(x) = 0\)</span> to predict how long someone has to wait (where <span class="math inline">\(x\)</span> represents the time of day). What does this model really say in plain english?
+<ul>
+<li>What are your thoughts about our choice of models?</li>
+</ul></li>
+<li>We’ll use the <a href="https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution" class="uri">https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution</a> <span class="math inline">\(p(r) = \lambda e^{-\lambda r}\)</span> to model the residuals.</li>
+<li>Find the loglikelihood function given 100 data points $ (x_i,y_i) $ (where <span class="math inline">\(x_i\)</span> is the time of day the <span class="math inline">\(i^{\text{th}}\)</span> person comes into the bank and <span class="math inline">\(y_i\)</span> is the amount of time that person waits in line).</li>
+<li>Find the location of the maximum of the loglikelihood function.</li>
+</ul>
 <p><a href="https://www.statlect.com/fundamentals-of-statistics/exponential-distribution-maximum-likelihood" target="_blank">This article</a> goes through all the computations above.</p>
 <hr>
 <p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.27">Class.27 on byuimath.com</a></em></p>

@@ -522,7 +522,11 @@ StDev = Sqrt[Var]
 <summary>
 Solution
 </summary>
-<p>The general formulas are <span class="math inline">\(\ds E[X] = \int_{-\infty}^\infty x f(x) dx\)</span> and <span class="math inline">\(\ds Var[X] = \int_{-\infty}^\infty (x-E[X]])^2 f(x) dx\)</span>. We update the bounds <span class="math inline">\(0\leq x&lt;\infty\)</span> and function <span class="math inline">\(f(x) =  \lambda e^{-\lambda x}\)</span> to obtain - <span class="math inline">\(\ds E[X] = \int_0^\infty x (\lambda e^{-\lambda x}) dx\)</span> - <span class="math inline">\(\ds Var[X] = \int_{0}^\infty (x-E[X]])^2 (\lambda e^{-\lambda x}) dx\)</span>.</p>
+<p>The general formulas are <span class="math inline">\(\ds E[X] = \int_{-\infty}^\infty x f(x) dx\)</span> and <span class="math inline">\(\ds Var[X] = \int_{-\infty}^\infty (x-E[X]])^2 f(x) dx\)</span>. We update the bounds <span class="math inline">\(0\leq x&lt;\infty\)</span> and function <span class="math inline">\(f(x) =  \lambda e^{-\lambda x}\)</span> to obtain</p>
+<ul>
+<li><span class="math inline">\(\ds E[X] = \int_0^\infty x (\lambda e^{-\lambda x}) dx\)</span></li>
+<li><span class="math inline">\(\ds Var[X] = \int_{0}^\infty (x-E[X]])^2 (\lambda e^{-\lambda x}) dx\)</span>.</li>
+</ul>
 </details>
 <ol start="2" type="1">
 <li>Compute both the integrals above with Mathematica.</li>
@@ -549,7 +553,11 @@ $Assumptions = Null;</code></pre>
 <summary>
 Solution
 </summary>
-<p>We update the bounds to <span class="math inline">\(a\leq x\leq b\)</span> and function <span class="math inline">\(f(x) = \frac{1}{b-a}\)</span> to obtain - <span class="math inline">\(\ds E[X] = \int_a^b x (\frac{1}{b-a}) dx\)</span> - <span class="math inline">\(\ds Var[X] = \int_a^b (x-E[X]])^2 (\frac{1}{b-a}) dx\)</span>.</p>
+<p>We update the bounds to <span class="math inline">\(a\leq x\leq b\)</span> and function <span class="math inline">\(f(x) = \frac{1}{b-a}\)</span> to obtain</p>
+<ul>
+<li><span class="math inline">\(\ds E[X] = \int_a^b x (\frac{1}{b-a}) dx\)</span></li>
+<li><span class="math inline">\(\ds Var[X] = \int_a^b (x-E[X]])^2 (\frac{1}{b-a}) dx\)</span>.</li>
+</ul>
 <p>The code chunk below computes these values, with some “%//Simplify” commands after the results to make them easier to work with later.</p>
 <pre><code>$Assumptions = a &lt;= b;
 f = 1/(b - a);

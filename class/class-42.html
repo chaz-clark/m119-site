@@ -511,13 +511,21 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <section id="calculate-a-percentile" class="level3">
 <h3 class="anchored" data-anchor-id="calculate-a-percentile">Calculate a Percentile</h3>
-<p>What is a percentile? - If a 2 month old baby has a weight that is at the 12th percentile, then that baby’s weight is greater than or equal to 12% of all other 2 month babies. - Scoring in the 95th percentile on an exam means your score was greater than or equal to 95% of all other people who took the exam.</p>
+<p>What is a percentile?</p>
+<ul>
+<li>If a 2 month old baby has a weight that is at the 12th percentile, then that baby’s weight is greater than or equal to 12% of all other 2 month babies.</li>
+<li>Scoring in the 95th percentile on an exam means your score was greater than or equal to 95% of all other people who took the exam.</li>
+</ul>
 <p>Let’s look at a formal definition.</p>
 <details>
 <summary>
 Definition: Percentile
 </summary>
-<p>A percentile is a number, <span class="math inline">\(x_p\)</span>, that satisfies the equation <span class="math inline">\(P(X \leq x_p) = \frac{p}{100}\)</span>. In other words, a percentile is a number <span class="math inline">\(x_p\)</span> that satisfies the equation <span class="math inline">\(F(x_p) = \frac{p}{100})\)</span>. - A percentile divides ordered values (outcomes of a random variable) into 100 equal groups (per 100). - A percentile is a number, <span class="math inline">\(x_p\)</span>, such that <span class="math inline">\(p\)</span>% of the values (outcomes of a random variable) are at or below this number.</p>
+<p>A percentile is a number, <span class="math inline">\(x_p\)</span>, that satisfies the equation <span class="math inline">\(P(X \leq x_p) = \frac{p}{100}\)</span>. In other words, a percentile is a number <span class="math inline">\(x_p\)</span> that satisfies the equation <span class="math inline">\(F(x_p) = \frac{p}{100})\)</span>.</p>
+<ul>
+<li>A percentile divides ordered values (outcomes of a random variable) into 100 equal groups (per 100).</li>
+<li>A percentile is a number, <span class="math inline">\(x_p\)</span>, such that <span class="math inline">\(p\)</span>% of the values (outcomes of a random variable) are at or below this number.</li>
+</ul>
 </details>
 <p>There are two common ways we can compute a percentile. One way is to start with the cumulative distribution function.</p>
 <ol type="1">
@@ -541,7 +549,14 @@ Solutions
 Solve[Integrate[64/(s + 2)^5, {s, 0, x}] == 0.07, x, Reals]
 Solve[Integrate[64/(s + 2)^5, {s, 0, x}] == 0.99, x, Reals]</code></pre>
 </details>
-<p>When the PDF is complicated, sometimes we’ll need to employ alternate tools in Mathematica to compute the integrals and solve equations. Often adding an N before Solve is sufficient. The computer then uses a numerical approximation technique, rather than trying to find an exact solution. - Given the probability density function, <span class="math inline">\(f(x) = \frac{1}{\sqrt{37.5352\pi}}e^{-\frac{1}{37.5352}(x-3.2)^2}\)</span> for <span class="math inline">\(-\infty &lt; x &lt; \infty\)</span>, find each of the following percentiles. (Write down the equation you need to solve and then use Mathematica to solve the integral equation. - 60th percentile - 99th percentile</p>
+<p>When the PDF is complicated, sometimes we’ll need to employ alternate tools in Mathematica to compute the integrals and solve equations. Often adding an N before Solve is sufficient. The computer then uses a numerical approximation technique, rather than trying to find an exact solution.</p>
+<ul>
+<li>Given the probability density function, <span class="math inline">\(f(x) = \frac{1}{\sqrt{37.5352\pi}}e^{-\frac{1}{37.5352}(x-3.2)^2}\)</span> for <span class="math inline">\(-\infty &lt; x &lt; \infty\)</span>, find each of the following percentiles. (Write down the equation you need to solve and then use Mathematica to solve the integral equation.
+<ul>
+<li>60th percentile</li>
+<li>99th percentile</li>
+</ul></li>
+</ul>
 <pre><code>Solve[Integrate[1/Sqrt[37.5352*\[Pi]]*Exp[-(1/37.5352)*(x-3.2)^2], {x, -Infinity, xp}] == 0.6, xp, Reals]
 
 NSolve[Integrate[1/Sqrt[37.5352*\[Pi]]*Exp[-(1/37.5352)*(x-3.2)^2], {x, -Infinity, xp}] == 0.6, xp, Reals]

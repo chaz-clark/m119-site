@@ -493,11 +493,29 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="solving-exponential-and-log-equation-videos" class="level3">
 <h3 class="anchored" data-anchor-id="solving-exponential-and-log-equation-videos">(1) Solving Exponential and Log Equation (videos)</h3>
-<p>Watch these video from mathispower4u. - <a href="https://www.youtube.com/watch?v=eDDAqsiLNyE&amp;feature=youtu.be">Exponential Equations (video 1)</a> (~5 minutes) - <a href="https://www.youtube.com/watch?v=-RMmLUHAlj0&amp;feature=youtu.be">Exponential Equations (video 2)</a> (~4.5 minutes) - <a href="https://www.youtube.com/watch?v=HpGjdfH1oZ0&amp;feature=youtu.be">Exponential Equations (video 3)</a> (~3.5 minutes) - <a href="https://www.youtube.com/watch?v=ZUREfaCqWzY">Log Equations (video 1)</a> (~7.5 minutes) - <a href="https://www.youtube.com/watch?v=nrNaxeKXxqU&amp;feature=youtu.be">Log Equations (video 2)</a> (~7.5 minutes)</p>
+<p>Watch these video from mathispower4u.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eDDAqsiLNyE&amp;feature=youtu.be">Exponential Equations (video 1)</a> (~5 minutes)</li>
+<li><a href="https://www.youtube.com/watch?v=-RMmLUHAlj0&amp;feature=youtu.be">Exponential Equations (video 2)</a> (~4.5 minutes)</li>
+<li><a href="https://www.youtube.com/watch?v=HpGjdfH1oZ0&amp;feature=youtu.be">Exponential Equations (video 3)</a> (~3.5 minutes)</li>
+<li><a href="https://www.youtube.com/watch?v=ZUREfaCqWzY">Log Equations (video 1)</a> (~7.5 minutes)</li>
+<li><a href="https://www.youtube.com/watch?v=nrNaxeKXxqU&amp;feature=youtu.be">Log Equations (video 2)</a> (~7.5 minutes)</li>
+</ul>
 </section>
 <section id="transformation-exercises" class="level3">
 <h3 class="anchored" data-anchor-id="transformation-exercises">(2) Transformation (Exercises)</h3>
-<p>Consider the general form <span class="math inline">\(P(x;a,b,h,k) = af(c(x-h))+k\)</span> for the transformation of a function <span class="math inline">\(f(u)\)</span>. - For each <span class="math inline">\(P(x)\)</span> and parent function <span class="math inline">\(f(u)\)</span> below, identify the parameters <span class="math inline">\(a\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(h\)</span>, and <span class="math inline">\(k\)</span> required to obtain <span class="math inline">\(P(x) = P(x;a,b,h,k)\)</span> and describe how these parameters transform <span class="math inline">\(f(u)\)</span>. - State the domain and range for each function below. - Graph each function below. - <span class="math inline">\(P(x) = \ln{(x-2)}\)</span> where <span class="math inline">\(f(u) = \ln{u} = \log_{e}{u}\)</span> - <span class="math inline">\(P(x) = -3\log{(x)} + 1\)</span> where <span class="math inline">\(f(u) = \log{u} = \log_{10}{u}\)</span> - <span class="math inline">\(P(x) = -\log_7{(x)} -5\)</span> where <span class="math inline">\(f(u) = \log_7{u}\)</span> - <span class="math inline">\(P(x) = \ln(6-2x)\)</span> where <span class="math inline">\(f(u) = \ln{u}\)</span></p>
+<p>Consider the general form <span class="math inline">\(P(x;a,b,h,k) = af(c(x-h))+k\)</span> for the transformation of a function <span class="math inline">\(f(u)\)</span>.</p>
+<ul>
+<li>For each <span class="math inline">\(P(x)\)</span> and parent function <span class="math inline">\(f(u)\)</span> below, identify the parameters <span class="math inline">\(a\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(h\)</span>, and <span class="math inline">\(k\)</span> required to obtain <span class="math inline">\(P(x) = P(x;a,b,h,k)\)</span> and describe how these parameters transform <span class="math inline">\(f(u)\)</span>.</li>
+<li>State the domain and range for each function below.</li>
+<li>Graph each function below.
+<ul>
+<li><span class="math inline">\(P(x) = \ln{(x-2)}\)</span> where <span class="math inline">\(f(u) = \ln{u} = \log_{e}{u}\)</span></li>
+<li><span class="math inline">\(P(x) = -3\log{(x)} + 1\)</span> where <span class="math inline">\(f(u) = \log{u} = \log_{10}{u}\)</span></li>
+<li><span class="math inline">\(P(x) = -\log_7{(x)} -5\)</span> where <span class="math inline">\(f(u) = \log_7{u}\)</span></li>
+<li><span class="math inline">\(P(x) = \ln(6-2x)\)</span> where <span class="math inline">\(f(u) = \ln{u}\)</span></li>
+</ul></li>
+</ul>
 <p>Use this code to define the functions above.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ <span class="fu">log</span>(x<span class="dv">-2</span>) }</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ <span class="sc">-</span><span class="dv">3</span><span class="sc">*</span><span class="fu">log</span>(x,<span class="dv">10</span>) <span class="sc">+</span> <span class="dv">1</span> }</span>
@@ -674,8 +692,10 @@ Intermediate Value Theorem (IVT)
 <p>If <span class="math inline">\(f(x)\)</span> is a continuous function on a closed interval $ [a, b] $, where <span class="math inline">\(f(a) \neq f(b)\)</span>, and <span class="math inline">\(y_0\)</span> is any <span class="math inline">\(y\)</span>-value strictly between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span>, then <span class="math inline">\(y_0 = f(x_0)\)</span> for some <span class="math inline">\(x\)</span>-value, <span class="math inline">\(x_0\)</span>, in $ [a, b] $.</p>
 <p>Note: While there is a rigorous mathematical definition for what it means to be a continuous function, for our purposes the following concept with suffice, a function is continuous on an interval if the graph of that function can be traced with a pencil without lifting the pencil from the page.</p>
 </details>
-<p>Consider the function <span class="math inline">\(f(x) = (-13 + 2x)e^{-0.05x}\)</span> and the interval $ [ 3, 50 ] $.<br>
-- What does the IVT say about this function over this interval?</p>
+<p>Consider the function <span class="math inline">\(f(x) = (-13 + 2x)e^{-0.05x}\)</span> and the interval $ [ 3, 50 ] $.</p>
+<ul>
+<li>What does the IVT say about this function over this interval?</li>
+</ul>
 <details>
 <summary>
 Expand for a plot of the function.
@@ -707,7 +727,12 @@ Expand to see an exact solution to <span class="math inline">\(f(x_0) = 0\)</spa
 </summary>
 <p>We want to solve <span class="math inline">\((-13 + 2x_0) e^{-0.05x_0} = 0\)</span>. Since we have two things that multiply to zero, we know one of the quantities must be zero. We see <span class="math inline">\(-13 + 2x_0 = 0\)</span> or <span class="math inline">\(e^{-0.05x_0} = 0\)</span>. Since the range of an exponential function is strictly positive numbers, we know <span class="math inline">\(e^{-0.05x_0} \neq 0\)</span>. So we only have to determine when <span class="math inline">\(-13 + 2x_0 = 0\)</span>. This means <span class="math inline">\(2x_0 = 13\)</span>, or <span class="math inline">\(x_0 = \frac{13}{2} = 6.5\)</span>.</p>
 </details>
-<p>The intermediate value theorem does not require that we pick <span class="math inline">\(y_0 = 0\)</span>. - What values can we choose for <span class="math inline">\(y_0\)</span>? Let’s choose <span class="math inline">\(y_0 = 5\)</span>, and repeat what we did above. - Why is <span class="math inline">\(y_0=5\)</span> a valid choice? - Let’s try solving <span class="math inline">\(f(x_0) = y_0 = 5\)</span> by hand for <span class="math inline">\(x_0\)</span>. (Unfortunately we will fail when trying to solve this equation exactly.)</p>
+<p>The intermediate value theorem does not require that we pick <span class="math inline">\(y_0 = 0\)</span>.</p>
+<ul>
+<li><p>What values can we choose for <span class="math inline">\(y_0\)</span>? Let’s choose <span class="math inline">\(y_0 = 5\)</span>, and repeat what we did above.</p></li>
+<li><p>Why is <span class="math inline">\(y_0=5\)</span> a valid choice?</p></li>
+<li><p>Let’s try solving <span class="math inline">\(f(x_0) = y_0 = 5\)</span> by hand for <span class="math inline">\(x_0\)</span>. (Unfortunately we will fail when trying to solve this equation exactly.)</p></li>
+</ul>
 <details>
 <summary>
 Expand to see an attempt at solving <span class="math inline">\(f(x_0) = 5\)</span> exactly.

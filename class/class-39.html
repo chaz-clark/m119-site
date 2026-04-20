@@ -493,7 +493,20 @@ window.Quarto = {
 <section id="practice-finding-pdf-and-using-them-to-compute-expected-value-and-variance" class="level3">
 <h3 class="anchored" data-anchor-id="practice-finding-pdf-and-using-them-to-compute-expected-value-and-variance">(1) Practice finding PDF and using them to compute Expected Value and Variance</h3>
 <p>Many of the exercises below come from section 4.3 of <a href="https://byuistats.github.io/M119/unit3/probability.html" target="_blank">Rectangles, Targets, and Sums</a>.</p>
-<p>For each function <span class="math inline">\(g(x)\)</span> below, suppose <span class="math inline">\(X\)</span> is a random variable with probability density function <span class="math inline">\(f(x)=kg(x)\)</span>. - Find the value <span class="math inline">\(k\)</span> that makes <span class="math inline">\(f\)</span> a probability density function. - Compute the expected value of <span class="math inline">\(X\)</span>. - Write down the definite integral required to calculate the expected value. - Use Mathematica to compute the value. - Compute the variance of <span class="math inline">\(X\)</span> and the standard deviation <span class="math inline">\(\sigma\)</span>. - Write down the definite integral required to calculate the variance. - Use Mathematica to compute the value.</p>
+<p>For each function <span class="math inline">\(g(x)\)</span> below, suppose <span class="math inline">\(X\)</span> is a random variable with probability density function <span class="math inline">\(f(x)=kg(x)\)</span>.</p>
+<ul>
+<li>Find the value <span class="math inline">\(k\)</span> that makes <span class="math inline">\(f\)</span> a probability density function.</li>
+<li>Compute the expected value of <span class="math inline">\(X\)</span>.
+<ul>
+<li>Write down the definite integral required to calculate the expected value.</li>
+<li>Use Mathematica to compute the value.</li>
+</ul></li>
+<li>Compute the variance of <span class="math inline">\(X\)</span> and the standard deviation <span class="math inline">\(\sigma\)</span>.
+<ul>
+<li>Write down the definite integral required to calculate the variance.</li>
+<li>Use Mathematica to compute the value.</li>
+</ul></li>
+</ul>
 <ol type="1">
 <li><span class="math inline">\(g(x) = \begin{cases}e^{-3x} &amp; 0\leq x&lt;\infty\\ 0 &amp; \text{otherwise}\end{cases}\)</span></li>
 </ol>
@@ -701,7 +714,11 @@ x - 1 &amp; 1 \leq x \leq 3 \\
 <summary>
 Probability Density Function (PDF)
 </summary>
-<p>A <strong>probability density function</strong> <span class="math inline">\(f(x)\)</span> is a nonnegative function that satisfies <span class="math inline">\(\displaystyle\int_{-\infty}^{\infty}f(x)dx = 1\)</span>. - Remember the description “nonnegative function” means all the outputs of <span class="math inline">\(f\)</span> are positive or zero, <span class="math inline">\(f(x) \geq 0\)</span>. - Important note: If a function is zero everywhere except on an interval <span class="math inline">\(a \leq x \leq b\)</span>, then <span class="math inline">\(\int_{-\infty}^{\infty}f(x)dx = \int_{a}^{b}f(x)dx\)</span>.</p>
+<p>A <strong>probability density function</strong> <span class="math inline">\(f(x)\)</span> is a nonnegative function that satisfies <span class="math inline">\(\displaystyle\int_{-\infty}^{\infty}f(x)dx = 1\)</span>.</p>
+<ul>
+<li>Remember the description “nonnegative function” means all the outputs of <span class="math inline">\(f\)</span> are positive or zero, <span class="math inline">\(f(x) \geq 0\)</span>.</li>
+<li>Important note: If a function is zero everywhere except on an interval <span class="math inline">\(a \leq x \leq b\)</span>, then <span class="math inline">\(\int_{-\infty}^{\infty}f(x)dx = \int_{a}^{b}f(x)dx\)</span>.</li>
+</ul>
 </details>
 <details>
 <summary>
