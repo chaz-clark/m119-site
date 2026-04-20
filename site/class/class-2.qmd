@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Familiarize yourself with class
 - Read the Syllabus
 - Complete the Background Survey
@@ -49,11 +50,42 @@ Our first Unit is focused on expanding our knowledge and understanding of functi
 | 1 |  |  |
 | 2 |  |  |
 
-### (3) Start working with R and RStudio
-1. Install [R](https://www.r-project.org/)
-2. Install [RStudio](https://www.rstudio.com/products/rstudio/download/)
-3. Open a new file in RStudio and use it to perform a few computations. One option is to repeat some of the computations you did during class in groups, but this time using R to perform the computations. Or you may pick something else of interest. Feel free to search the web for a tutorial on performing computations with R in RStudio.
-4. Construct the plot of a function (either one from part 2 above, from in class, or one of your choice).
+### (3) Start working with R
+
+1. Install [R](https://www.r-project.org/){target="_blank"}.
+2. Install an editor to work with R:
+    - **Recommended:** [RStudio](https://www.rstudio.com/products/rstudio/download/){target="_blank"} — purpose-built for R and the easiest path for this course. Course examples, screenshots, and troubleshooting assume RStudio.
+    - **Alternative:** [VS Code](https://code.visualstudio.com/){target="_blank"} — fine if you already use VS Code for other courses, but it requires extra setup. See the note below.
+
+<details>
+<summary>Setting up R in VS Code (click to expand)</summary>
+
+If you pick VS Code instead of RStudio, here's what you'll need beyond the editor itself:
+
+1. Install the [**R Extension for VS Code**](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r){target="_blank"} (publisher: REditorSupport).
+2. In the R console, install the `languageserver` package — this powers autocomplete and inline help inside VS Code:
+
+    ```r
+    install.packages("languageserver")
+    ```
+
+3. For plots to display nicely in VS Code, install `httpgd`:
+
+    ```r
+    install.packages("httpgd")
+    ```
+
+    Then in VS Code settings search for "R plot" and enable **R > Plot: Use Httpgd**.
+
+4. For knitting R Markdown files, install the [**Quarto CLI**](https://quarto.org/docs/get-started/){target="_blank"} plus the Quarto VS Code extension — or run `rmarkdown::render("file.Rmd")` from the R terminal.
+5. Open an `.R` or `.Rmd` file and use **Cmd/Ctrl + Enter** to run the line at your cursor.
+
+Because course materials assume RStudio, if you're on VS Code you'll sometimes need to translate pane names (e.g. "Plots tab" → the httpgd browser window, "Environment" → the R Side Bar).
+
+</details>
+
+3. Open a new file and use it to perform a few computations in R. One option is to repeat some of the computations you did during class in groups, but this time using R. Or pick something else of interest. Feel free to search the web for a short R tutorial.
+4. Construct the plot of a function (either one from part 2 above, from class, or one of your choice).
 
 You could play with and adjust the code below as a starting point.
 

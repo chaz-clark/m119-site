@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Make Connections
 - Prepare to share a few problems from 3 -- Discrete Random Variables and Expected Value and Complete 3 -- Calculate Parameters of Continuous Random Variables Identifying Expected Value and Variance assignments in Knewton Alta.
     - What similarities and difference can you identify between the exercises in these two assignments?

@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Solving Linear Systems
 We will need the result from our work below to finish Project 2 Task 3. Once we have more than one unknown parameter in our model, we have to solve a system of equations where every partial derivative equals zero, in order to locate the parameters that lead to maximum likelihood. We'll solve a single system of equations, symbolically, and then use the result to answer lots of questions. 
 The linear system we need to solve is 

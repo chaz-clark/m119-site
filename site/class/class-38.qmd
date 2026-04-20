@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Creating a PDF and using it to compute the expected value and a probability
 Consider the function $$\ds f(x) = 
 \begin{cases}

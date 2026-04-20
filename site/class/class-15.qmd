@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Likelihood Practice (with Poisson)
 
 Use the storms listed on Wikipedia's [List of Florida hurricanes](https://tinyurl.com/51vyiwjw) page to answer the questions below.

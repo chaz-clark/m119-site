@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Derivative Rules
 - Watch [Intro to Derivative Rules](https://www.youtube.com/watch?v=untsh_gpdzI&feature=youtu.be){target="_blank"} (~9 minutes)
     - Begin Knewton Alta assignment 2 -- Derivative Rules (Power Function, Sum/Difference, Constant Multiple)

@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Extrema Vocabulary
 Answer as many of the questions from [Derivative Relationships Fill in the Blank](https://byuistats.github.io/M119/m119-docs/DerivativeRelationship_FillBlank.pdf){target="_blank"} as possible. Use sections 4.3 and 4.5 from the OpenStax Calculus Volume 1 as a resource.
 - [Section 4.3 OpenStax Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima){target="_blank"}

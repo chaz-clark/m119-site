@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Derivative Relationships (extended)
 - Using your sketches of the derivatives of each of the six function in [this file](https://byuistats.github.io/M119/m119-docs/DerivativeGraphs.pdf){target="_blank"}, sketch the second derivative of each function. Remember the second derivative is the derivative of the first derivative function.
 

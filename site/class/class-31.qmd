@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Reading Assignment
 One of the goals in our class is to become better at reading and writing mathematics.  This is a skill that is learned through practice.  
 - Read [Second Derivative Test in Higher Dimensions](../assets/docs/SecondDerTest_BrianSittinger.pdf){target="_blank"}.

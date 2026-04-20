@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Chain Rule
 Watch a video from mathispower4u about the [Chain Rule (video 2)](https://www.youtube.com/watch?v=1x_wMYFOliQ){target="_blank"} (~9 min)
 - Download [this file](https://byuistats.github.io/M119/m119-docs/ChainRule_comparison.pdf){target="_blank"} and complete the exercises. 

@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Recap Reading - Rectangles, Targets, and Sums
 For Unit 3, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
 1. Skim read the entire document above (it's a second pass over the material). Make notes of questions you have that you would like to discuss more. If you didn't watch the video in section 1.2 the first time through, please do so this time through. 

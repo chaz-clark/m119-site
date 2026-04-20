@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Compare Maximum Likelihood fit to your Visual fit
 Today in class we fitted $f_2$ and $f_6$ to the seed 123. Let's now adapt what we did in class and the code to fit $f_2$ and $f_6$ to your seed. 
 - Adapt the code from class to fit $f_2$ to your data (the data obtained when using your assigned seed to select a light bulb).

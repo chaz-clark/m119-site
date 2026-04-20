@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Solving a General Linear System with 2 equations and 2 unknowns
 Last time the assignment was to solve, or attempt to solve, the system similar to the one below for $x$ and $y$.
 $$\left\{

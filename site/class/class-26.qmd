@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Making Connections
 1. Consider the function $ f(a) = 100 - \frac{1}{2}(3-4a)^2 $. 
 - Find the critical points of $f$.

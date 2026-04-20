@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Install Mathematica
 Use the following link to access instructions for [installing Mathematica](https://www.byui.edu/mathematics/student-resources/mathematica){target="_blank"}.
 We will be using Mathematica frequently during the last several weeks of the semester. You will need Mathematica to complete Project 3.

@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) CDF's and PDF's (Making Connections)
 Let $g(x)$ be a function that defines the top of a target. Each time we throw a dart, it hits a a random spot on the target. We let $X$ be the random variable that records the $x$-coordinate of the dart's location. 
 

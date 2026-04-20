@@ -10,6 +10,7 @@ Pick something from your prep today that you can share with your group in class.
 
 <a id="Prep"></a>
 ## Preparation
+
 ### (1) Practice with Functions
 Let $f(x) = \sqrt{x}$ and complete the exercise 1-4.<br>
 1. Find the exact values.
