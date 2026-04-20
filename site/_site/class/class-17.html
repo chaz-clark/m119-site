@@ -427,7 +427,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-17" id="toc-between-class-sessions---prep-for-day-17" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-17">Between Class Sessions - Prep for Day 17 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#loglikelihood" id="toc-loglikelihood" class="nav-link" data-scroll-target="#loglikelihood">(2) Loglikelihood</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
+  <li><a href="#applied-practice-project-work" id="toc-applied-practice-project-work" class="nav-link" data-scroll-target="#applied-practice-project-work">Applied Practice (Project Work)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
   <li><a href="#summary-what-is-a-derivative" id="toc-summary-what-is-a-derivative" class="nav-link" data-scroll-target="#summary-what-is-a-derivative">Summary (What is a derivative?)</a>
@@ -466,6 +475,59 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-17" class="level1">
+<h1>Between Class Sessions - Prep for Day 17 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Derivative Rules - Watch <a href="https://www.youtube.com/watch?v=untsh_gpdzI&amp;feature=youtu.be" target="_blank">Intro to Derivative Rules</a> (~9 minutes) - Begin Knewton Alta assginment 2 – Derivative Rules (Power Function, Sum/Difference, Constant Multiple)</p>
+<section id="loglikelihood" class="level3">
+<h3 class="anchored" data-anchor-id="loglikelihood">(2) Loglikelihood</h3>
+<details>
+<summary>
+Loglikelihood Function
+</summary>
+<p>The <strong>loglikelihood function</strong> is the natural log of the likelihood function.</p>
+<p><strong>Useful Fact:</strong> The loglikelihood will have a maximum at the same location (i.e.&nbsp;for the same parameter value, or collection of parameter values for multidimensional likelihood functions) as the likelihood function.</p>
+</details>
+<p>For each of the likelihood functions below, write the corresponding loglikelihood function. - <span class="math inline">\(L_1(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\)</span> with <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt; 0\)</span>.</p>
+<ul>
+<li><p><span class="math inline">\(L_2(\lambda; \mathbf{x}) = \prod_{i=1}^n \lambda e^{-\lambda x_i}\)</span> with <span class="math inline">\(x_i &gt; 0\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt;0\)</span>.</p></li>
+<li><p><span class="math inline">\(L_3(\mu, \sigma; \mathbf{x}) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}},\)</span> where <span class="math inline">\(\mu\)</span> is a real number and <span class="math inline">\(\sigma &gt; 0\)</span>.</p></li>
+</ul>
+<details>
+<summary>
+Answers
+</summary>
+<ul>
+<li><p><span class="math inline">\(\ell_1(\lambda; \mathbf{x}) = \ln\left(\prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}\right)\)</span> with <span class="math inline">\(x_i = 0, 1, 2, 3, ...\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt; 0\)</span>.</p></li>
+<li><p><span class="math inline">\(\ell_2(\lambda; \mathbf{x}) = \ln\left(\prod_{i=1}^n \lambda e^{-\lambda x_i}\right)\)</span> with <span class="math inline">\(x_i &gt; 0\)</span> for <span class="math inline">\(i = 1, 2, ... n\)</span> where <span class="math inline">\(\lambda &gt;0\)</span>.</p></li>
+<li><p><span class="math inline">\(\ell_3(\mu, \sigma; \mathbf{x}) = \ln\left(\prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}\right),\)</span> where <span class="math inline">\(\mu\)</span> is a real number and <span class="math inline">\(\sigma &gt; 0\)</span>.</p></li>
+</ul>
+<p>Remember: Logs can turn multiplication into addition.</p>
+<p>How could you use this property of logarithms to rewrite each loglikelihood function with a sum rather than a product?</p>
+</details>
+<p><a id="PP"></a></p>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="skill-practice-ka-homework" class="level3">
+<h3 class="anchored" data-anchor-id="skill-practice-ka-homework">Skill Practice (KA Homework)</h3>
+<p>Begin Knewton Alta assginment 2 – Derivative Rules (Power Function, Sum/Difference, Constant Multiple)</p>
+</section>
+<section id="applied-practice-project-work" class="level3">
+<h3 class="anchored" data-anchor-id="applied-practice-project-work">Applied Practice (Project Work)</h3>
+<ul>
+<li>Complete Project 1</li>
+<li>Begin Project 2 Task 1
+<ul>
+<li>Read the instructions</li>
+<li>Write down a formula for residuals <span class="math inline">\(r_i = y_i - \hat{y_i} = y_i - f(t_i)\)</span> for each general function listed in Project 2 Task 1 and points $ ( t_i, y_i ) $. Write your formula so you can clearly see how the parameters <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> contribute to the calculation of <span class="math inline">\(r_i\)</span> in each case. For example, given the model <span class="math inline">\(f_1\)</span> the formula for the residuals will be <span class="math inline">\(r_i = y_i - f_1(t_i; a_1) = y_i - (100 + a_1t_i) = y_i - 100 - a_1t_i\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="brain-gains" class="level2">

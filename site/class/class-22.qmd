@@ -1,6 +1,52 @@
 ---
 title: "Class 22"
 ---
+# Between Class Sessions - Prep for Day 22 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Derivative Relationships (extended)
+- Using your sketches of the derivatives of each of the six function in [this file](https://byuistats.github.io/M119/m119-docs/DerivativeGraphs.pdf){target="_blank"}, sketch the second derivative of each function. Remember the second derivative is the derivative of the first derivative function.
+
+## More Derivative Practice 
+- Download [this file](https://byuistats.github.io/M119/m119-docs/DerRules_table.pdf){target="_blank"} and complete the exercises.
+
+- Consider the function $f(y;a,b,c) = ay^2 + by + c$. 
+    - Take the derivative with respect to $y$, assume all other variables and parameters are constants.
+    - Take the derivative with respect to $a$, assume all other variables and parameters are constants.
+    - Take the derivative with respect to $c$, assume all other variables and parameters are constants.
+
+- Consider the function $h(x,y;a) = (100 + xy)e^{-ax}$. 
+    - Take the derivative with respect to $x$, assume all other variables and parameters are constants.
+    - Take the derivative with respect to $a$, assume all other variables and parameters are constants.
+    - Take the derivative with respect to $y$, assume all other variables and parameters are constants.
+
+- Given $f(a_1; x) = \sum_{i=1}^{3} (a_1x_i + 2)^5$, find $\diff{f}{a_1}$ assume $x_1$, $x_2$, and $x_3$ are constants.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 2 -- Linearization assignment.
+- If you have not done so already, complete the other derivative rule assignments
+    - 2 -- Derivative Rules (Power Function, Sum/Difference, Constant Multiple)
+    - 2 -- Derivative Rules (Product and Quotient)
+    - 2 -- Derivative Rules (Function Composition) - the Chain Rule
+
+### Applied Practice (Project Work)
+- Review this [example of a written solution](https://byuistats.github.io/M119/m119-docs/project2_bmw.html){target="_blank"} for the loglikelihood calculation when using the model $f_1$. *Note this example solution is also posted in Canvas in the Additional Resources module.*
+- Complete or Revise and then submit Project 2 Task 1
+    - Remember, everyone can submit Project 2 Task 1 this week, regardless of whether they have finished Project 1.
+      - To earn a C, you need pass off one Project (and 2 project tasks). To earn a B, you need to pass off 2 Projects (and 4 project tasks). To earn an A, you need to pass off all 3 Project (and 6 project tasks). 
+    - Be real with yourself. 
+      - If you had a rough start to the semester, other classes are a higher priority, or *(fill in the blank with whatever you are dealing with this semester)*. Give yourself permission to focus your time and energy where you need to accomplish your goals. 
+      - As we move from Project 1 to Project 2 work, this is also a good time to refocus your efforts. You can move forward with Project 2, while finishing up Project 1 (Math 119 was designed to give you this personal flexibility). You can still finish all three projects this semester if you submit ready for review a Project 2 task and a Project 1 task every week and then follow-up by completing any revisions.
+
 
 # During Class
 

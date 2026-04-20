@@ -427,7 +427,15 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-46" id="toc-between-class-sessions---prep-for-day-46" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-46">Between Class Sessions - Prep for Day 46 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#antiderivative-exercises" id="toc-antiderivative-exercises" class="nav-link" data-scroll-target="#antiderivative-exercises">(2) Antiderivative Exercises</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
   <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a>
@@ -467,6 +475,45 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-46" class="level1">
+<h1>Between Class Sessions - Prep for Day 46 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Fundamental Theorem of Calculus Exercises 1. Compute the following definite integrals using Part 2 of the Fundamental Theorem of Calculus, and then check your work with Mathematica. 1. Compute <span class="math inline">\(\int_{-3}^{-\frac{1}{2}} \frac{2}{t^2} dt\)</span>. 1. Compute <span class="math inline">\(\int_2^x \frac{2}{t^2} dt\)</span>. 1. Explain why <span class="math inline">\(\frac{d}{dx}\left(\int_{-3}^{-\frac{1}{2}} \frac{2}{t^2} dt\right) = 0\)</span>. - We do not use (at least not directly) the Fundamental Theorem of Calculus when taking the derivative of this integral. Why not? 1. Compute <span class="math inline">\(\frac{d}{dx}\left(-\frac{2}{x} + 1\right)\)</span></p>
+<ol type="1">
+<li>Compute <span class="math inline">\(\frac{d}{dx}\left(\int_2^x \frac{2}{t^2} dt\right)\)</span>.</li>
+<li>Consider your work for the last two derivatives exercises above. What happens to the lower limit of integration when we take the derivative of <span class="math inline">\(\int_2^x \frac{2}{t^2} dt\)</span> with respect to <span class="math inline">\(x\)</span>?</li>
+</ol>
+<section id="antiderivative-exercises" class="level3">
+<h3 class="anchored" data-anchor-id="antiderivative-exercises">(2) Antiderivative Exercises</h3>
+<p>We use the symbol, <span class="math inline">\(\int f(x)dx\)</span>, to represent the collection of all antiderivatives of the function <span class="math inline">\(f(x)\)</span>. Remember antiderivative means “undo” the derivative. We also read <span class="math inline">\(\int f(x)dx\)</span> as “the indefinite integral of <span class="math inline">\(f\)</span>”.</p>
+<p>Evaluate each indefinite integral. Write your solutions (and the thinking leading to your answer) out on paper. 1. <span class="math inline">\(\int x^{10}dx\)</span> 1. <span class="math inline">\(\int (x+1)^{10}dx\)</span> 1. <span class="math inline">\(\int (3x+1)^{10}dx\)</span></p>
+<pre><code>1.  $\int \frac{64}{x^5} dx$
+1. $\int \frac{64}{(x+2)^5} dx$
+1. $\int \frac{64}{(3x+1)^5} dx$
+
+1.  $\int \frac{1}{x} dx$
+1. $\int \frac{1}{1-x} dx$
+1. $\int \frac{1}{1-4x} dx$
+
+1.  $\int e^x dx$
+1. $\int e^{x-1} dx$ 
+1. $\int e^{2-x} dx$ 
+1. $\int e^{2-5x} dx$</code></pre>
+<p><a id="PP"></a></p>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="skill-practice-ka-homework" class="level3">
+<h3 class="anchored" data-anchor-id="skill-practice-ka-homework">Skill Practice (KA Homework)</h3>
+<ul>
+<li>Complete 3 – CDFs, PDFs, and the Fundamental Theorem of Calculus</li>
+<li>Begin 3 – Antiderivatives or Indefinite Integrals</li>
+</ul>
+</section>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="brain-gains" class="level2">
@@ -584,9 +631,9 @@ FullSimplify[D[MyAnswer - MathmaticaAnswer, x] == 0]</code></pre>
 <li><p>Consider <span class="math inline">\(\int \frac{y}{(y+1)^4} dy\)</span>. Compute the integral by hand, and then with Mathematica. Compare the solutions, and verify that their difference is a constant.</p></li>
 <li><p>Consider <span class="math inline">\(\int \frac{1}{x^2 + 8} dx\)</span>. Computing the integral in Mathematica, and then plot the result. The ArcTan function may be new to many of us. The function <span class="math inline">\(f(x) = \tan^{-1}(x)\)</span> is called the arctangent function or inverse tangent function. The domain of the inverse tangent function is all real numbers. The range of the inverse tangent is $ ( -, ) $. We could use the following code to plot <span class="math inline">\(f(x) = \arctan(x)\)</span> in R.</p></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>inpt <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">25</span>,<span class="dv">30</span>,<span class="fl">0.1</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">2.5</span>,<span class="fl">2.5</span>,<span class="fl">0.25</span>,<span class="fl">0.25</span>))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(inpt,<span class="fu">atan</span>(inpt),<span class="at">type=</span><span class="st">'l'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>inpt <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">25</span>,<span class="dv">30</span>,<span class="fl">0.1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">2.5</span>,<span class="fl">2.5</span>,<span class="fl">0.25</span>,<span class="fl">0.25</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(inpt,<span class="fu">atan</span>(inpt),<span class="at">type=</span><span class="st">'l'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="group-meeting" class="level2">

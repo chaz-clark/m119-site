@@ -1,6 +1,43 @@
 ---
 title: "Class 19"
 ---
+# Between Class Sessions - Prep for Day 19 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Derivative Rules (Intro to Chain Rule)
+Watch the following videos from mathispower4u about the product, quotient, and chain rules.
+- [Product Rule (video 2)](https://www.youtube.com/watch?v=gsaHoc2mSps&feature=youtu.be){target="_blank"} (~6 min)
+- [Quotient Rule (video 2)](https://www.youtube.com/watch?v=Inq4V8Vogxc&feature=youtu.be){target="_blank"} (~6 min)
+- [Chain Rule Intro](https://www.youtube.com/watch?v=PT11CSo-WkQ){target="_blank"} (~9 min) - Note that there is a notation typo in their prepared slides. Can you spot it?
+
+- Compute the derivative of each function below, listing the rule needed at each step.  
+1. $f(x) = (x^3+4x)^5$
+
+1. $f(x) = (e^x+4x)^5$
+1. $f(x) = e^x\ln x$
+
+1. $f(x) = \frac{x^3}{4\ln(x) + 5x}$
+1. $f(x) = \sum_{i=1}^{5}(4-2t_i+xy_i)^3$
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 2 -- Derivative Rules (Power Function, Sum/Difference, Constant Multiple) assignment
+- Complete 2 -- Derivative Rules (Product and Quotient) assignment
+- Begin 2 -- Derivative Rules (Function Composition) - the Chain Rule assignment.
+
+### Applied Practice (Project Work)
+- Continue working on Project 2 Task 1
+    - Use the properties of logarithms to rewrite each loglikelihood function as a sum rather than a product.
+    - Use the properties of sums to write in the form $\ell(\text{parameters},\text{data}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\displaystyle\Sigma_{i=1}^{44}(y_i-f(t_i))^2$.
+
 
 # During Class
 

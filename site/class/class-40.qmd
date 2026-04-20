@@ -1,6 +1,58 @@
 ---
 title: "Class 40"
 ---
+# Between Class Sessions - Prep for Day 40 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Solving a System of Equations
+1. Solve the system $ \left\{\begin{array}{ll}\frac{x}{y} = 2 \\ \frac{x}{y^2} = 3\end{array} \right.$ for $x$ and $y$.
+
+1. Solve the system $ \left\{\begin{array}{ll}\frac{\alpha}{\beta} = 2.7 \\ \frac{\alpha}{\beta^2} = 10.2\end{array} \right.$ for $\alpha$ and $\beta$
+
+### (2) Continue working on Project 3 Task 2
+- Write down the definite integrals to compute $Var[X]$ for $f_0$, $f_1$, $f_2$, and $f_3$.
+    - Use Mathematica to calculate $Var[X]$ in each case.
+
+Use the following code to get you started. Let's calculate $\int_{-\infty}^\infty f(x) dx $, $ E[X] $, $ Var[X] $, and standard deviation of X for $f_3$ and $f_1$.
+
+```
+$Assumptions = \[Lambda] > 0;
+f = \[Lambda]*Exp[-\[Lambda]*x];
+bounds = {x, 0, Infinity};
+A = Integrate[f, bounds]
+EV = Integrate[x*f, bounds]
+Var = Integrate[(x - EV)^2*f, bounds]
+StDev = Sqrt[Var]
+% // Simplify
+```
+
+```
+$Assumptions = \[Sigma] > 0;
+f = 1/Sqrt[2*\[Pi]*\[Sigma]^2]*Exp[-1/2*((x - \[Mu])/\[Sigma])^2];
+bounds = {x, -Infinity, Infinity};
+A = Integrate[f, bounds]
+EV = Integrate[x*f, bounds]
+Var = Integrate[(x - EV)^2*f, bounds]
+StDev = Sqrt[Var]
+% // Simplify
+```
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Continue working on 3 -- Calculate Parameters of Continuous Random Variables (Identifying Expected Value and Variance)
+- Continue working on 3 -- Definite Integrals
+
+### Applied Practice (Project Work)
+- Continue working on Project 3 Task 2
+
 
 # During Class
 ## Brain Gains

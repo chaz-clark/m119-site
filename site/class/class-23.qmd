@@ -1,6 +1,47 @@
 ---
 title: "Class 23"
 ---
+# Between Class Sessions - Prep for Day 23 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Writing Equations
+The goal of these exercises is to practice writing functions that model a given situation. Each of the functions you create should depend on only one variable. We'll need this skill to solve applied optimization problems.
+
+1. The product of two numbers $n$ and $m$ is 100, and $n$ must be positive. (For example, $n = 20$ and $m = 5$ or $n = \frac{2}{3}$ and $m = 150$).
+    - Write a function that gives the sum of the two numbers in terms of $n$. 
+      - What is the domain of this function?
+    - Graph the function using R. 
+      - What is the minimum value of the function?
+      - For which value of $n$ do you obtain the minimum value of the function?
+      - What is the maximum value of the function?
+      - For which value of $n$ do you obtain the maximum value of the function?
+
+1. A rectangle with sides of length $\ell$ and width $w$ has a perimeter of 400 yards. (For example, if the length $\ell = 50$ yards then $w = ?$ and the area of the rectangle is $A = ?$).
+    - Write a function that gives the area in terms of $\ell$. What is the domain of this function?
+    - Write a function that gives the area in terms of $w$. What is the domain of this function?
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Work on 2 -- Partial Derivatives assignment.
+- If you have not done so already, complete the other derivative rule assignments
+    - 2 -- Derivative Rules (Power Function, Sum/Difference, Constant Multiple)
+    - 2 -- Derivative Rules (Product and Quotient)
+    - 2 -- Derivative Rules (Function Composition) - the Chain Rule
+    - 2 -- Linearization
+
+### Applied Practice (Project Work)
+- Submit Project 2 Task 1
+- Complete and submit revisions of any outstanding previous project work.
+- Read the instructions for Project 2 Task 2 (and get started)
+
 
 # During Class
 ## Brain Gains

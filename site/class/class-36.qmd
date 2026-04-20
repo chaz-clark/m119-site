@@ -1,6 +1,89 @@
 ---
 title: "Class 36"
 ---
+# Between Class Sessions - Prep for Day 36 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Reading - Rectangles, Targets, and Sums - Sections 4.1 - 4.3
+For Unit 3, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+1. Read sections 4.1-4.3.
+
+1. Complete a few exercises, and come ready to share what you did with your group. Remember it's OK if you don't have the correct answers. The point is to have made a good faith attempt, and then come ready to share what you did. 
+1. Using Mathematica, compute each of the following.
+    - The area under $g(x) = 2x$ for $0\leq x\leq 4$, so compute $\int_0^4 2x dx$. 
+    - The area under $g(x) = \sqrt{9-x^2}$ for $-3\leq x\leq 3$, so compute $\int_{-3}^{3} \sqrt{9-x^2} dx$.
+    - The centroid of the region under $g(x) = \sqrt{9-x^2}$ for $-3\leq x\leq 3$, so compute $$\dfrac{\int_{-3}^{3} x\sqrt{9-x^2} dx}{\int_{-3}^{3} \sqrt{9-x^2} dx}.$$
+
+<details>
+<summary>Solutions</summary>
+
+Come with your attempts, ready to share with each other. The code below will get you the first bullet point.
+
+```
+Integrate[2 x, {x, 0, 4}]
+```
+
+</details>
+
+### (2) Simulation and Probability
+1.  Use the following code to plot the function $ f_1(x) = \frac{1}{\sqrt{0.02\pi}}e^{-\frac{1}{2}\left(\frac{x-4}{0.1}\right)^2} $. That is the Normal probability model (or distribution) with the parameters $ \mu = 4 $ and $ \sigma = 0.1 $.
+
+```r
+f1 <- function(x,mu=0,sigma=1){(1/sqrt(2*pi*sigma^2))*exp(-0.5*((x-mu)/sigma)^2)}
+
+x <- seq(3,5,0.01)
+y <- f1(x,4,0.1)
+
+plot(x,y,type='l')
+```
+
+1.  Use the following code to simulate a sample of 25000 random measurements from the Normal probability model with the parameters $ \mu = 4 $ and $ \sigma = 0.1 $ and plot the density histogram of this sample. This code uses the set.seed() command in R to set the seed so our simulated sample is reproducible (we will all have the exact same random sample of 25000 measurements. We will use the seed 123.
+
+```r
+set.seed(123)
+tmp <- rnorm(25000, mean=4, sd=0.1)
+
+hist(tmp,probability = TRUE)
+```
+
+1.  Compare your plot of f1 and the density histogram of our sample. Use the following code to plot the sample and f1 together.
+
+```r
+hist(tmp,probability = TRUE)
+lines(x,y,col=5)
+```
+
+1.  Use the following code to calculate the probability that a measurement in our sample will be less than 3.8.
+
+```r
+#Count the number of measurements in our sample less than 3.8.
+x <- length(which(tmp < 3.8))
+x
+#Calculate the probability as the ratio of number of measurements with the characteristic (being less than 3.8) compared to the total number of measurements in our sample.
+p <- x/length(tmp)
+p
+```
+
+1.  Adjust the code above to calculate the probability that a measurement in our sample will be more than 4.7.
+
+1.  Adjust the code again to calculate another probability of your choice using our sample.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Begin 3 -- Riemann Sums & Definite Integrals
+
+### Applied Practice (Project Work)
+- Continue working on Project 3 Task 1.
+    - You should be getting close to having the task complete.
+
 
 # During Class
 

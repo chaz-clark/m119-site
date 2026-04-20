@@ -427,7 +427,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-38" id="toc-between-class-sessions---prep-for-day-38" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-38">Between Class Sessions - Prep for Day 38 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#relationships-between-cdfs-and-pdfs" id="toc-relationships-between-cdfs-and-pdfs" class="nav-link" data-scroll-target="#relationships-between-cdfs-and-pdfs">(2) Relationships between CDFs and PDFs</a></li>
+  <li><a href="#reading-practice" id="toc-reading-practice" class="nav-link" data-scroll-target="#reading-practice">(3) Reading Practice</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#summary-of-key-points-rectangles-targets-and-sums" id="toc-summary-of-key-points-rectangles-targets-and-sums" class="nav-link" data-scroll-target="#summary-of-key-points-rectangles-targets-and-sums">Summary of Key Points (Rectangles, Targets, and Sums)</a></li>
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
@@ -463,6 +472,115 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-38" class="level1">
+<h1>Between Class Sessions - Prep for Day 38 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Creating a PDF and using it to compute the expected value and a probability Consider the function <span class="math display">\[\ds f(x) =
+\begin{cases}
+kx - k &amp;  1 \leq x \leq 3 \\
+0 &amp;  \text{otherwise}
+\end{cases}.\]</span> 1. Select <span class="math inline">\(k\)</span> so <span class="math inline">\(f\)</span> is the PDF of a random variable <span class="math inline">\(X\)</span>.</p>
+<ol type="1">
+<li><p>Use R and a Riemann sum to approximate $E[X] $.</p></li>
+<li><p>Use Mathematica to compute $E[X] $.</p></li>
+<li><p>Use Mathematica to compute <span class="math inline">\(P(X\leq 2)\)</span>.</p></li>
+</ol>
+<section id="relationships-between-cdfs-and-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="relationships-between-cdfs-and-pdfs">(2) Relationships between CDFs and PDFs</h3>
+<ol type="1">
+<li>Suppose a random variable <span class="math inline">\(X\)</span> has a CDF <span class="math display">\[F(x) =
+\begin{cases}
+0 &amp;  x &lt; 0 \\
+\frac{x}{3} &amp;  0 \leq x \leq 3 \\
+1 &amp;  x &gt; 3
+\end{cases}.\]</span>
+<ul>
+<li>Find <span class="math inline">\(F'(x)\)</span> to find the PDF of <span class="math inline">\(X\)</span>, <span class="math inline">\(f(x)\)</span>.</li>
+<li>Draw the target diagram for this PDF.</li>
+</ul></li>
+</ol>
+<details>
+<summary>
+Answer
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span> <span class="sc">+</span> <span class="dv">0</span><span class="sc">*</span>x}</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_target</span>(f,<span class="dv">0</span>,<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<pre><code>- Explain with a geometric argument why $E[X] = 1.5$, and then verify this with Mathematica by computing $\int_0^3 x\cdot\frac{1}{3}dx$.</code></pre>
+<ol type="1">
+<li>Suppose a random variable <span class="math inline">\(X\)</span> has a CDF <span class="math display">\[F(x) =
+\begin{cases}
+0 &amp; x &lt; 0 \\
+\frac{x^2}{16} &amp;  0 \leq x \leq 4 \\
+1 &amp; x &gt; 4
+\end{cases}.\]</span>
+<ul>
+<li>Find <span class="math inline">\(F'(x)\)</span> to find the PDF of <span class="math inline">\(X\)</span>, <span class="math inline">\(f(x)\)</span>.</li>
+<li>Draw the target diagram for this PDF.</li>
+</ul></li>
+</ol>
+<details>
+<summary>
+Answer
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){x<span class="sc">/</span><span class="dv">8</span>}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_target</span>(f,<span class="dv">0</span>,<span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<pre><code>- Use a table of centroids to explain why $E[X] = \frac{8}{3}$, and then verify this with Mathematica  by computing $\int_0^4 x\cdot\frac{x}{8}dx$.</code></pre>
+<ol type="1">
+<li>Use the two properties of probability density functions to answer the following.
+<ul>
+<li>Explain why <span class="math inline">\(f(x) = \begin{cases}2 &amp;  0 \leq x \leq 6 \\ 0 &amp; \text{otherwise}\end{cases}\)</span> <strong>is not</strong> a PDF.</li>
+<li>Explain why <span class="math inline">\(f(x) = \begin{cases}\frac{2x}{9} &amp;  0 \leq x \leq 3 \\ 0 &amp; \text{otherwise}\end{cases}\)</span> <strong>is</strong> a PDF.</li>
+<li>Explain why <span class="math inline">\(f(x) = \begin{cases}-\frac{1}{4} &amp;  0 \leq x \leq 4 \\ 0 &amp; \text{otherwise}\end{cases}\)</span> <strong>is not</strong> a PDF.</li>
+<li>Explain why <span class="math inline">\(f(x) = \begin{cases}\frac{3}{8}x^2 &amp;  0 \leq x \leq 2 \\ 0 &amp; \text{otherwise}\end{cases}\)</span> <strong>is</strong> a PDF.</li>
+</ul></li>
+<li>Find the value <span class="math inline">\(k\)</span> so that each function is a PDF. Use a table of centroids and/or Mathematica to obtain the needed areas.
+<ul>
+<li><span class="math inline">\(f(x) = \begin{cases}2k &amp;  0 \leq x \leq 6 \\0 &amp; \text{otherwise}\end{cases}\)</span></li>
+<li><span class="math inline">\(f(x) = \begin{cases}3kx &amp;  0 \leq x \leq 4 \\0 &amp; \text{otherwise}\end{cases}\)</span></li>
+<li><span class="math inline">\(f(x) = \begin{cases}5kx^2 &amp;  0 \leq x \leq 2 \\0 &amp; \text{otherwise}\end{cases}\)</span></li>
+</ul></li>
+</ol>
+</section>
+<section id="reading-practice" class="level3">
+<h3 class="anchored" data-anchor-id="reading-practice">(3) Reading Practice</h3>
+<p>Below is a list of properties of Definite Integrals. Read through the properties. Then consider the questions below. What other thoughts, connections, or questions did you identify? - How would you describe any of these properties with words? - Definite Integral can be thought of as “infinite sums”. - Can you identify any properties that sums and integrals share? - Discrete things are different from infinite things. - Can you identify any properties highlight any of these difference (highlighting a difference between sums and integrals)? - Can you find an example of any of these properties used in our <a href="https://byuistats.github.io/M119/unit3/probability.html" target="_blank">Rectangles, Targets, and Sums</a> work?</p>
+<section id="properties-of-the-definite-integral" class="level4">
+<h4 class="anchored" data-anchor-id="properties-of-the-definite-integral">Properties of the Definite Integral</h4>
+<ul>
+<li><p>Given <span class="math inline">\(a &lt; c &lt; k &lt; b\)</span>, <br> <span class="math inline">\(\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^k f(x) dx + \int_k^b f(x) dx\)</span>.</p>
+<ul>
+<li>Note this property also holds when the inequality <span class="math inline">\(a &lt; c &lt; k &lt; b\)</span> does not hold as long as <span class="math inline">\(f(x)\)</span> is integrable (can be integrated) for all the necessary intervals.</li>
+</ul></li>
+<li><p><span class="math inline">\(\int_a^b f(x)dx = -\int_b^a f(x)dx\)</span>.</p>
+<ul>
+<li>One way to think about this property is that if the width for the “infinite” rectangles you are adding up are all negative for the definite integral on the right-hand side of the equation.</li>
+</ul></li>
+<li><p><span class="math inline">\(\int_a^a f(x)dx = 0\)</span>.</p>
+<ul>
+<li>Note this is related to the concept that <span class="math inline">\(P(X = c) = 0\)</span> for all values of <span class="math inline">\(c\)</span> when <span class="math inline">\(X\)</span> is a continuous random variable.</li>
+</ul></li>
+<li><p><span class="math inline">\(\int_a^b cf(x)dx = c\int_a^b f(x) dx\)</span></p></li>
+<li><p><span class="math inline">\(\int_a^b f(x) + g(x) dx = \int_a^b f(x) dx + \int_a^b g(x) dx\)</span> AND <span class="math inline">\(\int_a^b f(x) - g(x) dx = \int_a^b f(x) dx - \int_a^b g(x) dx\)</span></p></li>
+</ul>
+<p><a id="PP"></a></p>
+</section>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="skill-practice-ka-homework" class="level3">
+<h3 class="anchored" data-anchor-id="skill-practice-ka-homework">Skill Practice (KA Homework)</h3>
+<ul>
+<li>Complete 3 – Riemann Sums &amp; Definite Integrals</li>
+<li>Begin 3 – Compute Probability (Continuous Random Variables)</li>
+<li>Begin 3 – Definite Integrals</li>
+</ul>
+</section>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="summary-of-key-points-rectangles-targets-and-sums" class="level2">
@@ -609,24 +727,24 @@ Answers
 <li>Why do we know the area under the “infinite” target is 1?</li>
 </ul>
 <p>Let’s approximate the area under <span class="math inline">\(f\)</span> using rectangles (so a Riemann sum).</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){<span class="dv">5</span><span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="dv">5</span><span class="sc">*</span>x)}</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#b should be infinity, but infinity is a concept (not a number) and the computer program needs a number to complete the calculation... so we pick a large but finite value for b</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">30</span> </span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>dx <span class="ot">&lt;-</span> (b<span class="sc">-</span>a)<span class="sc">/</span>n</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_rect_approx</span>(f,a,b,n) </span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>xi <span class="ot">&lt;-</span> <span class="fu">seq</span>(a<span class="sc">+</span>dx<span class="sc">/</span><span class="dv">2</span>,b,dx)</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){<span class="dv">5</span><span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="dv">5</span><span class="sc">*</span>x)}</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">#b should be infinity, but infinity is a concept (not a number) and the computer program needs a number to complete the calculation... so we pick a large but finite value for b</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">30</span> </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>dx <span class="ot">&lt;-</span> (b<span class="sc">-</span>a)<span class="sc">/</span>n</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">draw_rect_approx</span>(f,a,b,n) </span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>xi <span class="ot">&lt;-</span> <span class="fu">seq</span>(a<span class="sc">+</span>dx<span class="sc">/</span><span class="dv">2</span>,b,dx)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>We know the exact area is 1 and see that our approximation with 1000 rectangles, 0.9990631, is pretty good.</p>
 <p>Now let’s use rectangles to approximate the expected value using the Riemann sum <span class="math inline">\(E[X]\approx \sum x_i f(x_i) \Delta x\)</span>, and the variance using the Riemann sum <span class="math inline">\(\text{Var}[X]\approx \sum (x_i-E[X])^2 f(x_i) \Delta x\)</span>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>EV <span class="ot">&lt;-</span> <span class="fu">sum</span>(xi<span class="sc">*</span><span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>EV</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>Var <span class="ot">&lt;-</span> <span class="fu">sum</span>((xi<span class="sc">-</span>EV)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>Var</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>EV <span class="ot">&lt;-</span> <span class="fu">sum</span>(xi<span class="sc">*</span><span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>EV</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>Var <span class="ot">&lt;-</span> <span class="fu">sum</span>((xi<span class="sc">-</span>EV)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">f</span>(xi)<span class="sc">*</span>dx)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>Var</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The “target” seems to have more weight on the left, so <span class="math inline">\(E[X]\approx 0.2003749\)</span> seems like a reasonable approximation for <span class="math inline">\(E[X]\)</span>. This shape is not on any of our list of centroids so we don’t have a formula find the exact value for our expected value of <span class="math inline">\(E[X]\)</span>. But the exact expected value can be computed using a definite integral with Mathematica.</p>
 <p>We now compute <span class="math inline">\(A=\int_0^{\infty}f(x) dx\)</span>, <span class="math inline">\(E[X]=\int_0^{\infty}xf(x) dx\)</span>, and <span class="math inline">\(\text{Var}[X]=\int_0^{\infty}(x-E[X])^2f(x) dx\)</span> with Mathematica.</p>
 <pre><code>f = 5 Exp[-5 x]
@@ -639,38 +757,38 @@ Var = Integrate[(x - EV)^2*f, {x, 0, Infinity}]</code></pre>
 <ul>
 <li>Let’s plot some of the probability models from Project 3.</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>f0 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">0</span>,<span class="at">b=</span><span class="dv">1</span>){<span class="dv">1</span><span class="sc">/</span>(b<span class="sc">-</span>a)<span class="sc">+</span><span class="dv">0</span><span class="sc">*</span>x}</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>x0 <span class="ot">&lt;-</span> <span class="fu">seq</span>(a,b,<span class="fl">0.1</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>y0 <span class="ot">&lt;-</span> <span class="fu">f0</span>(x0,a,b)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x0,y0,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>f1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">m=</span><span class="dv">0</span>,<span class="at">s=</span><span class="dv">1</span>){<span class="dv">1</span><span class="sc">/</span>(<span class="fu">sqrt</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>s<span class="sc">^</span><span class="dv">2</span>))<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.5</span><span class="sc">*</span>((x<span class="sc">-</span>m)<span class="sc">/</span>s)<span class="sc">^</span><span class="dv">2</span>)}</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">20</span>,<span class="dv">20</span>,<span class="fl">0.1</span>)</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>y1 <span class="ot">&lt;-</span> <span class="fu">f1</span>(x1,m,s)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x1,y1,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>f2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">1</span>,<span class="at">b=</span><span class="dv">1</span>){b<span class="sc">^</span>a<span class="sc">/</span><span class="fu">gamma</span>(a)<span class="sc">*</span>(x)<span class="sc">^</span>(a<span class="dv">-1</span>)<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>b<span class="sc">*</span>x)}</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="fl">0.1</span>)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>y2 <span class="ot">&lt;-</span> <span class="fu">f2</span>(x2,a,b)</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x2,y2,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>f3 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">1</span>){lambda<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>lambda<span class="sc">*</span>x)}</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>x3 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="fl">0.1</span>)</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>y3 <span class="ot">&lt;-</span> <span class="fu">f3</span>(x3,lambda)</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x3,y3,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>f0 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">0</span>,<span class="at">b=</span><span class="dv">1</span>){<span class="dv">1</span><span class="sc">/</span>(b<span class="sc">-</span>a)<span class="sc">+</span><span class="dv">0</span><span class="sc">*</span>x}</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>x0 <span class="ot">&lt;-</span> <span class="fu">seq</span>(a,b,<span class="fl">0.1</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>y0 <span class="ot">&lt;-</span> <span class="fu">f0</span>(x0,a,b)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x0,y0,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>f1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">m=</span><span class="dv">0</span>,<span class="at">s=</span><span class="dv">1</span>){<span class="dv">1</span><span class="sc">/</span>(<span class="fu">sqrt</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>s<span class="sc">^</span><span class="dv">2</span>))<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.5</span><span class="sc">*</span>((x<span class="sc">-</span>m)<span class="sc">/</span>s)<span class="sc">^</span><span class="dv">2</span>)}</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">20</span>,<span class="dv">20</span>,<span class="fl">0.1</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>y1 <span class="ot">&lt;-</span> <span class="fu">f1</span>(x1,m,s)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x1,y1,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>f2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">1</span>,<span class="at">b=</span><span class="dv">1</span>){b<span class="sc">^</span>a<span class="sc">/</span><span class="fu">gamma</span>(a)<span class="sc">*</span>(x)<span class="sc">^</span>(a<span class="dv">-1</span>)<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>b<span class="sc">*</span>x)}</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="fl">0.1</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>y2 <span class="ot">&lt;-</span> <span class="fu">f2</span>(x2,a,b)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x2,y2,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>f3 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">1</span>){lambda<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>lambda<span class="sc">*</span>x)}</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>x3 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="fl">0.1</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>y3 <span class="ot">&lt;-</span> <span class="fu">f3</span>(x3,lambda)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x3,y3,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>- What is dexp()? What is rexp()?</code></pre>
 <ul>
 <li>Let’s compare f1 and dnorm().</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x1,<span class="at">mean=</span>m,<span class="at">sd=</span>s)</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x1,y1,<span class="at">type=</span><span class="st">'l,lwd=5,col='</span>gray<span class="st">')</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="st">lines(x1,y,col=4)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x1,<span class="at">mean=</span>m,<span class="at">sd=</span>s)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x1,y1,<span class="at">type=</span><span class="st">'l,lwd=5,col='</span>gray<span class="st">')</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="st">lines(x1,y,col=4)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Let’s do some Knewton Alta exercises together.
 <ul>

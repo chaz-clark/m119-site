@@ -1,6 +1,40 @@
 ---
 title: "Class 33"
 ---
+# Between Class Sessions - Prep for Day 33 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Reading - Rectangles, Targets, and Sums
+For our next Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+1. Read Section 1.1-1.6 and complete a few exercises along the way bring something you did to share with your group.
+
+1. Watch [Lego Fulcrom video](https://www.loom.com/share/b16f6b4aa3dd4816812780272a35f2c1){target="_blank"} (~4.5 mins)
+1. Three objects, with masses $m_1=3$, $m_2=5$, and $m_3 = 7$ are placed on an almost weightless ruler (think $x$-axis) with their centers of mass at $x_1=2$, $x_2=-6$ and $x_3=4$.  Identify the center of mass of the 3 objects together. 
+
+<details>
+<summary>Solution</summary>
+
+The total mass is $m = 3+5+7=15$. 
+We compute 
+$$\bar x = (2)\frac{3}{15} + (-6)\frac{5}{15} + (4)\frac{7}{15} = \frac{(2)3+(-6)5+(4)7}{15} = \frac{4}{15}.$$
+
+</details>
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 2 -- Least Squares assignment.
+
+### Applied Practice (Project Work)
+- Complete and Submit Project 2
+
 
 # During Class
 ## Group Meeting 

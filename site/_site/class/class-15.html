@@ -427,7 +427,15 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-15" id="toc-between-class-sessions---prep-for-day-15" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-15">Between Class Sessions - Prep for Day 15 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#residuals-exercises" id="toc-residuals-exercises" class="nav-link" data-scroll-target="#residuals-exercises">(2) Residuals Exercises</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#applied-practice-project-work" id="toc-applied-practice-project-work" class="nav-link" data-scroll-target="#applied-practice-project-work">Applied Practice (Project Work)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
   <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a>
@@ -461,6 +469,101 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-15" class="level1">
+<h1>Between Class Sessions - Prep for Day 15 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Likelihood Practice (with Poisson)</p>
+<p>Use the storms listed on Wikipedia’s <a href="https://tinyurl.com/51vyiwjw" class="uri">https://tinyurl.com/51vyiwjw</a> page to answer the questions below.</p>
+<ol type="1">
+<li>Use the data from 2005-2007 for <span class="math inline">\(x_1\)</span>, <span class="math inline">\(x_2\)</span>, and <span class="math inline">\(x_3\)</span>. The number of storms in 2005 is <span class="math inline">\(x_1\)</span>, the number of storms in 2006 is <span class="math inline">\(x_2\)</span>, and the number of storms in 2007 is <span class="math inline">\(x_3\)</span>.</li>
+</ol>
+<ul>
+<li>Adapt the code from class to complete the following table, calculating the probability given the value of <span class="math inline">\(\lambda\)</span>.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>p3v1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">2</span>){</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># each element of x must be a whole number</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prod</span>((lambda<span class="sc">^</span>x<span class="sc">/</span><span class="fu">factorial</span>(x))<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>lambda))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">p3v1</span>(<span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">8</span>),<span class="dv">1</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">p3v1</span>(<span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">8</span>),<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="line-block"><span class="math inline">\(\lambda\)</span> | <span class="math inline">\(P(X_1=x_1,X_2=x_2,X_3=x_3)\)</span> |</div>
+<div class="line-block">1 | 1.531x<span class="math inline">\(10^{-11}\)</span> |</div>
+<div class="line-block">2 | 1.998x<span class="math inline">\(10^{-7}\)</span> |</div>
+<div class="line-block">3 | |</div>
+<div class="line-block">4 | |</div>
+<div class="line-block">5 | |</div>
+<div class="line-block">6 | |</div>
+<div class="line-block">7 | |</div>
+<div class="line-block">8 | |</div>
+<div class="line-block">9 | |</div>
+<div class="line-block">10 | |</div>
+<div class="line-block">11 | |</div>
+<div class="line-block">12 | |</div>
+<div class="line-block">13 | |</div>
+<div class="line-block">14 | |</div>
+<div class="line-block">15 | |</div>
+<ul>
+<li>Use the code below to plot this function of <span class="math inline">\(\lambda\)</span> in R. (Because both <span class="math inline">\(\lambda\)</span> and <span class="math inline">\(x\)</span> are vectors, we must use the sapply function from R to appropriately tell the computer how to to parse the notation. You do not have to modify any code involving sapply for future tasks, so feel free to just run the code below to produce the needed plot.)</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>lambda <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">15</span>,<span class="fl">0.01</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">8</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>probs <span class="ot">&lt;-</span> <span class="fu">sapply</span>(lambda, p3v1, <span class="at">x =</span> x)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lambda, probs, <span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>If we know there will be 8 Florida tropical storms this year, 2 Florida tropical storms next year, and 8 Florida tropical storms the year after that (in other words the data values from 2005-2007), what is your guess for the best choice of parameter <span class="math inline">\(\lambda\)</span>?</li>
+</ul>
+<ol start="2" type="1">
+<li>Using the data from 2010-2012 adapt the code from exercise 1 (above) to plot a function with <span class="math inline">\(\lambda\)</span> on the horizontal axis and probability (that of the number of storms this year will be the same as the number of storms in 2010, the number of storms next year will be the same as the number of storms in 2011, and the number of storms in the year after that will be the same number as the number of storms in 2012) on the vertical axis. See Wikipedia’s <a href="https://tinyurl.com/51vyiwjw" class="uri">https://tinyurl.com/51vyiwjw</a> to get the appropriate data.</li>
+</ol>
+<ul>
+<li>Using your plot what is your guess for the best choice of the parameter <span class="math inline">\(\lambda\)</span> in this case?</li>
+</ul>
+<ol start="3" type="1">
+<li>Using the data from 2012-2015 adapt the code to plot a function with <span class="math inline">\(\lambda\)</span> on the horizontal axis and probability (that of the number of storms this year will be the same as the number of storms in 2012, the number of storms next year will be the same as the number of storms in 2013, the number of storms in the year after that will be the same number as the number of storms in 2014, and the number of storms in the year after that will be the same number as the number of storms in 2015) on the vertical axis.</li>
+</ol>
+<ul>
+<li><em>Note: There are 4 years this time. How will you have to change the code to allow for this?</em></li>
+<li>Using your plot what is your guess for the best choice of the parameter <span class="math inline">\(\lambda\)</span> in this case?</li>
+</ul>
+<ol start="4" type="1">
+<li>Using the data from 2000 and 2001 adapt the code to plot a function with <span class="math inline">\(\lambda\)</span> on the horizontal axis and probability on the vertical axis.</li>
+</ol>
+<ul>
+<li><em>Note: There are 2 years this time. How will you have to change the code to allow for this?</em></li>
+<li>Using your plot what is your guess for the best choice of the parameter <span class="math inline">\(\lambda\)</span> in this case?</li>
+</ul>
+<ol start="5" type="1">
+<li>Using the data from 2019 and 2020 adapt the code to plot a function with <span class="math inline">\(\lambda\)</span> on the horizontal axis and probability on the vertical axis.</li>
+</ol>
+<ul>
+<li><em>Note: There are 2 years this time. How will you have to change the code to allow for this?</em></li>
+<li>Using your plot what is your guess for the best choice of the parameter <span class="math inline">\(\lambda\)</span> in this case?</li>
+</ul>
+<section id="residuals-exercises" class="level3">
+<h3 class="anchored" data-anchor-id="residuals-exercises">(2) Residuals Exercises</h3>
+<details>
+<summary>
+Residuals
+</summary>
+<p>The <strong>residual</strong> for an observation is defined as the vertical distance between the observed value, <span class="math inline">\(y\)</span>, and value predicted by a fitted model, represented with a <span class="math inline">\(\hat{y}\)</span> (read “y hat”).</p>
+<p>Examples: - Given the model <span class="math inline">\(f(x) = ax^2 + bx + c\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c.\)</span> - Given the model <span class="math inline">\(g(x) = k\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - g(x) = y - k.\)</span> - Given the model <span class="math inline">\(h(x) = ae^{-bx} + cxe^{-bx}\)</span> and the data point <span class="math inline">\((x,y)\)</span>, the residual is <span class="math inline">\(y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.\)</span></p>
+</details>
+<p>Consider the 6 functions you have been fitting in Project 1. - Write down a formula for the residual given model <span class="math inline">\(f_1\)</span>. - Write down a formula for the residual given model <span class="math inline">\(f_2\)</span>. - Write down a formula for the residual given model <span class="math inline">\(f_3\)</span>.</p>
+<p><a id="PP"></a></p>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="applied-practice-project-work" class="level3">
+<h3 class="anchored" data-anchor-id="applied-practice-project-work">Applied Practice (Project Work)</h3>
+<ul>
+<li>Complete Project 1 Task 4</li>
+</ul>
+</section>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="brain-gains" class="level2">
@@ -496,15 +599,15 @@ Answers
 <ul>
 <li>The number of tropical storms observed in Florida during the years 2019, 2020, and 2021 was 7, 13, and then 3 (see <a href="https://en.wikipedia.org/wiki/List_of_Florida_hurricanes_(2000%E2%80%93present)#2019">List of Florida hurricanes (2000–present) #2019</a>). In the prep we used the Poisson distribution to compute a probability, for various values of <span class="math inline">\(\lambda\)</span>, of observing some number of tropical storms over a 3 year period. Adapt the code from the prep (see below) to construct a plot of <span class="math inline">\(\lambda\)</span> versus the probability of seeing 7, 13, and then 3 storms, for that value of <span class="math inline">\(\lambda\)</span>. What is your guess for the best choice of parameter <span class="math inline">\(\lambda\)</span>?</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>p3v1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">2</span>){</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># each element of x must be a whole number</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prod</span>((lambda<span class="sc">^</span>x<span class="sc">/</span><span class="fu">factorial</span>(x))<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>lambda))</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>lambda <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">15</span>,<span class="fl">0.01</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">8</span>) <span class="co">#how many storms</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>probs <span class="ot">&lt;-</span> <span class="fu">sapply</span>(lambda, p3v1, <span class="at">x =</span> x)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lambda,probs,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>p3v1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">lambda=</span><span class="dv">2</span>){</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># each element of x must be a whole number</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prod</span>((lambda<span class="sc">^</span>x<span class="sc">/</span><span class="fu">factorial</span>(x))<span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span>lambda))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>lambda <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">15</span>,<span class="fl">0.01</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">2</span>,<span class="dv">8</span>) <span class="co">#how many storms</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>probs <span class="ot">&lt;-</span> <span class="fu">sapply</span>(lambda, p3v1, <span class="at">x =</span> x)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lambda,probs,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="discussion" class="level2">
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>

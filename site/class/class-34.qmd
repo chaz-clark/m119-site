@@ -1,6 +1,43 @@
 ---
 title: "Class 34"
 ---
+# Between Class Sessions - Prep for Day 34 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Reading - Rectangles, Targets, Sums - Sections 1.7 through 2.3
+For this Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+1. Read sections 1.7-2.3.
+
+1. In 1.8 and 1.9 complete a few of the exercises.
+1. Complete a few exercises from 2.1 - 2.3, and come ready to share what you did with your group.  
+
+1. Consider the right triangular region that lies above the $x$-axis and under the function $g(x) = 10-2x$ for $0\leq x \leq 5$. The triangle is 10 units tall, and 5 units wide. Find the center of mass of that triangle. 
+1. Find a number $k$ so that the area of the triangular region under the function $f(x) = k(10-2x)$ for $0\leq x\leq 5$ is 1. 
+
+<details>
+<summary>Solutions for 4 and 5</summary>
+
+Using <https://en.wikipedia.org/wiki/List_of_centroids,> we get $\bar x = \frac{5}{3}$.   The area under function $g$ is $A = \frac{1}{2}(10)(5) = 25$, which means we can divide the function by 25 (so let $k=\frac{1}{10}$) to get $f(x) = \frac{1}{25}(10-2x)$ and then have the area under $f$ be 1, instead of 25.
+
+</details>
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 3 -- Discrete Random Variables and Expected Value
+
+### Applied Practice (Project Work)
+- Begin Project 3 Task 1
+    - Read the instruction.
+    - Get started with task 1.
+
 
 # During Class
  

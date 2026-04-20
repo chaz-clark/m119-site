@@ -1,6 +1,63 @@
 ---
 title: "Class 35"
 ---
+# Between Class Sessions - Prep for Day 35 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Reading - Rectangles, Targets, and Sums - Sections 2.3 through 3.2
+For this Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+1. Read sections 2.3-3.2.
+
+1. Complete a few exercises from each section, and come ready to share what you did with your group.  
+1. Let $g(x) = 2x$ for $0\leq x\leq 4$ be a target function. 
+    - Find a value $k$ so that the area under $f(x) = k g(x)$ is one (so provide a normalized target function). 
+    - Let $X$ be the random variable which records the $x$-coordinate of dropping a dart on the target defined by $g$. Find the cumulative distribution function $F(x)$. 
+    - Compute the derivative $F'(x)$. 
+
+<details>
+<summary>Solutions for 3</summary>
+
+- The area under the function $g$ is $ A = \frac{1}{2}(4)(8) = 16 $, which means we should pick $ k = \frac{1}{\text{Area}} = \frac{1}{16} $ so that the area under the function $ f $ is 1. This means $ f(x) = kg(x) = \frac{1}{16}(2x) = \frac{1}{8}x $ for $ 0 \leq x \leq 4 $.
+
+- The cdf of $X$ will be the following function.
+$F(x) = 
+\begin{cases}
+0 & \quad x \leq 0 \\ \\
+\frac{x^2}{16} & \quad 0 < x < 4 \\ \\
+1 & \quad x \geq 4.
+\end{cases}$
+
+- Calculating the derivative of $F(x)$ we find.
+$F'(x) = 
+\begin{cases}
+0 & \quad x < 0 \\ \\
+\frac{1}{16}(2x) & \quad 0 < x < 4 \\ \\
+0 & \quad x > 4
+\end{cases} = 
+\begin{cases}
+\frac{1}{8}(x) & \quad 0 < x < 4 \\ \\
+0 & \quad \text{otherwise} \\ \\
+\end{cases}$
+
+</details>
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+If you have not done so already, complete 3 -- Discrete Random Variables and Expected Value.
+
+### Applied Practice (Project Work)
+- Continue working on Project 3 Task 1
+    - Visually fit the probability models $f_2$ and $f_3$ to the data.
+    - Use the parameters for your visually fitted models to simulate data and calculate approximate probability.
+
 
 # During Class
 

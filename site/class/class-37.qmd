@@ -1,6 +1,39 @@
 ---
 title: "Class 37"
 ---
+# Between Class Sessions - Prep for Day 37 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Recap Reading - Rectangles, Targets, and Sums
+For Unit 3, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+1. Skim read the entire document above (it's a second pass over the material). Make notes of questions you have that you would like to discuss more. If you didn't watch the video in section 1.2 the first time through, please do so this time through. 
+
+1. Complete a few exercises that perhaps you skipped before, or have a better understanding of now.  Come ready to share what you did with your group. Remember it's OK if you don't have the correct answers. The point is to have made a good faith attempt, and then come ready to share what you did. 
+1. Please focus on the following exercises.   
+    - 1.9 #4
+    - 2.1 #4
+    - 2.2 #4
+    - 2.3 #4
+    - 3.2 #1
+    - 4.2 #2 (pick one or two)
+    - 4.3 #1 (pick one)
+1. One of the main goals of doing the exercises above is to focus on why $P(a < X \leq b) = P(a \leq X \leq b) = F(b)-F(a)$. Write a sentence or two that explains why this is true, based off your work from the exercises above.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Continue working on 3 -- Riemann Sums & Definite Integrals
+
+### Applied Practice (Project Work)
+- Finish and Submit Project 3 Task 1
+
 
 # During Class
 ## Brain Gains

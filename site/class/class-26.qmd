@@ -1,6 +1,97 @@
 ---
 title: "Class 26"
 ---
+# Between Class Sessions - Prep for Day 26 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Making Connections
+1. Consider the function $ f(a) = 100 - \frac{1}{2}(3-4a)^2 $. 
+- Find the critical points of $f$.
+- Use the second derivative test to determine if the critical points are locations of maxima or minima.
+
+2. Consider the function $ f(a_1) $ that has the derivative $ f'(a_1) = 172746.8 - 328767530a_1 $.
+- Find the critical points of $f$.
+- Use the second derivative test to determine if the critical points are locations of maxima or minima.
+
+3. Consider the function $ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2 $.
+- Review your calculation of the first derivative and second derivative of $ \ell_1 $.
+    - Note: This is part of the required work for Project 2 Task 2.
+- Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Try using the sum function.) Check that you obtain the following:
+    - $ \frac{d\ell_1}{da_1} = 172746.8 - 328767530 a_1 $
+    - $ \frac{d^2\ell_1}{da_1^2} = -328767530 $
+- Find the critical points of $\ell_1$.
+- Use the second derivative test to determine if the critical points are locations of maxima or minima.
+- State the value of $a_1$ that gives the location of the maximum of loglikelihood (or maximum loglikelihood).
+    - Note: This is the same value that give the location of the maximum of the likelihood (or maximum likelihood).
+- Plot the lightbulb data (using the seed 123) along with the fitted model $ f_1(t) $ on the same axes, updating the value you obtained for $ a_1 $. The code below may help you get started.
+
+```r
+rm(list=ls())
+library(data4led)
+bulb <- led_bulb(1,seed=123)
+ti <- bulb$hours
+yi <- bulb$percent_intensity
+
+f1 <- function(t,a1){100+a1*t}
+a1 <- 0.0002 #Will need to be updated
+plot(ti,yi)
+lines(ti,f1(ti,a1))
+```
+
+    - Note: This is part of the required work for Project 2 Task 3.
+
+4. Consider the function $ f(a) = 100 - \frac{1}{2}(300e^{-2}-400e^{-2}a)^2 $. 
+- Find the critical points of $f$.
+- Use the second derivative test to determine if the critical points are locations of maxima or minima.
+
+5. Consider the function $ f(a_1) $ that has the derivative $ f'(a_1) = 1386372 - 225775231a_1 $.
+- Find the critical points of $f$.
+- Use the second derivative test to determine if the critical points are locations of maxima or minima.
+
+6. Consider the function $ \ell_5 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100e^{-0.00005t_i} - a_1t_ie^{-0.00005t_i})^2 $.
+- Review your calculation of the first derivative and second derivative of $ \ell_5 $.
+    - Note: This is part of the required work for Project 2 Task 2.
+- Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Try using the sum function.) Check that you obtain the following:
+    - $ \frac{d\ell_1}{da_1} = 1386372 - 225775231a_1 $
+    - $ \frac{d^2\ell_1}{da_1^2} = -225775231 $
+- Find the critical points of $\ell_1$.
+- Use the second derivative test to determine if the critical points are locations of maxima or minima.
+- State the value of $a_1$ that gives the location of the maximum of loglikelihood (or maximum loglikelihood).
+    - Note: This is the same value that give the location of the maximum of the likelihood (or maximum likelihood).
+- Plot the lightbulb data (using the seed 123) along with the fitted model $ f_1(t) $ on the same axes, updating the value you obtained for $ a_1 $. The code below may help you get started.
+
+```r
+rm(list=ls())
+library(data4led)
+bulb <- led_bulb(1,seed=123)
+ti <- bulb$hours
+yi <- bulb$percent_intensity
+
+f5 <- function(t,a1){100*exp(-5e-5*t) + a1*t*100*exp(-5e-5*t)}
+a1 <- 0.0002 #Will need to be updated
+plot(ti,yi)
+lines(ti,f5(ti,a1))
+```
+
+    - Note: This is part of the required work for Project 2 Task 3.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Begin 2 -- First Derivative and Extrema assignment
+- Begin 2 -- Second Derivative and Extrema assignment
+
+### Applied Practice (Project Work)
+- Read [this file](https://byuistats.github.io/M119/m119-docs/PDloglikelihoodFn6.html){target="_blank"} describing how to find the first and second partials of $\ell_6$. Then try repeating the computations on your own for $\ell_4$.
+    - Note: This is part of the required work for Project 2 Task 2.
+
 
 # During Class
 ## Brain Gains

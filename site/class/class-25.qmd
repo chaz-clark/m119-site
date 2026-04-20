@@ -1,6 +1,81 @@
 ---
 title: "Class 25"
 ---
+# Between Class Sessions - Prep for Day 25 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Extrema Vocabulary
+Answer as many of the questions from [Derivative Relationships Fill in the Blank](https://byuistats.github.io/M119/m119-docs/DerivativeRelationship_FillBlank.pdf){target="_blank"} as possible. Use sections 4.3 and 4.5 from the OpenStax Calculus Volume 1 as a resource.
+- [Section 4.3 OpenStax Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima){target="_blank"}
+- [Section 4.5 OpenStax Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph){target="_blank"}
+
+### (2) Writing Equations (still practicing)
+Write an equation in one variable for the described quantity in each story below.
+1. A farmer has 2400 feet of fencing to build a fence creating a rectangular corral (or pen) for some of the animals. Write an equation in one variable for the area of the rectangular corral. (Our goal will be to build the corral with maximum area.)
+
+1. A different farmer also has 2400 feet of fencing to build a fence creating a rectangular corral, but she plans to use the wall of a long group of buildings as one of the sides of the rectangular corral. Write an equation in one variable for the area of the rectangular corral. (Our goal will be to build the corral with maximum area.)
+1. A company is building square-bottomed boxes with no tops. The material for the bottom costs \$2 per cm'^2^' and the material for the sides costs \$1 per cm'^2^'. The company plans to charge \$96 for one box. Write an equation in one variable for the volume of the box. (Our goal will be to build a box with maximum volume.)
+
+After you have written down each function, open R and plot each function to visually identify where the maximum of each function occurs. 
+
+### (3) Making Connections
+Open <https://byuistats.github.io/M119/project2.html.>  
+- Consider the model $f_5$. Review your computations to obtain the loglikelihood function (or complete the computations now). The answer is provided to you in the Task 1 Instructions. Your job is to perform the needed computations and include explanations of each of the steps. 
+    - Note: This is part of the required work for Project 2 Task 1.
+- Now compute the first and second derivative of this loglikelihood function.
+    - Note: This is part of the required work for Project 2 Task 2.
+- Adapt the following code (from class today) to plot this loglikelihood function.
+
+```r
+#clear the environment
+rm(list=ls())
+#load the library
+library(data4led)
+#read in the data set
+bulb <- led_bulb(1,seed=123) #Remember to use your assigned seed!
+
+# Here is our Data.
+t <- bulb$hours
+y <- bulb$percent_intensity
+
+#define the loglikelihood function
+l <- function(p,t,y){
+  44*log(1/sqrt(2*pi)) - (1/2)*sum((y-100-p*t)^2)
+}
+
+#create a list of inputs for our plot of the loglikelihood function
+a1 <- seq(-0.005,0.005,1e-5)
+#use those inputs to calculate outputs for our plot of the loglikelihood function
+Y <- as.vector(lapply(a1,FUN=l,t=t,y=y))
+
+#plot the loglikelihood function
+plot(a1,Y,type='l')
+```
+
+- Make a guess for what you think is the best value for $a_1$. How did you decide on that value?
+- Using what you learned in the reading, how might you find the best value for $a_1$ rather than just estimating from the graph?
+    - Note: This is part of the required work for Project 2 Task 3. We will continue to discuss these concepts next week in class.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- If you have not done so already, complete the other derivative rule assignments
+    - 2 -- Derivative Rules (Power Function, Sum/Difference, Constant Multiple)
+    - 2 -- Derivative Rules (Product and Quotient)
+    - 2 -- Derivative Rules (Function Composition) - the Chain Rule
+    - 2 -- Linearization
+    - 2 -- Partial Derivatives
+
+### Applied Practice (Project Work)
+- Continue working on Project 2 Task 2
+
 
 # During Class
 ## Brain Gains

@@ -712,7 +712,9 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
     toc-depth: 3
@@ -829,12 +831,20 @@ This site is generated from the course PMWiki at [byuimath.com/bmw/all/119/](htt
 # Main pipeline
 # ---------------------------------------------------------------------------
 
+CLASS_NUM_RE = re.compile(r'^(\d+)([a-z]?)$')
+
+
+def _class_sort_key(page: str) -> tuple[int, str]:
+    m = CLASS_NUM_RE.match(page.split('.', 1)[1])
+    return (int(m.group(1)), m.group(2)) if m else (10**9, '')
+
+
 def get_class_pages(wiki_dir: Path) -> list[str]:
     pages = [
         f.name for f in wiki_dir.iterdir()
-        if f.name.startswith('Class.') and f.name.split('.')[1].isdigit()
+        if f.name.startswith('Class.') and CLASS_NUM_RE.match(f.name.split('.', 1)[1])
     ]
-    return sorted(pages, key=lambda p: int(p.split('.')[1]))
+    return sorted(pages, key=_class_sort_key)
 
 
 def get_group_pages(wiki_dir: Path, group: str) -> list[str]:
@@ -908,10 +918,17 @@ def run_conversion(page_filter: str = None, dry_run: bool = False):
         file_path = WIKI_DIR / page_name
         page_data = decode_pmwiki_file(file_path)
         qmd_body = convert_page(page_name, page_data['text'], link_registry, WIKI_DIR)
-        frontmatter = make_frontmatter(page_name)
-        qmd_content = frontmatter + qmd_body + '\n'
 
         group, _, page = page_name.partition('.')
+        if group == 'Class':
+            prep_path = WIKI_DIR / f'Prep.{page}'
+            if prep_path.exists():
+                prep_text = decode_pmwiki_file(prep_path)['text']
+                prep_qmd = convert_page(f'Prep.{page}', prep_text, link_registry, WIKI_DIR)
+                qmd_body = prep_qmd.rstrip() + '\n\n' + qmd_body.lstrip()
+
+        frontmatter = make_frontmatter(page_name)
+        qmd_content = frontmatter + qmd_body + '\n'
         if group == 'Class':
             out_path = SITE_DIR / 'class' / f'class-{page}.qmd'
         elif group == 'Definition':

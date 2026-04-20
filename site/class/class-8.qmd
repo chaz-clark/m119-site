@@ -1,6 +1,48 @@
 ---
 title: "Class 8"
 ---
+# Between Class Sessions - Prep for Day 8 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Exponential Function Practice
+Watch this video from mathispower4u, [Graphing Exponential Functions](https://www.youtube.com/watch?v=FMzZB9Ve-1U&feature=youtu.be) (~6.5 minutes)
+
+Now complete the following:
+
+1. Let $f(x) = 4^x$ and complete the following exercises. Find the exact values.
+    - Evaluate $f(1)$.
+    - Evaluate $f(0)$.
+    - Evaluate $f(-1)$.
+    - Evaluate $f(-2)$.
+    - Evaluate $f(\frac{1}{2})$.
+    - Evaluate $f(3)$.
+    - Are there any real numbers that would cause us a problem when trying to evaluate $f$ at that number?
+    - What do you notice about all the outputs of $f$?
+    - Graph the function $f(x) = 4^x$.
+    - Is this function increasing or decreasing on the interval $(-\infty,\infty)$?
+1. Graph the function $g(x) = (1/2)^x$. Is this function increasing or decreasing on the interval $(-\infty,\infty)$?
+
+1. If $h(x) = a^x$ is an increasing function, what do you know about the parameter $a$? 
+### (2) Project 1 Task 2
+Work on project 1 task 2, with the goal of submitting it.  Remember to complete the AI log. 
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+Start working on 
+- 1 -- Definition of a Logarithm
+- 1 -- Evaluate Exponential and Logarithmic Functions
+- 1 -- Properties of Logarithms
+### Applied Practice (Project Work)
+- Work on Project 1 Task 2
+
 
 # During Class - Day 8
 ## Brain Gains

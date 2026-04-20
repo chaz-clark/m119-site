@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -392,7 +427,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-2" id="toc-between-class-sessions---prep-for-day-2" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-2">Between Class Sessions - Prep for Day 2 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#graphing-functions" id="toc-graphing-functions" class="nav-link" data-scroll-target="#graphing-functions">(2) Graphing Functions</a></li>
+  <li><a href="#start-working-with-r-and-rstudio" id="toc-start-working-with-r-and-rstudio" class="nav-link" data-scroll-target="#start-working-with-r-and-rstudio">(3) Start working with R and RStudio</a></li>
+  <li><a href="#pick-something-to-share" id="toc-pick-something-to-share" class="nav-link" data-scroll-target="#pick-something-to-share">(4) Pick something to share</a></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
   <li><a href="#group-discussion" id="toc-group-discussion" class="nav-link" data-scroll-target="#group-discussion">Group Discussion</a>
@@ -432,6 +473,57 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-2" class="level1">
+<h1>Between Class Sessions - Prep for Day 2 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Familiarize yourself with class - Read the Syllabus - Complete the Background Survey - Open a Knewton Alta assignment and answer some questions (for example you could open up “1 – Function Evaluation”). The point is to make sure you have gotten into the system, and seen how it works. Feel free to complete one of the assignments. - Skim read the instructions for <a href="https://byuistats.github.io/M119/project1.html." class="uri">https://byuistats.github.io/M119/project1.html.</a></p>
+<section id="graphing-functions" class="level3">
+<h3 class="anchored" data-anchor-id="graphing-functions">(2) Graphing Functions</h3>
+<p>Our first Unit is focused on expanding our knowledge and understanding of functions. Plot the following functions by hand. Select five or more input values, calculate the corresponding output values, plot the points, and connect the points with a line. Check your work by plotting the function with Desmos (or another graphing calculator). 1. <span class="math inline">\(f(x) = 1-4x\)</span></p>
+<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(f(x)\)</span> | $ (x, f(x)) $ |</div>
+<div class="line-block">-2 | 9 | (-2,9) |</div>
+<div class="line-block">-1 | | |</div>
+<div class="line-block">0 | | |</div>
+<div class="line-block">1 | | |</div>
+<div class="line-block">2 | | |</div>
+<ol type="1">
+<li><span class="math inline">\(g(x) = |2x+4|\)</span></li>
+</ol>
+<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(g(x)\)</span> | $ (x, g(x)) $ |</div>
+<div class="line-block">-4 | 4 | (-4,4) |</div>
+<div class="line-block">-3 | | |</div>
+<div class="line-block">-2 | | |</div>
+<div class="line-block">-1 | | |</div>
+<div class="line-block">0 | | |</div>
+<ol type="1">
+<li><span class="math inline">\(h(x) = \frac{1}{2}x^2+3\)</span></li>
+</ol>
+<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(h(x)\)</span> | $ (x, h(x)) $ |</div>
+<div class="line-block">-2 | 5 | (-2,5) |</div>
+<div class="line-block">-1 | | |</div>
+<div class="line-block">0 | | |</div>
+<div class="line-block">1 | | |</div>
+<div class="line-block">2 | | |</div>
+</section>
+<section id="start-working-with-r-and-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="start-working-with-r-and-rstudio">(3) Start working with R and RStudio</h3>
+<ol type="1">
+<li><p>Install R - <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a></p></li>
+<li><p>Install RStudio - <a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a></p></li>
+<li><p>Open a new file in RStudio and use it to perform a few computations. One option is to repeat some of the computations you did during class in groups, but this time using R to perform the computations. Or you may pick something else of interest. Feel free to search the web for a tutorial on performing computations with R in RStudio.</p></li>
+<li><p>Construct the plot of a function (either one from part 2 above, from in class, or one of your choice). You could play with and adjust the code below as a starting point.</p></li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">9</span>,<span class="dv">16</span>,<span class="dv">25</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pick-something-to-share" class="level3">
+<h3 class="anchored" data-anchor-id="pick-something-to-share">(4) Pick something to share</h3>
+<p>Remember to pick something from the above that you can share with your peers tomorrow. What could that be? - Did you encounter any issues with KnewtonAlta or have questions? Was there a problem in what you attempted that helped you remember something. - As you plotted functions from (2), were there any tricky parts? Did you use Desmos or something else? Do you have any tips for plotting? - How did installing R and RStudio go? If there were any hiccups along the way, what did you do to resolve them? Did you plot a function and are you willing to share the code you used? Were there any bits of code that didn’t make sense? Did you ask AI for help to plot a function and have a record of your chat history you can share? - Something else. Remember that questions can be just as valuable as solutions. If you worked on something and know it’s wrong, sometimes the most valuable thing you can share is that wrong attempt. This will generate discussion and help all grow.</p>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="brain-gains" class="level2">

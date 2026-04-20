@@ -1,6 +1,106 @@
 ---
 title: "Class 24"
 ---
+# Between Class Sessions - Prep for Day 24 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Writing Equations (more practice)
+The goal of these exercises is to practice writing functions that model given situations. Each of the functions you create should depend on only **one variable**. You'll need this skill to solve applied optimization problems.
+- A right circular cone has a volume of 231 cubic inches, which is 1 gallon. (For example, if the height is $h=5$ inches then the radius is $r = ?$). Find a function that gives the radius in terms of its height. What is the domain of this function?
+
+- A light-rail system carries 80000 passengers per day at a fare of 2.25 dollars per ride. For each 5-cent increase/decrease in fare, surveys predict ridership will drop/grow by 250 passengers. (For example, if the fare is lowered to 2.00 dollars per ride, then the number of riders is ??? and the revenue is ???). Find a function giving the revenue as a function of $x$, the number of 5-cent increases. (Hint: first find a formula for the number of riders as a function of $x$, and the cost per ride as a function of $x$. Revenue is number of passengers multiplied by the cost per passenger.) What is the domain of this function?
+
+### (2) Partial Derivatives of a loglikelihood function
+Watch the videos below that walk you through finding the first and second partials of 
+$$\ell_2 = \ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) + \sum_{i=1}^{44} \left(-\frac{1}{2}(y_i - 100 - a_1t_i - a_2t_i^2)^2\right).$$
+- [First Partials](https://www.loom.com/share/faf8677c97d3471e82ef932733754eec?sharedAppSource=personal_library){target="_blank"} (~11 min)
+- [Second Partials](https://www.loom.com/share/e40fd32ff0df48dfaeeee70cd2d8534b?sharedAppSource=personal_library){target="_blank"} (~10 min)
+- [Calculating Constants](https://www.loom.com/share/1033f69c42e843db94624993e73c5764?sharedAppSource=personal_library){target="_blank"} (~7 min)
+After watching the videos, try to repeat the computations on your own so that you can discover where you have questions. 
+
+Now try repeating these computations yourself for $$\ell_6(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i - a_2(1-e^{-0.0003t}))^2.$$ 
+- <https://byuistats.github.io/M119/m119-docs/PDloglikelihoodFn6.html.>
+
+(:div:)
+
+<details>
+<summary>Click to expand the material used in the videos above.</summary>
+
+### Applying Partial Derivatives to Loglikelihood
+Consider the model $f_2(t; a_1, a_2) = 100 + a_1t + a_2t^2$. The function $f_2$ models the brightness of a lightbulb, measured as a percent of the original intensity of the lightbulb, given the number of hours the lightbulb as been on, $t$. We will fit $f_2$ to a list of 44 measurements, $(t_i, y_i)$. Assuming the residuals (or errors) are independent and normally distributed (with mean 0 and standard deviation 1), the loglikelihood function for these errors is $\ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) + \sum_{i=1}^{44} \left(-\frac{1}{2}(y_i - 100 - a_1t_i - a_2t_i^2)^2\right)$.
+
+1. Find the first partials of $\ell_2$.
+
+1. Find the second partials of $\ell_2$.
+
+Our data, a list of 44 points $(t_i, y_i)$.
+
+```r
+rm(list=ls())
+library(data4led)
+bulb <- led_bulb(1,seed=0219)
+
+t <- bulb$hours
+y <- bulb$percent_intensity
+```
+
+The number $\sum_{i=1}^{44} t_i(y_i-100)$ is a constant that depends on our data.
+
+```r
+A <- sum((y-100)*t)
+A
+```
+
+The number $\sum t_i^2$ is a constant that depends on our data.
+
+```r
+B <- sum(t^2)
+B
+```
+
+The number $\sum t_i^3$ is a constant that depends on our data.
+
+```r
+C <- sum(t^3)
+C
+```
+
+The number $\sum t_i^2(y_i -100)$ is a constant that depends on our data.
+
+```r
+D <- sum((y-100)*t^2)
+D
+```
+
+The number $\sum t_i^4$ is a constant that depends on our data.
+
+```r
+E <- sum(t^4)
+E
+```
+
+</details>
+
+(:divend:)
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 2 -- Partial Derivatives assignment.
+
+### Applied Practice (Project Work)
+- Start Project 2 Task 2
+    - Calculate the first derivative of $\ell_1$ with respect to $a_1$.
+    - Calculate the first partial derivatives of $\ell_4$. Remember there are two first partial derivatives when a function has two independent variables.
+    - Calculate the first derivative of $\ell_5$.
+
 
 # During Class
 ## Brain Gains

@@ -1,6 +1,64 @@
 ---
 title: "Class 12"
 ---
+# Between Class Sessions - Prep for Day 12 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Activity - Operations on Functions
+- Throughout the semester we will rely on 4 types of function operations. (Multiply by a Constant, Add/Substract, Multiply/Divide, Compose)
+- Throughout the semester we will study 3 types of functions. (Power, Exponential, Logarithmic)
+We can use function operations to create new functions or to better understand a function by recognizing parts. 
+
+1. Multiply by a Constant
+    - $cf(x)$
+1. Add/Subtract
+    - $(f + g)(x) = f(x) + g(x)$
+    - $(f - g)(x) = f(x) - g(x)$
+1. Multiply/Divide
+    - $(f \cdot g)(x) = f(x) \cdot g(x)$
+    - $\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)}$
+1. Compose
+    - $(f \circ g)(x) = f(g(x))$
+
+<details>
+<summary>Definition: Algebraic Function</summary>
+
+An **algebraic function** is a function that is described by basic algebraic operations (addition/subtraction, multiplication, division, and rational powers).
+
+Examples: Power Functions, Polynomials, Rational Functions, Root Functions, and other functions built up from these functions and the 4 function operations (constant multiple, add/subtract, multiply/divide, composition).
+
+</details>
+
+All algebraic functions can be built using only **power functions** and **the 4 function operations**.
+
+- For each function given below, identify the power functions and operations used to build (or construct) the function.
+    1. $f(x) = 4\sqrt[3]{x-1}$
+    1. $g(x) = \frac{6x+5}{3x}$
+    1. $h(x) = 7(x+3)^2 = 7x^2 + 42x +63$
+
+- Given $h(x)$, find two functions $f(x)$ and $g(x)$ so that $(f \circ g)(x) = h(x)$. There are multiple options for each.  
+    1. $h(x) = \sqrt{x+5}$
+    1. $h(x) = 2(x-1)^5$
+    1. $h(x) =\frac{4}{x-1}$
+    1. $h(x) =\frac{3}{x+2}$
+    1. $h(x) =(5x+4)^2$
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Finish any of the function assignments you have not completed already.
+
+### Applied Practice (Project Work)
+- Complete and Submit Project 1 Task 3
+- Start Project 1 Task 4
+
 
 # During Class - Day 12
 ## Brain Gains

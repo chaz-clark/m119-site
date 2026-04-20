@@ -1,6 +1,147 @@
 ---
 title: "Class 4"
 ---
+# Between Class Sessions - Prep for Day 4 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+
+### (1) Interactive Programming Activity
+
+> **seq() function in R**<br>
+> Run the following code in your Console.
+> 
+```r
+seq(-10,10,0.2)
+```
+
+> What does this code do?
+> 
+> What if we change the last number?
+> 
+```r
+seq(-10,10,1)
+seq(-10,10,5)
+seq(-10,10)
+```
+
+> 
+> What if we change the first number?
+> 
+```r
+seq(-10,10,2)
+seq(-1,10,2)
+seq(3,10,2)
+seq(-14,10,2)
+```
+
+> 
+> What if we change the second number?
+> 
+```r
+seq(-10,10,2)
+seq(-10,-2,2)
+seq(-10,5,2)
+```
+
+> 
+> What if we change the second number?
+> 
+```r
+seq(-10,10,2)
+seq(-10,-2,2)
+seq(-10,5,2)
+```
+
+> 
+> Run the following in your Console?
+> 
+```
+?seq
+```
+
+> 
+> 
+> 
+> **Plotting in R**<br>
+> Run the following code in your Console.
+> 
+```r
+x <- seq(-2,2,length=5)
+y <- c(4,1,0,1,4)
+plot(x,y)
+```
+
+> What does this code do?
+> 
+> What does the argument, type='l', do in the plot function?
+> 
+```r
+plot(x,y,type='l')
+```
+
+> 
+> What does the argument, type='p', do in the plot function?
+> 
+```r
+plot(x,y,type='p')
+```
+
+> 
+> Run the following code in your Console.
+> 
+```r
+plot(iris$Sepal.Length,iris$Petal.Length,pch=16)
+```
+
+> What does this code do?
+> 
+> What does the argument, "pch=16", do?
+> 
+> Run the following code in your Console.
+> 
+```
+head(iris)
+head(iris$Petal.Width)
+head(iris$Sepal.Length)
+```
+
+> What does the $ do?
+
+### (2) Transformation of Functions (Videos)
+
+> * Watch the following videos, from mathispower4u website.
+> ** [Video 1](https://www.youtube.com/watch?v=2S9LUinJ8-w) (~10 minutes)
+> ** [Video 2](https://www.youtube.com/watch?v=iFYX3MvLt4M) (~7.5 minutes)
+> ** [Video 3 (summary)](https://www.youtube.com/watch?v=An29CALYjAA) (~8.5 minutes)
+> 
+> If you prefer reading you can carefully read and review [Section 1.5 Precalculus Text](https://openstax.org/books/precalculus/pages/1-5-transformation-of-functions).You can skip the "Determining Even and Odd Functions" part of this section.
+
+### (3) Project 1 Task 1
+
+> * Begin Project 1 Task 1
+> ** Read each of the following.
+> ***[Specs](https://byuistats.github.io/M119/project.html){target="_blank"}
+> ***[Spec Details](https://byuistats.github.io/M119/specs_detail.html){target="_blank"}
+> ***[Project 1 Task 1 Instructions](https://byuistats.github.io/M119/project1.html){target="_blank"}
+> 
+> * Create the required scatterplot for Project 1 Task 1.
+
+<a id="PP"></a>
+
+## Regular Reminders 
+### Skill Practice (KA Homework)
+- Begin 1 -- Transformations of Functions assignment 
+- Begin 1 -- Solving Linear Systems assignment
+
+### Applied Practice (Project Work)
+- Begin Project 1 Task 1
+
 
 # During Class
 ## Brain Gains

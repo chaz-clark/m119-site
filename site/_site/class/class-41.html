@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -392,7 +427,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-41" id="toc-between-class-sessions---prep-for-day-41" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-41">Between Class Sessions - Prep for Day 41 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#definite-integrals-and-geometric-arguments" id="toc-definite-integrals-and-geometric-arguments" class="nav-link" data-scroll-target="#definite-integrals-and-geometric-arguments">(2) Definite Integrals and Geometric arguments</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
+  </ul></li>
+  <li><a href="#applied-practice-project-work" id="toc-applied-practice-project-work" class="nav-link" data-scroll-target="#applied-practice-project-work">Applied Practice (Project Work)</a></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
   <li><a href="#group-meeting" id="toc-group-meeting" class="nav-link" data-scroll-target="#group-meeting">Group Meeting</a>
@@ -433,6 +477,73 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-41" class="level1">
+<h1>Between Class Sessions - Prep for Day 41 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Making Connections - Prepare to share just a few problems from 3 – Compute Probability (Continuous Random Variables) and Complete 3 – Calculate Parameters of Continuous Random Variables Identifying Expected Value and Variance assignments in Knewton Alta. - Write down the definite integrals then use Mathematica to compute the integrals. - What connections can you identify between the exercises in these assignments and our in-class exercises? - What connections can you find between these exercises and Project 3?</p>
+<section id="definite-integrals-and-geometric-arguments" class="level3">
+<h3 class="anchored" data-anchor-id="definite-integrals-and-geometric-arguments">(2) Definite Integrals and Geometric arguments</h3>
+<ul>
+<li>Consider the function <span class="math inline">\(f(x) = \sqrt{16-(x-4)^2}\)</span>. Adapt the following R code to graph this function.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">8</span>,<span class="fl">0.1</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> [calculate corresponding y values here; there are several ways to do this]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">type=</span><span class="st">'l'</span>,<span class="at">xlim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">9</span>),<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>What is the shape of this function?</p>
+<ul>
+<li>Consider the curve <span class="math inline">\((x-4)^2 + y^2 = 16\)</span>. Use the following Mathematica code to plot this curve. Notice, it is not a function.</li>
+</ul>
+<pre><code>ContourPlot[(x - 4)^2 + y^2 == 16, {x, -1, 9}, {y, -5, 5}]</code></pre>
+<p>What is the shape of this curve?</p>
+<ul>
+<li>Consider the following Mathematica code.</li>
+</ul>
+<pre><code>ContourPlot[y == Sqrt[16 - (x - 4)^2], {x, -1, 9}, {y, -5, 5}]</code></pre>
+<pre><code>- What curve is being plotted here?
+- What do you notice about the function $f(x) = \sqrt{16-(x-4)^2}$ and the curve $ (x-4)^2 + y^2 = 16 $? </code></pre>
+<ul>
+<li>Now let’s use our observations. Consider the integral, <span class="math inline">\(\displaystyle\int_0^{8} \sqrt{16-(x-4)^2} dx\)</span>.
+<ul>
+<li>What is the shape of the integrand, <span class="math inline">\(f(x) = \sqrt{16-(x-4)^2}\)</span>?</li>
+</ul></li>
+</ul>
+<details>
+<summary>
+-&gt;Answer
+</summary>
+<p><span class="math inline">\(f(x)\)</span> is one half of a circle centered at (4,0) with radius 4. You’ll encounter functions like this one when working on Knewton Alta homework.</p>
+</details>
+<blockquote class="blockquote">
+<p>Calculate the integral, <span class="math inline">\(\displaystyle\int_0^{8} \sqrt{16-(x-4)^2} dx\)</span>, using a geometric formula. Then check your answer by calculating the definite integral in Mathematica.</p>
+</blockquote>
+<details>
+<summary>
+-&gt;<em>Hint</em>
+</summary>
+</details>
+<p>-&gt;The formula for calculating the area of a circle with radius <span class="math inline">\(r\)</span> is <span class="math inline">\(A = \pi r^2\)</span>.</p>
+<p><a id="PP"></a></p>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="skill-practice-ka-homework" class="level3">
+<h3 class="anchored" data-anchor-id="skill-practice-ka-homework">Skill Practice (KA Homework)</h3>
+<ul>
+<li>Complete 3 – Calculate Parameters of Continuous Random Variables Identifying Expected Value and Variance</li>
+<li>Continue working on 3 – Definite Integrals</li>
+</ul>
+</section>
+</section>
+<section id="applied-practice-project-work" class="level2">
+<h2 class="anchored" data-anchor-id="applied-practice-project-work">Applied Practice (Project Work)</h2>
+<ul>
+<li>Finish and Submit Project 3 Task 2.</li>
+</ul>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="brain-gains" class="level2">

@@ -392,7 +392,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class" id="toc-during-class" class="nav-link active" data-scroll-target="#during-class">During Class</a>
+  <li><a href="#between-class-sessions---prep-for-day-45" id="toc-between-class-sessions---prep-for-day-45" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-45">Between Class Sessions - Prep for Day 45 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">(2) Practice</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
+  <li><a href="#applied-practice-project-work" id="toc-applied-practice-project-work" class="nav-link" data-scroll-target="#applied-practice-project-work">Applied Practice (Project Work)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
   <li><a href="#group-meeting" id="toc-group-meeting" class="nav-link" data-scroll-target="#group-meeting">Group Meeting</a>
   <ul class="collapse">
@@ -429,6 +438,77 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-45" class="level1">
+<h1>Between Class Sessions - Prep for Day 45 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) CDF’s and PDF’s (Making Connections) Let <span class="math inline">\(g(x)\)</span> be a function that defines the top of a target. Each time we throw a dart, it hits a a random spot on the target. We let <span class="math inline">\(X\)</span> be the random variable that records the <span class="math inline">\(x\)</span>-coordinate of the dart’s location.</p>
+<section id="calculating-a-pdf-from-a-nonnegative-function-with-finite-area" class="level4">
+<h4 class="anchored" data-anchor-id="calculating-a-pdf-from-a-nonnegative-function-with-finite-area">Calculating a PDF (from a nonnegative function with finite area)</h4>
+<p>Given a “target” function, <span class="math inline">\(g(x)\)</span>, there are two ways to calculate the <strong>probability density function</strong>, <span class="math inline">\(f\)</span>:<br> <em>Method 1</em> - <em>Calculate</em> <span class="math inline">\(F(x) = P(X \leq x)\)</span> for every real number <span class="math inline">\(x\)</span>. - Calculate probabilities as ratios of areas, $ P(X x) = $. - <strong>Take the derivative</strong> of the CDF to find the PDF, <span class="math inline">\(f(x) = F'(x)\)</span>.</p>
+<p><em>Method 2</em> - <em>Normalize</em> the target so the total area will be 1. - Multiple <span class="math inline">\(g(x)\)</span> by <span class="math inline">\(k = \frac{1}{\int_{-\infty}^\infty g(x) dx}\)</span>, to get <span class="math inline">\(f(x) = kg(x)\)</span>.</p>
+</section>
+<section id="calculating-a-cdf-from-a-nonnegative-function-with-finite-area" class="level4">
+<h4 class="anchored" data-anchor-id="calculating-a-cdf-from-a-nonnegative-function-with-finite-area">Calculating a CDF (from a nonnegative function with finite area)</h4>
+<p>Given a “target” function, <span class="math inline">\(g(x)\)</span>, there are two ways to calculate the <strong>cumulative distribution function</strong>, <span class="math inline">\(F\)</span>:<br> <em>Method 1</em> - <em>Normalize</em> <span class="math inline">\(g(x)\)</span> to find the PDF, <span class="math inline">\(f(x)\)</span>. - Multiple <span class="math inline">\(g(x)\)</span> by <span class="math inline">\(k = \frac{1}{\int_{-\infty}^\infty g(x) dx}\)</span>. Pick <span class="math inline">\(k\)</span> so that <span class="math inline">\(\int_{-\infty}^\infty f(x)dx = 1\)</span>. - <strong>Find the Antiderivative (“undo the derivative”)</strong> to find the CDF. - $ F(x) = _{-}^x f(t)dt $</p>
+<p><em>Method 2</em> - <em>Calculate</em> <span class="math inline">\(F(x) = P(X \leq x)\)</span> for every real number <span class="math inline">\(x\)</span>. - Calculate probabilities as ratios of areas, $ F(x) = P(X x) = $.</p>
+</section>
+<section id="practice" class="level3">
+<h3 class="anchored" data-anchor-id="practice">(2) Practice</h3>
+<p>Complete the following exercises, identifying which method from above you used. (Please use Mathematica as need to compute definite integrals.)</p>
+<ol type="1">
+<li>Given the cumulative distribution function below, find the probability density function, <span class="math inline">\(f(x)\)</span>. <br> <span class="math inline">\(F(x) = \begin{cases}0 &amp; x&lt;0\\ \\
+\frac{x^2}{9} &amp; 0\leq x\leq 3\\ \\
+1 &amp; x&gt;3\end{cases}.\)</span><br></li>
+<li>Given the probability density function below, find the cumulative distribution function, <span class="math inline">\(F(x)\)</span>. <br> <span class="math inline">\(f(x) =
+\begin{cases}
+3-6x^2 &amp; 0 \leq x \leq 1 \\ \\
+0 &amp; \text{otherwise}
+\end{cases}.\)</span><br></li>
+<li>Given the probability density function below, find the cumulative distribution function, <span class="math inline">\(F(x)\)</span>. <br> <span class="math inline">\(f(x) =
+\begin{cases}
+\frac{8}{7} - \frac{2}{7}x &amp; 0 \leq x \leq 1 \\ \\
+0 &amp; \text{otherwise}
+\end{cases}.\)</span><br></li>
+<li>Given the nonnegative function below, find the cumulative distribution function.</li>
+</ol>
+<p><span class="math inline">\(g(x) =
+\begin{cases}
+\frac{1}{x^2} &amp; x \geq 1 \\ \\
+0 &amp; \text{otherwise}
+\end{cases}.\)</span></p>
+<ol start="5" type="1">
+<li><p>Given the nonnegative function below, find the cumulative distribution function, <span class="math inline">\(F(x)\)</span>.<br> <span class="math inline">\(g(x) =
+\begin{cases}
+e^{-\lambda x} &amp; x \geq 0 \\ \\
+0 &amp; \text{otherwise}
+\end{cases}.\)</span></p></li>
+<li><p>Given the cumulative distribution function below, find the probability density function, <span class="math inline">\(f(x)\)</span>. <br> <span class="math inline">\(F(x) =
+\begin{cases}
+0 &amp; x \leq 0 \\ \\
+1 - e^{-\lambda x} &amp; x &gt; 0 \\ \\
+\end{cases}.\)</span></p></li>
+</ol>
+<p><a id="PP"></a></p>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="skill-practice-ka-homework" class="level3">
+<h3 class="anchored" data-anchor-id="skill-practice-ka-homework">Skill Practice (KA Homework)</h3>
+<ul>
+<li>Continue working on 3 – CDFs, PDFs, and the Fundamental Theorem of Calculus</li>
+<li><em>Complete any missing Function assignment, Derivative assignments, or any of the first 6 Integral assignments.</em></li>
+</ul>
+</section>
+<section id="applied-practice-project-work" class="level3">
+<h3 class="anchored" data-anchor-id="applied-practice-project-work">Applied Practice (Project Work)</h3>
+<ul>
+<li>Review and submit Project 3.</li>
+</ul>
+</section>
+</section>
+</section>
 <section id="during-class" class="level1">
 <h1>During Class</h1>
 <section id="group-meeting" class="level2">

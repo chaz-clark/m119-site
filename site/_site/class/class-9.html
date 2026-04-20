@@ -427,7 +427,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#during-class---day-9" id="toc-during-class---day-9" class="nav-link active" data-scroll-target="#during-class---day-9">During Class - Day 9</a>
+  <li><a href="#between-class-sessions---prep-for-day-9" id="toc-between-class-sessions---prep-for-day-9" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-9">Between Class Sessions - Prep for Day 9 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
+  <ul class="collapse">
+  <li><a href="#function-fairy-tales" id="toc-function-fairy-tales" class="nav-link" data-scroll-target="#function-fairy-tales">(2) Function “Fairy Tales”</a></li>
+  <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
+  <ul class="collapse">
+  <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
+  <li><a href="#applied-practice-project-work" id="toc-applied-practice-project-work" class="nav-link" data-scroll-target="#applied-practice-project-work">Applied Practice (Project Work)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#during-class---day-9" id="toc-during-class---day-9" class="nav-link" data-scroll-target="#during-class---day-9">During Class - Day 9</a>
   <ul class="collapse">
   <li><a href="#brain-gains" id="toc-brain-gains" class="nav-link" data-scroll-target="#brain-gains">Brain Gains</a></li>
   <li><a href="#definitions-and-reminders" id="toc-definitions-and-reminders" class="nav-link" data-scroll-target="#definitions-and-reminders">Definitions and Reminders</a></li>
@@ -464,6 +473,44 @@ window.Quarto = {
 </header>
 
 
+<section id="between-class-sessions---prep-for-day-9" class="level1">
+<h1>Between Class Sessions - Prep for Day 9 <a id="tasklist"></a></h1>
+<!-- from Prep.GeneralInstructions -->
+<p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
+<p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
+<p><a id="Prep"></a> ## Preparation ### (1) Logarithm Introduction and Practice Watch these video from mathispower4u. - <a href="https://www.youtube.com/watch?v=z296tOPj0HA" target="_blank">Introduction to Logarithmic Functions</a> - <a href="https://www.youtube.com/watch?v=dxj5J9OpWGA&amp;feature=youtu.be" target="_blank">Evaluating Logarithms</a> - <a href="https://www.youtube.com/watch?v=SxF44olWTyk" target="_blank">Properties of Logarithms</a></p>
+<section id="function-fairy-tales" class="level3">
+<h3 class="anchored" data-anchor-id="function-fairy-tales">(2) Function “Fairy Tales”</h3>
+<p>The local elvish population is modeled by the function <span class="math inline">\(P(x;a,b) = ax+b\)</span>, where <span class="math inline">\(x\)</span> is the number of years since 2000. - Letting <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b=30\)</span>, we have <span class="math inline">\(P(x) = 2x+30\)</span>. Plot this function and tell the story given by this model. - How many elves does this model say were alive in 2020?</p>
+<p>You can use the code below to help you tackle this problem.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">2</span>,<span class="at">b=</span><span class="dv">30</span>){a<span class="sc">*</span>x<span class="sc">+</span>b}</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">4</span>,<span class="dv">200</span>,<span class="fl">0.1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,<span class="fu">p</span>(x),<span class="at">type=</span><span class="st">'l'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">500</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">p</span>(<span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a id="PP"></a></p>
+</section>
+<section id="regular-reminders" class="level2">
+<h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
+<section id="skill-practice-ka-homework" class="level3">
+<h3 class="anchored" data-anchor-id="skill-practice-ka-homework">Skill Practice (KA Homework)</h3>
+<p>Continue working on the following assignments. - 1 – Definition of Logarithm - 1 – Evaluate Exponential and Logarithmic Functions - 1 – Properties of Logarithms</p>
+</section>
+<section id="applied-practice-project-work" class="level3">
+<h3 class="anchored" data-anchor-id="applied-practice-project-work">Applied Practice (Project Work)</h3>
+<ul>
+<li>Prepare for Project 1 Task 3
+<ul>
+<li>Read the Project 1 Task 3 instructions</li>
+<li>Watch the <a href="https://www.loom.com/share/e719841d54624db9b22ada1e85b7f85d?sharedAppSource=personal_library" target="_blank">video</a> example of visually fitting f2. The link for this video is also in the Project 1 (Task 3) Instructions.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
 <section id="during-class---day-9" class="level1">
 <h1>During Class - Day 9</h1>
 <section id="brain-gains" class="level2">
@@ -478,14 +525,14 @@ Solution
 </summary>
 <p>The population started at 10 elves in 2000, and grows by 5 each year to reach 110 in 2020. Note that the domain of this problem specifically prevents me from letting <span class="math inline">\(x\)</span> be negative (the “since 2000” comment), so we don’t have to worry about interpreting something like <span class="math inline">\(x=-20\)</span> which could mean there are -10 elves in 1980.</p>
 <p>The code below graphs the function.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">2</span>,<span class="at">b=</span><span class="dv">30</span>){a<span class="sc">*</span>x<span class="sc">+</span>b}</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">4</span>,<span class="dv">200</span>,<span class="fl">0.1</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,<span class="fu">p</span>(x,<span class="dv">5</span>,<span class="dv">10</span>),<span class="at">type=</span><span class="st">'l'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">500</span>))</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">p</span>(<span class="dv">20</span>,<span class="dv">5</span>,<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="cf">function</span>(x,<span class="at">a=</span><span class="dv">2</span>,<span class="at">b=</span><span class="dv">30</span>){a<span class="sc">*</span>x<span class="sc">+</span>b}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">4</span>,<span class="dv">200</span>,<span class="fl">0.1</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,<span class="fu">p</span>(x,<span class="dv">5</span>,<span class="dv">10</span>),<span class="at">type=</span><span class="st">'l'</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">500</span>))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">p</span>(<span class="dv">20</span>,<span class="dv">5</span>,<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <ol start="2" type="1">
 <li><p>Solve for <span class="math inline">\(x\)</span> in each of the following.</p>
@@ -634,19 +681,19 @@ Properties of Logarithms
 <h3 class="anchored" data-anchor-id="activity---transformations-of-exponential-functions">Activity - Transformations of Exponential Functions</h3>
 <p>Consider the general form <span class="math inline">\(Q(x;a,c,h,k) = af(c(x-h))+k\)</span> for a transformation of a function <span class="math inline">\(f(u)\)</span>. - Identify <span class="math inline">\(a\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(h\)</span>, and <span class="math inline">\(k\)</span> and describe the transformations on <span class="math inline">\(f\)</span> to obtain <span class="math inline">\(Q\)</span> for each function below. Then state the domain and range of <span class="math inline">\(Q\)</span>. Finish by graphing <span class="math inline">\(Q\)</span>. - <span class="math inline">\(Q(x) = 4 \cdot 2^x\)</span> where <span class="math inline">\(f(u) = 2^u\)</span> - <span class="math inline">\(Q(x) = (\frac{1}{2})^x - 2\)</span> where <span class="math inline">\(f(u) = (\frac{1}{2})^u\)</span> - <span class="math inline">\(Q(x) = \frac{1}{2}3^{x-1}\)</span> where <span class="math inline">\(f(u) = 3^u\)</span> - <span class="math inline">\(Q(x) = 2^{3-x}+5\)</span> where <span class="math inline">\(f(u) = 2^u\)</span></p>
 <p>Use this code to define the functions above.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ <span class="dv">4</span><span class="sc">*</span><span class="dv">2</span><span class="sc">^</span>x }</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ (<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>)<span class="sc">^</span>x <span class="sc">-</span> <span class="dv">2</span> }</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.3</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ (<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>)<span class="sc">*</span><span class="dv">3</span><span class="sc">^</span>(x<span class="dv">-1</span>) }</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.4</span>a <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ <span class="dv">2</span><span class="sc">^</span>(<span class="dv">3</span><span class="sc">-</span>x)<span class="sc">+</span><span class="dv">5</span> }</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.4</span>b <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ (<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>)<span class="sc">^</span>(x<span class="dv">-3</span>)<span class="sc">+</span><span class="dv">5</span> }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ <span class="dv">4</span><span class="sc">*</span><span class="dv">2</span><span class="sc">^</span>x }</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ (<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>)<span class="sc">^</span>x <span class="sc">-</span> <span class="dv">2</span> }</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.3</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ (<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>)<span class="sc">*</span><span class="dv">3</span><span class="sc">^</span>(x<span class="dv">-1</span>) }</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.4</span>a <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ <span class="dv">2</span><span class="sc">^</span>(<span class="dv">3</span><span class="sc">-</span>x)<span class="sc">+</span><span class="dv">5</span> }</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>fun<span class="fl">.4</span>b <span class="ot">&lt;-</span> <span class="cf">function</span>(x){ (<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>)<span class="sc">^</span>(x<span class="dv">-3</span>)<span class="sc">+</span><span class="dv">5</span> }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Use (and adapt) this code to plot the functions above.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="fl">0.1</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">fun.1</span>(x)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">2.5</span>,<span class="fl">2.5</span>,<span class="dv">1</span>,<span class="fl">0.25</span>))</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">type=</span><span class="st">"l"</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">10</span>,<span class="dv">30</span>))</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>,<span class="at">lty=</span><span class="dv">3</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>,<span class="at">lty=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="fl">0.1</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">fun.1</span>(x)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="fl">2.5</span>,<span class="fl">2.5</span>,<span class="dv">1</span>,<span class="fl">0.25</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">type=</span><span class="st">"l"</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">10</span>,<span class="dv">30</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>,<span class="at">lty=</span><span class="dv">3</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">'gray'</span>,<span class="at">lty=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 <p><em>Source: <a href="https://byuimath.com/clarkc/all/119/index.php?n=Class.9">Class.9 on byuimath.com</a></em></p>
 

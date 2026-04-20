@@ -1,6 +1,39 @@
 ---
 title: "Class 18"
 ---
+# Between Class Sessions - Prep for Day 18 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Derivative Rules
+
+> Watch the following videos.
+> * [Product Rule](https://www.youtube.com/watch?v=3T0mD8vKLN4){target="_blank"} (~10 minutes)
+> * [Quotient Rule](https://www.youtube.com/watch?v=wg2O3o4s1q0){target="_blank"} (~7.5 minutes)
+
+### (2) Function Decomposition (composing and decomposing functions)
+
+> Complete as much of this [Composing and Decomposing Practice](https://byuistats.github.io/M119/m119-docs/Composing_Decomposing_Practice.pdf) worksheet as you can.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 2 -- Derivative Rules (Power Function, Sum/Difference, Constant Multiple) assignment
+- Begin 2 -- Derivative Rules (Product and Quotient) assignment
+
+### Applied Practice (Project Work)
+- Complete and Submit Project 1
+- Continue working on Project 2 Task 1
+    - For each general function listed in Project 2 Task 1 and the points $(t_i,y_i)$ with $i = 1, 2, 3, ... 43, 44$, complete the following. Assume the residuals (or errors) are independent and normally distributed (with $\mu = 0$ and $\sigma = 1$). This means the probability model for one residual is $p(r_i) = \frac{1}{\sqrt{2\pi}}e^{-\frac{r_i^2}{2}}$. 
+      - Write down the likelihood function for the 44 independent residuals.
+      - Write down the loglikelihood function. How could you use the properties of logarithms to rewrite each the loglikelihood function as a sum rather than a product?
+
 
 # During Class
 ## Brain Gains

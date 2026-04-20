@@ -1,6 +1,114 @@
 ---
 title: "Class 7"
 ---
+# Between Class Sessions - Prep for Day 7 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Describing Functions (practice Reading Mathematics)
+Click on each box to expand it. Read each of the definitions. Then complete the questions that follow. 
+
+<details>
+<summary>Definition: **Constant** on the Interval $I$</summary>
+
+We say a function $f$ is constant on the interval $I$ if for all $x_1$ and $x_2$ in the interval, $f(x_1) = f(x_2)$.
+
+</details>
+
+<details>
+<summary>Definition: **Increasing** on the Interval $I$ (from OpenStax textbook)</summary>
+
+We say a function $f$ is increasing on the interval $I$ if for all $x_1$ and $x_2$ in the interval, $f(x_1) \leq f(x_2)$ when $x_1 < x_2$.
+
+Note: We say a function $f$ is strictly increasing on the interval $I$ if for all $x_1$ and $x_2$ in the interval, $f(x_1) < f(x_2)$ when $x_1 < x_2$.
+
+</details>
+
+<details>
+<summary>Definition: **Decreasing** on the Interval $I$ (from OpenStax textbook)</summary>
+
+We say a function $f$ is decreasing on the interval $I$ if for all $x_1$ and $x_2$ in the interval, $f(x_1) \geq f(x_2)$ when $x_1 < x_2$.
+
+Note: We say a function $f$ is strictly decreasing on the interval $I$ if for all $x_1$ and $x_2$ in the interval, $f(x_1) > f(x_2)$ when $x_1 < x_2$.
+
+</details>
+
+<details>
+<summary>Definition: **Positive** on the interval $I$</summary>
+
+We say a function $f$ is positive on the interval $I$ if for all $x_1$ in the interval, $f(x_1) > 0$.
+
+</details>
+
+<details>
+<summary>Definition: **Nonnegative** on the interval $I$</summary>
+
+We say a function $f$ is nonnegative on the interval $I$ if for all $x_1$ in the interval, $f(x_1) \geq 0$.
+
+</details>
+
+<details>
+<summary>Definition: **Negative** on the interval $I$</summary>
+
+We say a function $f$ is negative on the interval $I$ if for all $x_1$ in the interval, $f(x_1) < 0$.
+
+</details>
+
+- What is the difference between a function being positive and a function being nonnegative?
+- Give an example of a function that is constant and nonnegative on the interval $ (1,5) $. 
+- Give an example of a function that is negative and strictly increasing on the interval $ (0,2) $
+- Can a function be both positive and nonnegative on an interval? If so, give an example. 
+- Can a function be both increasing and decreasing on an interval? If so, give an example. 
+- Give an example of a positive function that is increasing on $ (-2,0) $ and then decreasing on $ (0,2) $.
+
+### (2) Sum and Product Notation
+
+**Sum Notation**<br>
+The symbol $\sum_{k=1}^n a_k$ means to find the sum of the $a_k$ terms for each integer from $k=1$ to $k=n$ .
+
+For example:
+- $\sum_{k=2}^5 (3k-1) = \underbrace{ (3(2)-1) }_{k=2} + \underbrace{ (3(3)-1) }_{k=3}  + \underbrace{ (3(4)-1) }_{k=4} +\underbrace{ (3(5)-1) }_{k=5} = 5+8+11+14 =  38$.
+
+**Product Notation**<br>
+The symbol $\prod_{j=1}^n a_j$ means to find the product of the $a_j$ terms for each integer from $j=1$ to $j=n$.
+
+For example:
+- $\prod_{m=2}^5 (3m-1) = \underbrace{ (3(2)-1) }_{k=2}\cdot \underbrace{ (3(3)-1) }_{k=3}\cdot \underbrace{ (3(4)-1) }_{k=4}\cdot \underbrace{ (3(5)-1) }_{k=5} = 5\cdot 8\cdot 11\cdot 14=6160$.
+
+We can use R to compute sums and products as follows. 
+
+```r
+k <- seq(2,5)
+sum(3*k-1)
+prod(3*k-1)
+```
+
+Calculate the following values by hand, and check your work with R. 
+- $\sum_{m=1}^5 (4m^2+4)$ and $\prod_{m=1}^5 (4m^2+4)$
+- $\sum_{k=1}^4 (30 - k^2)$ and $\prod_{k=1}^3 (30 - k^2)$
+- $\sum_{n=1}^{10} n$ and $\prod_{n=1}^7 n$
+- $\sum_{i=1}^6 (50-i)$ and $\prod_{i=1}^6 (10-i)$
+
+### (3) Systems of Equations (videos)
+Watch the following videos about solving systems of equations.
+- [Video 1](https://www.youtube.com/watch?v=HxhacvH49o8) (~10 minutes)
+- [Video 2](https://www.youtube.com/watch?v=ova8GSmPV4o) (~7.5 minutes)
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 1 -- Transformations of Functions assignment
+- Complete 1 -- Solving Linear Systems assignment 
+
+### Applied Practice (Project Work)
+- Continue working on Project 1 Task 2
+
 
 # During Class - Day 7
 ## Brain Gains

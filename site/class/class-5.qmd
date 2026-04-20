@@ -1,6 +1,37 @@
 ---
 title: "Class 5"
 ---
+# Between Class Sessions - Prep for Day 5 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Review the Cohesive Analysis
+Take a look at this [html file](https://byuistats.github.io/M119/m119-docs/Practice_RMarkdown.html){target="_blank"}. This is an example of a cohesive analysis.
+- Notice there are complete sentences (and paragraphs) introducing the calculations.
+- Notice the calculations are explained.
+- Notice the work is reproducible because the steps of the calculations are included in the explanations, the functions we are working with are stated in the narrative (the text), and the R code is included.
+- Notice the written work stands independent of our work in class, you do not need to see the Wiki or problem statement to understand what is going on in the narrative.
+- You can download the RMarkdown file used to create this html [here](https://byuistats.github.io/M119/m119-docs/Practice_RMarkdown.Rmd).
+
+### (2) Create your own Cohesive Analysis
+- Complete Project 1 Task 1 by creating your own RMarkdown file (feel free to download and modify the one above), and in that file give a short cohesive analysis with the required scatterplot. In other words, take the work you already did and covert it into a short cohesive analysis.
+- For some additional practice with RMarkdown and writing cohesive analysis, create your own RMarkdown file (feel free to download and modify the one above), and in that file give a short cohesive analysis that computes the several values of a function taken from one of the exercises we did today. In other words, take the work you've already done in a script file in R, and convert it into a short cohesive analysis.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Continue working on 1 -- Transformations of Functions assignment 
+- Continue working on 1 -- Solving Linear Systems assignment
+
+### Applied Practice (Project Work)
+- Submit the html file for Project 1 Task 1 on Canvas.
+
 
 # During Class
 ## Brain Gains

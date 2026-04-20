@@ -1,6 +1,211 @@
 ---
 title: "Class 39"
 ---
+# Between Class Sessions - Prep for Day 39 <a id="tasklist"></a>
+
+<!-- from Prep.GeneralInstructions -->
+Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks. 
+
+Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
+
+<a id="Prep"></a>
+## Preparation
+### (1) Practice finding PDF and using them to compute Expected Value and Variance
+Many of the exercises below come from section 4.3 of [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"}.
+
+For each function $g(x)$ below, suppose $X$ is a random variable with probability density function $f(x)=kg(x)$.
+- Find the value $k$ that makes $f$ a probability density function. 
+- Compute the expected value of $X$. 
+    - Write down the definite integral required to calculate the expected value.
+    - Use Mathematica to compute the value.
+- Compute the variance of $X$ and the standard deviation $\sigma$.
+    - Write down the definite integral required to calculate the variance.
+    - Use Mathematica to compute the value.
+
+1. $g(x) = \begin{cases}e^{-3x} & 0\leq x<\infty\\ 0 & \text{otherwise}\end{cases}$
+
+<details>
+<summary>Some Answers</summary>
+
+- $\int_{-\infty}^{\infty}f(x)dx = \int_{-\infty}^{\infty} k g(x)dx = \int_{0}^{\infty} ke^{-3x}dx = k \int_{0}^{\infty} e^{-3x}dx$
+
+```
+Integrate[Exp[-3*x], {x, 0, Infinity}]
+```
+
+    - Since $\int_{-\infty}^{\infty}f(x)dx = 1$ we know $\frac{1}{3}k = 1$.
+    - $k = 3$
+
+- $\int_{-\infty}^{\infty} xf(x)dx = \int_{0}^{\infty} x(3e^{-3x})dx$
+
+```
+Integrate[3*x*Exp[-3*x], {x, 0, Infinity}]
+```
+
+- $\int_{-\infty}^{\infty} (x - \mu)^2f(x)dx = \int_{0}^{\infty} (x - \frac{1}{3})^2(3e^{-3x})dx$
+
+```
+Integrate[3*(x-(1/3))^2*Exp[-3*x], {x, 0, Infinity}]
+```
+
+    - $\sigma = \sqrt{\text{Var}[X]}$
+
+```
+sqrt(1/9)
+```
+
+</details>
+
+2.
+ $g(x) = \begin{cases}e^{-\lambda x} & 0\leq x<\infty\\ 0 & \text{otherwise}\end{cases}$
+
+<details>
+<summary>Some Answers</summary>
+
+- $\int_{-\infty}^{\infty}f(x)dx = \int_{-\infty}^{\infty} k g(x)dx = \int_{0}^{\infty} ke^{-\lambda x}dx = k \int_{0}^{\infty} e^{-3x}dx$
+
+```
+Assuming[L > 0, Integrate[Exp[-L*x], {x, 0, Infinity}]]
+```
+
+    - Since $\int_{-\infty}^{\infty}f(x)dx = 1$ we know $\frac{1}{\lambda}k = 1$.
+    - $k = \lambda$
+
+- $\int_{-\infty}^{\infty} xf(x)dx = \int_{0}^{\infty} x(\lambda e^{-\lambda x})dx$
+
+```
+Assuming[L > 0, Integrate[L*x*Exp[-L*x], {x, 0, Infinity}]]
+```
+
+- $\int_{-\infty}^{\infty} (x - \mu)^2f(x)dx = \int_{0}^{\infty} (x - \frac{1}{\lambda})^2(\lambda e^{-\lambda x})dx$
+
+```
+Integrate[L*(x-(1/L))^2*Exp[-L*x], {x, 0, Infinity}]
+```
+
+    - $\sigma = \sqrt{\text{Var}[X]} = \frac{1}{\lambda}$
+
+</details>
+
+3.
+$g(x) = \begin{cases}1 & 2\leq x\leq 7\\ 0 & \text{otherwise}\end{cases}$
+
+<details>
+<summary>Some Answers</summary>
+
+- $\int_{-\infty}^{\infty}f(x)dx = \int_{-\infty}^{\infty} k g(x)dx = \int_{2}^{7} k(1) dx = k\int_{2}^{7} 1 dx$
+
+```
+Integrate[1, {x, 2, 7}]
+```
+
+    - Since $\int_{-\infty}^{\infty}f(x)dx = 1$ we know $5k = 1$.
+    - $k = \frac{1}{5}$
+
+- $\int_{-\infty}^{\infty} xf(x)dx = \int_{2}^{7} x(\frac{1}{5}) dx$
+
+```
+Integrate[x/5, {x, 2, 7}]
+```
+
+- $\int_{-\infty}^{\infty} (x - \mu)^2f(x)dx = \int_{0}^{\infty} (x - \frac{9}{2})^2(\frac{1}{5})dx$
+
+```
+Integrate[(1/5)*(x-(9/2))^2, {x, 2, 7}]
+```
+
+    - $\sigma = \sqrt{\text{Var}[X]}$
+
+```
+sqrt(25/12)
+```
+
+</details>
+
+4.
+$g(x) = \begin{cases}1 & a\leq x\leq b\\ 0 & \text{otherwise}\end{cases}$
+
+<details>
+<summary>Some Answers</summary>
+
+- $\int_{-\infty}^{\infty}f(x)dx = \int_{-\infty}^{\infty} k g(x)dx = \int_{a}^{b} k(1) dx = k\int_{a}^{b} 1 dx$
+
+```
+Integrate[1, {x, a, b}]
+```
+
+    - Since $\int_{-\infty}^{\infty}f(x)dx = 1$ we know $(b-a)k = 1$.
+    - $k = \frac{1}{b-a}$
+
+- $\int_{-\infty}^{\infty} xf(x)dx = \int_{a}^{b} x(\frac{1}{b-a}) dx$
+
+```
+Simplify[Integrate[x/(b-a), {x, a, b}]]
+```
+
+- $\int_{-\infty}^{\infty} (x - \mu)^2f(x)dx = \int_{a}^{b} (x - \frac{a+b}{2})^2(\frac{1}{b-a})dx$
+
+```
+Integrate[(1/(b-a))*(x-((a+b)/2))^2, {x, a, b}]
+```
+
+    - $\sigma = \sqrt{\text{Var}[X]} = \frac{a-b}{\sqrt{12}}$
+
+</details>
+
+5.
+$g(x) = \begin{cases}2 & -5 \leq x \leq 1\\ 4.5 & 3 \leq x \leq 5\\ 0 & \text{otherwise}\end{cases}$
+
+<details>
+<summary>Some Answers</summary>
+
+- $\int_{-\infty}^{\infty}f(x)dx = \int_{-\infty}^{\infty} k g(x)dx = \int_{-5}^{1} 2k dx + \int_{3}^{5} 4.5k dx = k\int_{-5}^{1} 2 dx + k\int_{3}^{5} 4.5 dx = k (\int_{-5}^{1} 2 dx + \int_{3}^{5} 4.5 dx)$
+
+```
+Integrate[2, {x, -5, 1}]
+
+Integrate[4.5, {x, 3, 5}]
+```
+
+    - Since $\int_{-\infty}^{\infty}f(x)dx = 1$ we know $21k = 1$.
+    - $k = \frac{1}{21}$
+
+- $\int_{-\infty}^{\infty} xf(x)dx = \int_{-5}^{1} \frac{2x}{21} dx + \int_{3}^{5} \frac{4.5x}{21} dx$
+
+```
+Integrate[2*x/21, {x, -5, 1}] + Integrate[4.5*x/21, {x, 3, 5}]
+```
+
+- $\int_{-\infty}^{\infty} (x - \mu)^2f(x)dx = \int_{-5}^{1} (x - 0.571429)^2(\frac{2}{21}) dx + \int_{3}^{5} (x - 0.571429)^2(\frac{4.5}{21}) dx$
+
+```
+Integrate[(2/21)*(x-0.571429)^2, {x, -5, 1}] + Integrate[(4.5/21)*(x-0.571429)^2, {x, 3, 5}]
+```
+
+    - $\sigma = \sqrt{\text{Var}[X]}$
+
+```
+sqrt(10.6735)
+```
+
+</details>
+
+### (2) Start Project 3 Task 2
+- Read the instructions. Familiarize yourself with the task.
+- Write down the definite integrals to compute $E[X]$ for $f_0$, $f_1$, $f_2$, and $f_3$.
+    - Use Mathematica to calculate $E[X]$ in each case.
+
+<a id="PP"></a>
+
+## Regular Reminders
+### Skill Practice (KA Homework)
+- Complete 3 -- Compute Probability (Continuous Random Variables)
+- Continue working on 3 -- Definite Integrals
+- Begin 3 -- Calculate Parameters of Continuous Random Variables (Identifying Expected Value and Variance)
+
+### Applied Practice (Project Work)
+- Begin Project 3 Task 2
+
 
 # During Class
 We'll start in groups today, to help review setting up and computing integrals.
