@@ -141,7 +141,12 @@ def write_schedule_json(calendar: list[dict]):
 
 
 def _load_class_topics() -> dict[int, str]:
-    """Return {class_num: first_###_heading} by scanning generated .qmd files."""
+    """Return {class_num: first ### heading under '# During Class'} per class .qmd.
+
+    The first `###` overall is always a Prep step like "(1) Foo" — not useful as
+    a schedule topic. Skip past `# During Class` and take the first `###` from
+    there (the in-class activity heading).
+    """
     topics = {}
     class_dir = SITE_DIR / "class"
     if not class_dir.exists():
@@ -151,8 +156,12 @@ def _load_class_topics() -> dict[int, str]:
             num = int(qmd.stem.split("-")[1])
         except (IndexError, ValueError):
             continue
+        in_class_section = False
         for line in qmd.read_text(errors="replace").splitlines():
-            if line.startswith("### "):
+            if line.startswith("# During Class"):
+                in_class_section = True
+                continue
+            if in_class_section and line.startswith("### "):
                 topics[num] = line[4:].strip()
                 break
     return topics
