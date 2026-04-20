@@ -14,7 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Derivative Relationships
 
-> Download [this file](https://byuistats.github.io/M119/m119-docs/DerivativeGraphs.pdf){target="_blank"}. Then sketch the derivative of each function, using what you know about linear approximations (tangent lines) and the derivative.
+> Download [this file](https://chaz-clark.github.io/M119/Projects/m119-docs/DerivativeGraphs.pdf){target="_blank"}. Then sketch the derivative of each function, using what you know about linear approximations (tangent lines) and the derivative.
 
 <a id="PP"></a>
 

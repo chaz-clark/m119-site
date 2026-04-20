@@ -20,7 +20,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (2) Solving Equations
 
-Review page 1-3 in this [summary of solving equations](https://byuistats.github.io/M119/m119-docs/EquationSolvingStrategies_kelly.pdf){target="_blank"} compiled by my colleague Kelly MacArthur. Then complete as many of these as you can, with the goal of having something you can share with your team in class.
+Review page 1-3 in this [summary of solving equations](https://chaz-clark.github.io/M119/Projects/m119-docs/EquationSolvingStrategies_kelly.pdf){target="_blank"} compiled by my colleague Kelly MacArthur. Then complete as many of these as you can, with the goal of having something you can share with your team in class.
 
 - Create an example of a linear equation to solve, and then solve it.
 - Create an example of a quadratic equation to solve, and then solve it.

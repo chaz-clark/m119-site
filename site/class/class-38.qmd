@@ -89,7 +89,7 @@ Below is a list of properties of Definite Integrals. Read through the properties
     - Can you identify any properties that sums and integrals share? 
 - Discrete things are different from infinite things.
     - Can you identify any properties highlight any of these difference (highlighting a difference between sums and integrals)? 
-- Can you find an example of any of these properties used in our [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} work?
+- Can you find an example of any of these properties used in our [Rectangles, Targets, and Sums](https://chaz-clark.github.io/M119/Projects/probability.html){target="_blank"} work?
 
 #### Properties of the Definite Integral
 - Given $a < c < k < b$, <br>

@@ -97,7 +97,7 @@ lines(ti,f5(ti,a1))
 - Begin 2 -- Second Derivative and Extrema assignment
 
 ### Applied Practice (Project Work)
-- Read [this file](https://byuistats.github.io/M119/m119-docs/PDloglikelihoodFn6.html){target="_blank"} describing how to find the first and second partials of $\ell_6$. Then try repeating the computations on your own for $\ell_4$.
+- Read [this file](https://chaz-clark.github.io/M119/Projects/m119-docs/PDloglikelihoodFn6.html){target="_blank"} describing how to find the first and second partials of $\ell_6$. Then try repeating the computations on your own for $\ell_4$.
     - Note: This is part of the required work for Project 2 Task 2.
 
 

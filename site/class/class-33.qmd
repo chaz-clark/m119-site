@@ -13,7 +13,7 @@ Pick something from your prep today that you can share with your group in class.
 ## Preparation
 
 ### (1) Reading - Rectangles, Targets, and Sums
-For our next Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+For our next Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://chaz-clark.github.io/M119/Projects/probability.html){target="_blank"} 
 
 1. Read Section 1.1-1.6 and complete a few exercises along the way bring something you did to share with your group.
 

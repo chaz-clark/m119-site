@@ -13,10 +13,10 @@ Pick something from your prep today that you can share with your group in class.
 ## Preparation
 
 ### (1) Derivative Relationships (extended)
-- Using your sketches of the derivatives of each of the six function in [this file](https://byuistats.github.io/M119/m119-docs/DerivativeGraphs.pdf){target="_blank"}, sketch the second derivative of each function. Remember the second derivative is the derivative of the first derivative function.
+- Using your sketches of the derivatives of each of the six function in [this file](https://chaz-clark.github.io/M119/Projects/m119-docs/DerivativeGraphs.pdf){target="_blank"}, sketch the second derivative of each function. Remember the second derivative is the derivative of the first derivative function.
 
 ## More Derivative Practice 
-- Download [this file](https://byuistats.github.io/M119/m119-docs/DerRules_table.pdf){target="_blank"} and complete the exercises.
+- Download [this file](https://chaz-clark.github.io/M119/Projects/m119-docs/DerRules_table.pdf){target="_blank"} and complete the exercises.
 
 - Consider the function $f(y;a,b,c) = ay^2 + by + c$. 
     - Take the derivative with respect to $y$, assume all other variables and parameters are constants.
@@ -41,7 +41,7 @@ Pick something from your prep today that you can share with your group in class.
     - 2 -- Derivative Rules (Function Composition) - the Chain Rule
 
 ### Applied Practice (Project Work)
-- Review this [example of a written solution](https://byuistats.github.io/M119/m119-docs/project2_bmw.html){target="_blank"} for the loglikelihood calculation when using the model $f_1$. *Note this example solution is also posted in Canvas in the Additional Resources module.*
+- Review this [example of a written solution](https://chaz-clark.github.io/M119/Projects/m119-docs/project2_bmw.html){target="_blank"} for the loglikelihood calculation when using the model $f_1$. *Note this example solution is also posted in Canvas in the Additional Resources module.*
 - Complete or Revise and then submit Project 2 Task 1
     - Remember, everyone can submit Project 2 Task 1 this week, regardless of whether they have finished Project 1.
       - To earn a C, you need pass off one Project (and 2 project tasks). To earn a B, you need to pass off 2 Projects (and 4 project tasks). To earn an A, you need to pass off all 3 Project (and 6 project tasks). 

@@ -16,7 +16,7 @@ Pick something from your prep today that you can share with your group in class.
 - Read the Syllabus
 - Complete the Background Survey
 - Open a Knewton Alta assignment and answer some questions (for example you could open up "1 -- Function Evaluation"). The point is to make sure you have gotten into the system, and seen how it works.  Feel free to complete one of the assignments. 
-- Skim read the [instructions for Project 1](https://byuistats.github.io/M119/project1.html).
+- Skim read the [instructions for Project 1](https://chaz-clark.github.io/M119/Projects/unit1.html).
 
 ### (2) Graphing Functions
 

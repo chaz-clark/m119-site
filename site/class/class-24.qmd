@@ -30,7 +30,7 @@ After watching the videos, try to repeat the computations on your own so that yo
 
 Now try repeating these computations yourself for $$\ell_6(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i - a_2(1-e^{-0.0003t}))^2.$$ 
 
-- [Partial derivatives of loglikelihood for f6](https://byuistats.github.io/M119/m119-docs/PDloglikelihoodFn6.html).
+- [Partial derivatives of loglikelihood for f6](https://chaz-clark.github.io/M119/Projects/m119-docs/PDloglikelihoodFn6.html).
 
 <details>
 <summary>Click to expand the material used in the videos above.</summary>

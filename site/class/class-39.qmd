@@ -13,7 +13,7 @@ Pick something from your prep today that you can share with your group in class.
 ## Preparation
 
 ### (1) Practice finding PDF and using them to compute Expected Value and Variance
-Many of the exercises below come from section 4.3 of [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"}.
+Many of the exercises below come from section 4.3 of [Rectangles, Targets, and Sums](https://chaz-clark.github.io/M119/Projects/probability.html){target="_blank"}.
 
 For each function $g(x)$ below, suppose $X$ is a random variable with probability density function $f(x)=kg(x)$.
 
