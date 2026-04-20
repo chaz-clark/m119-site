@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Local Slope

@@ -9,10 +9,12 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Recap Reading - Rectangles, Targets, and Sums
 For Unit 3, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+
 1. Skim read the entire document above (it's a second pass over the material). Make notes of questions you have that you would like to discuss more. If you didn't watch the video in section 1.2 the first time through, please do so this time through. 
 
 1. Complete a few exercises that perhaps you skipped before, or have a better understanding of now.  Come ready to share what you did with your group. Remember it's OK if you don't have the correct answers. The point is to have made a good faith attempt, and then come ready to share what you did. 
@@ -291,6 +293,7 @@ For each function below, use Mathematica to compute
 Work on the chalkboard as you complete these problems, and pass the chalk as you finish each one. Leave up your work so that you can compare your answers with your neighbors. If you notice an answer differs from a neighboring group's, then have a discussion with them.
 
 Consider the function $g(x) = 2x$ for $0\leq x\leq 5$, and 0 otherwise.    
+
 1. Find the area under $g$ using a geometric argument.  Then compute $A=\int_0^5 2x dx$ with Mathematica to verify you have the same answer. Then let $k=\frac{1}{A}$ so that $f(x) = k g(x)$ is a probability density function for a random variable $X$.
 
 1. Explain why $P(X\leq 2) = \frac{4}{25}$ by using a geometric argument. Then use Mathematica to verify that $\int_0^2 f(x) dx = \frac{4}{25}$. 
@@ -308,6 +311,7 @@ Consider the function $g(x) = 2x$ for $0\leq x\leq 5$, and 0 otherwise.
 1. Explain why $\int_a^b f(x) dx = F(b)-F(a)$.
 
 If you finish early, swap to the function $g(x) = 7-x$ for $0\leq x\leq 4$ and 0 otherwise.    
+
 1. Find the area under $g$ using a geometric argument.  Then compute $A=\int_0^4 g dx$ with Mathematica to verify you have the same answer. Then let $k=\frac{1}{A}$ so that $f(x) = k g(x)$ is a probability density function for a random variable $X$.
 
 1. Compute $P(X\leq 2)$ using a geometric argument. Then use Mathematica to verify your result. 

@@ -9,12 +9,14 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Antiderivative Practice
 An **antiderivative** is a function that reverses what the derivative did, the result we get when we "undo" a derivative is called an antiderivative.
 Drawing on your knowledge of derivatives, for each expression below, please "undo" the derivative. 
 In other words answer the question, "What function did we take the derivative of to get this function?"
+
 1. $ x^7 $
 
 1. $ x^{-2} $
@@ -39,6 +41,7 @@ For each function below, do the following.
 (b) Use what you know about derivatives to think backwards and identify a function whose derivative is $f(x)$. Can you identify another function whose derivative is also $f(x)$? 
 (c) Without using software, guess which of the derivatives of $f(x)$ is the CDF.
 (d) Check your guess by computing the CDF with Mathematica. Remember the CDF is $ F(x) = P(X \leq x) = \int_{-\infty}^x f(t) dt$.
+
 1. $f(x) = \frac{1}{5}$ for $0 \leq x \leq 5$ and 0 otherwise.
 
 1. $f(x) = \frac{x}{8}$ for $0 \leq x \leq 4$ and 0 otherwise.
@@ -88,6 +91,7 @@ For each function below, do the following.
 An **antiderivative** is a function that reverses what the derivative did, the result we get when we "undo" a derivative is called an antiderivative.
 Drawing on your knowledge of derivatives, for each expression below, please "undo" the derivative. 
 In other words answer the question, "What function did we take the derivative of to get this function?"
+
 1. $3x^2$
 
 1. $4e^{x}$
@@ -110,6 +114,7 @@ In other words answer the question, "What function did we take the derivative of
 Combining the above facts, we see that $ \int_a^b f(x) dx = F(b) - F(a) $ provided $F'(x) = f(x)$ (so $F$ is an antiderivative of $f$). All our computations have assumed that $f(x)$ was a pdf for a random variable. What if $f$ is not a pdf? Let's verify this rule holds for a few functions. 
 
 Compute each definite integral in 2 ways, namely (1) use Mathematica and then (2) find an antiderivative $G$ of the integrand $g$ and then evaluate $G(b)-G(a)$. Show your work for the second part on the chalkboard. 
+
 1. Compute $\int_1^4 5 dx$.
 
 1. Compute $\int_1^4 x dx$.

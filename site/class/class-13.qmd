@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Introduction to Probability and Random Variables
@@ -117,6 +118,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 
 ### Exploring new functions
 The prep for today involved exploring the 5 new functions below. 
+
 1. $f_1(x; n,p) = \frac{n!}{x!(n-x)!}p^x(1-p)^{ (n-x)}$ with $x = 0, 1, 2, 3, ... , n$ where $n$ is a positive integer and $0 \leq p \leq 1$.
 
 1. $f_2(x; \lambda) = \lambda e^{-\lambda x}$ with $x > 0$ where $\lambda >0$.
@@ -327,6 +329,7 @@ $$f(x) =
 0.2 & \quad x=12
 \end{cases}.$$
 Compute the probabilities requested below:
+
 1. $P(x \leq 6)$
 
 1. $P(x = 9)$
@@ -355,6 +358,7 @@ Compute the probabilities requested below:
 #### Example 3
 Suppose we toss two fair six-sided dice once. We will record the value that appears on each of the dice, and let $X_1$ represent the outcome for the first die and $X_2$ represent the outcome for the second die. Note the events from random variable $X_1$ and the events from $X_2$ are independent.
 Compute the following:
+
 1. $P(X_1 = 3)$
 
 1. $P(X_2 = 1)$
@@ -399,6 +403,7 @@ $f_2(x_2) =
 #### Example 4
 Suppose we toss seven fair six-sided dice once. We will record the value that appears on each of the dice, and let $X_i$ represent the outcome for the $i$th die with $i = 1, 2, ..., 7$. Note the events from random variables $X_1$, $X_2$, ... $X_7$ are independent.
 Compute the following:
+
 1. $P(X_1 = 1)$
 
 1. $P(X_6 = 4)$
@@ -416,6 +421,7 @@ $f_i(x_i) =
 0 & \quad \text{otherwise},
 \end{cases}$
 for $i = 1, 2, ..., 7$.
+
 1. $P(X_1 = 1) = \frac{1}{6}$
 
 1. $P(X_6 = 4) = \frac{1}{6}$

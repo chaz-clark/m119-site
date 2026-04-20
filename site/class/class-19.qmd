@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Derivative Rules (Intro to Chain Rule)
@@ -161,6 +162,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 [Derivative Rules](https://chaz-clark.github.io/M119/Projects/m119-docs/119ReferenceSheet.html){target="_blank"}
 
 Take turns at the chalkboard computing the derivative of each function below. Show your work, step-by-step, listing the rules you use at each stage. Remember to pass the chalk after each problem. 
+
 1. $f(x) = (3x-2x^2)(5+4x)$. Remember to **list each rule you used**. Then pass the chalk (PTC)
 
 1. $f(x) = \frac{x-1}{2x+3}$ (PTC)
@@ -182,6 +184,7 @@ Take turns at the chalkboard computing the derivative of each function below. Sh
 <summary>Final Answers</summary>
 
 These are the final answers you should obtain after listing out each step.
+
 1. $\diff{f}{x}(x) = (3-4x)(5+4x) + (3x - 2x^2)(4)$
 
 1. $\diff{f}{x}(x) = \frac{ (1)(2x+3) - (x-1)(2) }{ (2x+3)^2 }$
@@ -209,6 +212,7 @@ Open this [Higher Order Derivatives worksheet](../assets/docs/Higher_Order_Deriv
 
 ## Bonus Problems
 Suppose we know that $f_i(x)$ is a differentiable function and $c_i$ is a constant for each integer $i$ from 1 to 4.
+
 1. Compute $\frac{d}{dx}\left(\sum_{i=1}^{4}c_if_i(x)\right)$.
 
 1. Compute $\frac{d}{dx}\left(\prod_{i=1}^{4}c_if_i(x)\right)$.

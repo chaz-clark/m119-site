@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Derivative Relationships (extended)
@@ -118,6 +119,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 
 ### Activity - Chain Rule Practice
 For each function $g(x)$, identify two functions $f(u)$ and $u(x)$ so that $g(x) = f(u(x))$ and  then compute $\frac{dg}{dx} = \frac{df}{du}\frac{du}{dx}$. 
+
 1. $g(x) = (x^2-3)^4$
 
 1. $g(x) = \ln(4x+3)$
@@ -174,6 +176,7 @@ Assume the residuals (errors) are independent and normally distributed (with mea
 For each pair of functions $f(x)$ and $g(x)$ below, write out the compositions $f(g(x))$ and $g(f(x))$. 
 Then compute the derivative of each composite function. As a suggestion, compute both $f'(x)$ and $g'(x)$ first, and then show how you can combine $f,g,f',g'$ to get the derivative of each composite function.  
 Remember to pass the chalk between each problem. 
+
 1. $f(x) = 3x + 4$, $g(x) = x^2 + 1$
 
 1. $f(x) = e^x$, $g(x) = \sqrt{2x-5}$

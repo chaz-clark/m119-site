@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Writing Equations
@@ -129,6 +130,7 @@ $g_{yx} = \frac{\partial}{\partial x}(-\frac{6}{5}(\pi x - \frac{1}{5}y)) = -\fr
 ### Activity - Partial Derivatives for $\ell_2$. 
 The loglikelihood function for $f_2(t; a_1,a_2) = 100 + a_1t +a_2t^2$ is 
 $$\ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i- 100 - a_1t_i - a_2t_i^2)^2.$$
+
 1. Compute $\dfrac{\partial \ell_2}{\partial a_1}$. We avoid using $(\ell_2)_{a_1}$ notation here, because the double subscript is awkward.  We could let $\ell = \ell_2$ and then write $\ell_{a_1}$ to resolve this. 
 
 1. Compute $\dfrac{\partial \ell_2}{\partial a_2}$. 
@@ -149,6 +151,7 @@ Open this [Higher Order Derivatives worksheet](../assets/docs/Higher_Order_Deriv
 For each pair of functions $f(x)$ and $g(x)$ below, write out the compositions $f(g(x))$ and $g(f(x))$. 
 Then compute the derivative of each composite function. As a suggestion, compute both $f'(x)$ and $g'(x)$ first, and then show how you can combine $f,g,f',g'$ to get the derivative of each composite function.  
 Remember to pass the chalk between each problem. 
+
 1. $f(x) = 3x + 4$, $g(x) = x^2 + 1$
 
 1. $f(x) = e^x$, $g(x) = \sqrt{2x-5}$

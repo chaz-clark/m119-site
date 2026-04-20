@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Extrema Vocabulary
@@ -18,6 +19,7 @@ Answer as many of the questions from [Derivative Relationships Fill in the Blank
 
 ### (2) Writing Equations (still practicing)
 Write an equation in one variable for the described quantity in each story below.
+
 1. A farmer has 2400 feet of fencing to build a fence creating a rectangular corral (or pen) for some of the animals. Write an equation in one variable for the area of the rectangular corral. (Our goal will be to build the corral with maximum area.)
 
 1. A different farmer also has 2400 feet of fencing to build a fence creating a rectangular corral, but she plans to use the wall of a long group of buildings as one of the sides of the rectangular corral. Write an equation in one variable for the area of the rectangular corral. (Our goal will be to build the corral with maximum area.)
@@ -218,6 +220,7 @@ If $f$ is continuous at $x=a$ and $f$ changes concavity at $x=a$, the point $(a,
 To help us understand derivative relationships and associated vocabulary, let's create sketches that illustrate the concepts. 
 At the chalk boards, take turns providing a rough sketch of a function with the properties listed (also sketch the derivative and/or second derivative if this helps you make sense of the properties).
 Number your graphs, keep them small-ish, and try to fill your board with examples that we can compare with others. Use the information above for reference. 
+
 1. $f$ is increasing and concave up for all $x$.
 
 1. $f$ so that $f'(x) > 0$ and $f''(x)<0$ for all $x$.

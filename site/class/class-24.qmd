@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Writing Equations (more practice)
@@ -173,6 +174,7 @@ uniroot(f_x,c(2,3))$root
 You have been given a list of data for 50 ElvesRUs employees, $(t_i, c_i)$, were $t_i$ is the number of years working at ElvesRUs and $c_i$ is the salary for the $i^{\text{th}}$ employee.
 The salary (platinum coins per year) for an employee at ElvesRUs can be modeled by $f(t;A,b,k)=Ae^{bt}+k,$ where $t$ is the number of years an elf has been working at ElvesRUs. 
 Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1), which means we're assuming the probability model for the residuals is $$p(r) = \frac{1}{\sqrt{2\pi}}e^{-\frac{r^2}{2}}.$$
+
 1. Write the loglikelihood function for the errors in this situation.
 
 1. Rewrite the loglikelihood function using the properties of logs and sums.
@@ -186,6 +188,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 You will be working together to revisit Task 1 and complete part of Task 2 for [Project 2](https://chaz-clark.github.io/M119/Projects/unit2.html).  The prep for today asked you to watch some videos related to $f_2$.
 
 Consider the model $f_1(t; a_1) = 100 + a_1t$. 
+
 1. On the chalk board, as a group, go through the computations needed to obtain the loglikelihood function. Your job is to perform the needed computations and include enough explanations to show that $$\ell_1(a_1; \mathbf{t},\mathbf{y}) =
 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i
 - 100 - a_1t_i)^2.$$ 

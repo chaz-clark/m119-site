@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Install Mathematica
@@ -181,6 +182,7 @@ y <- data$y
 
 Consider the model $f(x; a) = a e^x$. We will fit this model to our data.
 Work with your group on the chalkboard to obtain the best fit parameters for this model using both 
+
 1. the maximum likelihood method, and
 
 1. least squares. 
@@ -200,6 +202,7 @@ Note the sum of squared errors of $f$ is $$S(a; \mathbf{x},\mathbf{y}) = \sum_{i
 
 #### Answer questions with the Model
 Once you have your model, you can use it to answer questions.  
+
 1. What is $f(4)$, the value predicted by the model at $x=4$. 
 
 1. Find $x$ so that $f(x) = 5$. 
@@ -208,6 +211,7 @@ Once you have your model, you can use it to answer questions.
 <summary>Solutions</summary>
 
 Using $f(x) = 3.187972 e^x$, we have
+
 1. $f(4) = 174.0574$
 
 1. uniroot yields about $x = 0.45$.

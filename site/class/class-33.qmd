@@ -9,10 +9,12 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Reading - Rectangles, Targets, and Sums
 For our next Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, and Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+
 1. Read Section 1.1-1.6 and complete a few exercises along the way bring something you did to share with your group.
 
 1. Watch [Lego Fulcrom video](https://www.loom.com/share/b16f6b4aa3dd4816812780272a35f2c1){target="_blank"} (~4.5 mins)
@@ -58,6 +60,7 @@ $$f(x) =
 ???   & x=2 \\
 \end{cases}.
 $$
+
 1. Fill in the $???$ above so that $f(x)$ is a probability mass function. (Hint: what must the sum of the probabilities equal?)
 
 1. What is the probability that you'll end up with a positive score?  In other words, compute $P(X > 0)$.
@@ -213,6 +216,7 @@ sum(val.y*prop.y)
 - <https://chaz-clark.github.io/M119/Projects/probability.html#Exercises9>
 
  Suppose we toss a coin three times and record the number of heads. Let the random variable $X$ represent this total number of heads. Note that possible outcomes of counting the number of heads are 0,1,2,3 (these are discrete values, hence we call this a discrete random variable). These outcomes arise from the 8 possible results of tossing a coin three times (TTT,TTH,THT, THH,HTT,HTH,HHT, HHH).
+
 1. Verify by hand that F(1)=0.5.
 
 1. Locate F(2) in the table above.

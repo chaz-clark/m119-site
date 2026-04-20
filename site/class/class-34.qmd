@@ -9,10 +9,12 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Reading - Rectangles, Targets, Sums - Sections 1.7 through 2.3
 For this Unit, the reading as well as many practice exercises appear in the document [Rectangles, Targets, Sums](https://byuistats.github.io/M119/unit3/probability.html){target="_blank"} 
+
 1. Read sections 1.7-2.3.
 
 1. In 1.8 and 1.9 complete a few of the exercises.
@@ -116,6 +118,7 @@ $$g(x) =
 5 & \quad 0 \leq x \leq 6 \\ \\
 0 & \quad \text{otherwise}.
 \end{cases}.$$
+
 1. Find the total area of the target. 
 
 1. Compute the probability that a dart will land with an $x$ coordinate at most 4, so compute $P(X\leq 4)$. 
@@ -191,6 +194,7 @@ When a dart falls on the point $(x,y)$, we'll record just the $x$-coordinate and
 \frac{x^2}{36} & \quad 0 \leq x \leq 6 \\ \\
 1 & \quad x > 6
 \end{cases}.$$
+
 1. Calculate the derivative of $F(x)$ with respect to $x$.
     - How does $F'(x)$ compare to the normalized target function $f(x)$ where $k$ is $\frac{1}{\text{area of the target}}$?
 1. Use this [link](https://en.wikipedia.org/wiki/List_of_centroids){target="_blank"} to look up the formula for the $x$-coordinate of the centroid of a right triangle. Explain why the $x$-coordinate of the centroid of this right triangular target is $4$.

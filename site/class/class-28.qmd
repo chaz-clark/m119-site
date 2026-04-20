@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Solving a General Linear System with 2 equations and 2 unknowns
@@ -299,6 +300,7 @@ Find the value for $a_1$ that maximizes the loglikelihood.
 #### Locating Critical Values of $\ell_6$
 In project 2 Task 1 we obtained 
 $$\ell_6(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i - a_2(1-e^{-0.0003t_i}))^2.$$
+
 1. Compute $\frac{\partial\ell_6}{\partial a_1}$ and $\frac{\partial\ell_6}{\partial a_2}$.
 
 1. Use seed 123 to solve the system of equations $\frac{\partial\ell_6}{\partial a_1} = 0$ and $\frac{\partial\ell_6}{\partial a_2} = 0$.  You should obtain $a_1=-0.0008219878$ and $a_2=7.442637$.  

@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Describing Functions (practice Reading Mathematics)
@@ -114,6 +115,7 @@ Watch the following videos about solving systems of equations.
 # During Class - Day 7
 ## Brain Gains
 Write in expanded form and then calculate each of the following.
+
 1. $\sum_{k=4}^{8} (5-k)$
 
 1. $\prod_{n=1}^4 n$
@@ -211,6 +213,7 @@ We say a function $f$ is negative on the interval $I$ if for all $x_1$ in the in
 </details>
 
 Let's apply these definitions to some examples. 
+
 1. Consider the function $\ds f(x) = \begin{cases}-x-4 & x<-2\\-2 & -2\leq x\leq 2\\x-4 & 2<x\\\end{cases}.$
     1. Sketch the graph of $f$.
     1. Give an interval on which $f$ is constant. Then give another. 
@@ -224,6 +227,7 @@ Let's apply these definitions to some examples.
 
 ### Sum and Product Notation
 Start by discussing any questions from the prep. The complete the following with your team. 
+
 1. Writing the expression in expanded form, then compute the sum or product, and finish by checking with R. 
     1.  $\sum_{k=2}^{4} (2k-3)$
     1. $\prod_{k=2}^4 (2k-3)$

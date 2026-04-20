@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Creating a PDF and using it to compute the expected value and a probability
@@ -17,6 +18,7 @@ Consider the function $$\ds f(x) =
 kx - k &  1 \leq x \leq 3 \\
 0 &  \text{otherwise}
 \end{cases}.$$
+
 1. Select $k$ so $f$ is the PDF of a random variable $X$. 
 
 1. Use R and a Riemann sum to approximate $E[X] $.
@@ -235,6 +237,7 @@ The standard deviation is equal to the square root of the variance, which we wri
 We'll complete this as groups at the boards.
 
 Consider the function $g(x) = 9-x^2$ for $0\leq x\leq 3$ and 0 otherwise. As you complete each exercise below, first write on the board any integral you need to compute. Then use Mathematica to compute it. 
+
 1. Draw the function $g$. 
 
 1. Is $g(x)$ the PDF of a random variable $X$?  Explain.

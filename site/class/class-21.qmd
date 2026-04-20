@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Derivative Relationships
@@ -80,6 +81,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 
 ### Activity - Derivative Practice with Parameters
 Take turns writing your **solutions** on the chalk board and discussing any questions. Show your work, step-by-step, listing the rules you use at each stage. Remember to pass the chalk after each problem. This is a time to practice the derivative rules. A time to practice communicating mathematics (sharing their ideas, writing mathematics, articulating what they understand, articulating what they don't understand yet). A time to practice listening and contributing to you group by engaging with their peers' work.
+
 1.  Let $g(x,y) = x^3y^3 - 5y + 1$.
     - Find the derivative of $g$ with respect to $x$ assuming $y$ is constant.
     - Find the derivative of $g$ with respect to $y$ assuming $x$ is constant.
@@ -139,6 +141,7 @@ We'll discuss any questions you have, model the first problem from the next acti
 For each pair of functions $f(x)$ and $g(x)$ below, write out the compositions $f(g(x))$ and $g(f(x))$. 
 Then compute the derivative of each composite function. 
 Remember to pass the chalk between each problem. 
+
 1. $f(x) = 3x + 4$, $g(x) = x^2 + 1$
 
 1. $f(x) = e^x$, $g(x) = \sqrt{2x-5}$

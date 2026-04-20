@@ -9,10 +9,12 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Practice with Functions
 Let $f(x) = \sqrt{x}$ and complete the exercise 1-4.<br>
+
 1. Find the exact values.
 - Evaluate $f(1)$.
 - Evaluate $f(0)$.
@@ -41,6 +43,7 @@ Watch the following videos from mathispower4u about Function Composition
 - [Video 3](https://www.youtube.com/watch?v=b-i7N0hE-Ys&feature=youtu.be) (~5 minutes)
 
 Then complete the following:
+
 1. For $f(x) = x^2$ and $g(x) = (x+3)$, compute each of $f(g(x))$ and $g(f(x))$.  
 
 1. Given the function $f(x) = \sqrt{3-2x}$, give two function $g(x)$ and $h(x)$ so that $f(x) = g(h(x))$.
@@ -58,6 +61,7 @@ Then complete the following:
 # During Class - Day 6
 ## Brain Gains
 Consider the function $T(x) = \frac{1}{2}(3(x+2))^2 - 10$. 
+
 1. Let $g(x) = c f(a(x+b)) + d$ with $a$, $b$, $c$, and $d$ constants. If $T(x) = g(x)$, which means $f(u) = u^2$, answer the following questions.
     - What is $a$?
     - What is $b$?

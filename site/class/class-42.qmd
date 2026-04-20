@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Make Connections
@@ -36,6 +37,7 @@ Pick something from your prep today that you can share with your group in class.
 We'll do this in small groups at the board, and then have a discussion.  Take turns acting as scribe, and help each other complete the following. Remember anytime you need an to compute an integral to first write the integral on the board and then compute it with Mathematica. 
 
 Consider the random variable $X$ whose probability density function is $f(x) = k(15-x)$ for $0\leq x\leq 15$. 
+
 1. Find the value of $k$.
 
 1. Compute the expected value and variance of $X$ (write down the integral needed, and then compute it with Mathematica).
@@ -67,11 +69,13 @@ In other words, a percentile is a number $x_p$ that satisfies the equation $F(x_
 </details>
 
 There are two common ways we can compute a percentile. One way is to start with the cumulative distribution function. 
+
 1. Given the cumulative distribution function $F(x) = \begin{cases}0 & x \leq 1 \\1-\frac{1}{x} & x > 1 \\\end{cases}$, find the 90th percentile.
 
 1. Given the cumulative distribution function $F(x) = \begin{cases}0 & x \leq 0 \\1 - e^{-\lambda x} & x > 0 \\\end{cases}$, find the 50th percentile.
 
 If we are given a probability density function, then we can compute the percentile using an integral.  
+
 1. Given the probability density function $f(x) = \frac{64}{(x+2)^5}$ for $x > 0$ (and 0 otherwise), find each of the following percentiles. (Write down the equation you need to solve and then use Mathematica to solve the integral equation.)
     - 60th percentile
     - 7th percentile

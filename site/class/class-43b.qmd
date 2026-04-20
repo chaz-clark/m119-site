@@ -10,12 +10,14 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Antiderivative Practice
 An **antiderivative** is a function that reverses what the derivative did, the result we get when we "undo" a derivative is called an antiderivative.
 Drawing on your knowledge of derivatives, for each expression below, please "undo" the derivative. 
 In other words answer the question, "What function did we take the derivative of to get this function?"
+
 1. $ 6x^5 $
 
 1. $ x^3 $
@@ -185,6 +187,7 @@ Use Mathematica to perform any definite integrals.
 <ol type="a">
   <li>Use a geometric argument to compute $P(3\leq X\leq 5)$. Then use Mathematica to verify your answer is correct by writing down an appropriate definite integral and computing it. </li>
 </ol>
+
 1. Use a geometric argument to state the CDF $F(x)$. Then use Mathematica to verify your answer is correct by writing down an appropriate definite integral and computing it. 
 
 1. Now that we have a formula for $F(x)$, use that formula to compute $F(3)$ and $F(5)$. Then use $F(3)$ and $F(5)$ to obtain $P(3\leq X\leq 5)$. 
@@ -193,6 +196,7 @@ Use Mathematica to perform any definite integrals.
 <ol type="a">
   <li>Use a geometric argument to compute $P(1\leq X\leq 3)$. Then use Mathematica to verify your answer is correct by writing down an appropriate definite integral and computing it. </li>
 </ol>
+
 1. Use a geometric argument to state the CDF $F(x)$. Then use Mathematica to verify your answer is correct by writing down an appropriate definite integral and computing it. 
 
 1. Now that we have a formula for $F(x)$, use that formula to compute $F(1)$ and $F(3)$. Then use $F(1)$ and $F(3)$ to obtain $P(1\leq X\leq 3)$. 
@@ -201,6 +205,7 @@ Use Mathematica to perform any definite integrals.
 <ol type="a">
   <li>State a function $G(x)$ whose derivative is $g(x)$. Then state another. Then state another.  How many such functions are there?</li>
 </ol>
+
 1. Compute $G(x)-G(0)$. 
 
 1. Use Mathematica to compute the cumulative distribution function $\int_0^x g(x)dx$. 
@@ -210,6 +215,7 @@ Use Mathematica to perform any definite integrals.
 <ol type="a">
   <li>State a function $G(x)$ whose derivative is $g(x)$. Then state another. Then state another.  How many such functions are there?</li>
 </ol>
+
 1. Compute $G(x)-G(0)$. 
 
 1. Use Mathematica to compute the cumulative distribution function $\int_0^x g(x)dx$. 
@@ -219,6 +225,7 @@ Use Mathematica to perform any definite integrals.
 <ol type="a">
   <li>State a function $G(x)$ whose derivative is $g(x)$. Then state another. Then state another.  How many such functions are there?</li>
 </ol>
+
 1. Compute $G(x)-G(2)$.
 
 1. Use Mathematica to compute the cumulative distribution function $\int_2^x g(x)dx$. 
@@ -228,6 +235,7 @@ Use Mathematica to perform any definite integrals.
 <ol type="a">
   <li>State a function $G(x)$ whose derivative is $g(x)$. Then state another. Then state another.  How many such functions are there?</li>
 </ol>
+
 1. Compute $G(x)-G(2)$. 
 
 1. Use Mathematica to compute the cumulative distribution function $\int_2^x g(x)dx$. 

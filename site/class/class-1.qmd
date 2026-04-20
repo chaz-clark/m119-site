@@ -71,6 +71,7 @@ Let $f(x) = \frac{2x+4}{x^2}$. Find each of the following values.
 <ol type="a">
   <li>$f(-4)$</li>
 </ol>
+
 1. $f(1)$
 
 1. $f(0)$

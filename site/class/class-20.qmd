@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Chain Rule
@@ -70,6 +71,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 
 ### Activity - Chain Rule
 Compute the derivative of each function below, by first identifying $y(u)$ and $u(x)$. Take turns writing your solutions on the chalk board and discussing any questions.  
+
 1. $f(x) = (x^2+3)^4$
 
 1. $g(x) = (3e^x+x^2)^5$
@@ -86,6 +88,7 @@ Open this [Higher Order Derivatives worksheet](../assets/docs/Higher_Order_Deriv
 
 ### Activity - Derivative Practice with Parameters
 Find the derivatives described below.
+
 1.  Let $f(x; b, m) = b + mx$.
     - Find the derivative of $f$ with respect to $x$ assuming $b$ and $m$ are constant.
     - Find the derivative of $f$ with respect to $m$ assuming $x$ and $b$ are constant.
@@ -193,6 +196,7 @@ All three forms are useful.
 </details>
 
 For each function below, give an equation of the linear approximation at the specified point using (a) point-slope form, (b) the form $L(x;a) = f(a)+f'(a)(x-a)$, and (c) slope intercept form.
+
 1. $f(x) = -3e^{x}$ at $x = 0$
 
 1. $l(x) = 100 - 3x + 7x^2$ at $x = -3$

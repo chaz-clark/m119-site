@@ -9,6 +9,7 @@ Please spend around 2 hours working between class sessions, focusing on the task
 Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something.  It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.
 
 <a id="Prep"></a>
+
 ## Preparation
 
 ### (1) Solving Linear Systems
@@ -372,6 +373,7 @@ A company is building square-bottomed boxes with no tops. The material for the b
 ### Activity - Project 2 Practice with $f_1$
 We'll spend some time working through parts of project 2. The point is to help each other by asking and answering questions. We'll focus on the first model $f_1(t; a_1) = 100 + a_1t$. The loglikelihood function, which task 1 has you derive, is 
 $$ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2.$$ 
+
 1. Compute the first derivative of $\ell_1$ with respect to $a_1$ and show that it can be written in the form $$\frac{d\ell_1}{da_1} = \left(\sum_{i=1}^{44} t_i(y_i-100)\right) - \left(\sum_{i=1}^{44} t_i^2\right) a_1.$$
 
 1. Compute the second derivative of $\ell_1$ with respect to $a_1$ and show that it can be written in the form $$\frac{d^2\ell_1}{da_1^2} = -\sum_{i=1}^{44} t_i^2.$$
