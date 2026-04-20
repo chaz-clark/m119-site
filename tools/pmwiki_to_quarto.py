@@ -897,10 +897,7 @@ def run_conversion(page_filter: str = None, dry_run: bool = False):
             if not index_path.exists():
                 index_path.write_text(build_index_qmd())
 
-            # Schedule — generate_schedule.py owns this file after first run
-            schedule_content = build_schedule_page(WIKI_DIR)
-            (SITE_DIR / 'schedule.qmd').write_text(schedule_content)
-            print("  wrote: site/schedule.qmd")
+            # Schedule is owned by tools/generate_schedule.py — do not clobber it here.
 
             # Copy uploads
             if UPLOADS_DIR.exists():

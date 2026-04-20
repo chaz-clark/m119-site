@@ -429,9 +429,13 @@ window.Quarto = {
   <ul>
   <li><a href="#between-class-sessions---prep-for-day-2" id="toc-between-class-sessions---prep-for-day-2" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-2">Between Class Sessions - Prep for Day 2 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
   <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#familiarize-yourself-with-class" id="toc-familiarize-yourself-with-class" class="nav-link" data-scroll-target="#familiarize-yourself-with-class">(1) Familiarize yourself with class</a></li>
   <li><a href="#graphing-functions" id="toc-graphing-functions" class="nav-link" data-scroll-target="#graphing-functions">(2) Graphing Functions</a></li>
-  <li><a href="#start-working-with-r-and-rstudio" id="toc-start-working-with-r-and-rstudio" class="nav-link" data-scroll-target="#start-working-with-r-and-rstudio">(3) Start working with R and RStudio</a></li>
+  <li><a href="#start-working-with-r" id="toc-start-working-with-r" class="nav-link" data-scroll-target="#start-working-with-r">(3) Start working with R</a></li>
   <li><a href="#pick-something-to-share" id="toc-pick-something-to-share" class="nav-link" data-scroll-target="#pick-something-to-share">(4) Pick something to share</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#during-class" id="toc-during-class" class="nav-link" data-scroll-target="#during-class">During Class</a>
   <ul class="collapse">
@@ -478,10 +482,24 @@ window.Quarto = {
 <!-- from Prep.GeneralInstructions -->
 <p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
 <p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
-<p><a id="Prep"></a> ## Preparation ### (1) Familiarize yourself with class - Read the Syllabus - Complete the Background Survey - Open a Knewton Alta assignment and answer some questions (for example you could open up “1 – Function Evaluation”). The point is to make sure you have gotten into the system, and seen how it works. Feel free to complete one of the assignments. - Skim read the <a href="https://byuistats.github.io/M119/project1.html">instructions for Project 1</a>.</p>
+<p><a id="Prep"></a></p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
+<section id="familiarize-yourself-with-class" class="level3">
+<h3 class="anchored" data-anchor-id="familiarize-yourself-with-class">(1) Familiarize yourself with class</h3>
+<ul>
+<li>Read the Syllabus</li>
+<li>Complete the Background Survey</li>
+<li>Open a Knewton Alta assignment and answer some questions (for example you could open up “1 – Function Evaluation”). The point is to make sure you have gotten into the system, and seen how it works. Feel free to complete one of the assignments.</li>
+<li>Skim read the <a href="https://chaz-clark.github.io/M119/Projects/unit1.html">instructions for Project 1</a>.</li>
+</ul>
+</section>
 <section id="graphing-functions" class="level3">
 <h3 class="anchored" data-anchor-id="graphing-functions">(2) Graphing Functions</h3>
-<p>Our first Unit is focused on expanding our knowledge and understanding of functions. Plot the following functions by hand. Select five or more input values, calculate the corresponding output values, plot the points, and connect the points with a line. Check your work by plotting the function with Desmos (or another graphing calculator). 1. <span class="math inline">\(f(x) = 1-4x\)</span></p>
+<p>Our first Unit is focused on expanding our knowledge and understanding of functions. Plot the following functions by hand. Select five or more input values, calculate the corresponding output values, plot the points, and connect the points with a line. Check your work by plotting the function with Desmos (or another graphing calculator).</p>
+<ol type="1">
+<li><span class="math inline">\(f(x) = 1-4x\)</span></li>
+</ol>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -597,22 +615,50 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="start-working-with-r-and-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="start-working-with-r-and-rstudio">(3) Start working with R and RStudio</h3>
+<section id="start-working-with-r" class="level3">
+<h3 class="anchored" data-anchor-id="start-working-with-r">(3) Start working with R</h3>
 <ol type="1">
-<li>Install <a href="https://www.r-project.org/">R</a></li>
-<li>Install <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></li>
-<li>Open a new file in RStudio and use it to perform a few computations. One option is to repeat some of the computations you did during class in groups, but this time using R to perform the computations. Or you may pick something else of interest. Feel free to search the web for a tutorial on performing computations with R in RStudio.</li>
-<li>Construct the plot of a function (either one from part 2 above, from in class, or one of your choice).</li>
+<li>Install <a href="https://www.r-project.org/" target="_blank">R</a>.</li>
+<li>Install an editor to work with R:
+<ul>
+<li><strong>Recommended:</strong> <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">RStudio</a> — purpose-built for R and the easiest path for this course. Course examples, screenshots, and troubleshooting assume RStudio.</li>
+<li><strong>Alternative:</strong> <a href="https://code.visualstudio.com/" target="_blank">VS Code</a> — fine if you already use VS Code for other courses, but it requires extra setup. See the VS Code setup note at the end of this section.</li>
+</ul></li>
+<li>Open a new file and use it to perform a few computations in R. One option is to repeat some of the computations you did during class in groups, but this time using R. Or pick something else of interest. Feel free to search the web for a short R tutorial.</li>
+<li>Construct the plot of a function (either one from part 2 above, from class, or one of your choice).</li>
 </ol>
 <p>You could play with and adjust the code below as a starting point.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">9</span>,<span class="dv">16</span>,<span class="dv">25</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">type=</span><span class="st">'l'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<details>
+<summary>
+Note for step 2 — Setting up R in VS Code (click to expand)
+</summary>
+<p>If you pick VS Code instead of RStudio, here’s what you’ll need beyond the editor itself:</p>
+<ol type="1">
+<li><p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r" target="_blank"><strong>R Extension for VS Code</strong></a> (publisher: REditorSupport).</p></li>
+<li><p>In the R console, install the <code>languageserver</code> package — this powers autocomplete and inline help inside VS Code:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"languageserver"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>For plots to display nicely in VS Code, install <code>httpgd</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"httpgd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then in VS Code settings search for “R plot” and enable <strong>R &gt; Plot: Use Httpgd</strong>.</p></li>
+<li><p>For rendering Quarto documents, install the <a href="https://quarto.org/docs/get-started/" target="_blank"><strong>Quarto CLI</strong></a> plus the Quarto VS Code extension — then run <code>quarto render file.qmd</code> (or use the Quarto preview command from VS Code’s command palette).</p></li>
+<li><p>Open an <code>.R</code> or <code>.qmd</code> file and use <strong>Cmd/Ctrl + Enter</strong> to run the line at your cursor.</p></li>
+</ol>
+<p>Because course materials assume RStudio, if you’re on VS Code you’ll sometimes need to translate pane names (e.g.&nbsp;“Plots tab” → the httpgd browser window, “Environment” → the R Side Bar).</p>
+</details>
 </section>
 <section id="pick-something-to-share" class="level3">
 <h3 class="anchored" data-anchor-id="pick-something-to-share">(4) Pick something to share</h3>
-<p>Remember to pick something from the above that you can share with your peers tomorrow. What could that be? - Did you encounter any issues with KnewtonAlta or have questions? Was there a problem in what you attempted that helped you remember something. - As you plotted functions from (2), were there any tricky parts? Did you use Desmos or something else? Do you have any tips for plotting? - How did installing R and RStudio go? If there were any hiccups along the way, what did you do to resolve them? Did you plot a function and are you willing to share the code you used? Were there any bits of code that didn’t make sense? Did you ask AI for help to plot a function and have a record of your chat history you can share? - Something else. Remember that questions can be just as valuable as solutions. If you worked on something and know it’s wrong, sometimes the most valuable thing you can share is that wrong attempt. This will generate discussion and help all grow.</p>
+<p>Remember to pick something from the above that you can share with your peers tomorrow. What could that be?</p>
+<ul>
+<li>Did you encounter any issues with KnewtonAlta or have questions? Was there a problem in what you attempted that helped you remember something.</li>
+<li>As you plotted functions from (2), were there any tricky parts? Did you use Desmos or something else? Do you have any tips for plotting?</li>
+<li>How did installing R and RStudio go? If there were any hiccups along the way, what did you do to resolve them? Did you plot a function and are you willing to share the code you used? Were there any bits of code that didn’t make sense? Did you ask AI for help to plot a function and have a record of your chat history you can share?</li>
+<li>Something else. Remember that questions can be just as valuable as solutions. If you worked on something and know it’s wrong, sometimes the most valuable thing you can share is that wrong attempt. This will generate discussion and help all grow.</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="during-class" class="level1">
@@ -646,7 +692,11 @@ Possible Solution
 Possible Solution
 </summary>
 <p>Given <span class="math inline">\(f(x) = x^2\)</span>, we know <span class="math inline">\(f(3) = 9\)</span>, <span class="math inline">\(f(4) = 16\)</span>, and <span class="math inline">\(f(3+4)=f(7)=49\)</span>. Since <span class="math inline">\(9+16 = 25\neq 49\)</span>, then we know <span class="math inline">\(f(3+4) \neq f(3) + f(4)\)</span>.</p>
-<p>Important take away: - In general, the square of a sum is NOT the sum of the squares, <span class="math inline">\((a + b)^2 \neq a^2 + b^2\)</span>. - The operation of addition must happen before the power. The order of operations is grouping and then exponents.</p>
+<p>Important take away:</p>
+<ul>
+<li>In general, the square of a sum is NOT the sum of the squares, <span class="math inline">\((a + b)^2 \neq a^2 + b^2\)</span>.</li>
+<li>The operation of addition must happen before the power. The order of operations is grouping and then exponents.</li>
+</ul>
 <p>There is an entire class of functions for which <span class="math inline">\(f(a+b) = f(a)+f(b)\)</span>. We call these “linear functions” and they are studied in depth in Math 341: Linear Algebra.</p>
 </details>
 </section>
@@ -701,31 +751,183 @@ Exponential Function
 <p>An exponential function is any function of the form <span class="math inline">\(f(x) = b^x\)</span> where <span class="math inline">\(b &gt; 0\)</span> and <span class="math inline">\(b \neq 1\)</span>.</p>
 </details>
 <p>As a group, discuss whether each function is a power function, quadratic function, polynomial function, root function, and/or a rational function. Record your solutions in a table similar to the following. Note a function can be classified as multiple types.</p>
-<div class="line-block">&nbsp;| power fn. | quadratic fn. | polynomial fn. | root fn. | rational fn. |</div>
-<div class="line-block">— | — | — | — | — | — |</div>
-<div class="line-block"><span class="math inline">\(f(x) = x^2\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(g(x) = \sqrt{x}\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(h(x) = x^3\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(p(x) = \sqrt{3x+1}\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(q(x) = x^3 - 3x + 2\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(A(x) = (x-1)^2\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(r(x) = \frac{2x+3}{x^2+1}\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(w(x) = 5^x\)</span> | | | | | |</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>power fn.</th>
+<th>quadratic fn.</th>
+<th>polynomial fn.</th>
+<th>root fn.</th>
+<th>rational fn.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(f(x) = x^2\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(g(x) = \sqrt{x}\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(h(x) = x^3\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(p(x) = \sqrt{3x+1}\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(q(x) = x^3 - 3x + 2\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(A(x) = (x-1)^2\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(r(x) = \frac{2x+3}{x^2+1}\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(w(x) = 5^x\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>After you’ve finished classifying the functions, first compare your results with the other groups in class. Discuss any changes you believe need to be made. Then expand the solution below and discuss any questions you have.</p>
 <details>
 <summary>
 Answer
 </summary>
-<div class="line-block">&nbsp;| power fn. | quadratic fn. | polynomial fn. | root fn. | rational fn. |</div>
-<div class="line-block">— | — | — | — | — | — |</div>
-<div class="line-block"><span class="math inline">\(f(x) = x^2\)</span> | X | X | X | | X |</div>
-<div class="line-block"><span class="math inline">\(g(x) = \sqrt{x}\)</span> | X | | | X | |</div>
-<div class="line-block"><span class="math inline">\(h(x) = x^3\)</span> | X | | X | | X |</div>
-<div class="line-block"><span class="math inline">\(p(x) = \sqrt{3x+1}\)</span> | | | | | |</div>
-<div class="line-block"><span class="math inline">\(q(x) = x^3 - 3x + 2\)</span> | | | X | | X |</div>
-<div class="line-block"><span class="math inline">\(A(x) = (x-1)^2\)</span> | | X | X | | X |</div>
-<div class="line-block"><span class="math inline">\(r(x) = \frac{2x+3}{x^2+1}\)</span> | | | | | X |</div>
-<div class="line-block"><span class="math inline">\(w(x) = 5^x\)</span> | | | | | |</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>power fn.</th>
+<th>quadratic fn.</th>
+<th>polynomial fn.</th>
+<th>root fn.</th>
+<th>rational fn.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(f(x) = x^2\)</span></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(g(x) = \sqrt{x}\)</span></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(h(x) = x^3\)</span></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(p(x) = \sqrt{3x+1}\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(q(x) = x^3 - 3x + 2\)</span></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(A(x) = (x-1)^2\)</span></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(r(x) = \frac{2x+3}{x^2+1}\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(w(x) = 5^x\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>The function <span class="math inline">\(w(x) = 5^x\)</span> is an exponential function.</p>
 </details>
 <p><strong>Examples and Nonexamples</strong> - Give an example of a polynomial that is NOT a power function. - Give an example of a power function that is NOT a polynomial.</p>
@@ -733,8 +935,13 @@ Answer
 <summary>
 Possible Solutions
 </summary>
-<p>These are some solutions to the questions above. Come up with your own, and jot them on the chalk board. - Examples of polynomials that are NOT power functions. - <span class="math inline">\(q(x) = x^3 - 3x + 2\)</span> - <span class="math inline">\(A(x) = (x-1)^2\)</span></p>
+<p>These are some solutions to the questions above. Come up with your own, and jot them on the chalk board.</p>
 <ul>
+<li>Examples of polynomials that are NOT power functions.
+<ul>
+<li><span class="math inline">\(q(x) = x^3 - 3x + 2\)</span></li>
+<li><span class="math inline">\(A(x) = (x-1)^2\)</span></li>
+</ul></li>
 <li>Examples of power functions that are NOT polynomials
 <ul>
 <li><span class="math inline">\(g(x) = \sqrt{x}\)</span></li>
@@ -749,27 +956,96 @@ Possible Solutions
 <ol type="1">
 <li>Complete each table below.</li>
 </ol>
-<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(f(x)\)</span> |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block">-2 | |</div>
-<div class="line-block">-1 | |</div>
-<div class="line-block">0 | |</div>
-<div class="line-block">1 | |</div>
-<div class="line-block">2 | |</div>
-<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(g(x) = f(x) + 2\)</span> |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block">-2 | |</div>
-<div class="line-block">-1 | |</div>
-<div class="line-block">0 | |</div>
-<div class="line-block">1 | |</div>
-<div class="line-block">2 | |</div>
-<div class="line-block"><span class="math inline">\(x\)</span> | <span class="math inline">\(h(x) = f(x+2)\)</span> |</div>
-<div class="line-block">— | — |</div>
-<div class="line-block">&nbsp;| 4 |</div>
-<div class="line-block">&nbsp;| 1 |</div>
-<div class="line-block">&nbsp;| 0 |</div>
-<div class="line-block">&nbsp;| 1 |</div>
-<div class="line-block">&nbsp;| 4 |</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(f(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(g(x) = f(x) + 2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>-1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(h(x) = f(x+2)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
 <ol type="1">
 <li><p>Graph each of the functions from part 1.</p></li>
 <li><p>The graph of <span class="math inline">\(g\)</span> is the same as the graph of <span class="math inline">\(f\)</span> but shifted _________________.</p></li>
@@ -796,7 +1072,11 @@ Definition 1 (from OpenStax textbook)
 Definition 2 (Sister Johnson’s definition)
 </summary>
 <p>A <em>function from <strong>set D</strong> to a <strong>set Y</strong></em> is <strong>a rule</strong> that assigns each element in <strong>set D</strong> exactly one element from <strong>set Y</strong>.</p>
-<p>Note: - The <em>domain</em> of a function from set D to a set Y is the set of inputs of the function. Notice all the values of set D must be used as inputs so the domain is the set D. - The <em>range</em> of a function from set D to a set Y is the <strong>set of outputs</strong> of the function. Notice the range of the function is not necessarily set Y, not all the value of set Y must be used as outputs.</p>
+<p>Note:</p>
+<ul>
+<li>The <em>domain</em> of a function from set D to a set Y is the set of inputs of the function. Notice all the values of set D must be used as inputs so the domain is the set D.</li>
+<li>The <em>range</em> of a function from set D to a set Y is the <strong>set of outputs</strong> of the function. Notice the range of the function is not necessarily set Y, not all the value of set Y must be used as outputs.</li>
+</ul>
 </details>
 <details>
 <summary>
@@ -804,9 +1084,13 @@ Definition 3 (Another Instructor’s definition)
 </summary>
 <p>A <strong>function</strong> is a rule that assigns to every value of the domain just one value in the range. The domain is the inputs of the function. The range is the outputs of the function.</p>
 </details>
-<p>All of these definitions are correct. - What similarities do you notice? - What differences do you notice? - What are the key characteristics of the mathematical object, a <strong>function</strong>? - What questions do you have?</p>
+<p>All of these definitions are correct.</p>
 <ul>
-<li>There are at least four ways to represent a function:
+<li><p>What similarities do you notice?</p></li>
+<li><p>What differences do you notice?</p></li>
+<li><p>What are the key characteristics of the mathematical object, a <strong>function</strong>?</p></li>
+<li><p>What questions do you have?</p></li>
+<li><p>There are at least four ways to represent a function:</p>
 <ul>
 <li>Algebraic (symbolic)</li>
 <li>Graph (visual)</li>

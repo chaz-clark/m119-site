@@ -11,6 +11,11 @@ __pycache__/
 
 # AI files
 CLAUDE.md
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# macOS
+.DS_Store
 
 # R
 .Rhistory
