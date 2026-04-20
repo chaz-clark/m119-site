@@ -73,6 +73,7 @@ $ D_xh(x) = \frac{3x}{\ln x} - \frac{3x}{2(\ln x)^2}$
 ## More Likelihood Practice
 You have been given a list of data for 400 customers, $(x_i, t_i)$, were $x_i$ is the number of months the since the boot was purchased and $t_i$ is the tread thickness of the boot for the $i^{\text{th}}$ customer. 
 A model for the tread thickness on the bottom of a boot is $f(x;m,b) = mx+b$, where $x$ is the number of months since the date the boot was purchased. 
+
 - Write the formula for the residuals.
 
 Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1), 

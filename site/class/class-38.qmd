@@ -83,6 +83,7 @@ Find the value $k$ so that each function is a PDF. Use a table of centroids and/
 
 ### (3) Reading Practice
 Below is a list of properties of Definite Integrals. Read through the properties. Then consider the questions below. What other thoughts, connections, or questions did you identify?
+
 - How would you describe any of these properties with words?
 - Definite Integral can be thought of as "infinite sums". 
     - Can you identify any properties that sums and integrals share? 
@@ -124,6 +125,7 @@ A **random variable** is a collection of measurements and their associated proba
 The **cumulative distribution function** of a random variable $X$ is the function $F(x) = P(X \leq x)$.
 
 The following statements are true of cumulative distribution functions (CDF).
+
 - If $f$ is a PDF, then $F(x) = P(X \leq x) = \int_{-\infty}^x f(x)dx$.
 - It is not required that $F$ is continuous.
 - Every cumulative distribution function is nondecreasing.
@@ -139,6 +141,7 @@ The following statements are true of cumulative distribution functions (CDF).
 </details>
 
 We can calculate probabilities (using the CDF). Below are three examples. 
+
 - $ P(X \leq 2) = F(2) $ 
 - $ P(X > 3) = 1 - P(X \leq 3) = 1 - F(3) $
 - $ P(2 < X \leq 3) = P(X \leq 3) - P(X \leq 2) = F(3) - F(2) $
@@ -160,6 +163,7 @@ a **Riemann sum for $f$**.
 For a function $f(x)$ defined on $a \leq x \leq b$, **the definite integral of $f$ from $a$ to $b$** is 
 $$\int_a^b f(x) dx = \lim_{n\to \infty }\sum_{i=1}^nf(x_i)\Delta x,$$
 provided the limit exists. If the limit exists, we say that $f$ is integrable on $ [ a, b ] $.
+
 - $f(x)$ is the integrand
 - $x$ is the variable of integration
 - $a$ is the lower bound (or lower limit of integration)
@@ -173,6 +177,7 @@ The derivative of a cumulative distribution function of a continuous random vari
 <summary>The probability density function of a continuous random variable with cumulative distribution function $F(x)$.</summary>
 
 The **probability density function** $f(x)$ of a *continuous* random variable $X$ with cumulative distribution function $F(x)$ is the derivative of $F(x)$, $f(x) = F'(x)$.
+
 - Every probability density function is nonnegative, in other words $f(x) \geq 0$.
 - The total area under a probability density function always equals 1.
 
@@ -182,6 +187,7 @@ The **probability density function** $f(x)$ of a *continuous* random variable $X
 <summary>Probability Density Function (PDF)</summary>
 
 A **probability density function** $f(x)$ is a nonnegative function that satisfies $\displaystyle\int_{-\infty}^{\infty}f(x)dx = 1$.
+
 - Remember the description "nonnegative function" means all the outputs of $f$ are positive or zero, so $f(x) \geq 0$.
 - Important note: If a function is zero everywhere except on an interval $a \leq x \leq b$, then $\int_{-\infty}^{\infty}f(x)dx = \int_{a}^{b}f(x)dx = 1$.
 
@@ -190,13 +196,16 @@ A **probability density function** $f(x)$ is a nonnegative function that satisfi
 Any nonnegative function with finite area can be normalized to make a pdf, $f(x) = kg(x) $ where $k = \frac{1}{\text{Total Area of } g} = \frac{1}{\int_{-\infty}^{\infty} g(x) dx} $.
 
 We can calculating probabilities (using the PDF). Below are several examples. 
+
 - $ P(X \leq 2) = \int_{-\infty}^2 f(x) dx $ 
 - $ P(X > 3) = \int_{3}^{\infty} f(x) dx $
 - $ P(2 < X \leq 3) = \int_2^3 f(x) dx$
 And notice that we can obtain the CDF from the PDF using 
+
 - $F(x) = P(X \leq x) = \int_{-\infty}^x f(x) dx$. 
 
 Look above at how we computed $P(a < X \leq b)$. 
+
 - We have $ P(a < X \leq b) = \int_a^b f(x) dx$ using the PDF. 
 - We have $ P(a < X \leq b) = F(b) - F(a) $ using the CDF. 
 Combining these facts gives $$\int_a^b f(x) dx = F(b) - F(a).$$
@@ -228,6 +237,7 @@ $$E[X] = \int_{-\infty}^{\infty} x f(x) dx.$$
 The **variance** of a *continuous* random variable $X$ with probability density function $f(x)$ is
 $$Var[X] = \int_{-\infty}^{\infty} (x - E[X])^2 f(x) dx.$$
 The standard deviation is equal to the square root of the variance, which we write as $\sigma_X = \sqrt{Var[X]}$.
+
 - The variance is characteristic of a random variable.
 - The variance is a measure of how spread out the data is. The more spread out the data is, the larger the variance.
 

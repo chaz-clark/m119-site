@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Extrema Vocabulary
 Answer as many of the questions from [Derivative Relationships Fill in the Blank](https://byuistats.github.io/M119/m119-docs/DerivativeRelationship_FillBlank.pdf){target="_blank"} as possible. Use sections 4.3 and 4.5 from the OpenStax Calculus Volume 1 as a resource.
+
 - [Section 4.3 OpenStax Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima){target="_blank"}
 - [Section 4.5 OpenStax Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph){target="_blank"}
 
@@ -29,6 +30,7 @@ After you have written down each function, open R and plot each function to visu
 
 ### (3) Making Connections
 Open [Project 2 instructions](https://byuistats.github.io/M119/project2.html).
+
 - Consider the model $f_5$. Review your computations to obtain the loglikelihood function (or complete the computations now). The answer is provided to you in the Task 1 Instructions. Your job is to perform the needed computations and include explanations of each of the steps. 
     - Note: This is part of the required work for Project 2 Task 1.
 - Now compute the first and second derivative of this loglikelihood function.
@@ -131,6 +133,7 @@ If $f$ is a continuous function over the closed, bounded interval $ [a, b] $, th
 <summary>First Derivative Test</summary>
 
 Suppose that $f$ is a continuous function over an interval $I$ containing a critical point $c$. If $f$ is differentiable over $I$, except possibly at point $c$, then $f(c)$ satisfies one of the following descriptions:
+
 - If $f'$ changes sign from positive when $x < c$ to negative when $x > c$, then $f(c)$ is a local maximum of $f$.
 - If $f'$ changes sign from negative when $x < c$ to positive when $x > c$, then $f(c)$ is a local minimum of $f$.
 - If $f'$ has the same sign for $x < c$ and $x > c$, then $f(c)$ is neither a local maximum nor a local minimum of $f$.
@@ -141,6 +144,7 @@ Suppose that $f$ is a continuous function over an interval $I$ containing a crit
 <summary>Second Derivative Test</summary>
 
 Suppose that $f'(c) = 0$, $f''$ is continuous over an interval containing $c$.
+
 - If $f''(c) > 0$, then $f$ has a local minimum at $x=c$.
 - If $f''(c) < 0$, then $f$ has a local maximum at $x=c$.
 - If $f''(c) = 0$, then the test is inconclusive.
@@ -169,6 +173,7 @@ If $f'$ is increasing over $I$, we say $f$ is **concave up** over $I$.<br>
 If $f'$ is decreasing over $I$, we say $f$ is **concave down** over $I$.
 
 Let $f$ be a function that is twice differentiable of an interval $I$.
+
 - If $f''(x) > 0$ for all $x \in I$, then $f$ is concave up over $I$.
 - If $f''(x) < 0$ for all $x \in I$, then $f$ is concave down over $I$.
 

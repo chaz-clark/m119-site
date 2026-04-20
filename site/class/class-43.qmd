@@ -60,6 +60,7 @@ In other words answer the question, "What function did we take the derivative of
 
 ### Applied Practice (Project Work)
 We have discussed in class all the information you need to complete Project 3.
+
 - Continue working on Project 3
 
 
@@ -222,6 +223,7 @@ Use Mathematica to perform any definite integrals.
 ## Discussion
 ### Antiderivatives, Indefinite Integrals, Accumulation Functions
 Consider the pdf $f(x) = e^{-x} $ for $x \geq 0$ and zero otherwise.
+
 - We can verify that $F_1(x) = -e^{-x}$, $F_2(x) = 5 - e^{-x} $, and $F_3(x) = -e^{-x} - 2$ are all antiderivatives of $f$. Are any of these function the CDF of the random variable $X$?
 - Find the cdf of $X$.
     - We know $F(x) = P(X \leq x) = \int_{-\infty}^x f(t)dt$.

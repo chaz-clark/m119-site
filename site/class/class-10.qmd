@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Solving Exponential and Log Equation (videos)
 Watch these video from mathispower4u.
+
 - [Exponential Equations (video 1)](https://www.youtube.com/watch?v=eDDAqsiLNyE&feature=youtu.be) (~5 minutes)
 - [Exponential Equations (video 2)](https://www.youtube.com/watch?v=-RMmLUHAlj0&feature=youtu.be) (~4.5 minutes)
 - [Exponential Equations (video 3)](https://www.youtube.com/watch?v=HpGjdfH1oZ0&feature=youtu.be) (~3.5 minutes)
@@ -22,6 +23,7 @@ Watch these video from mathispower4u.
 
 ### (2) Transformation (Exercises)
 Consider the general form  $P(x;a,b,h,k) = af(c(x-h))+k$ for the transformation of a function $f(u)$. 
+
 - For each $P(x)$ and parent function $f(u)$ below, identify the parameters $a$, $c$, $h$, and $k$ required to obtain $P(x) = P(x;a,b,h,k)$ and describe how these parameters transform $f(u)$.
 - State the domain and range for each function below.
 - Graph each function below.
@@ -226,6 +228,7 @@ Note: While there is a rigorous mathematical definition for what it means to be 
 </details>
 
 Consider the function $f(x) = (-13 + 2x)e^{-0.05x}$ and the interval $ [ 3, 50 ] $.  
+
 - What does the IVT say about this function over this interval?
 
 <details>
@@ -267,8 +270,10 @@ This means $2x_0 = 13$, or $x_0 = \frac{13}{2} = 6.5$.
 </details>
 
 The intermediate value theorem does not require that we pick $y_0 = 0$.
+
 - What values can we choose for $y_0$?
 Let's choose $y_0 = 5$, and repeat what we did above. 
+
 - Why is $y_0=5$ a valid choice?
 - Let's try solving $f(x_0) = y_0 = 5$ by hand for $x_0$. (Unfortunately we will fail when trying to solve this equation exactly.)
 
@@ -294,6 +299,7 @@ We've already entered a realm where current knowledge has failed to find exact s
 
 </details>
  
+
 - While we cannot obtain an exact solution to $(-13 + 2x_0) e^{-0.05x_0} = 5$, let's solve numerically using R. 
 - Remember that to use the uniroot() function, we need to have one side of the equation be zero (we need to be looking for a root). We see $f(x_0) = 5$ is equivalent to $f(x_0) - 5 = 0$. The function $f(x_0) - 5$ is a new function, let's call it $g$. Notice that $g$ is a transformation of $f$. To get $g$ from $f$ we just shift down 5. 
 

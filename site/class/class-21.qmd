@@ -58,6 +58,7 @@ The value of the function at $x=-2$ is $f(-2) = 4+2 = 6$.
 An equation of the line that passes through the point $(-2,6)$ and has slope $-5$ is 
 $$y-6=(-5)(x+2).$$
 The above is sufficient, though we can also write this as
+
 - $y=6+(-5)(x+2)$ or
 - $y=-5x-4$.
 
@@ -112,9 +113,11 @@ Take turns writing your **solutions** on the chalk board and discussing any ques
 
 You have been given a list of 44 data points, $(t_i, y_i)$, were $t_i$ is the time in hours since the light was turned on and $y_i$ is the percent intensity of the bulb after $t_i$ hours. 
 A model for the percent intensity of the bulb is $f(x;m,b) = mx+b$, where $t$ is the time in hours since the light was turned on. 
+
 - Write the formula for the residuals.
 
 Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1).
+
 - Write down the probability model we are using for one of the residuals.
 - What does knowing the residuals are independent allow us to do?
     - Use the assumption of independent residuals to write the joint probability function.

@@ -81,6 +81,7 @@ $$
 
 ### Activity - Complete Exercises in 1.8 and 1.9
 Complete the exercises in sections 1.8 and 1.9. 
+
 - <https://chaz-clark.github.io/M119/Projects/probability.html>
 
 ## Discussion 

@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Derivative Rules (Intro to Chain Rule)
 Watch the following videos from mathispower4u about the product, quotient, and chain rules.
+
 - [Product Rule (video 2)](https://www.youtube.com/watch?v=gsaHoc2mSps&feature=youtu.be){target="_blank"} (~6 min)
 - [Quotient Rule (video 2)](https://www.youtube.com/watch?v=Inq4V8Vogxc&feature=youtu.be){target="_blank"} (~6 min)
 - [Chain Rule Intro](https://www.youtube.com/watch?v=PT11CSo-WkQ){target="_blank"} (~9 min) - Note that there is a notation typo in their prepared slides. Can you spot it?

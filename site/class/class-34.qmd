@@ -81,6 +81,7 @@ draw_pmf(x,p)
 
 ## Group Discussion
 Give each group member 1-2 minutes to share what they prepared from the between class work.
+
 - [Rectangles, Targets, and Sums](https://chaz-clark.github.io/M119/Projects/probability.html){target="_blank"}
 
 ### Activity - Targets for Continuous Random Variables

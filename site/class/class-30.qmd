@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Compare Maximum Likelihood fit to your Visual fit
 Today in class we fitted $f_2$ and $f_6$ to the seed 123. Let's now adapt what we did in class and the code to fit $f_2$ and $f_6$ to your seed. 
+
 - Adapt the code from class to fit $f_2$ to your data (the data obtained when using your assigned seed to select a light bulb).
     - On the same graph plot (1) your data, (2) your visually fitted model (from Project 1), and (3) the fitted model you just found using the maximum likelihood method.  You'll need to use the lines command twice, once for your visually fitted model, and once for the model we got from the maximum likelihood method. 
       - What do you notice? 
@@ -108,6 +109,7 @@ y <- data$y2
 ```
 
 [Identify the Function of Interest] (Project 2 Task 1)
+
 - Write down and simplify the loglikelihood function. Explain your steps. Be explicit.
     - Where did you use the assumption that the errors are normal with mean 0 and standard deviation 1?
     - Where did you use the assumption that the errors are independent?
@@ -122,6 +124,7 @@ $\ell(m, b; \mathbf{x}, \mathbf{y}) = \ln\left(\prod_{i=1}^{50} \frac{1}{\sqrt{2
 </details>
 
 [Optimize] -- Find the first and second derivatives of $\ell$. (Project 2 Task 2)
+
 - Write down and simplify the first and second partial derivatives of $\ell$. Each of first partial derivatives should be of the form $c_1 - c_2b - c_3m$. Each of the second partial derivatives should be a constant.
     - What derivative rules did you use?
     - What sum rules did you use?
@@ -139,6 +142,7 @@ $\ell(m, b; \mathbf{x}, \mathbf{y}) = \ln\left(\prod_{i=1}^{50} \frac{1}{\sqrt{2
 </details>
 
 [Optimize] -- Find any critical point(s) of $\ell$. (Project 2 Task 3)
+
 - Solve the system that results from setting the partial derivatives equal to zero. 
 
 <details>
@@ -167,6 +171,7 @@ b_2 - c_{21}b - c_{22}m &= 0,
 \end{array} 
 \right.$$
 with
+
 - $b_1 = \sum_{i=1}^{50} y_i$,
 - $c_{11} = 50$,
 - $c_{12} = c_{21} = \sum_{i=1}^{50} x_i$,
@@ -228,6 +233,7 @@ Since $D > 0$ and $\frac{\partial^2 \ell}{\partial b^2} < 0$, we know we have fo
 </details>
 
 [Answer the Question] (Project 2 Task 3 & Project 2)
+
 - Write down your fitted model.
     - Plot your model.
     - We could use this function to answer a question or make a prediction based on the data and the assumption that the process can be described by the general model $f(x) = mx + b$.
@@ -251,6 +257,7 @@ We will assume the errors are independent and normally distributed with mean 0 a
 
 #### Consider the model $f(x) = mx$. 
 We would like to fit this model to the following data $(x_i,y_i)$ using the maximum likelihood method.
+
 - Read in the data with the following code.
 
 ```r

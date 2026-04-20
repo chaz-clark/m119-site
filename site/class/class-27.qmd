@@ -34,6 +34,7 @@ The problems that follow are designed to help guide you to solving this system.
 Get as far as you can today, and come with questions. 
 
 One problem solving strategy we often use in mathematics is when a problem is challenging and we are not sure how to move forward, we look for a similar (but "easier") problem we know how to solve and use that to help us move forward on the more difficult problem we are working on. Designing problems we know the answer to helps us step forward to more difficult problems. 
+
 - Let's start with a problem that seems more familiar (level 0): Solve the system
 $$\left\{
 \begin{array}{ll}
@@ -270,6 +271,7 @@ $$
 \end{align*}
 $$
 The solution then takes the same from as the previous solutions, with 
+
 - $b_{1,1}=(\sum_{n=1}^{44}n)$,
 - $b_{1,2}=(\sum_{n=1}^{44}3)$,
 - $c_{1}=(\sum_{n=1}^{44}7)$,
@@ -406,6 +408,7 @@ lines(x,f1(x,a1))
 Now focus on $f_2(t; a_1,a_2) = 100 + a_1t +a_2t^2$. The loglikelihood function is 
 $$ \ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) =
 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i
+
 - 100 - a_1t_i - a_2t_i^2)^2.$$
 
 1. Compute the both first partials $\frac{partial \ell_2}{\partial a_1}$ and $\frac{partial \ell_2}{\partial a_2}$. Simplify your work to match the values given in Project 2 Task 2. 
@@ -440,6 +443,7 @@ We have not yet discussed a second derivative test when there is more than one v
 
 ### Analyzing Waiting times - Using the exponential distribution for our stochastic model. 
 How long do people wait in a line when they head to the bank?  
+
 - We'll use the deterministic model $f(x) = 0$ to predict how long someone has to wait (where $x$ represents the time of day). What does this model really say in plain english? 
     - What are your thoughts about our choice of models?
 - We'll use the <https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution> $p(r) = \lambda e^{-\lambda r}$ to model the residuals. 

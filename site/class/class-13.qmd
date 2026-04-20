@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Introduction to Probability and Random Variables
 Watch the following videos are from mathispower4u.
+
 - [Intro to Probability](https://www.youtube.com/watch?v=YWt_u5l_jHs&feature=youtu.be){target="_blank"} (~8 minutes)
 - [Discrete Random Variable](https://www.youtube.com/watch?v=8tzaV3RK53Y&feature=youtu.be){target="_blank"} (~5 minutes)
 - [PMF Discrete](https://www.youtube.com/watch?v=VlMn5wkw8Xc&feature=youtu.be){target="_blank"} (~3 minutes)
@@ -22,6 +23,7 @@ Watch the following videos are from mathispower4u.
 
 ### (2) Explore Common Probability Functions
 For each of the five functions below, complete the following:
+
 - Identify the domain.
 - Identify the parameters.
 - Plot the function in R.
@@ -267,6 +269,7 @@ The probability of $A$ given $B$ is $P(A | B) = \frac{P(A \text{ and } B)}{P(B)}
 <summary>Definition: Independent Events</summary>
 
 Two events $A$ and $B$ are independent if the knowledge that one occurred does not affect the chance the other occurs. This means:
+
 - $P(A | B) = P(A)$
 - $P(B | A) = P(B)$
 - $P(A \text{ and } B) = P(A)P(B)$

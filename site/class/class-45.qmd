@@ -102,11 +102,13 @@ Work on the chalkboard as you complete these activities and exercises, and pass 
 <summary>Summary: Calculating Probability with the PDF and CDF</summary>
 
 To calculate a probability with the PDF of a continuous random variable, we use the following:
+
 - $P(X \leq a) = \int_{-\infty}^a f(x)dx$,
 - $P(a \leq X \leq b) = \int_a^b f(x)dx$,
 - $P(X \geq a) = \int_a^\infty f(x)dx$.
 
 To calculate a probability with the CDF of a continuous random variable, we use the following:
+
 - $P(X \leq a) = F(a)$
 - $P(a \leq X \leq b) = F(b) - F(a)$
 - $P(X \geq a) = 1 - F(a)$
@@ -224,6 +226,7 @@ Since $f(x) = F'(x)$, we know $f(x) = F'(x) = \lim_{\Delta x \rightarrow 0}\frac
 <summary>Definition: Percentile</summary>
 
 Let $X$ be a random variable. 
+
 - A percentile is a number $x_p$ that satisfies the equation $P(X \leq x_p) = \frac{p}{100}$. 
     - This means $x_p$ satisfies the equation $F(x_p) = \frac{p}{100}$ where $F(x)$ is the cumulative distribution function for $X$.
     - This means $x_p$ satisfies the equation $\int_{-\infty}^{x_p}f(t)dt = \frac{p}{100}$ where $f(x)$ is the probability density function for $X$.

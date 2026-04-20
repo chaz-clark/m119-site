@@ -42,6 +42,7 @@ A **Poisson random variable (or Poisson distribution)** is a model for the numbe
 The probability mass function (pmf) for the Poisson distribution is $p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}$ when $x = 0, 1, 2, 3, ...$ and zero otherwise where $\lambda > 0$.
 
 Examples:
+
 - Let $X$ be the random variable that counts the number of hurricanes in Florida in a given year.
 - Let $Y$ be the random variable that counts the number of hits on BYU-Idaho's website in a given minute.
 - Let $W$ be the random variable that counts the number of cars that go through an intersection in a given hour.
@@ -67,6 +68,7 @@ plot(x,p(x,lambda=2.4)) # lambda just needs to be positive.
 ```
 
 Assuming the parameter $\lambda = 2$, calculate the following and check your answers. 
+
 - The probability of 4 Florida tropical storms this year.
 - The probability of 5 Florida tropical storms this year.
 - The probability of 2 Florida tropical storms this year.
@@ -108,6 +110,7 @@ sum(p(0:2))
 </details>
 
 Now answer the following and come with answers to compare with your group in class. 
+
 - The probability of less than 8 Florida tropical storms this year using $\lambda = 3$.
 - The probability of less than 8 Florida tropical storms this year using $\lambda = 6$.
 - The probability of at least 8 Florida tropical storms this year using $\lambda = 6$.
@@ -126,12 +129,15 @@ Now answer the following and come with answers to compare with your group in cla
 # During Class
 ## Brain Gains
 Let $ h(t) = \sqrt{3t+1} $.
+
 - Compute $ h(2) $.
 - Solve $ h(t) = 2 $ for $ t $. 
 Let $X_1$, $X_2$, and $X_3$ be independent random variables which each return the value of a single toss of one fair six-sided die. 
+
 - Compute $P(X_1 = 1, X_2 = 4, \text{ and } X_3 = 5)$. 
 - Compute $P(X_1 \leq 3, X_2\leq 3,\text{ and }X_3\leq 3)$. 
 Recall that the probability mass function (pmf) for a Poisson distribution is $p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}$ with $x = 0, 1, 2, 3, ...$ where $\lambda > 0$.  Suppose that $Y$ is a random variable with a Poisson distribution with $\lambda = 1$. 
+
 - Compute $P(Y=1)$.
 - Compute $P(Y=0)$.
 - Compute $P(Y>1)$.
@@ -182,6 +188,7 @@ p <- function(x,lambda=2){
 ```
 
 Compare your answers that you got for the last 4 questions of yesterday's prep work. These 4 problems asked you to compute each of the things below. 
+
 - The probability of less than 8 Florida tropical storms this year using $\lambda = 3$.
 - The probability of less than 8 Florida tropical storms this year using $\lambda = 6$.
 - The probability of at least 8 Florida tropical storms this year using $\lambda = 6$.
@@ -287,6 +294,7 @@ p3v2(4,4,8,10)
 ```
 
 If we know there will be 4 Florida tropical storms this year, 4 Florida tropical storms next year, and 8 Florida tropical storms the year after, then our calculations above can help us determine a good value for the parameter $\lambda$. The value $\lambda=10$ is a better option that $\lambda = 1$ because $p3(4,4,8,10) = 4.029234e-05 > 2.143747e-09 = p3(4,4,8,1)$. 
+
 - Try various other values for $\lambda$ and calculate the probability of 4 Florida tropical storms this year, 4 Florida tropical storms next year, and 8 Florida tropical storms the year after. 
 - What criteria would you use to decide "what is the best value for the parameter $\lambda$?"
 - Construct a plot (use p3v2) that has $\lambda$ on the horizontal($x$) axis, and on the vertical($y$) axis we place the probability of 4, then 4, then 8 Florida tropical storms for the next three years assuming that value for $\lambda$. Describe the shape of this plot, and how can we use it to find the "best value" for $\lambda$. 

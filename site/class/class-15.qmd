@@ -17,6 +17,7 @@ Pick something from your prep today that you can share with your group in class.
 Use the storms listed on Wikipedia's [List of Florida hurricanes](https://tinyurl.com/51vyiwjw) page to answer the questions below.
 
 1. Use the data from 2005-2007 for $x_1$, $x_2$, and $x_3$. The number of storms in 2005 is $x_1$, the number of storms in 2006 is $x_2$, and the number of storms in 2007 is $x_3$.
+
 - Adapt the code from class to complete the following table, calculating the probability given the value of $\lambda$.
 
 ```r
@@ -59,17 +60,21 @@ plot(lambda, probs, type='l')
 - If we know there will be 8 Florida tropical storms this year, 2 Florida tropical storms next year, and 8 Florida tropical storms the year after that (in other words the data values from 2005-2007), what is your guess for the best choice of parameter $\lambda$?
 
 2. Using the data from 2010-2012 adapt the code from exercise 1 (above) to plot a function with $\lambda$ on the horizontal axis and probability (that of the number of storms this year will be the same as the number of storms in 2010, the number of storms next year will be the same as the number of storms in 2011, and the number of storms in the year after that will be the same number as the number of storms in 2012) on the vertical axis. See Wikipedia's [List of Florida hurricanes](https://tinyurl.com/51vyiwjw) to get the appropriate data.
+
 - Using your plot what is your guess for the best choice of the parameter $\lambda$ in this case?
 
 3. Using the data from 2012-2015 adapt the code to plot a function with $\lambda$ on the horizontal axis and probability (that of the number of storms this year will be the same as the number of storms in 2012, the number of storms next year will be the same as the number of storms in 2013, the number of storms in the year after that will be the same number as the number of storms in 2014, and the number of storms in the year after that will be the same number as the number of storms in 2015) on the vertical axis.
+
 - *Note: There are 4 years this time. How will you have to change the code to allow for this?*
 - Using your plot what is your guess for the best choice of the parameter $\lambda$ in this case?
 
 4. Using the data from 2000 and 2001 adapt the code to plot a function with $\lambda$ on the horizontal axis and probability on the vertical axis.
+
 - *Note: There are 2 years this time. How will you have to change the code to allow for this?*
 - Using your plot what is your guess for the best choice of the parameter $\lambda$ in this case?
 
 5. Using the data from 2019 and 2020 adapt the code to plot a function with $\lambda$ on the horizontal axis and probability on the vertical axis.
+
 - *Note: There are 2 years this time. How will you have to change the code to allow for this?*
 - Using your plot what is your guess for the best choice of the parameter $\lambda$ in this case?
 
@@ -81,6 +86,7 @@ plot(lambda, probs, type='l')
 The **residual** for an observation is defined as the vertical distance between the observed value, $y$, and value predicted by a fitted model, represented with a $\hat{y}$ (read "y hat"). 
 
 Examples:
+
 - Given the model $f(x) = ax^2 + bx + c$ and the data point $(x,y)$, the residual is $y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c.$
 - Given the model $g(x) = k$ and the data point $(x,y)$, the residual is $y-\hat{y} = y - g(x) = y - k.$
 - Given the model $h(x) = ae^{-bx} + cxe^{-bx}$ and the data point $(x,y)$, the residual is $y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.$
@@ -88,6 +94,7 @@ Examples:
 </details>
 
 Consider the 6 functions you have been fitting in Project 1. 
+
 - Write down a formula for the residual given model $f_1$.
 - Write down a formula for the residual given model $f_2$.
 - Write down a formula for the residual given model $f_3$.
@@ -134,9 +141,11 @@ plot(lambda,probs,type='l')
 ## Discussion
 ### Likelihood
 The **Poisson distribution** is modeled using the function (called a *probability mass function*)
+
 - $p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}$ for every $x = 0, 1, 2, 3, ...$, for some $\lambda > 0$.
 
 The likelihood function for the Poisson distribution is the function
+
 - $L_1(\lambda; x) = \frac{\lambda^x}{x!}e^{-\lambda}$ for every $\lambda > 0$, for some $x = 0, 1, 2, 3, ...$. 
 
 What do you notice about $L_1$ and $p$? What are the similarities? What are the differences?
@@ -146,9 +155,11 @@ What do you notice about $L_1$ and $p$? What are the similarities? What are the 
 
 ----
 We created the *joint probability mass function* for three independent Poisson Random variables by multiplying three functions together to obtain 
+
 - $p_3(x_1, x_2, x_3; \lambda) = \frac{\lambda^{x_1 + x_2 + x_3}}{x_1!x_2!x_3!}e^{-3\lambda}$ for every $x_1 = 0, 1, 2, 3, ...$, $x_2 = 0, 1, 2, 3, ...$, and $x_3 = 0, 1, 2, 3, ...$, for some $\lambda > 0$. 
 
 Consider the function 
+
 - $L_3(\lambda; x_1, x_2, x_3) = \frac{\lambda^{x_1 + x_2 + x_3}}{x_1!x_2!x_3!}e^{-3\lambda}$ for every $\lambda > 0$, for some $x_1 = 0, 1, 2, 3, ...$, $x_2 = 0, 1, 2, 3, ...$, and $x_3 = 0, 1, 2, 3, ...$.
 
 What do you notice about $L_3$ and $p_3$? What are the similarities? What are the differences?
@@ -182,6 +193,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 The **residual** for an observation is defined as the vertical distance between the observed value, $y$, and value predicted by a fitted model, represented with a $\hat{y}$ (read "y hat"). 
 
 Examples:
+
 - Given the model $f(x) = ax^2 + bx + c$ and the data point $(x,y)$, the residual is $y-\hat{y} = y - f(x) = y - (ax^2 + bx + c) = y- ax^2 - bx - c).$
 - Given the model $g(x) = k$ and the data point $(x,y)$, the residual is $y-\hat{y} = y - g(x) = y - k.$
 - Given the model $h(x) = ae^{-bx} + cxe^{-bx}$ and the data point $(x,y)$, the residual is $y-\hat{y} = y - h(x) = y - (ae^{-bx} + cxe^{-bx}) = y - ae^{-bx} - cxe^{-bx}.$
@@ -212,12 +224,15 @@ Likelihood is *not* probability but it is related to probability.
 
 #### Poisson Distribution 
 This is a **Poisson distribution**. (A common probability model.)
+
 - $p(x; \lambda) = \frac{\lambda^x}{x!}e^{-\lambda}$ for every $x = 0, 1, 2, 3, ...$, for some $\lambda > 0$.
 
 If we have more than one observation and we assume the observations come from independent random variables, we can multiply the probability functions to find the joint probability function. This is a probability model, *the joint probability mass function for $n$ **Poisson** random variables (all with the same $\lambda$)*.
+
 - $F_P(\mathbf{x}; \lambda) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}$ for every $x_i = 0, 1, 2, 3, ...$ with $i = 1, 2, ... n$, for some $\lambda > 0$.
 
 How do we go from a distribution to a likelihood function? We reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for $n$ **Poisson** random variables (all with the same $\lambda$).
+
 - $L_P(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}$ for every $\lambda > 0$, for some $x_i = 0, 1, 2, 3, ...$ with $i = 1, 2, ... n$.
 
 We can use the following code to plot this function in R.
@@ -259,12 +274,15 @@ plot(lambda,y,type='l',main='Poisson Likelihood')
 
 #### Exponential Distribution 
 This is an **Exponential distribution**. (A common probability model.)
+
 - $f_2(x; \lambda) = \lambda e^{-\lambda x}$ for every $x > 0$, for some $\lambda >0$.
 
 When we have more than one observation, and we assume the observations come from independent random variables, then we can multiply the probability functions to find the joint probability function. This is a probability model, *the joint probability density function for $n$ **Exponential** random variables (all with the same $\lambda$)*.
+
 - $F_E(\mathbf{x}; \lambda) = \prod_{i=1}^n \lambda e^{-\lambda x_i}$ for every $x_i > 0$ with $i = 1, 2, ... n$, for some $\lambda >0$.
 
 How do we go from a distribution to a likelihood function? Reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for $n$ **Exponential** random variables (all with the same $\lambda$).
+
 - $L_E(\lambda; \mathbf{x}) = \prod_{i=1}^n \lambda e^{-\lambda x_i}$ for every $\lambda >0$, for some $x_i > 0$ with $i = 1, 2, ... n$.
 
 We can use the following code to plot this function in R.
@@ -304,12 +322,15 @@ plot(lambda,y,type='l',main='Exponential Likelihood')
 
 #### Normal Distribution 
 This is a **Normal distribution**. (A common probability model.)
+
 - $f_3(x; \mu, \sigma) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ for every real number $x$, for some real number $\mu$ and real number $\sigma > 0$.
 
 If we have more than one observation and we assume the observations come from independent random variables, we can multiply the probability functions to find the joint probability function. This is a probability model, *the joint probability density function for $n$ **Normal** random variables (all with the same $\mu$ and $\sigma$).*
+
 - $F_N(\mathbf{x}; \mu, \sigma) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}$ for every real number $x_i$ with $i = 1, 2, ... n$, for some real number $\mu$ and real number $\sigma > 0$.
 
 How do we go from a distribution to a likelihood function? Reverse the roles of the data (the input variable, or independent variable, a list of measurements) and the parameters. This is the likelihood function for $n$ **Normal** random variables (all with the same $\mu$ and $\sigma$).
+
 - $L_N(\mu, \sigma; \mathbf{x}) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}$ for every real number $\mu$ and real number $\sigma > 0$, for some real numbers $x_i$ with $i = 1, 2, ... n$.
 
 We can use the following code to plot this function in R.
@@ -348,6 +369,7 @@ plot(mu,y,type='l',main='Normal Likelihood')
 
 ### Deterministic vs Probability Models
 Deterministic models describe relationships between quantities.
+
 - time a light bulb is on (quantity 1) and the brightness of the bulb (quantity 2)
 - number of months since purchase (quantity 1) and the thickness of a shoe tread (quantity 2)
 - number of years (quantity 1) and number of elves (quantity 2)
@@ -358,6 +380,7 @@ Deterministic models describe relationships between quantities.
 
 Probability models describe probability information for a measurement.<br>
 Measurements have variation. There is always some uncertainty in measurement. Even if we are capable of measuring precisely there can still be variation. For example, we can count with precision how many heads there are in 100 coin flips. But if we repeat the experiment (flipping a coin 100 more times and counting) we could get a different number of heads. If we are measuring the weight of an object, there can be variation in the weights based on precision of the scale and other factors (which scale is used, calibration, temperature, vibrations, user error,...). Because there is variation in measurement we often think of measurements as random (or stochastic) variables and use probability distributions to describe the values and associated probabilities.
+
 - Some Common Probability Models
     - Poisson distribution (discrete)
       - the number of events that occur during a fixed time interval

@@ -84,6 +84,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 <summary>Second-Order Partial Derivatives</summary>
 
 For a function $f(x,y)$ of two independent variables, the 4 second order partial derivatives are
+
 - $(f_x)_x = f_{xx} = \dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial x}\right) = \dfrac{\partial^2 f}{\partial x^2}$,
 - $(f_y)_y = f_{yy} = \dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial y}\right) = \dfrac{\partial^2 f}{\partial y^2}$,
 - $(f_x)_y = f_{xy} = \dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial x}\right) = \dfrac{\partial^2 f}{\partial y \partial x}$, and
@@ -97,6 +98,7 @@ For a function $f(x,y)$ of two independent variables, the 4 second order partial
 <summary>Solution</summary>
 
 We have 
+
 - $f_x = 2x-3y$,
 - $f_y = -3x+10y$,
 - $f_{xx} = 2$,

@@ -109,6 +109,7 @@ Remember to **Pass The Chalk** between each problem, giving everyone a chance to
 
 ### Plotting in R 
 Help each other plot the following functions in R.
+
 - $f(x) = x^2+3x$ for $-3\leq x \leq 3$.
 - $g(x) = \sqrt{x+4}-\sqrt{x+1}$ over a reasonable domain. 
 
@@ -132,45 +133,27 @@ Let $f(x) = x^2$. Complete each of the following exercises below.
 1. Complete each table below.
 
 | $x$ | $f(x)$ |
-
 | --- | --- |
-
 | -2 |  |
-
 | -1 |  |
-
 | 0 |  |
-
 | 1 |  |
-
 | 2 |  |
 
 | $x$ | $g(x) = f(x) + 2$ |
-
 | --- | --- |
-
 | -2 |  |
-
 | -1 |  |
-
 | 0 |  |
-
 | 1 |  |
-
 | 2 |  |
 
 | $x$ | $h(x) = f(x+2)$ |
-
 | --- | --- |
-
 |  | 4 |
-
 |  | 1 |
-
 |  | 0 |
-
 |  | 1 |
-
 |  | 4 |
 
 1.  Graph each of the functions from part 1. 
@@ -229,6 +212,7 @@ We can examine the mtcars dataset with head(mtcars), and then construct scatterp
     - But you can copy Latex from our Wiki or Project Instructions.
 
 We'll now use RStudio to calculate each value.
+
 - Let $w(v) = v^2 - 5v -6$ Compute the following values.
     - $w(-1)$
     - $w(-3)$

@@ -72,6 +72,7 @@ Integrate[3x,x] in Mathematica to check your answer.
 
 1. Compute $\int 5+\frac{1}{x^2} dx$. Use Mathematica to check your answer.
 1. Consider the pdf $f(x) = e^{-x} $ for $x \geq 0$ and zero otherwise.
+
 - We can verify that $F_1(x) = -e^{-x}$, $F_2(x) = 5 - e^{-x} $, and $F_3(x) = -e^{-x} - 2$ are all antiderivatives of $f$. Are any of these function the CDF of the random variable $X$?
     - We know that $F(x)$ is from the family of functions $\int e^{-x}dx$. How do we pick which one?
       - We need to identify the constant. We know $F(0) = 0$.
@@ -113,6 +114,7 @@ Integrate[Exp[-x],x]
 
 ## Group Meeting 
 General Instructions
+
 - Give each group member a several minutes to share.
 - When you finish discussing the prep, please start on the activity below.
 ### Activity - Accumulation Function

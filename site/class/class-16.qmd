@@ -328,6 +328,7 @@ data.frame(x=x,y=y,slope=slope)
 You will need a table such as the one above for each of the 4 functions. 
 
 2. Use the information from your tables to answer the following questions.  Write your answers on the chalk board.
+
 - $f_1(x) = x^4 - 10x^2 + 3x$ at $x=3$
     - What is the value of $f_1$ when $x=3$?
     - What is your collective guess for the slope at $x=3$? 
@@ -353,6 +354,7 @@ You will need a table such as the one above for each of the 4 functions.
     - Write the equation of the line with this slope through the point and slope identified above. Write your answer in the form $y-y_1 = m(x-x_1)$.
 
 Some Vocabulary
+
 - The lines you wrote down are called **the linearization** of $f_1$, $f_2$, $f_3$, and $f_4$ at the specified point.
 - These lines are also called **the local linear approximations** of $f_1$, $f_2$, $f_3$, $f_4$ at the specified point.
 - These lines are also called **the tangent lines** of $f_1$, $f_2$, $f_3$, and $f_4$ at the specified point.

@@ -206,6 +206,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 ### Interactive Programming Activity
 The prep for today included completing an interactive programming activity (see above). 
 As a group, discuss each question below. 
+
 - What does the seq() command do?
 - How does the plot() command work?
 - What does c() command do?

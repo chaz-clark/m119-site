@@ -74,12 +74,14 @@ We say a function $f$ is negative on the interval $I$ if for all $x_1$ in the in
 The symbol $\sum_{k=1}^n a_k$ means to find the sum of the $a_k$ terms for each integer from $k=1$ to $k=n$ .
 
 For example:
+
 - $\sum_{k=2}^5 (3k-1) = \underbrace{ (3(2)-1) }_{k=2} + \underbrace{ (3(3)-1) }_{k=3}  + \underbrace{ (3(4)-1) }_{k=4} +\underbrace{ (3(5)-1) }_{k=5} = 5+8+11+14 =  38$.
 
 **Product Notation**<br>
 The symbol $\prod_{j=1}^n a_j$ means to find the product of the $a_j$ terms for each integer from $j=1$ to $j=n$.
 
 For example:
+
 - $\prod_{m=2}^5 (3m-1) = \underbrace{ (3(2)-1) }_{k=2}\cdot \underbrace{ (3(3)-1) }_{k=3}\cdot \underbrace{ (3(4)-1) }_{k=4}\cdot \underbrace{ (3(5)-1) }_{k=5} = 5\cdot 8\cdot 11\cdot 14=6160$.
 
 We can use R to compute sums and products as follows. 
@@ -91,6 +93,7 @@ prod(3*k-1)
 ```
 
 Calculate the following values by hand, and check your work with R. 
+
 - $\sum_{m=1}^5 (4m^2+4)$ and $\prod_{m=1}^5 (4m^2+4)$
 - $\sum_{k=1}^4 (30 - k^2)$ and $\prod_{k=1}^3 (30 - k^2)$
 - $\sum_{n=1}^{10} n$ and $\prod_{n=1}^7 n$
@@ -98,6 +101,7 @@ Calculate the following values by hand, and check your work with R.
 
 ### (3) Systems of Equations (videos)
 Watch the following videos about solving systems of equations.
+
 - [Video 1](https://www.youtube.com/watch?v=HxhacvH49o8) (~10 minutes)
 - [Video 2](https://www.youtube.com/watch?v=ova8GSmPV4o) (~7.5 minutes)
 
@@ -246,6 +250,7 @@ Start by discussing any questions from the prep. The complete the following with
 
 ### Systems of Equations (videos)
 Solve each system of equations for $x$ and $y$. The variables $a,b,c,d,e,f$ below are constants. 
+
 - $3x + 2y = -4, -x + 7y = 9$
 - $x+2y=3, 4x+5y=6$
 - $x+by=3, 4x+5y=6$
@@ -258,6 +263,7 @@ Solve each system of equations for $x$ and $y$. The variables $a,b,c,d,e,f$ belo
 ## Discussion
 - Reminder of what the parameters in the general transformation form do.
 $$ T(x) = af(b(x-h))+k $$
+
 - Let's think about the general quadratic $f(x) = a_2x^2 + a_1x + a_0$.
     - Recall the example. $q(x) = x^2 + 4x + 9$. We wrote $q(x) = (x-2)^2+5$ by completing the square.
     - Consider $g(x) = x^2 - 5x - 1$ or $h(x) = 2x^2 + 14x + 3$. 
@@ -267,9 +273,11 @@ $$ T(x) = af(b(x-h))+k $$
 
 ## Discussion - Project 1 Task 2 and the Example Project. 
 If you haven't yet found the worked examples in Canvas, note that there are examples for a few tasks in the Additional resources module. Here is an example for project 1 task 2, which shows how you can put multiple plots together in the same figure, using the par(mfrow()) command, something required for the task.  Note that the example below shows far more plots than are required for the actual tasks.   
+
 - [Project 1 Task 2 worked example](https://chaz-clark.github.io/M119/Projects/m119-docs/Project1_Task2_f2_example.html)
 
 We'll spend the rest of class examining the example project's Task 2. 
+
 - Open the [Example Project Instructions](../assets/docs/example_project.html){target="_blank"}, and briefly read Task 2
 - Use the Desmos links to explore the three probability density models $f_0$, $f_1$, and $f_2$.
     - Use the slider to alter the values of $a$ and $b$. Discuss how these parameters alter the graph of $f_0$.

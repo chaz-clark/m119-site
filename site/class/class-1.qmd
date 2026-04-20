@@ -7,6 +7,7 @@ title: "Class 1"
 
 - The address for this Wiki is [site](https://byuimath.com/bmw/all/119/){target="_blank"}.  
 ![](../assets/uploads/Class/119-bmw.png){height="100px"}
+
 - First Day Challenge: Exchange name and contact information with at least 1 other student in this class during our work today.
 
 ## Brain Gains
@@ -62,6 +63,7 @@ The number $f(\sqrt{3})$ is an irrational number which means any decimal represe
 ## Group Discussion
 We'll split into randomized groups every day of class. Jot your name on the board to help us all learn each other's names.  
 Then work through the following problems. 
+
 - Take turns acting as scribe for the group. When you are the scribe, it's fine to not know exactly how to proceed. 
 - The goal is to ask questions of each other and help each other. 
 - Leave up your work so that you can compare your answers with neighbors. 
@@ -180,6 +182,7 @@ Given $f(x) = x^2$, we will show $f(a+b) = f(a) + f(b)$ is not true for all valu
 We can also show that $f(a+b) = f(a) + f(b)$ is not a true statement by showing that $f(a+b) \neq f(a) + f(b)$ in general when $f(x) = x^2$. We see $f(a) = a^2$ and $f(b) = b^2$. Now we compute $f(a+b) = (a+b)^2 = (a+b)(a+b) = a^2 + 2ab + b^2 \neq a^2 + b^2 = f(a) + f(b)$ when $2ab \neq 0$. Thus we see that $f(a+b) \neq f(a) + f(b)$ unless $2ab = 0$.
 
 Important take away:
+
 - The square of a sum is NOT the sum of the squares, $(a + b)^2 \neq a^2 + b^2$. 
 - The operation of addition must happen before the power. The order of operations is grouping and then exponents.
 

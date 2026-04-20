@@ -39,6 +39,7 @@ Work on project 1 task 2, with the goal of submitting it.  Remember to complete 
 ## Regular Reminders
 ### Skill Practice (KA Homework)
 Start working on 
+
 - 1 -- Definition of a Logarithm
 - 1 -- Evaluate Exponential and Logarithmic Functions
 - 1 -- Properties of Logarithms
@@ -109,6 +110,7 @@ Share with each other what you did for project 1 task 2.  Help address any quest
 
 ### Graph Exponential Functions
 Graph each function below, showing at least 2 points, and any horizontal asymptote. End by stating the $y$ intercept. 
+
 - $f(x) = 2^{x-3}$
 - $f(x) = (1/3)^{x}+4$
 
@@ -122,6 +124,7 @@ Graph each function below, showing at least 2 points, and any horizontal asympto
 ## Discussion
 ### Deterministic Versus Probabilistic Models
 We'll have a high level discussion about where we are headed with the the projects. 
+
 - What is a deterministic model?
 - What is a probabilistic model?
 
@@ -129,10 +132,12 @@ How does AI fit into this?
 
 ### Function "Mad Libs"
 Let's list several quantities that we can measure. We'll use these to construct madlibs with mathematics.  Functions tell a story, and we need to learn to tell that story.  
+
 - Quantity 1:
 - Quantity 2:
 
 For the model $y=f(x;a=10,b=4)=10-\sqrt{x+4}$, we'll tell the story that occurs if we let $x$ be quantity 1, and $y$ be quantity 2. 
+
 - Use the code below to plot this function in R, and then tell the story.
 
 ```r
@@ -156,6 +161,7 @@ plot(x,y,type='l')
 
 #### Summary
 A function tells a story about a relationship between two quantities, whether that relationship is realistic or not.  
+
 - Telling the story given by a model is a skill different from but related to the skill of determining whether the model is a good description of a relationship being studied.
 - Telling the story given by a model is a skill different from but related to adjusting the model to better describe a relationship being studied.
 - Telling the story given by the model (no matter how ridiculous) is a skill that takes practice.

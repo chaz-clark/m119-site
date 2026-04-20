@@ -14,14 +14,17 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Making Connections
 1. Consider the function $ f(a) = 100 - \frac{1}{2}(3-4a)^2 $. 
+
 - Find the critical points of $f$.
 - Use the second derivative test to determine if the critical points are locations of maxima or minima.
 
 2. Consider the function $ f(a_1) $ that has the derivative $ f'(a_1) = 172746.8 - 328767530a_1 $.
+
 - Find the critical points of $f$.
 - Use the second derivative test to determine if the critical points are locations of maxima or minima.
 
 3. Consider the function $ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2 $.
+
 - Review your calculation of the first derivative and second derivative of $ \ell_1 $.
     - Note: This is part of the required work for Project 2 Task 2.
 - Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Try using the sum function.) Check that you obtain the following:
@@ -49,14 +52,17 @@ lines(ti,f1(ti,a1))
     - Note: This is part of the required work for Project 2 Task 3.
 
 4. Consider the function $ f(a) = 100 - \frac{1}{2}(300e^{-2}-400e^{-2}a)^2 $. 
+
 - Find the critical points of $f$.
 - Use the second derivative test to determine if the critical points are locations of maxima or minima.
 
 5. Consider the function $ f(a_1) $ that has the derivative $ f'(a_1) = 1386372 - 225775231a_1 $.
+
 - Find the critical points of $f$.
 - Use the second derivative test to determine if the critical points are locations of maxima or minima.
 
 6. Consider the function $ \ell_5 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100e^{-0.00005t_i} - a_1t_ie^{-0.00005t_i})^2 $.
+
 - Review your calculation of the first derivative and second derivative of $ \ell_5 $.
     - Note: This is part of the required work for Project 2 Task 2.
 - Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Try using the sum function.) Check that you obtain the following:
@@ -118,6 +124,7 @@ $$\ds\sum_{i=1}^{44}\ln(2x_i^3) = 44\ln 2+3\sum_{i=1}^{44}\ln(x_i).$$
 
 2. 
 A twice differentiable function $f(x)$ satisfies $f'(4.2)=0$ and $f'(6.3)=0$. The second derivatives at these points are $f' '(4.2)=7.8$ and $f' '(6.3)=-1.9$.  
+
 - At which $x$ value(s) does $f$ have a local maximum?
 - At which $x$ value(s) does $f$ have a local minimum?
 

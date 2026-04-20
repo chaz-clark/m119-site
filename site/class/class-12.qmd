@@ -142,6 +142,7 @@ uniroot(f,c(-1,1))
 
 ### Using a model
 Consider the following fitted models. These models were fit to the data for Project 1 Task 3 using seed=123.
+
 - $f_2(x) = 100 + 0.0011x - 0.00000015x^2$ where $x \geq 0$
 - $f_3(x) = 101.9 - 1.9e^{-0.00114x}$ where $x \geq 0$
 - $f_4(x) = 100 - 0.000181x + 0.83\ln(0.005x+1)$ where $x \geq 0$

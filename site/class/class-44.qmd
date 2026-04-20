@@ -135,6 +135,7 @@ What does the word "density" mean?  Which is more dense, water or air?  Why?  Ha
 <summary>Some examples</summary>
 
 Density is a measure of compactness.
+
 - mass per length
 - mass per volume
 - people per area (population density)
@@ -150,8 +151,10 @@ Consider the random variable $X$ with the probability density function $$f(x) =
 0 &  \text{otherwise}
 \end{cases}.$$
 We can think of this as a target function
+
 - Explain why $P(3 \leq X \leq 5) = \frac{2}{6}$. 
 We have connected probabilities to areas. Rectangles have area = height x width. In the computation above note that $f = \frac{1}{6}$ gives the height whereas the distance from 3 to 5 (a change in $x$ we can write as $\Delta x$) gives the width. So we have  $\text{probability}=f(x) \Delta x$. Using $p$ for probability, this means that $f(x) = \frac{p}{\Delta x}$.
+
 - What are the units of $f(x)$?
 
 <details>

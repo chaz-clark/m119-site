@@ -156,6 +156,7 @@ sum(f(xi)*dx) #Should be 1.
 ```
 
 We now approximate the expected value and variance of $X$ using 
+
 - $E[X]\approx \sum x_if(x_i)\Delta x$ and 
 - $\text{Var}[X]\approx\sum (x_i-E[X])^2f(x_i)\Delta x$.
 Variance is a measure of how spread out a distribution is.
@@ -271,6 +272,7 @@ f - D[F, x] // FullSimplify (*See if the difference is zero*)
 Work together on your computers to help one another complete the following problems. 
 
 For each function below, use Mathematica to compute 
+
 - the area $A = \int_a^b g(x) dx$, 
 - the value $k$ so that $f=kg$ is a PDF for a random variable, 
 - the expected value $E[X] =\int_a^b xf(x)dx$, and 

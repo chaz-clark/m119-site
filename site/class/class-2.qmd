@@ -98,6 +98,7 @@ Because course materials assume RStudio, if you're on VS Code you'll sometimes n
 
 ### (4) Pick something to share
 Remember to pick something from the above that you can share with your peers tomorrow.  What could that be?
+
 - Did you encounter any issues with KnewtonAlta or have questions? Was there a problem in what you attempted that helped you remember something.
 - As you plotted functions from (2), were there any tricky parts? Did you use Desmos or something else? Do you have any tips for plotting?
 - How did installing R and RStudio go? If there were any hiccups along the way, what did you do to resolve them? Did you plot a function and are you willing to share the code you used? Were there any bits of code that didn't make sense? Did you ask AI for help to plot a function and have a record of your chat history you can share?
@@ -130,6 +131,7 @@ x^3 & \quad x < -1 \\ \\
 Given $f(x) = x^2$, we know $f(3) = 9$, $f(4) = 16$, and $f(3+4)=f(7)=49$.  Since $9+16 = 25\neq 49$, then we know $f(3+4) \neq f(3) + f(4)$.
 
 Important take away:
+
 - In general, the square of a sum is NOT the sum of the squares, $(a + b)^2 \neq a^2 + b^2$. 
 - The operation of addition must happen before the power. The order of operations is grouping and then exponents.
 
@@ -201,23 +203,14 @@ An exponential function is any function of the form $f(x) = b^x$ where $b > 0$ a
 As a group, discuss whether each function is a power function, quadratic function, polynomial function, root function, and/or a rational function. Record your solutions in a table similar to the following. Note a function can be classified as multiple types. 
 
 |  | power fn. | quadratic fn. | polynomial fn. | root fn. | rational fn. |
-
 | --- | --- | --- | --- | --- | --- |
-
 | $f(x) = x^2$ |  |  |  |  |  |
-
 | $g(x) = \sqrt{x}$ |  |  |  |  |  |
-
 | $h(x) = x^3$ |  |  |  |  |  |
-
 | $p(x) = \sqrt{3x+1}$ |  |  |  |  |  |
-
 | $q(x) = x^3 - 3x + 2$ |  |  |  |  |  |
-
 | $A(x) = (x-1)^2$ |  |  |  |  |  |
-
 | $r(x) = \frac{2x+3}{x^2+1}$ |  |  |  |  |  |
-
 | $w(x) = 5^x$ |  |  |  |  |  |
 
 After you've finished classifying the functions, first compare your results with the other groups in class.  Discuss any changes you believe need to be made.  Then expand the solution below and discuss any questions you have. 
@@ -226,23 +219,14 @@ After you've finished classifying the functions, first compare your results with
 <summary>Answer</summary>
 
 |  | power fn. | quadratic fn. | polynomial fn. | root fn. | rational fn. |
-
 | --- | --- | --- | --- | --- | --- |
-
 | $f(x) = x^2$ | X | X | X |  | X |
-
 | $g(x) = \sqrt{x}$ | X |  |  | X |  |
-
 | $h(x) = x^3$ | X |  | X |  | X |
-
 | $p(x) = \sqrt{3x+1}$ |  |  |  |  |  |
-
 | $q(x) = x^3 - 3x + 2$ |  |  | X |  | X |
-
 | $A(x) = (x-1)^2$ |  | X | X |  | X |
-
 | $r(x) = \frac{2x+3}{x^2+1}$ |  |  |  |  | X |
-
 | $w(x) = 5^x$ |  |  |  |  |  |
 
 The function $w(x) = 5^x$ is an exponential function.
@@ -257,6 +241,7 @@ The function $w(x) = 5^x$ is an exponential function.
 <summary>Possible Solutions</summary>
 
 These are some solutions to the questions above.  Come up with your own, and jot them on the chalk board. 
+
 - Examples of polynomials that are NOT power functions.
     - $q(x) = x^3 - 3x + 2$
     - $A(x) = (x-1)^2$
@@ -273,45 +258,27 @@ Let $f(x) = x^2$. Complete each of the following exercises below.
 1. Complete each table below.
 
 | $x$ | $f(x)$ |
-
 | --- | --- |
-
 | -2 |  |
-
 | -1 |  |
-
 | 0 |  |
-
 | 1 |  |
-
 | 2 |  |
 
 | $x$ | $g(x) = f(x) + 2$ |
-
 | --- | --- |
-
 | -2 |  |
-
 | -1 |  |
-
 | 0 |  |
-
 | 1 |  |
-
 | 2 |  |
 
 | $x$ | $h(x) = f(x+2)$ |
-
 | --- | --- |
-
 |  | 4 |
-
 |  | 1 |
-
 |  | 0 |
-
 |  | 1 |
-
 |  | 4 |
 
 1.  Graph each of the functions from part 1. 
@@ -342,6 +309,7 @@ A **function** $f$ consists of a set of inputs, a set of outputs, and a rule for
 A *function from **set D** to a **set Y*** is **a rule** that assigns each element in **set D** exactly one element from **set Y**.
 
 Note:
+
 - The *domain* of a function from set D to a set Y is the set of inputs of the function. Notice all the values of set D must be used as inputs so the domain is the set D.
 - The *range* of a function from set D to a set Y is the **set of outputs** of the function. Notice the range of the function is not necessarily set Y, not all the value of set Y must be used as outputs.
 
@@ -355,6 +323,7 @@ A **function** is a rule that assigns to every value of the domain just one valu
 </details>
 
 All of these definitions are correct.
+
 - What similarities do you notice?
 - What differences do you notice?
 - What are the key characteristics of the mathematical object, a **function**?

@@ -14,12 +14,14 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Logarithm Introduction and Practice
 Watch these video from mathispower4u.
+
 - [Introduction to Logarithmic Functions](https://www.youtube.com/watch?v=z296tOPj0HA){target="_blank"}
 - [Evaluating Logarithms](https://www.youtube.com/watch?v=dxj5J9OpWGA&feature=youtu.be){target="_blank"}
 - [Properties of Logarithms](https://www.youtube.com/watch?v=SxF44olWTyk){target="_blank"}
 
 ### (2) Function "Fairy Tales"
 The local elvish population is modeled by the function $P(x;a,b) = ax+b$, where $x$ is the number of years since 2000.
+
 - Letting $a=2$ and $b=30$, we have $P(x) = 2x+30$. Plot this function and tell the story given by this model. 
 - How many elves does this model say were alive in 2020? 
 
@@ -41,6 +43,7 @@ p(20)
 ## Regular Reminders
 ### Skill Practice (KA Homework)
 Continue working on the following assignments.
+
 - 1 -- Definition of Logarithm
 - 1 -- Evaluate Exponential and Logarithmic Functions
 - 1 -- Properties of Logarithms
@@ -139,6 +142,7 @@ Note: An exponential function is not an algebraic function.
 <summary>Properties of Exponents</summary>
 
 If $a > 0$, $b >0$, and $m$ and $n$ are any real number, then 
+
 - $a^m \cdot a^n = a^{m+n}$
 - $\frac{a^m}{a^n} = a^{m-n}$
 - $(a^m)^n = a^{mn}$
@@ -195,6 +199,7 @@ Note: A logarithmic function is not an algebraic function.
 <summary>Properties of Logarithms</summary>
 
 If $a>0$, $b > 0$, $c > 0$, $b \neq 1$, and $n$ is any real number, then
+
 - $\log_b b^x = x$ and $b^{\log_b x} = x$ (inverse property)
     - Special Cases
       - $\log_b b = \log_b b^1 = 1$
@@ -240,6 +245,7 @@ $\huge{\text{Logs turn multiplication into addition!}}$
 
 ### Activity - Transformations of Exponential Functions
 Consider the general form $Q(x;a,c,h,k) = af(c(x-h))+k$ for a transformation of a function $f(u)$. 
+
 - Identify $a$, $c$, $h$, and $k$ and describe the transformations on $f$ to obtain $Q$ for each function below. Then state the domain and range of $Q$. Finish by graphing $Q$. 
     - $Q(x) = 4 \cdot 2^x$ where $f(u) = 2^u$
     - $Q(x) = (\frac{1}{2})^x - 2$ where $f(u) = (\frac{1}{2})^u$

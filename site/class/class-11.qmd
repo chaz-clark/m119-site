@@ -145,6 +145,7 @@ hist(dist$percent_intensity,probability = TRUE)
 ```
 
 By identifying the characteristics we see in the data we know what behavior we would like the function curve to have.
+
 - What characteristics do you notice about the density histogram of our data?
     - What is the smallest value?
     - What is the largest value?
@@ -228,12 +229,14 @@ plot(t,y1,xlab="Hour", ylab="Intensity(%) ", pch=16)
 ```
 
 By identifying the characteristics we see in the data we know what behavior we would like the function curve to have.
+
 - What characteristics do you notice about the scatter plot of our data?
     - What is the range of values for the intensities? 
     - What is the range of times?
     - What behaviors do you see in the data?
 
 The prep for today had you try visually fitting parameters to function $f_5$.  Let's head up to the prep, rerun the relevant code, and discuss what you tried.  Then we'll spend the rest of the hour, in groups, trying to obtain a reasonably good visual fit for the other models, using the seed 123. This is precisely what Project 1 Task 3 has you do. 
+
 - If using Desmos to help you make choices, realize you can change the range and step size for each slider. 
 
 ## Group Meeting 

@@ -53,6 +53,7 @@ Consider the random variable $X$ whose probability density function is $f(x) = k
 ## Discussion
 ### Calculate a Percentile
 What is a percentile?
+
 - If a 2 month old baby has a weight that is at the 12th percentile, then that baby's weight is greater than or equal to 12% of all other 2 month babies. 
 - Scoring in the 95th percentile on an exam means your score was greater than or equal to 95% of all other people who took the exam.  
 
@@ -63,6 +64,7 @@ Let's look at a formal definition.
 
 A percentile is a number, $x_p$, that satisfies the equation $P(X \leq x_p) = \frac{p}{100}$. 
 In other words, a percentile is a number $x_p$ that satisfies the equation $F(x_p) = \frac{p}{100})$.
+
 - A percentile divides ordered values (outcomes of a random variable) into 100 equal groups (per 100).
 - A percentile is a number, $x_p$, such that $p$% of the values (outcomes of a random variable) are at or below this number.
 
@@ -93,6 +95,7 @@ Solve[Integrate[64/(s + 2)^5, {s, 0, x}] == 0.99, x, Reals]
 </details>
 
 When the PDF is complicated, sometimes we'll need to employ alternate tools in Mathematica to compute the integrals and solve equations. Often adding an N before Solve is sufficient. The computer then uses a numerical approximation technique, rather than trying to find an exact solution.
+
 - Given the probability density function, $f(x) = \frac{1}{\sqrt{37.5352\pi}}e^{-\frac{1}{37.5352}(x-3.2)^2}$ for $-\infty < x < \infty$, find each of the following percentiles. (Write down the equation you need to solve and then use Mathematica to solve the integral equation.
     - 60th percentile
     - 99th percentile

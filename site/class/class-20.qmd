@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Chain Rule
 Watch a video from mathispower4u about the [Chain Rule (video 2)](https://www.youtube.com/watch?v=1x_wMYFOliQ){target="_blank"} (~9 min)
+
 - Download [this file](https://byuistats.github.io/M119/m119-docs/ChainRule_comparison.pdf){target="_blank"} and complete the exercises. 
 
 <a id="PP"></a>
@@ -143,6 +144,7 @@ Find the derivatives described below.
 
 ### Activity - Additional Derivative Rule Practice
 Find the derivative of each of the functions below with respect to the independent variable.
+
 - $f(x) = (x^2 - 1)(-x^3 - 5x +2)$
 - $h(x) = \frac{-2x^2 + x + 4}{x^2 + 4x -1}$
 - $g(x) = \frac{ (1-2x)(x+4) }{ (x^2 + 3x - 1) }$
@@ -185,6 +187,7 @@ The linear approximation must pass through the point $x=3$ and $y = f(3) = 3^2 =
 The derivative of $f$ is $f'(x) = 2x$. 
 The slope of the linear approximation is $m=f'(3) = 2(3) = 6$. 
 So the graph of the linear approximation is a line through the point $(x,y) =(3,9)$ with slope $f'(3)=6$. 
+
 - Using point-slope form, an equation for the tangent line is $y - 9 = 6(x-3)$.
 - Solving for $y$ above gives $y = L(x) = 9+6(x-3)$. It's common to use the form $L(x) = f(a) + f'(a)(x-a)$ when stating a linear approximation. 
 - We can write the above in slope-intercept form to obtain $y = 6x-9$.
@@ -224,9 +227,11 @@ For each function below, give an equation of the linear approximation at the spe
 
 You have been given a list of data for 50 ElvesRUs employees, $(t_i, c_i)$, were $t_i$ is the number of years working at ElvesRUs and $c_i$ is the salary for the $i^{\text{th}}$ employee. ([Here's a short GPT conversation to generate some sample data.](https://chatgpt.com/share/68f269de-bd0c-8011-af92-6ece28d007aa))
 The salary (platinum coins per year) for an employee at ElvesRUs can be modeled by $f(t;A,b,k)=Ae^{bt}+k,$ where $t$ is the number of years an elf has been working at ElvesRUs. 
+
 - Write the formula for the residuals.
 
 Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1). Note: This tells us the probability model we will be using and it tells us we can multiply the probabilities to get the likelihood function.
+
 - The probability model we are using is $ p(r) = \frac{1}{\sqrt{2\pi}}e^{-\frac{r^2}{2}} $.
 - Write the likelihood function for the residuals in this situation.
 - Write the loglikelihood function for the residuals in this situation.
@@ -259,9 +264,11 @@ $$\ell(A, b, k; t_i, c_i) = 50\ln\left(\frac{1}{\sqrt{2\pi}}\right) -\frac{1}{2}
 
 You have been given a list of 44 data points, $(t_i, y_i)$, were $t_i$ is the time in hours since the light was turned on and $y_i$ is the percent intensity of the bulb after $t_i$ hours. 
 A model for the percent intensity of the bulb is $f(x;m,b) = mx+b$, where $t$ is the time in hours since the light was turned on. 
+
 - Write the formula for the residuals.
 
 Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1).
+
 - Write down the probability model we are using for one of the residuals.
 - What does knowing the residuals are independent allow us to do?
     - Use the assumption of independent residuals to write the joint probability function.

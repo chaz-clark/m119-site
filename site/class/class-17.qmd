@@ -28,6 +28,7 @@ The **loglikelihood function** is the natural log of the likelihood function.
 </details>
 
 For each of the likelihood functions below, write the corresponding loglikelihood function.
+
 - $L_1(\lambda; \mathbf{x}) = \prod_{i=1}^n \frac{\lambda^{x_i}}{x_i!}e^{-\lambda}$ with $x_i = 0, 1, 2, 3, ...$ for $i = 1, 2, ... n$ where $\lambda > 0$.
 
 - $L_2(\lambda; \mathbf{x}) = \prod_{i=1}^n \lambda e^{-\lambda x_i}$ with $x_i > 0$ for $i = 1, 2, ... n$ where $\lambda >0$.
@@ -120,6 +121,7 @@ Below is a list of derivative rules (most of which we have seen) that you are we
 
 ## Using a model (practice with Project 1)
 Consider the following fitted models. *These models were fit to the data obtained using seed=123.*
+
 - $f_2(x) = 100 + 0.0011x - 0.00000015x^2$ where $x \geq 0$
 - $f_3(x) = 101.9 - 1.9e^{-0.00114x}$ where $x \geq 0$
 - $f_4(x) = 100 - 0.000181x + 0.83\ln(0.005x+1)$ where $x \geq 0$

@@ -27,6 +27,7 @@ Solve the system, obtaining values for $x$ and $y$, and come to class with any q
 <summary>Answer</summary>
 
 There are lots of ways to obtain the solution. Here's a possible answer. 
+
 - $y = \frac{c_{1,1}b_2 - c_{2,1}b_1}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
 - $x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1,2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
 
@@ -246,6 +247,7 @@ lines(x,f2(x),type = "l")
 
 #### Analyzing Waiting times - The exponential distribution
 How long do people wait in a line when they head to the bank?  
+
 - We'll use the deterministic model $f(x) = 0$ to predict how long someone has to wait (where $x$ represents the time of day). What does this model really say in plain english? 
     - What are your thoughts about our choice of models?
 - We'll use the <https://openstax.org/books/introductory-business-statistics/pages/5-3-the-exponential-distribution> $p(r) = \lambda e^{-\lambda r}$ to model the residuals. 
@@ -263,6 +265,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 Let $X_i$ be the stochastic variable that counts the number of tropical storms in Florida during the $i^{\text{th}}$ year (with $i=1$ corresponding to 2000). Assume the $X_i$ are independent Poisson stochastic variables each with the parameter $\lambda$. Previously, we found the likelihood function $L(\lambda; \mathbf{x})$ to be given by 
 $L(\lambda; \mathbf{x}) = \prod_{i=1}^{21} \frac{ \lambda^{x_i} }{ x_i! }e^{ -\lambda }$ where the $x_i$'s are nonnegative integers for $i = 1, 2, ... 21$ and $\lambda > 0$.
 The loglikelihood function is given by 
+
 - $\ell(\lambda; \mathbf{x}) = \ln \left(\prod_{i=1}^{21} \frac{\lambda^{x_i}}{x_i!}e^{-\lambda} \right) = \left(\sum_{i=1}^{21} x_i \right) \ln\lambda - \sum_{i=1}^{21}\ln(x_i!) - 21\lambda$ where the $x_i$'s are nonnegative integers for $i = 1, 2, ... 21$ and $\lambda > 0$.
 
 1. 

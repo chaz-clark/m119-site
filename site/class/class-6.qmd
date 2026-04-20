@@ -16,6 +16,7 @@ Pick something from your prep today that you can share with your group in class.
 Let $f(x) = \sqrt{x}$ and complete the exercise 1-4.<br>
 
 1. Find the exact values.
+
 - Evaluate $f(1)$.
 - Evaluate $f(0)$.
 - Evaluate $f(36)$.
@@ -25,6 +26,7 @@ Let $f(x) = \sqrt{x}$ and complete the exercise 1-4.<br>
 - Are there any real numbers that would cause us a problem when trying to evaluate $f$ at that number?
 
 2. A different kind of question. Find the exact values. Assume that $x$ is a real number.
+
 - Solve $f(x) = 16$.
 - Solve $f(x) = \frac{1}{25}$.
 - Solve $f(x) = -1$.
@@ -38,6 +40,7 @@ Let $f(x) = \sqrt{x}$ and complete the exercise 1-4.<br>
 
 ### (2) Function Composition Practice
 Watch the following videos from mathispower4u about Function Composition
+
 - [Video 1](https://www.youtube.com/watch?v=gFSSk8jaAwA&feature=youtu.be) (~6 minutes)
 - [Video 2](https://www.youtube.com/watch?v=Blvv-Dnfubo&feature=youtu.be) (~4.5 minutes)
 - [Video 3](https://www.youtube.com/watch?v=b-i7N0hE-Ys&feature=youtu.be) (~5 minutes)
@@ -87,6 +90,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 
 ### Practice with Functions
 Compare your answers in the prep and discuss any questions. Then at the boards, tackle the following. 
+
 - For $f(x) = x^3$, write out $f(x+2)$, $f(x-2)$, $f(x)+2$, and $f(x)-2$.
     - Use R to graph these five functions.
     - Compare and contrast them. 

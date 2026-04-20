@@ -34,6 +34,7 @@ Det[m]
 ```
 
 Wolfram created a "FAST INTRODUCTION FOR MATH STUDENTS". Read the first page on "Entering Input", and then head to the "Derivatives" section to learn how to compute derivatives with Mathematica. 
+
 - <https://www.wolfram.com/language/fast-introduction-for-math-students/en/>
 
 ### (2) **Least Squares Regression**
@@ -46,6 +47,7 @@ Then complete a couple problems in Knewton Alta on the 2 -- Least Squares Predic
 <summary>Simple Linear Regression Solution</summary>
 
 If we want to fit the function $f(x) = b + mx$ to $n$ data points $(x_i, y_i)$, we should use the parameter values:
+
 - $m = \frac{\left(\sum_{i=1}^{n} x_iy_i\right) - n\overline{x}\overline{y}}{\sum_{i=1}^{n} x_i^2 - n\overline{x}^2}$ and 
 - $b = \overline{y} -  m\overline{x}$,
 where $\overline{x} = \frac{1}{n} \sum_{i=1}^n x_i$ and $\overline{y} = \frac{1}{n} \sum_{i=1}^n y_i$. Here the symbol $\overline{x}$ is referring to the average (or mean) of the $x$-values and $\overline{y}$ is referring to the average (or mean) of the $y$-values. Can you see why?
@@ -89,6 +91,7 @@ lines(x.val,y.val,col=3)
 # During Class
 ## Brain Gains
 1. Given a general form for a transformation of a function $T(x) = af(b(x-h))+k$ and the parent function $f$, identify $a$, $b$, $h$, and $k$ for the transformation below.
+
 - $g(x) = 4\sqrt{x-1} -2$ where $f(u) = \sqrt{u}$
 - $\ell(z) = 53\ln(\frac{1}{\sqrt{2\pi}}) + -\frac{1}{2}z^2 $ where $f(u) = u^2$
 
@@ -96,12 +99,14 @@ lines(x.val,y.val,col=3)
 <summary>Answers</summary>
 
 For $g(x)$:
+
 - $a=4$
 - $b=1$
 - $h=1$
 - $k=-2$
 
 For $\ell(z)$
+
 - $a=-\frac{1}{2}$
 - $b=1$
 - $h=0$
@@ -110,6 +115,7 @@ For $\ell(z)$
 </details>
 
 2. Given $S(a) = \sum_{i=0}^n(y_i - ax_i)^2$, write out the following transformations of $S$.
+
 - $ T_1(a) = 132.74 - 0.5S(a) $
 - $ T_2(a) = 2 + S(a-4) $
 
@@ -133,6 +139,7 @@ Solve[{c11 x + c12 y - b1 == 0, c21 x + c22 y - b2 == 0}, {x, y}]
 ```
 
 When solving this by hand, here's what we obtained.  
+
 - $y = \frac{c_{1,1}b_2 - c_{2,1}b_1}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
 - $x = \frac{b_1 - c_{1,2}y}{c_{1,1}} = \frac{b_{1}c_{2,2} - b_{2}c_{1,2}}{c_{1,1}c_{2,2} - c_{2,1}c_{1,2}}$
 
@@ -242,6 +249,7 @@ y <- data$y
 ```
 
 This time use the model $f(x;b,m) = b+mx$.
+
 - Fit this model to the data using either the Least Squares or Maximum Likelihood method.
 - What is $f(4)$, the value predicted by the model at $x=4$. 
 - Find $x$ so that $f(x) = 5$.
@@ -308,6 +316,7 @@ uniroot(function(x){f(x)-5},c(-2,2))$root # 0.3402777
     - The sum of the squared errors is $S(b, m; x_i,y_i) = \sum_{i=1}^{n}(y_i - b - mx_i)^2$
 
 Because the loglikelihood function, in this case, is a transformation of the sum of the squared errors function, $\ell(b, m; x_i,y_i) = n\ln(\frac{1}{\sqrt{2\pi}}) - \frac{1}{2}S(b, m; x_i,y_i)$. The answer for the location of the extrema for both optimization problems is the same.
+
 - Since the answers using both methods are the same, what are the pros and cons of each method?
     - The loglikelihood method is more general. Since you see where the assumptions are used to write the loglikelihood function you can identify what you need to change in the likelihood function if the assumptions are changed.
       - While writing the objective function for least squares requires less thought work, this comes at a cost -- we cannot see where the assumptions are acting in the objective function.
@@ -316,6 +325,7 @@ Because the loglikelihood function, in this case, is a transformation of the sum
 
 ### Using the term the "best fit"
 The term "best fit" can be used in multiple context and thus has context specific meaning.
+
 - When we use the loglikelihood method (or least squares method) to fit a model to data, we are looking for the "best fit" of a deterministic model to data. 
     - We are looking for the "best" choice of parameters out of all possible values for the parameters that could be used in the general form of the deterministic model.
     - We are **not** looking for the "best" choice out of all possible deterministic models, because we have made an assumption about the form for the deterministic model we are fitting when we wrote down the error term formula.

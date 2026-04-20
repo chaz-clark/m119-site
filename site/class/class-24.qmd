@@ -14,6 +14,7 @@ Pick something from your prep today that you can share with your group in class.
 
 ### (1) Writing Equations (more practice)
 The goal of these exercises is to practice writing functions that model given situations. Each of the functions you create should depend on only **one variable**. You'll need this skill to solve applied optimization problems.
+
 - A right circular cone has a volume of 231 cubic inches, which is 1 gallon. (For example, if the height is $h=5$ inches then the radius is $r = ?$). Find a function that gives the radius in terms of its height. What is the domain of this function?
 
 - A light-rail system carries 80000 passengers per day at a fare of 2.25 dollars per ride. For each 5-cent increase/decrease in fare, surveys predict ridership will drop/grow by 250 passengers. (For example, if the fare is lowered to 2.00 dollars per ride, then the number of riders is ??? and the revenue is ???). Find a function giving the revenue as a function of $x$, the number of 5-cent increases. (Hint: first find a formula for the number of riders as a function of $x$, and the cost per ride as a function of $x$. Revenue is number of passengers multiplied by the cost per passenger.) What is the domain of this function?
@@ -21,12 +22,14 @@ The goal of these exercises is to practice writing functions that model given si
 ### (2) Partial Derivatives of a loglikelihood function
 Watch the videos below that walk you through finding the first and second partials of 
 $$\ell_2 = \ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) + \sum_{i=1}^{44} \left(-\frac{1}{2}(y_i - 100 - a_1t_i - a_2t_i^2)^2\right).$$
+
 - [First Partials](https://www.loom.com/share/faf8677c97d3471e82ef932733754eec?sharedAppSource=personal_library){target="_blank"} (~11 min)
 - [Second Partials](https://www.loom.com/share/e40fd32ff0df48dfaeeee70cd2d8534b?sharedAppSource=personal_library){target="_blank"} (~10 min)
 - [Calculating Constants](https://www.loom.com/share/1033f69c42e843db94624993e73c5764?sharedAppSource=personal_library){target="_blank"} (~7 min)
 After watching the videos, try to repeat the computations on your own so that you can discover where you have questions. 
 
 Now try repeating these computations yourself for $$\ell_6(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i - a_2(1-e^{-0.0003t}))^2.$$ 
+
 - [Partial derivatives of loglikelihood for f6](https://byuistats.github.io/M119/m119-docs/PDloglikelihoodFn6.html).
 
 <details>
@@ -191,6 +194,7 @@ Consider the model $f_1(t; a_1) = 100 + a_1t$.
 
 1. On the chalk board, as a group, go through the computations needed to obtain the loglikelihood function. Your job is to perform the needed computations and include enough explanations to show that $$\ell_1(a_1; \mathbf{t},\mathbf{y}) =
 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i
+
 - 100 - a_1t_i)^2.$$ 
 1. Compute the first derivative of the loglikelihood function, so compute $\frac{d\ell_1}{da_1}$. The solution is provided in Task 2.
 
