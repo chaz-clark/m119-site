@@ -431,8 +431,11 @@ window.Quarto = {
   <ul>
   <li><a href="#between-class-sessions---prep-for-day-32" id="toc-between-class-sessions---prep-for-day-32" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-32">Between Class Sessions - Prep for Day 32 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
   <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
   <li><a href="#install-mathematica" id="toc-install-mathematica" class="nav-link" data-scroll-target="#install-mathematica">(1) Install Mathematica</a></li>
   <li><a href="#least-squares-regression" id="toc-least-squares-regression" class="nav-link" data-scroll-target="#least-squares-regression">(2) <strong>Least Squares Regression</strong></a></li>
+  </ul></li>
   <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
   <ul class="collapse">
   <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
@@ -485,7 +488,9 @@ window.Quarto = {
 <!-- from Prep.GeneralInstructions -->
 <p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
 <p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
-<p><a id="Prep"></a> ## Preparation</p>
+<p><a id="Prep"></a></p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="install-mathematica" class="level3">
 <h3 class="anchored" data-anchor-id="install-mathematica">(1) Install Mathematica</h3>
 <p>Use the following link to access instructions for <a href="https://www.byui.edu/mathematics/student-resources/mathematica" target="_blank">installing Mathematica</a>. We will be using Mathematica frequently during the last several weeks of the semester. You will need Mathematica to complete Project 3. If you encounter any issues, address them with your group.</p>
@@ -531,6 +536,7 @@ Simple Linear Regression Solution
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(x.val,y.val,<span class="at">col=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <p><a id="PP"></a></p>
+</section>
 </section>
 <section id="regular-reminders" class="level2">
 <h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
@@ -622,9 +628,10 @@ Answer
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">url</span>(<span class="st">"https://chaz-clark.github.io/M119/data4_ls.csv"</span>))</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> data<span class="sc">$</span>x</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> data<span class="sc">$</span>y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Consider the model <span class="math inline">\(f(x; a) = a e^x\)</span>. We will fit this model to our data. Work with your group on the chalkboard to obtain the best fit parameters for this model using both 1. the maximum likelihood method, and</p>
+<p>Consider the model <span class="math inline">\(f(x; a) = a e^x\)</span>. We will fit this model to our data. Work with your group on the chalkboard to obtain the best fit parameters for this model using both</p>
 <ol type="1">
-<li>least squares.</li>
+<li><p>the maximum likelihood method, and</p></li>
+<li><p>least squares.</p></li>
 </ol>
 <section id="using-the-maximum-likelihood-method" class="level4">
 <h4 class="anchored" data-anchor-id="using-the-maximum-likelihood-method">Using the Maximum Likelihood Method</h4>
@@ -637,18 +644,19 @@ Answer
 </section>
 <section id="answer-questions-with-the-model" class="level4">
 <h4 class="anchored" data-anchor-id="answer-questions-with-the-model">Answer questions with the Model</h4>
-<p>Once you have your model, you can use it to answer questions.<br>
-1. What is <span class="math inline">\(f(4)\)</span>, the value predicted by the model at <span class="math inline">\(x=4\)</span>.</p>
+<p>Once you have your model, you can use it to answer questions.</p>
 <ol type="1">
-<li>Find <span class="math inline">\(x\)</span> so that <span class="math inline">\(f(x) = 5\)</span>.</li>
+<li><p>What is <span class="math inline">\(f(4)\)</span>, the value predicted by the model at <span class="math inline">\(x=4\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(x\)</span> so that <span class="math inline">\(f(x) = 5\)</span>.</p></li>
 </ol>
 <details>
 <summary>
 Solutions
 </summary>
-<p>Using <span class="math inline">\(f(x) = 3.187972 e^x\)</span>, we have 1. <span class="math inline">\(f(4) = 174.0574\)</span></p>
+<p>Using <span class="math inline">\(f(x) = 3.187972 e^x\)</span>, we have</p>
 <ol type="1">
-<li>uniroot yields about <span class="math inline">\(x = 0.45\)</span>.</li>
+<li><p><span class="math inline">\(f(4) = 174.0574\)</span></p></li>
+<li><p>uniroot yields about <span class="math inline">\(x = 0.45\)</span>.</p></li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>my_a <span class="ot">&lt;-</span> <span class="fu">sum</span>(y<span class="sc">*</span><span class="fu">exp</span>(x))<span class="sc">/</span><span class="fu">sum</span>(<span class="fu">exp</span>(x)<span class="sc">^</span><span class="dv">2</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>my_a  </span>

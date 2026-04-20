@@ -431,9 +431,12 @@ window.Quarto = {
   <ul>
   <li><a href="#between-class-sessions---prep-for-day-27" id="toc-between-class-sessions---prep-for-day-27" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-27">Between Class Sessions - Prep for Day 27 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
   <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
   <li><a href="#solving-linear-systems" id="toc-solving-linear-systems" class="nav-link" data-scroll-target="#solving-linear-systems">(1) Solving Linear Systems</a></li>
   <li><a href="#practice-identifying-extrema" id="toc-practice-identifying-extrema" class="nav-link" data-scroll-target="#practice-identifying-extrema">(2) Practice – Identifying Extrema</a></li>
   <li><a href="#reflection-writing-objectives-functions" id="toc-reflection-writing-objectives-functions" class="nav-link" data-scroll-target="#reflection-writing-objectives-functions">(3) Reflection – Writing Objectives Functions</a></li>
+  </ul></li>
   <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
   <ul class="collapse">
   <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
@@ -488,7 +491,9 @@ window.Quarto = {
 <!-- from Prep.GeneralInstructions -->
 <p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
 <p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
-<p><a id="Prep"></a> ## Preparation</p>
+<p><a id="Prep"></a></p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="solving-linear-systems" class="level3">
 <h3 class="anchored" data-anchor-id="solving-linear-systems">(1) Solving Linear Systems</h3>
 <p>We will need the result from our work below to finish Project 2 Task 3. Once we have more than one unknown parameter in our model, we have to solve a system of equations where every partial derivative equals zero, in order to locate the parameters that lead to maximum likelihood. We’ll solve a single system of equations, symbolically, and then use the result to answer lots of questions. The linear system we need to solve is <span class="math display">\[\left\{
@@ -668,6 +673,7 @@ Answer (level 3 problem)
 </ul>
 <p><a id="PP"></a></p>
 </section>
+</section>
 <section id="regular-reminders" class="level2">
 <h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
 <section id="skill-practice-ka-homework" class="level3">
@@ -831,8 +837,9 @@ Answers
 </section>
 <section id="activity---project-2-practice-with-f_1" class="level3">
 <h3 class="anchored" data-anchor-id="activity---project-2-practice-with-f_1">Activity - Project 2 Practice with <span class="math inline">\(f_1\)</span></h3>
-<p>We’ll spend some time working through parts of project 2. The point is to help each other by asking and answering questions. We’ll focus on the first model <span class="math inline">\(f_1(t; a_1) = 100 + a_1t\)</span>. The loglikelihood function, which task 1 has you derive, is <span class="math display">\[ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2.\]</span> 1. Compute the first derivative of <span class="math inline">\(\ell_1\)</span> with respect to <span class="math inline">\(a_1\)</span> and show that it can be written in the form <span class="math display">\[\frac{d\ell_1}{da_1} = \left(\sum_{i=1}^{44} t_i(y_i-100)\right) - \left(\sum_{i=1}^{44} t_i^2\right) a_1.\]</span></p>
+<p>We’ll spend some time working through parts of project 2. The point is to help each other by asking and answering questions. We’ll focus on the first model <span class="math inline">\(f_1(t; a_1) = 100 + a_1t\)</span>. The loglikelihood function, which task 1 has you derive, is <span class="math display">\[ \ell_1 = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i - 100 - a_1t_i)^2.\]</span></p>
 <ol type="1">
+<li><p>Compute the first derivative of <span class="math inline">\(\ell_1\)</span> with respect to <span class="math inline">\(a_1\)</span> and show that it can be written in the form <span class="math display">\[\frac{d\ell_1}{da_1} = \left(\sum_{i=1}^{44} t_i(y_i-100)\right) - \left(\sum_{i=1}^{44} t_i^2\right) a_1.\]</span></p></li>
 <li><p>Compute the second derivative of <span class="math inline">\(\ell_1\)</span> with respect to <span class="math inline">\(a_1\)</span> and show that it can be written in the form <span class="math display">\[\frac{d^2\ell_1}{da_1^2} = -\sum_{i=1}^{44} t_i^2.\]</span></p></li>
 <li><p>Use R (with seed=123) to actually compute the coefficients in your first and second derivatives above. (Use the sum function.) Check that you obtain the following:</p>
 <ul>

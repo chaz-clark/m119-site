@@ -396,8 +396,11 @@ window.Quarto = {
   <ul>
   <li><a href="#between-class-sessions---prep-for-day-42" id="toc-between-class-sessions---prep-for-day-42" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-42">Between Class Sessions - Prep for Day 42 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
   <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
   <li><a href="#make-connections" id="toc-make-connections" class="nav-link" data-scroll-target="#make-connections">(1) Make Connections</a></li>
   <li><a href="#begin-project-3" id="toc-begin-project-3" class="nav-link" data-scroll-target="#begin-project-3">(2) Begin Project 3</a></li>
+  </ul></li>
   <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
   <ul class="collapse">
   <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
@@ -447,7 +450,9 @@ window.Quarto = {
 <!-- from Prep.GeneralInstructions -->
 <p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
 <p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
-<p><a id="Prep"></a> ## Preparation</p>
+<p><a id="Prep"></a></p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="make-connections" class="level3">
 <h3 class="anchored" data-anchor-id="make-connections">(1) Make Connections</h3>
 <ul>
@@ -467,6 +472,7 @@ window.Quarto = {
 <li>Use your fitted models to calculate the required probabilities.</li>
 </ul>
 <p><a id="PP"></a></p>
+</section>
 </section>
 <section id="regular-reminders" class="level2">
 <h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
@@ -490,8 +496,9 @@ window.Quarto = {
 <section id="brain-gains" class="level2">
 <h2 class="anchored" data-anchor-id="brain-gains">Brain Gains</h2>
 <p>We’ll do this in small groups at the board, and then have a discussion. Take turns acting as scribe, and help each other complete the following. Remember anytime you need an to compute an integral to first write the integral on the board and then compute it with Mathematica.</p>
-<p>Consider the random variable <span class="math inline">\(X\)</span> whose probability density function is <span class="math inline">\(f(x) = k(15-x)\)</span> for <span class="math inline">\(0\leq x\leq 15\)</span>. 1. Find the value of <span class="math inline">\(k\)</span>.</p>
+<p>Consider the random variable <span class="math inline">\(X\)</span> whose probability density function is <span class="math inline">\(f(x) = k(15-x)\)</span> for <span class="math inline">\(0\leq x\leq 15\)</span>.</p>
 <ol type="1">
+<li><p>Find the value of <span class="math inline">\(k\)</span>.</p></li>
 <li><p>Compute the expected value and variance of <span class="math inline">\(X\)</span> (write down the integral needed, and then compute it with Mathematica).</p></li>
 <li><p>Compute <span class="math inline">\(P(X\leq 1)\)</span>, <span class="math inline">\(P(X\leq 2)\)</span> and then <span class="math inline">\(F(x) = P(X\leq x)\)</span>.</p></li>
 <li><p>The 60th percentile is the value <span class="math inline">\(x\)</span> so that <span class="math inline">\(P(X\leq x)=0.60\)</span>, in other words the value <span class="math inline">\(x\)</span> so that <span class="math inline">\(F(x) = 0.6\)</span>. Find the 60th percentile of this random variable.</p></li>
@@ -512,12 +519,20 @@ Definition: Percentile
 </summary>
 <p>A percentile is a number, <span class="math inline">\(x_p\)</span>, that satisfies the equation <span class="math inline">\(P(X \leq x_p) = \frac{p}{100}\)</span>. In other words, a percentile is a number <span class="math inline">\(x_p\)</span> that satisfies the equation <span class="math inline">\(F(x_p) = \frac{p}{100})\)</span>. - A percentile divides ordered values (outcomes of a random variable) into 100 equal groups (per 100). - A percentile is a number, <span class="math inline">\(x_p\)</span>, such that <span class="math inline">\(p\)</span>% of the values (outcomes of a random variable) are at or below this number.</p>
 </details>
-<p>There are two common ways we can compute a percentile. One way is to start with the cumulative distribution function. 1. Given the cumulative distribution function <span class="math inline">\(F(x) = \begin{cases}0 &amp; x \leq 1 \\1-\frac{1}{x} &amp; x &gt; 1 \\\end{cases}\)</span>, find the 90th percentile.</p>
+<p>There are two common ways we can compute a percentile. One way is to start with the cumulative distribution function.</p>
 <ol type="1">
-<li>Given the cumulative distribution function <span class="math inline">\(F(x) = \begin{cases}0 &amp; x \leq 0 \\1 - e^{-\lambda x} &amp; x &gt; 0 \\\end{cases}\)</span>, find the 50th percentile.</li>
+<li><p>Given the cumulative distribution function <span class="math inline">\(F(x) = \begin{cases}0 &amp; x \leq 1 \\1-\frac{1}{x} &amp; x &gt; 1 \\\end{cases}\)</span>, find the 90th percentile.</p></li>
+<li><p>Given the cumulative distribution function <span class="math inline">\(F(x) = \begin{cases}0 &amp; x \leq 0 \\1 - e^{-\lambda x} &amp; x &gt; 0 \\\end{cases}\)</span>, find the 50th percentile.</p></li>
 </ol>
-<p>If we are given a probability density function, then we can compute the percentile using an integral.<br>
-1. Given the probability density function <span class="math inline">\(f(x) = \frac{64}{(x+2)^5}\)</span> for <span class="math inline">\(x &gt; 0\)</span> (and 0 otherwise), find each of the following percentiles. (Write down the equation you need to solve and then use Mathematica to solve the integral equation.) - 60th percentile - 7th percentile - 99th percentile</p>
+<p>If we are given a probability density function, then we can compute the percentile using an integral.</p>
+<ol type="1">
+<li>Given the probability density function <span class="math inline">\(f(x) = \frac{64}{(x+2)^5}\)</span> for <span class="math inline">\(x &gt; 0\)</span> (and 0 otherwise), find each of the following percentiles. (Write down the equation you need to solve and then use Mathematica to solve the integral equation.)
+<ul>
+<li>60th percentile</li>
+<li>7th percentile</li>
+<li>99th percentile</li>
+</ul></li>
+</ol>
 <details>
 <summary>
 Solutions

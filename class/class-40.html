@@ -396,8 +396,11 @@ window.Quarto = {
   <ul>
   <li><a href="#between-class-sessions---prep-for-day-40" id="toc-between-class-sessions---prep-for-day-40" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-40">Between Class Sessions - Prep for Day 40 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
   <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
   <li><a href="#solving-a-system-of-equations" id="toc-solving-a-system-of-equations" class="nav-link" data-scroll-target="#solving-a-system-of-equations">(1) Solving a System of Equations</a></li>
   <li><a href="#continue-working-on-project-3-task-2" id="toc-continue-working-on-project-3-task-2" class="nav-link" data-scroll-target="#continue-working-on-project-3-task-2">(2) Continue working on Project 3 Task 2</a></li>
+  </ul></li>
   <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
   <ul class="collapse">
   <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
@@ -449,7 +452,9 @@ window.Quarto = {
 <!-- from Prep.GeneralInstructions -->
 <p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
 <p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
-<p><a id="Prep"></a> ## Preparation</p>
+<p><a id="Prep"></a></p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="solving-a-system-of-equations" class="level3">
 <h3 class="anchored" data-anchor-id="solving-a-system-of-equations">(1) Solving a System of Equations</h3>
 <ol type="1">
@@ -487,6 +492,7 @@ Var = Integrate[(x - EV)^2*f, bounds]
 StDev = Sqrt[Var]
 % // Simplify</code></pre>
 <p><a id="PP"></a></p>
+</section>
 </section>
 <section id="regular-reminders" class="level2">
 <h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
@@ -711,8 +717,9 @@ D[F, x]</code></pre>
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <section id="expected-value-and-variance-of-common-distributions" class="level3">
 <h3 class="anchored" data-anchor-id="expected-value-and-variance-of-common-distributions">Expected Value and Variance of Common Distributions</h3>
-<p>We found the expected value and variance for 4 common probability distributions. Let’s recap what we found. 1. For an exponential distribution, we have <span class="math inline">\(E[X] = ...\)</span> and <span class="math inline">\(\text{Var}[X] = ...\)</span>. (Where did we compute these?)</p>
+<p>We found the expected value and variance for 4 common probability distributions. Let’s recap what we found.</p>
 <ol type="1">
+<li><p>For an exponential distribution, we have <span class="math inline">\(E[X] = ...\)</span> and <span class="math inline">\(\text{Var}[X] = ...\)</span>. (Where did we compute these?)</p></li>
 <li><p>For a uniform distribution, we have <span class="math inline">\(E[X] = ...\)</span> and <span class="math inline">\(\text{Var}[X] = ...\)</span>. (Where did we compute these?)</p></li>
 <li><p>For a normal distribution with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>, we have <span class="math inline">\(E[X] = \mu\)</span> and <span class="math inline">\(\text{Var}[X] = \sigma^2\)</span>.</p></li>
 <li><p>For a gamma distribution with shape <span class="math inline">\(\alpha\)</span> and rate <span class="math inline">\(\beta\)</span>, we have <span class="math inline">\(E[X] = \frac{\alpha}{\beta}\)</span> and <span class="math inline">\(\text{Var}[X] = \frac{\alpha}{\beta^2}\)</span>.</p></li>
@@ -720,8 +727,9 @@ D[F, x]</code></pre>
 </section>
 <section id="method-of-moments" class="level3">
 <h3 class="anchored" data-anchor-id="method-of-moments">Method of Moments</h3>
-<p>The expected value and variance are identifying characteristics of a random variable. We can match these characteristics from the distribution with these characteristics of the data, and use this to determine unknown parameters in a model. Here are the steps: 1. Calculate the mean (expected value) of the distribution as a function of the parameters of the distribution.</p>
+<p>The expected value and variance are identifying characteristics of a random variable. We can match these characteristics from the distribution with these characteristics of the data, and use this to determine unknown parameters in a model. Here are the steps:</p>
 <ol type="1">
+<li><p>Calculate the mean (expected value) of the distribution as a function of the parameters of the distribution.</p></li>
 <li><p>Calculate the variance of the distribution as a function of the parameters of the distribution.</p></li>
 <li><p>Set the mean of the distribution equal to the mean of the data.</p></li>
 <li><p>Set the variance of the distribution equal to the variance of the data.</p></li>

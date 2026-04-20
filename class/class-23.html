@@ -396,7 +396,10 @@ window.Quarto = {
   <ul>
   <li><a href="#between-class-sessions---prep-for-day-23" id="toc-between-class-sessions---prep-for-day-23" class="nav-link active" data-scroll-target="#between-class-sessions---prep-for-day-23">Between Class Sessions - Prep for Day 23 </a><a id="tasklist" class="nav-link" data-scroll-target="undefined"></a>
   <ul class="collapse">
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
   <li><a href="#writing-equations" id="toc-writing-equations" class="nav-link" data-scroll-target="#writing-equations">(1) Writing Equations</a></li>
+  </ul></li>
   <li><a href="#regular-reminders" id="toc-regular-reminders" class="nav-link" data-scroll-target="#regular-reminders">Regular Reminders</a>
   <ul class="collapse">
   <li><a href="#skill-practice-ka-homework" id="toc-skill-practice-ka-homework" class="nav-link" data-scroll-target="#skill-practice-ka-homework">Skill Practice (KA Homework)</a></li>
@@ -445,7 +448,9 @@ window.Quarto = {
 <!-- from Prep.GeneralInstructions -->
 <p>Please spend around 2 hours working between class sessions, focusing on the tasks below. Use any extra time to complete KnewtonAlta assignments and/or work on Project tasks.</p>
 <p>Pick something from your prep today that you can share with your group in class. It might be something new that you learned. It might be questions you have that are still unanswered, or a question along with what helped you eventually answer it. It might be something tricky that you solved. It might be a review topic that helped you remember something. It might be a conversation you had with AI that was helpful. You will have a chance to share this with your peers during class. Come ready to articulate your thinking and questions.</p>
-<p><a id="Prep"></a> ## Preparation</p>
+<p><a id="Prep"></a></p>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <section id="writing-equations" class="level3">
 <h3 class="anchored" data-anchor-id="writing-equations">(1) Writing Equations</h3>
 <p>The goal of these exercises is to practice writing functions that model a given situation. Each of the functions you create should depend on only one variable. We’ll need this skill to solve applied optimization problems.</p>
@@ -471,6 +476,7 @@ window.Quarto = {
 </ul></li>
 </ol>
 <p><a id="PP"></a></p>
+</section>
 </section>
 <section id="regular-reminders" class="level2">
 <h2 class="anchored" data-anchor-id="regular-reminders">Regular Reminders</h2>
@@ -572,8 +578,9 @@ Solution
 </section>
 <section id="activity---partial-derivatives-for-ell_2." class="level3">
 <h3 class="anchored" data-anchor-id="activity---partial-derivatives-for-ell_2.">Activity - Partial Derivatives for <span class="math inline">\(\ell_2\)</span>.</h3>
-<p>The loglikelihood function for <span class="math inline">\(f_2(t; a_1,a_2) = 100 + a_1t +a_2t^2\)</span> is <span class="math display">\[\ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i- 100 - a_1t_i - a_2t_i^2)^2.\]</span> 1. Compute <span class="math inline">\(\dfrac{\partial \ell_2}{\partial a_1}\)</span>. We avoid using <span class="math inline">\((\ell_2)_{a_1}\)</span> notation here, because the double subscript is awkward. We could let <span class="math inline">\(\ell = \ell_2\)</span> and then write <span class="math inline">\(\ell_{a_1}\)</span> to resolve this.</p>
+<p>The loglikelihood function for <span class="math inline">\(f_2(t; a_1,a_2) = 100 + a_1t +a_2t^2\)</span> is <span class="math display">\[\ell_2(a_1,a_2; \mathbf{t},\mathbf{y}) = 44\ln\left(\frac{1}{\sqrt{2\pi}}\right) - \frac{1}{2}\sum_{i}^{44} (y_i- 100 - a_1t_i - a_2t_i^2)^2.\]</span></p>
 <ol type="1">
+<li><p>Compute <span class="math inline">\(\dfrac{\partial \ell_2}{\partial a_1}\)</span>. We avoid using <span class="math inline">\((\ell_2)_{a_1}\)</span> notation here, because the double subscript is awkward. We could let <span class="math inline">\(\ell = \ell_2\)</span> and then write <span class="math inline">\(\ell_{a_1}\)</span> to resolve this.</p></li>
 <li><p>Compute <span class="math inline">\(\dfrac{\partial \ell_2}{\partial a_2}\)</span>.</p></li>
 <li><p>Compute <span class="math inline">\(\dfrac{\partial^2 \ell_2}{\partial a_1^2}\)</span>. You computed <span class="math inline">\(\dfrac{\partial \ell_2}{\partial a_1}\)</span> above, so now compute its partial derivative with respect to <span class="math inline">\(a_1\)</span>.</p></li>
 <li><p>Compute <span class="math inline">\(\dfrac{\partial^2 \ell_2}{\partial a_2\partial a_1}\)</span>. You computed <span class="math inline">\(\dfrac{\partial \ell_2}{\partial a_1}\)</span> above, so now compute its partial derivative with respect to <span class="math inline">\(a_2\)</span>.</p></li>
@@ -586,8 +593,9 @@ Solution
 <h3 class="anchored" data-anchor-id="activity---derivative-practice">Activity - Derivative Practice</h3>
 <p>Use the remaining time to practice working with higher order derivatives and the chain rule. Both of these activities are carried over from previous days. Please spend time with each one (maybe half the rest of class on higher order derivatives, and the other half on the chain rule).<br>
 #### Higher order derivatives Open this <a href="../assets/docs/Higher_Order_Derivatives.pdf">Higher Order Derivatives worksheet</a> and take turns computing derivatives, passing the chalk after each problem. #### Activity - Chain Rule Practice For each pair of functions <span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span> below, write out the compositions <span class="math inline">\(f(g(x))\)</span> and <span class="math inline">\(g(f(x))\)</span>. Then compute the derivative of each composite function. As a suggestion, compute both <span class="math inline">\(f'(x)\)</span> and <span class="math inline">\(g'(x)\)</span> first, and then show how you can combine <span class="math inline">\(f,g,f',g'\)</span> to get the derivative of each composite function.<br>
-Remember to pass the chalk between each problem. 1. <span class="math inline">\(f(x) = 3x + 4\)</span>, <span class="math inline">\(g(x) = x^2 + 1\)</span></p>
+Remember to pass the chalk between each problem.</p>
 <ol type="1">
+<li><p><span class="math inline">\(f(x) = 3x + 4\)</span>, <span class="math inline">\(g(x) = x^2 + 1\)</span></p></li>
 <li><p><span class="math inline">\(f(x) = e^x\)</span>, <span class="math inline">\(g(x) = \sqrt{2x-5}\)</span></p></li>
 <li><p><span class="math inline">\(f(x) = \frac{1}{x}\)</span>, <span class="math inline">\(g(x) = 2\ln(x)\)</span></p></li>
 <li><p><span class="math inline">\(f(x) = (x-5)^4\)</span>, <span class="math inline">\(g(x) = \sqrt[3]{x^2}\)</span></p></li>
