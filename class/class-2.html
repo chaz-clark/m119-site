@@ -645,8 +645,8 @@ Note for step 2 — Setting up R in VS Code (click to expand)
 <li><p>For plots to display nicely in VS Code, install <code>httpgd</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"httpgd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then in VS Code settings search for “R plot” and enable <strong>R &gt; Plot: Use Httpgd</strong>.</p></li>
-<li><p>For knitting R Markdown files, install the <a href="https://quarto.org/docs/get-started/" target="_blank"><strong>Quarto CLI</strong></a> plus the Quarto VS Code extension — or run <code>rmarkdown::render("file.Rmd")</code> from the R terminal.</p></li>
-<li><p>Open an <code>.R</code> or <code>.Rmd</code> file and use <strong>Cmd/Ctrl + Enter</strong> to run the line at your cursor.</p></li>
+<li><p>For rendering Quarto documents, install the <a href="https://quarto.org/docs/get-started/" target="_blank"><strong>Quarto CLI</strong></a> plus the Quarto VS Code extension — then run <code>quarto render file.qmd</code> (or use the Quarto preview command from VS Code’s command palette).</p></li>
+<li><p>Open an <code>.R</code> or <code>.qmd</code> file and use <strong>Cmd/Ctrl + Enter</strong> to run the line at your cursor.</p></li>
 </ol>
 <p>Because course materials assume RStudio, if you’re on VS Code you’ll sometimes need to translate pane names (e.g.&nbsp;“Plots tab” → the httpgd browser window, “Environment” → the R Side Bar).</p>
 </details>
