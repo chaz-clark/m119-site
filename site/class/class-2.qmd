@@ -24,7 +24,7 @@ Our first Unit is focused on expanding our knowledge and understanding of functi
 
 1. $f(x) = 1-4x$
 
-| $x$ | $f(x)$ | $ (x, f(x)) $ |
+| $x$ | $f(x)$ | $(x, f(x))$ |
 |---|---|---|
 | -2 | 9 | (-2,9) |
 | -1 |  |  |
@@ -34,7 +34,7 @@ Our first Unit is focused on expanding our knowledge and understanding of functi
 
 2. $g(x) = |2x+4|$
 
-| $x$ | $g(x)$ | $ (x, g(x)) $ |
+| $x$ | $g(x)$ | $(x, g(x))$ |
 |---|---|---|
 | -4 | 4 | (-4,4) |
 | -3 |  |  |
@@ -44,7 +44,7 @@ Our first Unit is focused on expanding our knowledge and understanding of functi
 
 3. $h(x) = \frac{1}{2}x^2+3$
 
-| $x$ | $h(x)$ | $ (x, h(x)) $ |
+| $x$ | $h(x)$ | $(x, h(x))$ |
 |---|---|---|
 | -2 | 5 | (-2,5) |
 | -1 |  |  |
