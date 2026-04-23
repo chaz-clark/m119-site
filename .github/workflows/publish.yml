@@ -6,6 +6,9 @@ name: Publish Quarto Site
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Daily Schedule Update"]
+    types: [completed]
   workflow_dispatch:
 
 jobs:
