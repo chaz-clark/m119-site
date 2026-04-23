@@ -7,6 +7,10 @@ on:
 
 jobs:
   update-schedule:
+    # Runs on m119-site only. m119_master mirrors this file but doesn't own
+    # publishing; letting it run there creates duplicate bot commits and
+    # persistent divergence between the two remotes.
+    if: github.repository == 'chaz-clark/m119-site'
     runs-on: ubuntu-latest
     permissions:
       contents: write
