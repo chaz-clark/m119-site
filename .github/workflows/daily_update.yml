@@ -2,7 +2,7 @@ name: Daily Schedule Update
 
 on:
   schedule:
-    - cron: "15 16 * * 1-5"  # 10:15am MDT (UTC-6) Mon-Fri — adjust per term when teaching time changes
+    - cron: "0 6 * * *"  # 00:00 MDT (06:00 UTC) every day — flips banner to new day overnight
   workflow_dispatch:          # allow manual trigger
 
 jobs:
