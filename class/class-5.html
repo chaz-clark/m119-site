@@ -512,7 +512,7 @@ Possible Solutions
 T(x;a,b,c,d)
 &amp;= af(b(x+c))+d \\
 &amp;= a(b(x+c))^3+d \\
-&amp;= 8(1(x+5))^3+(-2) &amp;&amp;\text{using }a=8, b=1, c=5, d=-2 \\
+&amp;= 8(1(x+5))^3+(-2) \\
 &amp;= 8(x+5)^3 - 2\\
 &amp;= h(x).
 \end{align*}\]</span> There is more than one correct answer. Another completely valid solution is <span class="math inline">\(a=1, b=2, c=5, d=-2\)</span>, as <span class="math display">\[T(x;1,2,5,-2) = 1(2(x+5))^3+(-2) = 8(x+5)^3 - 2.\]</span></p>
@@ -521,7 +521,7 @@ T(x;a,b,c,d)
 T(x;a,b,c,d)
 &amp;= af(b(x+c))+d \\
 &amp;= a\sqrt{b(x+c)}+d \\
-&amp;= 4\sqrt{2(x-3)}+7 &amp;&amp;\text{using }a=4, b=2, c=-3, d=7 \\
+&amp;= 4\sqrt{2(x-3)}+7 \\
 &amp;= 4\sqrt{2x-6}+7\\
 &amp;= h(x).
 \end{align*}\]</span> It’s common to guess <span class="math inline">\(c=-6\)</span> at first, but then we compute <span class="math inline">\(T(x;4,2,-6,7) = 4\sqrt{2(x-6)}+7 = 4\sqrt{2x-12}+7,\)</span>$ which is incorrect. A guess, followed by an informed update, is a completely valid way to solve this problem.</p>
@@ -535,125 +535,83 @@ T(x;a,b,c,d)
 </section>
 <section id="transformations-of-a-function" class="level3">
 <h3 class="anchored" data-anchor-id="transformations-of-a-function">Transformations of a function</h3>
-<ol type="1">
-<li>Given a general form for a transformation of a function <span class="math inline">\(T(x) = af(b(x+c))+d\)</span> and the parent function <span class="math inline">\(f\)</span>, identify <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(d\)</span> for each of the transformations below.
-<ol type="1">
+<p><strong>Exercise 1.</strong> Given a general form for a transformation of a function <span class="math inline">\(T(x) = af(b(x+c))+d\)</span> and the parent function <span class="math inline">\(f\)</span>, identify <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(d\)</span> for each of the transformations below.</p>
+<ol type="a">
 <li><span class="math inline">\(r(x) = \frac{1}{4x} - 5\)</span> where <span class="math inline">\(f(u) = \frac{1}{u}\)</span></li>
 <li><span class="math inline">\(t(x) = \frac{1}{2}|3-x|+7\)</span> where <span class="math inline">\(f(u) = |u|\)</span></li>
 <li><span class="math inline">\(p(x) = -3x^5 -1\)</span> where <span class="math inline">\(f(u) = u^5\)</span></li>
 <li><span class="math inline">\(q(x) = x^2 - 4x + 9\)</span> where <span class="math inline">\(f(u) = u^2\)</span></li>
-</ol></li>
-<li>Let <span class="math inline">\(f(x;a,b) = ax^b\)</span>, a generic power function. Consider the transformation <span class="math inline">\(T(x;a,b,A,B,C,D) = Af(B(x-C);a,b)+D\)</span>. For each set of values for <span class="math inline">\(a,b,A,B,C,D\)</span> below, do the following.
-<ol type="1">
-<li>Identify the parent function, $ f(x; a,b) $. For example, if <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b=5\)</span>, then the parent function is <span class="math inline">\(f(x;2,5) = f(x) = 2x^5\)</span>.</li>
+</ol>
+<p><strong>Exercise 2.</strong> Let <span class="math inline">\(f(x;a,b) = ax^b\)</span>, a generic power function. Consider the transformation <span class="math inline">\(T(x;a,b,A,B,C,D) = Af(B(x-C);a,b)+D\)</span>. For each parameter set below, do the following:</p>
+<ol type="a">
+<li>Identify the parent function <span class="math inline">\(f(x;a,b)\)</span>. For example, if <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b=5\)</span>, then the parent function is <span class="math inline">\(f(x;2,5) = f(x) = 2x^5\)</span>.</li>
 <li>Write down the specific function <span class="math inline">\(T(x;A,B,C,D)\)</span> produced from the given values for the parameters <span class="math inline">\(A,B,C,D\)</span>.</li>
 <li>Adapt this <a href="https://www.desmos.com/calculator/5jc00j0rpr">Desmos calculator</a> to plot and compare the two functions.</li>
 </ol>
-<ul>
-<li><span class="math inline">\(a=1,b=2,A=1,B=1,C=0,D=0\)</span></li>
-</ul></li>
-</ol>
+<p><strong>Set 1.</strong> <span class="math inline">\(a=1,\ b=2,\ A=1,\ B=1,\ C=0,\ D=0\)</span></p>
 <details>
 <summary>
 Check
 </summary>
-$ a = 1 <span class="math inline">\(&lt;br&gt;\)</span> b = 2 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-f(x) &amp;= 1x^2 \\
+<p>Parent function with <span class="math inline">\(a=1,\ b=2\)</span>: <span class="math display">\[f(x) = 1x^2 = x^2\]</span></p>
+<p>Transformation with <span class="math inline">\(A=1,\ B=1,\ C=0,\ D=0\)</span>: <span class="math display">\[\begin{aligned}
+T(x) &amp;= 1\cdot f(1(x-0)) + 0 \\
+&amp;= 1\cdot[1(1(x-0))^2] + 0 \\
 &amp;= x^2
-\end{aligned}\]</span>
-<p>$</p>
-$ A = 1 <span class="math inline">\(&lt;br&gt;\)</span> B = 1 <span class="math inline">\(&lt;br&gt;\)</span> C = 0 <span class="math inline">\(&lt;br&gt;\)</span> D = 0 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-T(x) &amp;= 1f(1(x-0)) + 0 \\
-&amp;= 1[1(1(x-0))^2] + 0 \\
-&amp;= 1[1(1(x))^2] + 0 \\
-&amp;= 1[1(x)^2] + 0 \\
-&amp;= x^2
-\end{aligned}\]</span>
-<p>$</p>
-<p>Notice <span class="math inline">\(T(x)\)</span>, the “transformed function”, is the same as <span class="math inline">\(f(x)\)</span>, the “parent function”, there is “no” transformation (or only a trivial transformation) in this case.</p>
+\end{aligned}\]</span></p>
+<p>Notice <span class="math inline">\(T(x)\)</span>, the “transformed function”, is the same as <span class="math inline">\(f(x)\)</span>, the “parent function” — there is no transformation (or only a trivial transformation) in this case.</p>
 </details>
-<pre><code>- $a=1,b=2,A=1,B=1,C=3,D=4$</code></pre>
+<p><strong>Set 2.</strong> <span class="math inline">\(a=1,\ b=2,\ A=1,\ B=1,\ C=3,\ D=4\)</span></p>
 <details>
 <summary>
 Check
 </summary>
-$ a = 1 <span class="math inline">\(&lt;br&gt;\)</span> b = 2 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-f(x) &amp;= 1x^2 \\
-&amp;= x^2
-\end{aligned}\]</span>
-<p>$</p>
-$ A = 1 <span class="math inline">\(&lt;br&gt;\)</span> B = 1 <span class="math inline">\(&lt;br&gt;\)</span> C = 3 <span class="math inline">\(&lt;br&gt;\)</span> D = 4 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-T(x) &amp;= 1f(1(x-3)) + 4 \\
-&amp;= 1(1(x-3))^2 + 4 \\
+<p>Parent function with <span class="math inline">\(a=1,\ b=2\)</span>: <span class="math display">\[f(x) = x^2\]</span></p>
+<p>Transformation with <span class="math inline">\(A=1,\ B=1,\ C=3,\ D=4\)</span>: <span class="math display">\[\begin{aligned}
+T(x) &amp;= 1\cdot f(1(x-3)) + 4 \\
 &amp;= (x-3)^2 + 4
-\end{aligned}\]</span>
-<p>$</p>
+\end{aligned}\]</span></p>
 </details>
-<pre><code>- $a=1,b=2,A=3,B=4,C=0,D=0$</code></pre>
+<p><strong>Set 3.</strong> <span class="math inline">\(a=1,\ b=2,\ A=3,\ B=4,\ C=0,\ D=0\)</span></p>
 <details>
 <summary>
 Check
 </summary>
-$ a = 1 <span class="math inline">\(&lt;br&gt;\)</span> b = 2 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-f(x) &amp;= 1x^2 \\
-&amp;= x^2
-\end{aligned}\]</span>
-<p>$</p>
-$ A = 3 <span class="math inline">\(&lt;br&gt;\)</span> B = 4 <span class="math inline">\(&lt;br&gt;\)</span> C = 0 <span class="math inline">\(&lt;br&gt;\)</span> D = 0 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-T(x) &amp;= 3f(4(x-0)) + 0 \\
-&amp;= 3f(4x) \\
-&amp;= 3(4x)^2 \\
-&amp;= 3(16x^2) \\
+<p>Parent function with <span class="math inline">\(a=1,\ b=2\)</span>: <span class="math display">\[f(x) = x^2\]</span></p>
+<p>Transformation with <span class="math inline">\(A=3,\ B=4,\ C=0,\ D=0\)</span>: <span class="math display">\[\begin{aligned}
+T(x) &amp;= 3\cdot f(4(x-0)) + 0 \\
+&amp;= 3\cdot(4x)^2 \\
+&amp;= 3\cdot 16x^2 \\
 &amp;= 48x^2
-\end{aligned}\]</span>
-<p>$</p>
+\end{aligned}\]</span></p>
 </details>
-<pre><code>- $a=3,b=4,A=1,B=1,C=0,D=0$</code></pre>
+<p><strong>Set 4.</strong> <span class="math inline">\(a=3,\ b=4,\ A=1,\ B=1,\ C=0,\ D=0\)</span></p>
 <details>
 <summary>
 Check
 </summary>
-<p>$ a = 3 <span class="math inline">\(&lt;br&gt;\)</span> b = 4 <span class="math inline">\(&lt;br&gt;\)</span> f(x) = 3x^4 $</p>
-$ A = 1 <span class="math inline">\(&lt;br&gt;\)</span> B = 1 <span class="math inline">\(&lt;br&gt;\)</span> C = 0 <span class="math inline">\(&lt;br&gt;\)</span> D = 0 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-T(x) &amp;= 1f(1(x-0)) + 0 \\
-&amp;= 1f(x) \\
-&amp;= 3x^4
-\end{aligned}\]</span>
-<p>$</p>
-<p>Notice <span class="math inline">\(T(x)\)</span>, the “transformed function”, is the same as <span class="math inline">\(f(x)\)</span>, the “parent function”, there is “no” transformation (or only a trivial transformation) in this case.</p>
+<p>Parent function with <span class="math inline">\(a=3,\ b=4\)</span>: <span class="math display">\[f(x) = 3x^4\]</span></p>
+<p>Transformation with <span class="math inline">\(A=1,\ B=1,\ C=0,\ D=0\)</span>: <span class="math display">\[\begin{aligned}
+T(x) &amp;= 1\cdot f(1(x-0)) + 0 \\
+&amp;= f(x) = 3x^4
+\end{aligned}\]</span></p>
+<p>Notice <span class="math inline">\(T(x)\)</span>, the “transformed function”, is the same as <span class="math inline">\(f(x)\)</span>, the “parent function” — there is no transformation (or only a trivial transformation) in this case.</p>
 </details>
-<pre><code>- $a=-1,b=3,A=2,B=-4,C=5,D=-6$</code></pre>
+<p><strong>Set 5.</strong> <span class="math inline">\(a=-1,\ b=3,\ A=2,\ B=-4,\ C=5,\ D=-6\)</span></p>
 <details>
 <summary>
 Check
 </summary>
-$ a = -1 <span class="math inline">\(&lt;br&gt;\)</span> b = 3 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-f(x) &amp;= -1x^3 \\
-&amp;= -x^3
-\end{aligned}\]</span>
-<p>$</p>
-$ A = 2 <span class="math inline">\(&lt;br&gt;\)</span> B = -4 <span class="math inline">\(&lt;br&gt;\)</span> C = 5 <span class="math inline">\(&lt;br&gt;\)</span> D = -6 <span class="math inline">\(&lt;br&gt;\)</span>
-<span class="math display">\[\begin{aligned}
-T(x) &amp;= 2f(-4(x-5)) + (-6) \\
-&amp;= 2[-1(-4(x-5))^3] - 6 \\
-&amp;= -2((-4)^3(x-5)^3) - 6 \\
-&amp;= -2(-64(x-5)^3) - 6 \\
+<p>Parent function with <span class="math inline">\(a=-1,\ b=3\)</span>: <span class="math display">\[f(x) = -x^3\]</span></p>
+<p>Transformation with <span class="math inline">\(A=2,\ B=-4,\ C=5,\ D=-6\)</span>: <span class="math display">\[\begin{aligned}
+T(x) &amp;= 2\cdot f(-4(x-5)) + (-6) \\
+&amp;= 2\cdot[-1\cdot(-4(x-5))^3] - 6 \\
+&amp;= -2\cdot(-64(x-5)^3) - 6 \\
 &amp;= 128(x-5)^3 - 6
-\end{aligned}\]</span>
-<p>$</p>
+\end{aligned}\]</span></p>
 </details>
-<ol type="1">
-<li><p>Each parameter ( <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span>, and <span class="math inline">\(D\)</span> ) above controls some aspect of the graph of the function. Explore changing these parameters and write a description of what each parameter controls.</p></li>
-<li><p>Replace <span class="math inline">\(f(x;a,b) = ax^b\)</span> above with <span class="math inline">\(f(x;a,b) = a(b^x)\)</span> and then repeat the second exercise. Do your conclusions from part 3 still hold?</p></li>
-</ol>
+<p><strong>Exercise 3.</strong> Each parameter (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span>, and <span class="math inline">\(D\)</span>) above controls some aspect of the graph of the function. Explore changing these parameters and write a description of what each parameter controls.</p>
+<p><strong>Exercise 4.</strong> Replace <span class="math inline">\(f(x;a,b) = ax^b\)</span> above with <span class="math inline">\(f(x;a,b) = a(b^x)\)</span> and then repeat Exercise 2. Do your conclusions from Exercise 3 still hold?</p>
 </section>
 </section>
 <section id="discussion" class="level2">
@@ -670,7 +628,7 @@ T(x) &amp;= 2f(-4(x-5)) + (-6) \\
 <h3 class="anchored" data-anchor-id="example-project-cohesive-analysis">Example Project (Cohesive Analysis)</h3>
 <p>We will complete Example Project Task 1 together and then put together a cohesive analysis to complete task 1 of the example project. We’ll be building a histogram as we complete the example project. You built a scatter plot when you complete Project 1 Task 1.</p>
 <ul>
-<li>We’ll open the <a href="../assets/docs/example_project.html" target="_blank">Example Project Instructions</a></li>
+<li>We’ll open the <a href="https://chaz-clark.github.io/M119/Projects/project1_practice.html" target="_blank">Example Project Instructions</a></li>
 <li>Use our work on this Example Project and the feedback you receive from your peer feedback to guide in your revisions on Project 1 Task 1. Remember, you can revise and resubmit your Project 1 Task 1 today if you have found something you need to change in order to meet the specs (or if there is something you would like to update).</li>
 <li>Are there any questions about the expectations for the project tasks?</li>
 </ul>
