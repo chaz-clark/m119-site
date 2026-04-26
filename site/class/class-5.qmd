@@ -54,7 +54,7 @@ For $g(x) = 8(x+5)^3 - 2$ we can chose $a=8, b=1, c=5, d=-2$.  The function $T(x
 T(x;a,b,c,d) 
 &= af(b(x+c))+d \\
 &= a(b(x+c))^3+d \\
-&= 8(1(x+5))^3+(-2) &&\text{using }a=8, b=1, c=5, d=-2 \\
+&= 8(1(x+5))^3+(-2) \\
 &= 8(x+5)^3 - 2\\
 &= h(x). 
 \end{align*}$$
@@ -65,7 +65,7 @@ For $h(x) = 4\sqrt{2x-6} +7$ we can chose $a=4, b=2, c=-3, d=7$. The function $T
 T(x;a,b,c,d) 
 &= af(b(x+c))+d \\
 &= a\sqrt{b(x+c)}+d \\
-&= 4\sqrt{2(x-3)}+7 &&\text{using }a=4, b=2, c=-3, d=7 \\
+&= 4\sqrt{2(x-3)}+7 \\
 &= 4\sqrt{2x-6}+7\\
 &= h(x). 
 \end{align*}$$
@@ -79,147 +79,112 @@ It's common to guess $c=-6$ at first, but then we compute $T(x;4,2,-6,7) = 4\sqr
 Compare and contrast your Project 1 Task 1 cohesive analyses. Are all plots introduced with words. Do you have sentences, outside of the code chunks, describing what is happening? If not, help each other add appropriate sentences. 
 
 ### Transformations of a function
-1. Given a general form for a transformation of a function $T(x) = af(b(x+c))+d$ and the parent function $f$, identify $a$, $b$, $c$, and $d$ for each of the transformations below. 
-    1. $r(x) = \frac{1}{4x} - 5$ where $f(u) = \frac{1}{u}$
-    1. $t(x) = \frac{1}{2}|3-x|+7$ where $f(u) = |u|$
-    1. $p(x) = -3x^5 -1$ where $f(u) = u^5$
-    1. $q(x) = x^2 - 4x + 9$ where $f(u) = u^2$
 
-1. Let $f(x;a,b) = ax^b$, a generic power function. Consider the transformation $T(x;a,b,A,B,C,D) = Af(B(x-C);a,b)+D$. For each set of values for $a,b,A,B,C,D$ below, do the following. 
-    1.  Identify the parent function, $ f(x; a,b) $. For example, if $a=2$ and $b=5$, then the parent function is $f(x;2,5) = f(x) = 2x^5$. 
-    1. Write down the specific function $T(x;A,B,C,D)$ produced from the given values for the parameters $A,B,C,D$. 
-    1. Adapt this [Desmos calculator](https://www.desmos.com/calculator/5jc00j0rpr) to plot and compare the two functions.
-    - $a=1,b=2,A=1,B=1,C=0,D=0$
+**Exercise 1.** Given a general form for a transformation of a function $T(x) = af(b(x+c))+d$ and the parent function $f$, identify $a$, $b$, $c$, and $d$ for each of the transformations below.
+
+a. $r(x) = \frac{1}{4x} - 5$ where $f(u) = \frac{1}{u}$
+b. $t(x) = \frac{1}{2}|3-x|+7$ where $f(u) = |u|$
+c. $p(x) = -3x^5 -1$ where $f(u) = u^5$
+d. $q(x) = x^2 - 4x + 9$ where $f(u) = u^2$
+
+**Exercise 2.** Let $f(x;a,b) = ax^b$, a generic power function. Consider the transformation $T(x;a,b,A,B,C,D) = Af(B(x-C);a,b)+D$. For each parameter set below, do the following:
+
+a. Identify the parent function $f(x;a,b)$. For example, if $a=2$ and $b=5$, then the parent function is $f(x;2,5) = f(x) = 2x^5$.
+b. Write down the specific function $T(x;A,B,C,D)$ produced from the given values for the parameters $A,B,C,D$.
+c. Adapt this [Desmos calculator](https://www.desmos.com/calculator/5jc00j0rpr) to plot and compare the two functions.
+
+**Set 1.** $a=1,\ b=2,\ A=1,\ B=1,\ C=0,\ D=0$
 
 <details>
 <summary>Check</summary>
 
-$ a = 1 $<br>
-$ b = 2 $<br>
-$\begin{aligned} 
-f(x) &= 1x^2 \\ 
-&= x^2 
-\end{aligned}$
+Parent function with $a=1,\ b=2$:
+$$f(x) = 1x^2 = x^2$$
 
-$ A = 1 $<br>
-$ B = 1 $<br>
-$ C = 0 $<br>
-$ D = 0 $<br>
-$\begin{aligned} 
-T(x) &= 1f(1(x-0)) + 0 \\ 
-&= 1[1(1(x-0))^2] + 0 \\ 
-&= 1[1(1(x))^2] + 0 \\ 
-&= 1[1(x)^2] + 0 \\ 
+Transformation with $A=1,\ B=1,\ C=0,\ D=0$:
+$$\begin{aligned}
+T(x) &= 1\cdot f(1(x-0)) + 0 \\
+&= 1\cdot[1(1(x-0))^2] + 0 \\
 &= x^2
-\end{aligned}$
+\end{aligned}$$
 
-Notice $T(x)$, the "transformed function", is the same as $f(x)$, the "parent function", there is "no" transformation (or only a trivial transformation) in this case.
+Notice $T(x)$, the "transformed function", is the same as $f(x)$, the "parent function" — there is no transformation (or only a trivial transformation) in this case.
 
 </details>
 
-    - $a=1,b=2,A=1,B=1,C=3,D=4$
+**Set 2.** $a=1,\ b=2,\ A=1,\ B=1,\ C=3,\ D=4$
 
 <details>
 <summary>Check</summary>
 
-$ a = 1 $<br>
-$ b = 2 $<br>
-$\begin{aligned} 
-f(x) &= 1x^2 \\ 
-&= x^2 
-\end{aligned}$
+Parent function with $a=1,\ b=2$:
+$$f(x) = x^2$$
 
-$ A = 1 $<br>
-$ B = 1 $<br>
-$ C = 3 $<br>
-$ D = 4 $<br>
-$\begin{aligned} 
-T(x) &= 1f(1(x-3)) + 4 \\ 
-&= 1(1(x-3))^2 + 4 \\ 
+Transformation with $A=1,\ B=1,\ C=3,\ D=4$:
+$$\begin{aligned}
+T(x) &= 1\cdot f(1(x-3)) + 4 \\
 &= (x-3)^2 + 4
-\end{aligned}$
+\end{aligned}$$
 
 </details>
- 
 
-    - $a=1,b=2,A=3,B=4,C=0,D=0$
+**Set 3.** $a=1,\ b=2,\ A=3,\ B=4,\ C=0,\ D=0$
 
 <details>
 <summary>Check</summary>
 
-$ a = 1 $<br>
-$ b = 2 $<br>
-$\begin{aligned} 
-f(x) &= 1x^2 \\ 
-&= x^2 
-\end{aligned}$
+Parent function with $a=1,\ b=2$:
+$$f(x) = x^2$$
 
-$ A = 3 $<br>
-$ B = 4 $<br>
-$ C = 0 $<br>
-$ D = 0 $<br>
-$\begin{aligned} 
-T(x) &= 3f(4(x-0)) + 0 \\ 
-&= 3f(4x) \\ 
-&= 3(4x)^2 \\ 
-&= 3(16x^2) \\ 
-&= 48x^2 
-\end{aligned}$
+Transformation with $A=3,\ B=4,\ C=0,\ D=0$:
+$$\begin{aligned}
+T(x) &= 3\cdot f(4(x-0)) + 0 \\
+&= 3\cdot(4x)^2 \\
+&= 3\cdot 16x^2 \\
+&= 48x^2
+\end{aligned}$$
 
 </details>
 
-    - $a=3,b=4,A=1,B=1,C=0,D=0$
+**Set 4.** $a=3,\ b=4,\ A=1,\ B=1,\ C=0,\ D=0$
 
 <details>
 <summary>Check</summary>
 
-$ a = 3 $<br>
-$ b = 4 $<br>
-$ f(x) = 3x^4 $
+Parent function with $a=3,\ b=4$:
+$$f(x) = 3x^4$$
 
-$ A = 1 $<br>
-$ B = 1 $<br>
-$ C = 0 $<br>
-$ D = 0 $<br>
-$\begin{aligned} 
-T(x) &= 1f(1(x-0)) + 0 \\ 
-&= 1f(x) \\ 
-&= 3x^4 
-\end{aligned}$
+Transformation with $A=1,\ B=1,\ C=0,\ D=0$:
+$$\begin{aligned}
+T(x) &= 1\cdot f(1(x-0)) + 0 \\
+&= f(x) = 3x^4
+\end{aligned}$$
 
-Notice $T(x)$, the "transformed function", is the same as $f(x)$, the "parent function", there is "no" transformation (or only a trivial transformation) in this case.
+Notice $T(x)$, the "transformed function", is the same as $f(x)$, the "parent function" — there is no transformation (or only a trivial transformation) in this case.
 
 </details>
 
-    - $a=-1,b=3,A=2,B=-4,C=5,D=-6$
+**Set 5.** $a=-1,\ b=3,\ A=2,\ B=-4,\ C=5,\ D=-6$
 
 <details>
 <summary>Check</summary>
 
-$ a = -1 $<br>
-$ b = 3 $<br>
-$ \begin{aligned}
-f(x) &= -1x^3 \\ 
-&= -x^3 
-\end{aligned}$
+Parent function with $a=-1,\ b=3$:
+$$f(x) = -x^3$$
 
-$ A = 2 $<br>
-$ B = -4 $<br>
-$ C = 5 $<br>
-$ D = -6 $<br>
-$\begin{aligned} 
-T(x) &= 2f(-4(x-5)) + (-6) \\ 
-&= 2[-1(-4(x-5))^3] - 6 \\ 
-&= -2((-4)^3(x-5)^3) - 6 \\ 
-&= -2(-64(x-5)^3) - 6 \\ 
+Transformation with $A=2,\ B=-4,\ C=5,\ D=-6$:
+$$\begin{aligned}
+T(x) &= 2\cdot f(-4(x-5)) + (-6) \\
+&= 2\cdot[-1\cdot(-4(x-5))^3] - 6 \\
+&= -2\cdot(-64(x-5)^3) - 6 \\
 &= 128(x-5)^3 - 6
-\end{aligned}$
+\end{aligned}$$
 
 </details>
 
-1.  Each parameter ( $A$, $B$, $C$, and $D$ ) above controls some aspect of the graph of the function. Explore changing these parameters and write a description of what each parameter controls. 
+**Exercise 3.** Each parameter ($A$, $B$, $C$, and $D$) above controls some aspect of the graph of the function. Explore changing these parameters and write a description of what each parameter controls.
 
-1. Replace $f(x;a,b) = ax^b$ above with $f(x;a,b) = a(b^x)$ and then repeat the second exercise. Do your conclusions from part 3 still hold? 
+**Exercise 4.** Replace $f(x;a,b) = ax^b$ above with $f(x;a,b) = a(b^x)$ and then repeat Exercise 2. Do your conclusions from Exercise 3 still hold?
 
 ## Discussion
 ### Project 1 Task 1 discussion
@@ -230,7 +195,7 @@ T(x) &= 2f(-4(x-5)) + (-6) \\
 ### Example Project (Cohesive Analysis)
 We will complete Example Project Task 1 together and then put together a cohesive analysis to complete task 1 of the example project.  We'll be building a histogram as we complete the example project.  You built a scatter plot when you complete Project 1 Task 1. 
 
-- We'll open the [Example Project Instructions](../assets/docs/example_project.html){target="_blank"}
+- We'll open the [Example Project Instructions](https://chaz-clark.github.io/M119/Projects/project1_practice.html){target="_blank"}
 - Use our work on this Example Project and the feedback you receive from your peer feedback to guide in your revisions on Project 1 Task 1. Remember, you can revise and resubmit your Project 1 Task 1 today if you have found something you need to change in order to meet the specs (or if there is something you would like to update).
 - Are there any questions about the expectations for the project tasks? 
 
