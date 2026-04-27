@@ -75,14 +75,24 @@ The symbol $\sum_{k=1}^n a_k$ means to find the sum of the $a_k$ terms for each 
 
 For example:
 
-- $\sum_{k=2}^5 (3k-1) = \underbrace{ (3(2)-1) }_{k=2} + \underbrace{ (3(3)-1) }_{k=3}  + \underbrace{ (3(4)-1) }_{k=4} +\underbrace{ (3(5)-1) }_{k=5} = 5+8+11+14 =  38$.
+$$\begin{aligned}
+\sum_{k=2}^5 (3k-1)
+  &= \underbrace{(3(2)-1)}_{k=2} + \underbrace{(3(3)-1)}_{k=3} + \underbrace{(3(4)-1)}_{k=4} + \underbrace{(3(5)-1)}_{k=5} \\
+  &= 5 + 8 + 11 + 14 \\
+  &= 38
+\end{aligned}$$
 
 **Product Notation**<br>
 The symbol $\prod_{j=1}^n a_j$ means to find the product of the $a_j$ terms for each integer from $j=1$ to $j=n$.
 
 For example:
 
-- $\prod_{m=2}^5 (3m-1) = \underbrace{ (3(2)-1) }_{k=2}\cdot \underbrace{ (3(3)-1) }_{k=3}\cdot \underbrace{ (3(4)-1) }_{k=4}\cdot \underbrace{ (3(5)-1) }_{k=5} = 5\cdot 8\cdot 11\cdot 14=6160$.
+$$\begin{aligned}
+\prod_{m=2}^5 (3m-1)
+  &= \underbrace{(3(2)-1)}_{m=2} \cdot \underbrace{(3(3)-1)}_{m=3} \cdot \underbrace{(3(4)-1)}_{m=4} \cdot \underbrace{(3(5)-1)}_{m=5} \\
+  &= 5 \cdot 8 \cdot 11 \cdot 14 \\
+  &= 6160
+\end{aligned}$$
 
 We can use R to compute sums and products as follows. 
 
@@ -129,14 +139,23 @@ When you finish, check your solution using R.
 <details>
 <summary>Solution</summary>
 
-- We find $\sum_{k=4}^{8} (5-k) = (5-4) + (5-5) + (5-6) + (5-7) + (5-8) = -5$.
+We find:
+
+$$\begin{aligned}
+\sum_{k=4}^{8} (5-k)
+  &= (5-4) + (5-5) + (5-6) + (5-7) + (5-8) \\
+  &= 1 + 0 + (-1) + (-2) + (-3) \\
+  &= -5
+\end{aligned}$$
 
 ```r
 x <- c(4,5,6,7,8)
 sum(5-x)
 ```
 
-- We compute $\prod_{n=1}^4 n = 1(2)(3)(4) = 24$. 
+We compute:
+
+$$\prod_{n=1}^4 n = 1 \cdot 2 \cdot 3 \cdot 4 = 24$$
 
 ```r
 prod(1:4)
@@ -148,7 +167,14 @@ Since $4! = \prod_{n=1}^4 n$, you can also use the factorial command in R to com
 factorial(4)
 ```
 
-- We see $\frac{1}{3}\sum_{i=3}^{7} (2+i^2) = \frac{1}{3}\left( (2+3^2) + (2+4^2) + (2+5^2) + (2+6)^2 + (2+7^2)\right) = \frac{145}{3}.$
+We see:
+
+$$\begin{aligned}
+\frac{1}{3}\sum_{i=3}^{7} (2+i^2)
+  &= \frac{1}{3}\left[(2+3^2) + (2+4^2) + (2+5^2) + (2+6^2) + (2+7^2)\right] \\
+  &= \frac{1}{3}(11 + 18 + 27 + 38 + 51) \\
+  &= \frac{145}{3}
+\end{aligned}$$
 
 ```r
 i <- 3:7
@@ -227,7 +253,7 @@ Let's apply these definitions to some examples.
     1. Give an interval on which $f$ is non-negative.  Then give another. 
     1. Give an interval on which $f$ is negative.  Then give another. 
     1. Give an interval on which $f$ is both increasing and decreasing. 
-1. Draw the graph of a function that  is constant on $ (0,2) $, strictly increasing on $ (2,5) $, decreasing on $ (5,10) $, nonnegative on $ [4,7] $, and negative on both $ [0,4) $ and $ (7,10] $.
+1. Draw the graph of a function that is constant on $(0,2)$, strictly increasing on $(2,5)$, decreasing on $(5,10)$, nonnegative on $[4,7]$, and negative on both $[0,4)$ and $(7,10]$.
 
 ### Sum and Product Notation
 Start by discussing any questions from the prep. The complete the following with your team. 
