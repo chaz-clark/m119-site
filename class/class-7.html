@@ -543,14 +543,20 @@ Definition: <strong>Negative</strong> on the interval <span class="math inline">
 <h3 class="anchored" data-anchor-id="sum-and-product-notation">(2) Sum and Product Notation</h3>
 <p><strong>Sum Notation</strong><br> The symbol <span class="math inline">\(\sum_{k=1}^n a_k\)</span> means to find the sum of the <span class="math inline">\(a_k\)</span> terms for each integer from <span class="math inline">\(k=1\)</span> to <span class="math inline">\(k=n\)</span> .</p>
 <p>For example:</p>
-<ul>
-<li><span class="math inline">\(\sum_{k=2}^5 (3k-1) = \underbrace{ (3(2)-1) }_{k=2} + \underbrace{ (3(3)-1) }_{k=3}  + \underbrace{ (3(4)-1) }_{k=4} +\underbrace{ (3(5)-1) }_{k=5} = 5+8+11+14 =  38\)</span>.</li>
-</ul>
+<p><span class="math display">\[\begin{aligned}
+\sum_{k=2}^5 (3k-1)
+  &amp;= \underbrace{(3(2)-1)}_{k=2} + \underbrace{(3(3)-1)}_{k=3} + \underbrace{(3(4)-1)}_{k=4} + \underbrace{(3(5)-1)}_{k=5} \\
+  &amp;= 5 + 8 + 11 + 14 \\
+  &amp;= 38
+\end{aligned}\]</span></p>
 <p><strong>Product Notation</strong><br> The symbol <span class="math inline">\(\prod_{j=1}^n a_j\)</span> means to find the product of the <span class="math inline">\(a_j\)</span> terms for each integer from <span class="math inline">\(j=1\)</span> to <span class="math inline">\(j=n\)</span>.</p>
 <p>For example:</p>
-<ul>
-<li><span class="math inline">\(\prod_{m=2}^5 (3m-1) = \underbrace{ (3(2)-1) }_{k=2}\cdot \underbrace{ (3(3)-1) }_{k=3}\cdot \underbrace{ (3(4)-1) }_{k=4}\cdot \underbrace{ (3(5)-1) }_{k=5} = 5\cdot 8\cdot 11\cdot 14=6160\)</span>.</li>
-</ul>
+<p><span class="math display">\[\begin{aligned}
+\prod_{m=2}^5 (3m-1)
+  &amp;= \underbrace{(3(2)-1)}_{m=2} \cdot \underbrace{(3(3)-1)}_{m=3} \cdot \underbrace{(3(4)-1)}_{m=4} \cdot \underbrace{(3(5)-1)}_{m=5} \\
+  &amp;= 5 \cdot 8 \cdot 11 \cdot 14 \\
+  &amp;= 6160
+\end{aligned}\]</span></p>
 <p>We can use R to compute sums and products as follows.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">2</span>,<span class="dv">5</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">3</span><span class="sc">*</span>k<span class="dv">-1</span>)</span>
@@ -604,20 +610,27 @@ Definition: <strong>Negative</strong> on the interval <span class="math inline">
 <summary>
 Solution
 </summary>
-<ul>
-<li>We find <span class="math inline">\(\sum_{k=4}^{8} (5-k) = (5-4) + (5-5) + (5-6) + (5-7) + (5-8) = -5\)</span>.</li>
-</ul>
+<p>We find:</p>
+<p><span class="math display">\[\begin{aligned}
+\sum_{k=4}^{8} (5-k)
+  &amp;= (5-4) + (5-5) + (5-6) + (5-7) + (5-8) \\
+  &amp;= 1 + 0 + (-1) + (-2) + (-3) \\
+  &amp;= -5
+\end{aligned}\]</span></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">5</span><span class="sc">-</span>x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li>We compute <span class="math inline">\(\prod_{n=1}^4 n = 1(2)(3)(4) = 24\)</span>.</li>
-</ul>
+<p>We compute:</p>
+<p><span class="math display">\[\prod_{n=1}^4 n = 1 \cdot 2 \cdot 3 \cdot 4 = 24\]</span></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prod</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Since <span class="math inline">\(4! = \prod_{n=1}^4 n\)</span>, you can also use the factorial command in R to commute this product.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li>We see <span class="math inline">\(\frac{1}{3}\sum_{i=3}^{7} (2+i^2) = \frac{1}{3}\left( (2+3^2) + (2+4^2) + (2+5^2) + (2+6)^2 + (2+7^2)\right) = \frac{145}{3}.\)</span></li>
-</ul>
+<p>We see:</p>
+<p><span class="math display">\[\begin{aligned}
+\frac{1}{3}\sum_{i=3}^{7} (2+i^2)
+  &amp;= \frac{1}{3}\left[(2+3^2) + (2+4^2) + (2+5^2) + (2+6^2) + (2+7^2)\right] \\
+  &amp;= \frac{1}{3}(11 + 18 + 27 + 38 + 51) \\
+  &amp;= \frac{145}{3}
+\end{aligned}\]</span></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>i <span class="ot">&lt;-</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">7</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>((<span class="dv">2</span><span class="sc">+</span>i<span class="sc">^</span><span class="dv">2</span>))</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>((<span class="dv">2</span><span class="sc">+</span>i<span class="sc">^</span><span class="dv">2</span>))<span class="sc">/</span><span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -686,7 +699,7 @@ Definition: <strong>Negative</strong> on the interval <span class="math inline">
 <li>Give an interval on which <span class="math inline">\(f\)</span> is negative. Then give another.</li>
 <li>Give an interval on which <span class="math inline">\(f\)</span> is both increasing and decreasing.</li>
 </ol></li>
-<li>Draw the graph of a function that is constant on $ (0,2) $, strictly increasing on $ (2,5) $, decreasing on $ (5,10) $, nonnegative on $ [4,7] $, and negative on both $ [0,4) $ and $ (7,10] $.</li>
+<li>Draw the graph of a function that is constant on <span class="math inline">\((0,2)\)</span>, strictly increasing on <span class="math inline">\((2,5)\)</span>, decreasing on <span class="math inline">\((5,10)\)</span>, nonnegative on <span class="math inline">\([4,7]\)</span>, and negative on both <span class="math inline">\([0,4)\)</span> and <span class="math inline">\((7,10]\)</span>.</li>
 </ol>
 </section>
 <section id="sum-and-product-notation-1" class="level3">
