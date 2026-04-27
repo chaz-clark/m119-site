@@ -97,7 +97,7 @@ For each parameter set below, do the following:
 
 - Identify the parent function $f(x;a,b)$. For example, if $a=2$ and $b=5$, then the parent function is $f(x;2,5) = f(x) = 2x^5$.
 - Write down the specific function $T(x;A,B,C,D)$ produced from the given values for the parameters $A,B,C,D$.
-- Adapt this [Desmos calculator](https://www.desmos.com/calculator/5jc00j0rpr) to plot and compare the two functions.
+- Adapt this [Desmos calculator](https://www.desmos.com/calculator/v4yeg616jq) to plot and compare the two functions.
 
 ##### Set 1
 
@@ -226,7 +226,7 @@ We will complete Example Project Task 1 together and then put together a cohesiv
 1. Give an example of a transformed power function. 
 
 1. Give an example of a transformed exponential function. 
-1. Let's use this [Desmos calculator](https://www.desmos.com/calculator/5jc00j0rpr) and create some examples, exploring how parameters transform a function.
+1. Let's use this [Desmos calculator](https://www.desmos.com/calculator/v4yeg616jq) and create some examples, exploring how parameters transform a function.
 
 ---
 
