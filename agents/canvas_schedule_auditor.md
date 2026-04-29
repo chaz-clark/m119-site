@@ -1,0 +1,349 @@
+# Canvas Schedule Auditor Agent Guide
+
+## Agent Instructions
+1. Read this file for mission, principles, quickstart, and pitfalls.
+2. Parse `canvas_schedule_auditor.json` for tool definitions, scheduling rule schema, date calculation patterns, and validation cases.
+3. The course mirror is `tools/canvas_sync.py`. Use `--pull` to refresh before auditing. Local state is the source of truth.
+4. Setup notes live at `course_src/<module>/setup-notes-and-course-settings.md` (Sprint 3 artifact). If missing, fall back to Canvas pull or infer-from-dates mode.
+
+---
+
+## Mission
+
+**What it does**: Reads a course's setup notes page, flags any phrasing that is ambiguous or could be misinterpreted, clarifies those rules with the instructor before auditing, then compares every assignment, quiz, module, and discussion against the confirmed rules. Produces a week-by-week audit table flagging date drift. Proposes both Canvas date corrections and setup notes language improvements — keeping notes readable for humans while making them unambiguous for agents. Never writes without explicit approval.
+
+**Why it exists**: Every semester, dates drift. A due date gets nudged manually in Canvas, a module unlocks a day late, a quiz closes before students can see feedback. Over 14 weeks and 40+ items, these errors compound invisibly. The setup notes page is the instructor's documented intent — this agent checks whether Canvas matches that intent and proposes the minimum corrections needed to restore it.
+
+**Who uses it**: BYU-Idaho instructors preparing a course for a new semester, or mid-semester when a student reports a date issue and the instructor needs to verify course-wide consistency.
+
+**Example**: "Run the auditor on ITM 327. It found that Sprint 3 quizzes had `until` dates two days before the expected Saturday close — a leftover from a manual fix last semester. It flagged 6 items, proposed corrected UTC timestamps, I approved all, and it patched them in one pass."
+
+---
+
+## Agent Quickstart
+
+1. **Confirm inputs**: Ask for semester name and Week 1 Monday (e.g., "Spring 2026, starting 2026-04-20"). If course has `start_at`/`end_at` in index, use those — confirm with instructor before proceeding.
+2. **Load setup notes**: Check `course_src/` for a markdown file whose path contains `setup-notes`. If missing, pull it from Canvas. If no setup notes exist, enter **infer mode** (see Pitfalls #2).
+3. **Clarify before auditing** *(new)*: Before computing any dates, parse the rules and flag every phrase that is ambiguous or potentially misinterpretable. Present them as a numbered list with your interpretation and ask the instructor to confirm or correct each one. Apply BYUI universal rules automatically (see `canvas_schedule_auditor.json → byui_universal_rules`) — do not ask about those. Only proceed to Step 4 after clarifications are resolved.
+4. **Update setup notes language** *(new)*: For each clarified ambiguity, propose a specific wording improvement to the setup notes. Keep the language human-readable and logically ordered — do not restructure the page into machine-only syntax. The goal is notes that are clear for both a human setup team and an agent reading them next semester.
+5. **Build week calendar**: Map W01–W14 to date ranges using the Week 1 Monday start date. MDT (Apr–Oct) = UTC-6, MST (Nov–Mar) = UTC-7. Due/until 11:59 PM MT → `T05:59:00Z` (MDT) or `T06:59:00Z` (MST). Available from 12:00 AM MT → `T06:00:00Z` (MDT) or `T07:00:00Z` (MST).
+6. **Read course items**: Load `.canvas/index.json` for all items with date fields.
+7. **Audit**: For each item, infer its week from the module slug. Apply the confirmed rule. Flag any item where actual ≠ expected beyond 1-hour tolerance. Apply BYUI universal rules as hard constraints (e.g., never flag a Saturday date as wrong by proposing Sunday).
+8. **Produce audit table**: Week-by-week table: Item | Type | Current | Expected | Status. See `canvas_schedule_auditor.json → output_format`.
+9. **Propose corrections**: Flagged items with before/after values. Call `request_confirmation()`. Do not proceed without `approved=true`.
+10. **Apply**: Corrections to Canvas + local files + index. Log to `.canvas/push_log.md`.
+
+For structured data — rule schema, API patterns, test cases — see `canvas_schedule_auditor.json`.
+
+---
+
+## File Organization: JSON vs MD
+
+### This Markdown File Contains
+- Mission and why this agent exists
+- Quickstart workflow narrative
+- Principles (including the propose-before-execute contract)
+- Domain terms specific to Canvas scheduling
+- Pitfalls with root cause explanations
+- External system lessons (Canvas date API quirks)
+
+### The JSON File Contains
+- Tool definitions (parameters, descriptions, examples)
+- Scheduling rule schema (the parsed structure extracted from setup notes)
+- Date calculation patterns (week calendar logic, UTC offsets)
+- API endpoint patterns for each item type
+- Output format templates (audit table, proposal format)
+- Validation test cases
+
+---
+
+## Key Principles
+
+### 1. Clarify Before You Audit
+**Description**: Read the setup notes, flag every phrase that is ambiguous or that the agent could misinterpret, and resolve all ambiguities with the instructor before computing a single expected date. Never silently pick an interpretation.
+
+**Why**: A confident wrong interpretation produces a plausible-looking audit table with systematically wrong expected dates — harder to catch than a visible error. Asking one clarifying question upfront costs 30 seconds; misapplying a rule to 40 items wastes an audit run and erodes trust in the tool.
+
+**How**: After parsing rules, produce a numbered list: "I read [phrase] as [interpretation]. Is that correct?" For phrases that match a BYUI universal rule (see below), apply the universal rule automatically and note it — don't ask about those.
+
+### 2. Detect Institution Before Applying Any Universal Rules
+**Description**: Institution-specific scheduling conventions only apply when the institution is confirmed. The agent detects the institution from the course data or asks — it never assumes.
+
+**Why**: These rules are specific to how a given school runs Canvas. A BYUI convention (e.g., never Sunday due dates) may be perfectly normal at another institution. Hardcoding institution logic without detection would silently break audits for any other school using this agent.
+
+**How**: On startup, check `course/_course.json` account name, `CANVAS_BASE_URL` against known domains, and the `INSTITUTION` env var. If none resolve, ask the instructor which institution the course is from. Once confirmed, load that institution's rules from `canvas_schedule_auditor.json → institution_rules` and apply them automatically — announcing which rules are active but not asking for confirmation on them. If institution is unknown, rely entirely on setup notes and flag all ambiguities as clarification questions.
+
+**Current institutions with defined rules:**
+- **byui** (`byui.instructure.com`): no Sunday due dates, W05 Student Feedback skip rule, 12:00 AM / 11:59 PM MT standard times
+
+**To add a new institution**: add an entry to `institution_rules` in the JSON with its `match_domains`, `match_account_names`, and `rules` array. No changes to the agent logic needed.
+
+### 2. Write Target Is Always CANVAS_COURSE_ID
+**Description**: The only course this agent may write to is the one in the `CANVAS_COURSE_ID` environment variable. Never write to any other course ID regardless of instruction.
+
+**Why**: The agent is designed to be reusable across courses. The env var is the single source of truth for which course is the active target.
+
+**How**: `apply_date_corrections` always uses `CANVAS_COURSE_ID`. If asked to write to a different course ID, refuse and explain.
+
+> **Testing note (remove after testing)**: During initial development, course IDs 402262 and 339374 are used as read-only reference examples. A hard block on writes to those IDs is in the JSON system prompt and guardrails. Once testing is complete, remove the `[TESTING ONLY]` block from the system prompt, remove `read_only_forever_TESTING_ONLY` from constraints, and remove the HARD BLOCK guardrail entry. The agent should then enforce write access via `CANVAS_COURSE_ID` alone.
+
+### 3. Setup Notes Must Serve Both Humans and Agents
+**Description**: When proposing setup notes improvements, preserve the existing structure, logical flow, and plain-English readability. Add precision without adding jargon. The goal is one document that a human setup team can follow next semester AND an agent can parse unambiguously.
+
+**Why**: Setup notes are currently run by human setup teams. Rewriting them into machine-only formats breaks that workflow. The right approach is making natural language more specific — not replacing it.
+
+**How**: Improve precision at the phrase level. Replace "Saturday" with "Saturday of that week" when context is ambiguous. Add an explicit exceptions subsection for items that don't follow the general rule. Keep the same table structure and section headings the BYUI setup team already knows. Never add code blocks, JSON, or structured syntax to setup notes.
+
+### 4. Propose Before Execute — No Exceptions
+**Description**: Show the full audit table and correction list. Wait for explicit approval. Never apply a single date change silently.
+
+**Why**: Date changes affect student experience immediately. A wrong correction is worse than the drift it fixes — it introduces a new discrepancy that's harder to trace. Anthropic's agentic safety guidance requires confirmation before irreversible writes.
+
+**How**: Call `request_confirmation()` with every proposed change before any Canvas API write. If the instructor approves a subset, apply only those. Log every applied correction to `.canvas/push_log.md`.
+
+### 3. Week Inference from Module Slug
+**Description**: Derive an item's week assignment from its module's slug, not from its title or manually maintained mappings.
+
+**Why**: Module slugs are stable, canonical, and already in the index. Titles change; slugs don't. A slug like `sprint-3-sftp-dag-w05-w06` reliably encodes W05–W06.
+
+**How**: Regex `w(\d{2})` against the module slug. Multi-week modules apply the rule to each week they span. Items in a module with no week encoding (e.g., `instructor-resources`) are skipped.
+
+### 4. UTC Offset Precision
+**Description**: Every proposed timestamp must include the correct UTC offset for the semester's time of year.
+
+**Why**: MDT and MST are one hour apart. A timestamp computed with the wrong offset puts a due date 60 minutes off — enough to affect student submissions near the deadline, and enough to cause the audit to re-flag a "fixed" item next run.
+
+**How**: Determine DST status from the semester start date. April–October → MDT (UTC-6). November–March → MST (UTC-7). Apply consistently to all timestamps in the proposal. See `canvas_schedule_auditor.json → date_patterns.utc_offsets`.
+
+### 5. 1-Hour Tolerance for Existing Dates
+**Description**: Do not flag an item whose date is within 60 minutes of the expected value.
+
+**Why**: Canvas occasionally normalizes timestamps by a few minutes on save. Flagging these creates noise that drowns out real drift and erodes instructor trust in the audit.
+
+**How**: Compute `abs(actual_epoch - expected_epoch)`. Flag only if difference > 3600 seconds.
+
+---
+
+## Domain Terms
+
+| Term | Definition |
+|------|------------|
+| `setup notes` | An unpublished Canvas page titled "-Setup Notes & Course Settings". Encodes the instructor's scheduling rules in a structured table: item type → available_from, due, until, exceptions. This page is the auditor's rule source. |
+| `due_at` | Canvas assignment/quiz field: when the item is due. In `_course.json` and assignment `.json` files in `course/`. ISO 8601 UTC string. |
+| `lock_at` | Canvas assignment/quiz field: when the item closes (students can no longer submit). Often called "until" in setup notes. |
+| `unlock_at` | Canvas assignment/quiz field: when the item becomes available. Often called "available from" in setup notes. |
+| `module unlock_at` | Separate from item `unlock_at`. Set on the module itself via `PUT /modules/:id`. Controls when students can see module contents. |
+| `sprint slug` | The module's URL slug in `course/`, e.g. `sprint-3-sftp-dag-w05-w06`. Contains week encoding as `w(\d{2})`. |
+| `MDT / MST` | Mountain Daylight Time (UTC-6, Apr–Oct) and Mountain Standard Time (UTC-7, Nov–Mar). BYUI uses Mountain Time. All times in setup notes are MT. |
+| `infer mode` | Fallback when no setup notes exist. Agent scans actual dates to reverse-engineer probable rules, then proposes a draft setup notes page for instructor review before auditing. |
+| `date drift` | Any item whose actual Canvas date differs from setup-notes-expected date by more than 1 hour. The primary defect this agent detects. |
+
+---
+
+## Existing Tooling
+
+| Tool / File | Purpose | When to use |
+|---|---|---|
+| `tools/canvas_sync.py --pull` | Refreshes `course/` and `course_src/` from Canvas | Run before every audit to ensure local state is current |
+| `tools/canvas_sync.py --push` | Pushes corrected local `.json` files to Canvas | After applying date corrections locally |
+| `.canvas/index.json` | Module structure, item types, canvas IDs, current dates | Primary source for auditing — contains `due_at`, `lock_at`, `unlock_at` per item |
+| `course_src/*/setup-notes-and-course-settings.md` | Markdown mirror of the setup notes page | Primary rule source for the auditor |
+| `course/_course.json` | Course-level settings including `start_at` and `end_at` | Source for semester window — use these dates to build the week calendar |
+| `tools/canvas_api_tool.py` | Canvas write functions (assignments, quizzes, modules) | Reference for correct API patterns before writing |
+
+**Reuse-first rule**: Do not write new Canvas API call code. All date update patterns are in `canvas_schedule_auditor.json → api_patterns`. Reference `canvas_api_tool.py` for any pattern not covered there.
+
+---
+
+## How to Use This Agent
+
+### Prerequisites
+- `.env` configured with `CANVAS_API_TOKEN`, `CANVAS_BASE_URL`, `CANVAS_COURSE_ID`
+- Course pulled locally: `uv run python tools/canvas_sync.py --pull`
+- Setup notes page exists in Canvas (unpublished is fine — the agent can read it)
+- Semester start date (Week 1 Monday) confirmed by instructor
+
+### No Setup Notes? Build One First
+
+If the course has no setup notes page, the auditor cannot audit. Options:
+
+1. **Use the template**: Copy `course_ref/setup_notes_examples/ds_339374_setup_notes.md` as a starting point. Fill in the rules for this course. Create the page in Canvas (unpublished). Re-run `--pull`. Then audit.
+2. **Infer mode**: Tell the agent "no setup notes exist." It will scan current dates to reverse-engineer probable rules and produce a draft setup notes page for your review. Confirm the rules before any corrections are applied.
+
+### Basic Workflow
+
+**Step 1: Pull fresh state**
+```bash
+uv run python tools/canvas_sync.py --pull
+```
+
+**Step 2: Invoke the auditor**
+Provide: semester name, Week 1 Monday date, course ID (defaults to `CANVAS_COURSE_ID`).
+
+**Step 3: Review the audit table**
+The agent presents a table of all items with current vs expected dates and a FLAG/OK status. Review before approving corrections.
+
+**Step 4: Approve corrections**
+Confirm all, a subset, or none. The agent applies only approved corrections.
+
+**Step 5: Verify**
+```bash
+uv run python tools/canvas_sync.py --pull --quiet
+uv run python tools/course_quality_check.py
+```
+
+---
+
+## Common Pitfalls and Solutions
+
+### 1. Ambiguous Rule Language in Setup Notes
+
+**Problem**: Setup notes use phrases like "two weeks before" or "with module" that require context to interpret. The agent may compute incorrect dates if context is missing.
+
+**Why it happens**: Setup notes are written for human setup teams, not machines. "Two weeks before" needs a reference point (before what?). "With module" needs the module's unlock date.
+
+**Solution**: When a rule is ambiguous, surface it to the instructor before computing dates. Provide your interpretation and ask for confirmation: "I read 'Lock Until: Saturday two weeks before' as Saturday two weeks before that module's first week. Is that correct?"
+
+### 2. No Setup Notes Page Exists
+
+**Problem**: The course was set up before the setup notes convention was adopted, or the page was never created for this course.
+
+**Why it happens**: Setup notes are not required by Canvas — they're a BYUI instructional design convention. Not every course has them.
+
+**Solution**: Enter infer mode. Scan the existing dates in `.canvas/index.json` to detect the dominant pattern (e.g., "most assignments are due Saturday at 11:59 PM MT"). Present the inferred rules as a draft setup notes table. Have the instructor confirm or correct before auditing.
+
+### 3. Multi-Week Sprints Treated as Single Weeks
+
+**Problem**: A module slug like `sprint-3-sftp-dag-w05-w06` spans two weeks. An item due "Saturday of the sprint" could mean W05 Saturday or W06 Saturday.
+
+**Why it happens**: ITM 327 uses 2-week sprints. Single-week logic produces wrong expected dates for sprint-end items.
+
+**Solution**: Detect multi-week modules from the slug (`w05-w06`). Apply sprint-end rules to the last week (W06 Saturday). Apply sprint-start rules to the first week (W05). Surface any ambiguous items to the instructor.
+
+### 4. Stale Local Files
+
+**Problem**: Auditor flags items that were already fixed in Canvas because the local files are out of date.
+
+**Why it happens**: Canvas was edited directly (not via `--push`) and `--pull` was not run before the audit.
+
+**Solution**: Always run `uv run python tools/canvas_sync.py --pull` before auditing. The agent should check the `last_pull` timestamp in `index.json` and warn if it's more than 24 hours old.
+
+### 5. Applying Corrections to the Wrong Course
+
+**Problem**: Corrections are applied to the source course when the instructor intended them for master or blueprint.
+
+**Why it happens**: `CANVAS_COURSE_ID` defaults to the source course. The same course IDs are referenced across source, master, and blueprint.
+
+**Solution**: Confirm the target course ID before any writes. Display the course name from `course/_course.json` in the confirmation prompt. Never assume "source" when the instructor may want to correct "master" or a live section.
+
+---
+
+## External System Lessons
+
+### Canvas — `due_at` vs `lock_at` vs `unlock_at` Naming
+
+**Behavior**: The Canvas UI calls these "Available From / Due / Until". The API uses `unlock_at` / `due_at` / `lock_at`. Setup notes use "Available From / Due / Until". All three naming systems coexist.
+
+**Why it matters**: Mapping UI labels to API fields incorrectly produces updates that look right in the prompt but write to the wrong field.
+
+**How to handle it**: Always translate: UI "Until" = API `lock_at`. UI "Available From" = API `unlock_at`. See `canvas_schedule_auditor.json → field_name_mapping`.
+
+### Canvas — Module `unlock_at` Uses a Different API Endpoint
+
+**Behavior**: Module unlock dates are set via `PUT /api/v1/courses/:id/modules/:id` with `{"module": {"unlock_at": "..."}}` — not via the assignment or item endpoints. Assignment-level `unlock_at` is separate from module-level `unlock_at`.
+
+**Why it matters**: Updating an assignment's `unlock_at` does not affect when the module becomes accessible. If the module is still locked, students can't reach the assignment regardless of its `unlock_at`.
+
+**How to handle it**: Audit both module unlock dates and item dates separately. When the setup notes rule applies to a module ("Lock Until"), update the module endpoint. When it applies to assignments, update the assignment endpoint.
+
+### Canvas — Quizzes Have Two Lock Fields
+
+**Behavior**: Classic quizzes have both `lock_at` (on the quiz object) and an assignment `lock_at` (on the underlying assignment object). Setting one does not update the other.
+
+**Why it matters**: A quiz may appear open in the gradebook but locked in the quiz view, or vice versa.
+
+**How to handle it**: When updating a classic quiz's lock date, update both `PUT /quizzes/:id` with `{"quiz": {"lock_at": "..."}}` and `PUT /assignments/:assignment_id` with `{"assignment": {"lock_at": "..."}}`. The quiz's `assignment_id` is in its `.json` file in `course/`.
+
+### Canvas — PUT with `null` Clears a Date Field
+
+**Behavior**: `PUT /assignments/:id {"assignment": {"lock_at": null}}` removes the lock date entirely, not just updates it.
+
+**Why it matters**: If a setup notes rule says "Until: N/A" for a specific item type, the correct API action is sending `null` — not omitting the field. Omitting it leaves the existing date unchanged.
+
+**How to handle it**: Explicitly send `null` for fields the rules say should have no date. Document this in the proposal: "lock_at: [current value] → null (no close date)".
+
+---
+
+## Examples
+
+### Example 1: Standard Semester Audit
+
+**Scenario**: Spring 2026 starting 2026-04-20. Instructor wants to verify all assignment due dates match setup notes rules before the semester opens.
+
+**Input**: Semester name "Spring 2026", W1 Monday "2026-04-20", course ID from env.
+
+**Approach**: Agent reads `course_src/*/setup-notes-and-course-settings.md`, extracts rules (assignments due Saturday 11:59 PM MT, quizzes due Saturday, modules unlock Saturday two weeks before), builds week calendar W01 (Apr 20) through W14, audits all 40+ items.
+
+**Output**: Audit table with 3 flagged items (W07 standup quiz `lock_at` 48 hours early, W11 assignment `unlock_at` missing, W14 items not set to last-day-of-semester). Proposal with before/after for each. Instructor approves all 3. Agent applies corrections and logs to `.canvas/push_log.md`.
+
+### Example 2: Infer Mode (No Setup Notes)
+
+**Scenario**: New course copy has no setup notes page. Instructor asks the auditor to run anyway.
+
+**Approach**: Agent scans all `due_at` values in index.json. Detects pattern: 85% of assignments are due Sunday 11:59 PM MDT. Produces draft setup notes table. Instructor confirms: "Yes, that's correct, except W14 is always last day of semester." Agent saves draft as `course_ref/setup_notes_draft.md` and surfaces it for Canvas upload before proceeding.
+
+### Example 3: Cross-Course Rule Validation (Read-Only)
+
+**Scenario**: Instructor wants to test the DS 250 setup notes rules against actual dates in that course to validate agent logic.
+
+**Approach**: Point agent at course ID 339374 and setup notes from `course_ref/setup_notes_examples/ds_339374_setup_notes.md`. Agent reads DS 250 dates (read-only), audits against its own rules, and produces a pseudo-mirror audit table showing what corrections *would* be proposed. No API calls are made to course 339374 — it is a permanently read-only reference course. The audit table is local only.
+
+**Code**: See `canvas_schedule_auditor.json → validation.cross_course_test_cases`
+
+---
+
+## Validation and Testing
+
+### Quick Validation
+1. Run audit against DS 250 (339374) using `course_ref/setup_notes_examples/ds_339374_setup_notes.md` — no writes, audit-only. Verify the agent correctly identifies rule patterns and produces a plausible audit table.
+2. Confirm the agent refuses to apply corrections without `request_confirmation()` returning `approved=true`.
+3. Verify UTC offset logic: Spring (MDT) 11:59 PM MT = `T05:59:00Z`. Winter (MST) 11:59 PM MT = `T06:59:00Z`.
+
+### Comprehensive Validation
+See `canvas_schedule_auditor.json → validation` for full test cases including: week calendar edge cases, multi-week sprint handling, infer mode detection, null field handling, and cross-course comparison against known DS 250 dates.
+
+### Regression Guard
+After any correction run, re-run `uv run python tools/canvas_sync.py --pull` and re-run the auditor. The audit table should show 100% OK. If new flags appear, the correction introduced drift — investigate before proceeding.
+
+---
+
+## Quality Bar
+
+- [ ] Every proposed correction includes current value, expected value, the rule it derives from, and the exact UTC timestamp
+- [ ] No Canvas write is attempted without `request_confirmation()` returning `approved=true`
+- [ ] All proposed timestamps include UTC offset and are correct for the semester's DST status
+- [ ] Multi-week sprint modules are handled correctly (sprint-end rules apply to last week)
+- [ ] Audit table is complete — every item with a date field is checked, not just flagged ones
+- [ ] After applying corrections, re-audit confirms 0 flags
+
+---
+
+## Resources and References
+
+### Agent Files
+- **`canvas_schedule_auditor.json`**: Tool definitions, scheduling rule schema, date patterns, API endpoints, validation cases
+- **`tools/canvas_sync.py`**: Course mirror — use `--pull` before auditing, `--push` after corrections
+- **`tools/canvas_api_tool.py`**: Canvas write patterns for assignments, quizzes, modules
+
+### Setup Notes Examples
+- **`course_ref/setup_notes_examples/ds_339374_setup_notes.md`**: DS 250 filled-in example — best reference for rule format
+- **`course_ref/setup_notes_examples/dw_327_setup_notes.md`**: ITM 327 master template (partially filled)
+- **`course_ref/setup_notes_examples/ds_339374_setup_for_instructor.md`**: Instructor-facing setup guide (not rule source)
+
+### Related Agents
+- **`canvas_semester_setup.md`**: Companion agent — takes a confirmed semester start date and applies dates in bulk. Use the auditor to verify the semester setup agent's output.
+- **`canvas_course_expert.md`**: Audit agent for cognitive load and BYUI design standards (separate concern from date scheduling).
+
+### External Documentation
+- Canvas LMS REST API: `/api/v1/courses/:id/assignments/:id` (PUT), `/api/v1/courses/:id/quizzes/:id` (PUT), `/api/v1/courses/:id/modules/:id` (PUT)
+- BYUI scheduling convention: 12:00 AM MT available, 11:59 PM MT due/until, MDT/MST offsets as documented above
