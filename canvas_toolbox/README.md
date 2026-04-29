@@ -50,6 +50,57 @@ That's the core loop. Everything else builds on it.
 
 ---
 
+## Using canvas_toolbox as an upstream for course repos
+
+The common pattern: each Canvas course gets its own git repo (for that semester's `course/` state, CLAUDE.md, answer keys, etc.), and pulls **scripts and agents** from canvas_toolbox as an upstream. This keeps tooling in sync across many courses while each course owns its own content.
+
+### Initial setup (in the downstream course repo)
+
+```bash
+git remote add upstream https://github.com/chaz-clark/canvas_toolbox.git
+git fetch upstream
+```
+
+### Pulling updates from upstream
+
+**Do not use `git pull upstream main`.** The two repos have unrelated histories and different content. Instead, cherry-pick just the files canvas_toolbox owns:
+
+```bash
+git fetch upstream
+git checkout upstream/main -- tools/ agents/ .env.example .gitignore README.md
+git status                              # review the changes
+git commit -m "sync canvas_toolbox upstream"
+```
+
+Run this any time you want the latest tooling. Safe to re-run — `course/`, `.env`, `CLAUDE.md`, and everything in `.canvas/` are untouched.
+
+**Why not `--allow-unrelated-histories`:** that permanently fuses the two repos' histories. From then on every pull drags in *all* of canvas_toolbox's commits, including ones you don't want. The selective checkout above is the intended workflow, not a workaround.
+
+### What upstream owns vs. what the course repo owns
+
+| Upstream (canvas_toolbox)     | Course repo                            |
+|-------------------------------|----------------------------------------|
+| `tools/` (Python scripts)     | `course/` (live course mirror)         |
+| `agents/` (agent guides)      | `.env` (credentials, course IDs)       |
+| `.env.example`                | `CLAUDE.md` (course-specific context)  |
+| `.gitignore`                  | `course_ref/` (local-only artifacts)   |
+| `README.md`                   | `.canvas/` (per-course indexes)        |
+
+### Pushing improvements back upstream
+
+If you improve a script or agent and want the fix to reach other courses, push it to canvas_toolbox directly — don't try to push from a downstream course repo.
+
+```bash
+# in the canvas_toolbox repo
+git checkout main
+# make the same edit here
+git commit -m "..."
+git push origin main
+# then in each course repo, run the sync command above
+```
+
+---
+
 ## What it does
 
 | Tool | Purpose |
@@ -212,13 +263,19 @@ Note: `canvas_quiz_id` and `course_id` are course-specific — the same quiz has
 uv run python tools/canvas_api_tool.py --test    # smoke tests, no credentials needed
 ```
 
-Scores your course 0–100 across three frameworks:
+Scores your course against a stack of instructional-design frameworks:
 
-**Cognitive Load** (extraneous / intrinsic / germane) — flags unclear navigation, inconsistent naming, buried content.
+| Framework | What it checks |
+|---|---|
+| **Cognitive Load Theory** | Working-memory load — manage intrinsic, minimize extraneous, maximize germane |
+| **Hattie's 3-Phase Model** | Surface → Deep → Transfer progression; gaps at Surface block everything downstream |
+| **Three Domains of Learning** | Cognitive, Affective, Psychomotor coverage (Wilson) |
+| **BYUI Taxonomy Explorer** | Verb-level outcome classification (BYUI institutional view, Simpson psychomotor) |
+| **Experiential Learning** | Brain-aligned sequencing — Experience → Observation → Discussion → Explanation → Theory |
+| **Designer Thinking** | Backward design — Outcome → Evidence → Experience → Content → Reality Check |
+| **Toyota Gap Analysis** | Change-plan format — Current State → Target State → Gap → Root Cause → Countermeasure → Verification |
 
-**Hattie's 3-Phase Model** — Surface (foundational knowledge), Deep (connecting ideas), Transfer (applying to new contexts). Gaps at Surface block everything downstream.
-
-**Toyota Gap Analysis** — Current State → Target State → Gap → Root Cause → Countermeasure → Verification.
+Full descriptions and when-to-use guidance: [`agents/knowledge/README.md`](agents/knowledge/README.md).
 
 ---
 
@@ -230,6 +287,24 @@ Scores your course 0–100 across three frameworks:
 - **late_policy PATCH** — returns 403 for instructor tokens. Set manually in Canvas Settings → Gradebook, or use admin token.
 - **IDs are course-specific** — the same assignment has a different ID in every course and every cloned section. Always match content across courses by title, never by ID.
 - **Content + module = two steps** — creating an assignment/quiz/page makes it exist in the course but students cannot access it until it is also added as a module item.
+
+---
+
+## Using with AI Coding Tools
+
+This repo ships an `AGENTS.md` at the root that any modern AI coding tool will load as project context. Adoption status:
+
+| Tool | What you do | What happens |
+|---|---|---|
+| **Claude Code** (CLI) | Just open the repo | AGENTS.md is auto-loaded as a fallback when no CLAUDE.md is present. If you keep a personal CLAUDE.md for local notes, start it with `@AGENTS.md` to import this file. |
+| **Antigravity** (Gemini IDE) | Just open the repo | Native AGENTS.md auto-load since v1.20.3 |
+| **VS Code + Copilot** | Set `chat.useAgentsMdFile: true` once in user settings | Copilot loads AGENTS.md for every new chat in this workspace |
+| **VS Code + Claude / ChatGPT extension** | Same setting flip | Same behavior — AGENTS.md is the cross-tool standard |
+| **Cursor** | Just open the repo | Native AGENTS.md auto-load |
+| **OpenAI Codex** (CLI) | Just open the repo | Codex was the original AGENTS.md adopter — native |
+| **Aider, goose, Windsurf, Zed, Jules, JetBrains Junie, Amp** | Just open the repo | All native |
+
+After AGENTS.md loads, ask the agent *"what can you do for me?"* — the canvas_course_expert TLDR is built in.
 
 ---
 
@@ -273,6 +348,6 @@ Module naming: `Sprint X: Topic (WXX–WXX)` or `Week X: Topic`.
 | `agents/canvas_blueprint_sync.md/.json` | Blueprint sync agent guide + API schema |
 | `agents/canvas_course_expert.md/.json` | Audit agent guide + rules |
 | `agents/canvas_content_sync.md/.json` | Content sync agent guide |
-| `agents/knowledge/` | Hattie 3-phase + Toyota gap analysis references |
+| `agents/knowledge/` | Instructional-design knowledge references (CLT, Hattie, Three Domains, BYUI Taxonomy Explorer, Experiential Learning, Designer Thinking, Toyota Gap Analysis) — see [`agents/knowledge/README.md`](agents/knowledge/README.md) |
 | `course/` | Live course mirror — source of truth |
-| `CLAUDE.md.example` | Template for Claude Code project context (CLAUDE.md is gitignored) |
+| `AGENTS.md` | Cross-tool project context — auto-loaded by Antigravity, Cursor, VS Code Copilot, Codex, Claude Code (fallback), Aider |

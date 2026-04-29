@@ -2,6 +2,9 @@
 course/
 blueprint_course/
 
+# Markdown workspace — generated from course/ by --build, never committed
+course_src/
+
 # Canvas ID indexes and push logs — course-specific, never committed
 .canvas/
 
@@ -9,8 +12,18 @@ blueprint_course/
 .env
 CLAUDE.md
 
+# AI coding tool local memory / caches — per-user, never committed
+.gemini/
+.claude/cache/
+.cursor/
+.aider*
+
 # GitHub issues workflow — local only
 .github_issues/
+
+# gh_issues_agent is an upstream subtree — do not commit changes here.
+# Make edits locally, then push to the upstream repo via git subtree push.
+gh_issues_agent/
 
 # Quality reports — generated output
 quality_report.md
@@ -24,3 +37,6 @@ __pycache__/
 # macOS
 .DS_Store
 knowledge/medium_draft_*.md
+
+# Raw source materials distilled into agents/knowledge/ — local only
+agents/pre_knowledge/
