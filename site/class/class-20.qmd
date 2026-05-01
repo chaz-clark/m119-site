@@ -230,7 +230,9 @@ The salary (platinum coins per year) for an employee at ElvesRUs can be modeled 
 
 - Write the formula for the residuals.
 
-Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1). Note: This tells us the probability model we will be using and it tells us we can multiply the probabilities to get the likelihood function.
+Assume the residuals (errors) are independent and normally distributed (with mean of 0 and standard deviation of 1).
+
+Note: This tells us the probability model we will be using and it tells us we can multiply the probabilities to get the likelihood function.
 
 - The probability model we are using is $ p(r) = \frac{1}{\sqrt{2\pi}}e^{-\frac{r^2}{2}} $.
 - Write the likelihood function for the residuals in this situation.
