@@ -130,7 +130,24 @@ Graph each function below, showing at least 2 points, and any horizontal asympto
 We'll have a high level discussion about where we are headed with the the projects. 
 
 - What is a deterministic model?
+
+<details>
+<summary>Answer</summary>
+
+A **deterministic model** gives a single, fixed output for each input — the same input always produces the same output. Examples include $A = \pi r^2$ or $d = v \cdot t$. If we model a quantity with $f(x) = ax^2 + bx + c$, plugging in $x = 3$ always yields the same number. **Project Unit 2** is built around fitting deterministic models to data.
+
+</details>
+
 - What is a probabilistic model?
+
+<details>
+<summary>Answer</summary>
+
+A **probabilistic model** describes uncertainty. Instead of producing a single output, it tells us how likely different outputs are. The functions $f_0, f_1, f_2$ are probability density models — they don't say what a single light bulb's intensity *will* be, they describe how the intensity of *many* bulbs is distributed. Probabilistic models are used when the outcome depends on many small, hard-to-predict factors. **Project Unit 3** focuses on probabilistic models.
+
+Same input, same output → deterministic. Same input, a *distribution* of possible outputs → probabilistic.
+
+</details>
 
 How does AI fit into this?
 
