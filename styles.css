@@ -21,6 +21,22 @@ details[open] summary {
   border-bottom: 1px solid var(--bs-border-color, #dee2e6);
 }
 
+/* Dark mode override: darkly's --bs-secondary-bg stays light (#ebebeb),
+   so scope explicitly to Quarto's dark-mode body class. */
+body.quarto-dark details {
+  background: #2b2b2b;
+  border-color: #444;
+  color: #dee2e6;
+}
+
+body.quarto-dark details summary {
+  color: #dee2e6;
+}
+
+body.quarto-dark details[open] summary {
+  border-bottom-color: #444;
+}
+
 .indent {
   margin-left: 2em;
 }
