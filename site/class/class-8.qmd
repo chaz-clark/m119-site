@@ -56,7 +56,9 @@ Start working on
 <details>
 <summary>Answers</summary>
 
-Since $f(0) = a + b(0)^2 = 10$, we see $a = 10$. Since $f(5) = 10 + b(25) = 510$, we see $b = 20$. Note: We have used the method of substitution to solve the linear system of equations for the parameters $a$ and $b$.
+Since $f(0) = a + b(0)^2 = 10$, we see $a = 10$. Since $f(5) = 10 + b(25) = 510$, we see $b = 20$.
+
+Note: We have used the method of substitution to solve the linear system of equations for the parameters $a$ and $b$.
 $\left\{
 \begin{array}{ll}
 a + b(0) &= 10 \\ 
