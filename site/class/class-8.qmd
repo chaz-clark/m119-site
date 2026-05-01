@@ -157,7 +157,25 @@ Let's list several quantities that we can measure. We'll use these to construct 
 - Quantity 1:
 - Quantity 2:
 
-For the model $y=f(x;a=10,b=4)=10-\sqrt{x+4}$, we'll tell the story that occurs if we let $x$ be quantity 1, and $y$ be quantity 2. 
+For the model $y=f(x;a=10,b=4)=10-\sqrt{x+4}$, we'll tell the story that occurs if we let $x$ be quantity 1, and $y$ be quantity 2.
+
+<details>
+<summary>Example</summary>
+
+- **Quantity 1**: tire pressure of a bicycle tire, measured in PSI
+- **Quantity 2**: distance from Earth to the Sun, measured in light-years
+
+So our model becomes
+$$y = 10 - \sqrt{x+4}$$
+where $x$ is the tire pressure and $y$ is the distance to the Sun.
+
+```r
+psi <- c(0, 5, 12, 21, 60, 96, 100)
+distance <- 10 - sqrt(psi + 4)
+data.frame(psi, distance)
+```
+
+</details>
 
 - Use the code below to plot this function in R, and then tell the story.
 
