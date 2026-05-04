@@ -212,7 +212,22 @@ If $a>0$, $b > 0$, $c > 0$, $b \neq 1$, and $n$ is any real number, then
 
 **Logs turn multiplication into addition!**
 
-## Group Meeting 
+<details>
+<summary>Example</summary>
+
+Consider $\prod_{i=1}^3 2 = 2 \cdot 2 \cdot 2 = 2^3 = 8$.
+
+Notice that multiplying the same base means **adding exponents**: $2^1 \cdot 2^1 \cdot 2^1 = 2^{1+1+1} = 2^3$.
+
+Now apply a log to that same product:
+
+$$\log_2\!\left(\prod_{i=1}^3 2\right) = \log_2(2) + \log_2(2) + \log_2(2) = 1 + 1 + 1 = 3$$
+
+The log of the product becomes a **sum of logs** — and each $\log_2(2) = 1$ recovers the exponent. The sum $1+1+1=3$ matches $\log_2(8) = 3$. ✓
+
+</details>
+
+## Group Meeting
 Start by giving each person a moment to share what they chose to prepare for class. Help each other address any questions.  When each person has had a chance to share, move on the other activities.
 
 ### Activity - Practice with Logarithms
