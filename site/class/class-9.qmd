@@ -215,14 +215,20 @@ If $a>0$, $b > 0$, $c > 0$, $b \neq 1$, and $n$ is any real number, then
 <details>
 <summary>Example</summary>
 
-Consider $\prod_{i=1}^3 2 = 2 \cdot 2 \cdot 2 = 2^3 = 8$.
+Consider:
+
+$$\begin{align*}
+\prod_{i=1}^3 2 &= 2 \cdot 2 \cdot 2 \\
+&= 2^3 \\
+&= 8
+\end{align*}$$
 
 Notice that multiplying the same base means **adding exponents**: $2^1 \cdot 2^1 \cdot 2^1 = 2^{1+1+1} = 2^3$.
 
 Now apply a log to that same product:
 
 $$\begin{align*}
-\log_2\!\left(\prod_{i=1}^3 2\right) &= \log_2(2) + \log_2(2) + \log_2(2) \\
+\log_2(2 \cdot 2 \cdot 2) &= \log_2(2) + \log_2(2) + \log_2(2) \\
 &= 1 + 1 + 1 \\
 &= 3
 \end{align*}$$
