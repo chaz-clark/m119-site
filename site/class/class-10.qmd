@@ -94,7 +94,7 @@ Start by giving each person a moment to share what they chose to prepare for cla
 ### Activity - Solving Equations
 Solve the following equations for $x$. Write down the exact answer and decimal approximation (round to 4 decimal places).
 
-1. $3^x = 17 $
+1. $3^x = 17$
 
 1. $\ln(4x-2) = 5$ 
 1. $\log(5x-30) = 1$
