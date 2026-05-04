@@ -56,7 +56,7 @@ Continue working on the following assignments.
 
 # During Class - Day 9
 ## Brain Gains
-1. The local elvish population is modeled by the function $P(x;a,b) = ax+b$, where $x$ is the number of years since 2000 (this means the domain is $ x \geq 0 $).
+1. The local elvish population is modeled by the function $P(x;a,b) = ax+b$, where $x$ is the number of years since 2000 (this means the domain is $x \geq 0$).
 
  Letting $a=5$ and $b=10$, we have $P(x) = 5x+10$. Plot this function and tell the story given by this model. How many elves does this model say were alive in 2020? 
 
@@ -210,7 +210,7 @@ If $a>0$, $b > 0$, $c > 0$, $b \neq 1$, and $n$ is any real number, then
 
 </details>
 
-$\huge{\text{Logs turn multiplication into addition!}}$
+**Logs turn multiplication into addition!**
 
 ## Group Meeting 
 Start by giving each person a moment to share what they chose to prepare for class. Help each other address any questions.  When each person has had a chance to share, move on the other activities.
@@ -237,11 +237,12 @@ Go to the Additional Resources module in our Canvas course. Click on the Review 
 
 ### Activity - Logs with $\prod$ and $\sum$ notation
 Rewrite the following expressions using log properties.
-    - $\ln \left(\prod_{m=1}^7(mx + 1)\right)$
-    - $\ln \left(\prod_{i=1}^5((y_i - 3)^2) \right)$
-    - $\ln \left(\prod_{i=1}^n((ax_i+b-y_i)^2) \right)$
 
-$\huge{\text{Logs turn multiplication into addition!}}$
+- $\ln \left(\prod_{m=1}^7(mx + 1)\right)$
+- $\ln \left(\prod_{i=1}^5((y_i - 3)^2) \right)$
+- $\ln \left(\prod_{i=1}^n((ax_i+b-y_i)^2) \right)$
+
+**Logs turn multiplication into addition!**
 
 ### Activity - Transformations of Exponential Functions
 Consider the general form $Q(x;a,c,h,k) = af(c(x-h))+k$ for a transformation of a function $f(u)$. 
