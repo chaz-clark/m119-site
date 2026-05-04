@@ -244,11 +244,17 @@ $$\begin{align*}
 
 In the first row we add exponents to combine powers. In the second row, $\log_2$ reads the exponent out of each factor — so adding the logs is just adding those exponents directly.
 
-In $b^x$, $b$ is the **base** and $x$ is the **exponent we're solving for**. $\log_b$ asks the reverse question: given the output, what was $x$?
+This works because $b^x$ and $\log_b$ are inverses:
+
+$$b^x = \# \quad \longleftrightarrow \quad \log_b(\#) = x$$
+
+- $b$ → base of the log
+- $\#$ → goes inside the argument (what $b^x$ equals)
+- $x$ → what the log returns
+
+So $2^1 = 2$ means $\log_2(2) = 1$ — the argument is $2$ (the result), not the exponent $1$.
 
 $$2^x = 8 \quad \Rightarrow \quad x = \log_2(8) = 3$$
-
-$\log_2$ is answering: 2 must be raised to the **3rd power** to reach 8 — the same 3 we found by adding the exponents above.
 
 </details>
 
