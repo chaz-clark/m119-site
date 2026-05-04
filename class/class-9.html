@@ -719,9 +719,15 @@ Example
 \log_2(2) + \log_2(2) + \log_2(2) &amp;= 1+1+1
 \end{align*}\]</span></p>
 <p>In the first row we add exponents to combine powers. In the second row, <span class="math inline">\(\log_2\)</span> reads the exponent out of each factor — so adding the logs is just adding those exponents directly.</p>
-<p>In <span class="math inline">\(b^x\)</span>, <span class="math inline">\(b\)</span> is the <strong>base</strong> and <span class="math inline">\(x\)</span> is the <strong>exponent we’re solving for</strong>. <span class="math inline">\(\log_b\)</span> asks the reverse question: given the output, what was <span class="math inline">\(x\)</span>?</p>
+<p>This works because <span class="math inline">\(b^x\)</span> and <span class="math inline">\(\log_b\)</span> are inverses:</p>
+<p><span class="math display">\[b^x = \# \quad \longleftrightarrow \quad \log_b(\#) = x\]</span></p>
+<ul>
+<li><span class="math inline">\(b\)</span> → base of the log</li>
+<li><span class="math inline">\(\#\)</span> → goes inside the argument (what <span class="math inline">\(b^x\)</span> equals)</li>
+<li><span class="math inline">\(x\)</span> → what the log returns</li>
+</ul>
+<p>So <span class="math inline">\(2^1 = 2\)</span> means <span class="math inline">\(\log_2(2) = 1\)</span> — the argument is <span class="math inline">\(2\)</span> (the result), not the exponent <span class="math inline">\(1\)</span>.</p>
 <p><span class="math display">\[2^x = 8 \quad \Rightarrow \quad x = \log_2(8) = 3\]</span></p>
-<p><span class="math inline">\(\log_2\)</span> is answering: 2 must be raised to the <strong>3rd power</strong> to reach 8 — the same 3 we found by adding the exponents above.</p>
 </details>
 </section>
 <section id="group-meeting" class="level2">
