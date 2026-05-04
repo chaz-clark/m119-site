@@ -65,9 +65,9 @@ All algebraic functions can be built using only **power functions** and **the 4 
 # During Class - Day 12
 ## Brain Gains
 - For the function $f(x) = -2\sqrt[3]{x+6}$, identify some power functions and then use appropriate operations to show how to construct $f$ from these power functions. (There are many correct ways to do this.) 
-- Let $ f(t) = \log_2{3t-2} $.
-    - Compute $ f(2) $.
-    - Solve $ f(t) = 2 $ for $ t $.
+- Let $f(t) = \log_2(3t-2)$.
+    - Compute $f(2)$.
+    - Solve $f(t) = 2$ for $t$.
       - Check your answer using uniroot() in R.
       - Construct a plot in R that shows where $f(t)$ and $y=2$ intersect.  
 - Rewrite the following expressions using the properties of logarithms.
@@ -79,10 +79,10 @@ All algebraic functions can be built using only **power functions** and **the 4 
 <details>
 <summary>Possible Solutions</summary>
 
-    - $\sum_{j=1}^{3} \log(x + j) $
-    - $\sum_{k=1}^{5} \log_4((y_k + b x_k)^2) = \sum_{k=1}^{5} 2\log_4(y_k + b x_k) = 2\sum_{k=1}^{5} \log_4(y_k + b x_k) $
-    - $\sum_{k=1}^{4} \ln(100-k^2) $
-    - $\sum_{i=1}^{500} \ln((y_i + a x_i)^2) = \sum_{i=1}^{500} 2\ln(y_i + a x_i) = 2\sum_{i=1}^{500} \ln(y_i + a x_i)$
+- $\sum_{j=1}^{3} \log(x + j)$
+- $\sum_{k=1}^{5} \log_4((y_k + b x_k)^2) = \sum_{k=1}^{5} 2\log_4(y_k + b x_k) = 2\sum_{k=1}^{5} \log_4(y_k + b x_k)$
+- $\sum_{k=1}^{4} \ln(100-k^2)$
+- $\sum_{i=1}^{500} \ln((y_i + a x_i)^2) = \sum_{i=1}^{500} 2\ln(y_i + a x_i) = 2\sum_{i=1}^{500} \ln(y_i + a x_i)$
 
 </details>
 
