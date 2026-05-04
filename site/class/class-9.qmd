@@ -221,7 +221,11 @@ Notice that multiplying the same base means **adding exponents**: $2^1 \cdot 2^1
 
 Now apply a log to that same product:
 
-$$\log_2\!\left(\prod_{i=1}^3 2\right) = \log_2(2) + \log_2(2) + \log_2(2) = 1 + 1 + 1 = 3$$
+$$\begin{align*}
+\log_2\!\left(\prod_{i=1}^3 2\right) &= \log_2(2) + \log_2(2) + \log_2(2) \\
+&= 1 + 1 + 1 \\
+&= 3
+\end{align*}$$
 
 The log of the product becomes a **sum of logs** — and each $\log_2(2) = 1$ recovers the exponent. The sum $1+1+1=3$ matches $\log_2(8) = 3$.
 
