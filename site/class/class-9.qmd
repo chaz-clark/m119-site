@@ -223,13 +223,22 @@ Now apply a log to that same product:
 
 $$\log_2\!\left(\prod_{i=1}^3 2\right) = \log_2(2) + \log_2(2) + \log_2(2) = 1 + 1 + 1 = 3$$
 
-The log of the product becomes a **sum of logs** — and each $\log_2(2) = 1$ recovers the exponent. The sum $1+1+1=3$ matches $\log_2(8) = 3$. ✓
+The log of the product becomes a **sum of logs** — and each $\log_2(2) = 1$ recovers the exponent. The sum $1+1+1=3$ matches $\log_2(8) = 3$.
 
 Notice that adding the logs is the **same operation** as adding the exponents:
 
-$$2^1 \cdot 2^1 \cdot 2^1 = 2^{1+1+1} \qquad \longleftrightarrow \qquad \log_2(2) + \log_2(2) + \log_2(2) = 1+1+1$$
+$$\begin{align*}
+2^1 \cdot 2^1 \cdot 2^1 &= 2^{1+1+1} \\
+\log_2(2) + \log_2(2) + \log_2(2) &= 1+1+1
+\end{align*}$$
 
 On the left we add exponents to combine powers. On the right, $\log_2$ reads the exponent out of each factor — so adding the logs is just adding those exponents directly.
+
+In $b^x$, $b$ is the **base** and $x$ is the **exponent we're solving for**. $\log_b$ asks the reverse question: given the output, what was $x$?
+
+$$2^x = 8 \quad \Rightarrow \quad x = \log_2(8) = 3$$
+
+$\log_2$ is answering: 2 must be raised to the **3rd power** to reach 8 — the same 3 we found by adding the exponents above.
 
 </details>
 
