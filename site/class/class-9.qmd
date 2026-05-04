@@ -242,6 +242,17 @@ Rewrite the following expressions using log properties.
 - $\ln \left(\prod_{i=1}^5((y_i - 3)^2) \right)$
 - $\ln \left(\prod_{i=1}^n((ax_i+b-y_i)^2) \right)$
 
+<details>
+<summary>Solution</summary>
+
+The log of a product is the sum of the logs.
+
+- $\ln \left(\prod_{m=1}^7(mx + 1)\right) = \sum_{m=1}^7 \ln(mx + 1)$
+- $\ln \left(\prod_{i=1}^5((y_i - 3)^2) \right) = \sum_{i=1}^5 \ln((y_i-3)^2) = 2\sum_{i=1}^5 \ln(y_i - 3)$
+- $\ln \left(\prod_{i=1}^n((ax_i+b-y_i)^2) \right) = \sum_{i=1}^n \ln((ax_i+b-y_i)^2) = 2\sum_{i=1}^n \ln(ax_i+b-y_i)$
+
+</details>
+
 **Logs turn multiplication into addition!**
 
 ### Activity - Transformations of Exponential Functions
