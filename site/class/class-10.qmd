@@ -114,27 +114,36 @@ Solve the following equations for $x$. Write down the exact answer and decimal a
 <details>
 <summary>Solutions</summary>
 
-1. $3^x = 17 \Rightarrow x = \log_3(17) = \dfrac{\ln 17}{\ln 3} \approx 2.5789$
+1. $3^x = 17 \Rightarrow$
+$$\begin{align*} x &= \log_3(17) \\ &= \dfrac{\ln 17}{\ln 3} \\ &\approx 2.5789 \end{align*}$$
 
-2. $\ln(4x-2) = 5 \Rightarrow 4x-2 = e^5 \Rightarrow x = \dfrac{e^5+2}{4} \approx 37.6033$
+2. $\ln(4x-2) = 5 \Rightarrow 4x-2 = e^5 \Rightarrow$
+$$\begin{align*} x &= \dfrac{e^5+2}{4} \\ &\approx 37.6033 \end{align*}$$
 
 3. $\log(5x-30) = 1 \Rightarrow 5x-30 = 10 \Rightarrow x = 8$
 
-4. $9^x = 49 \Rightarrow x = \log_9(49) = \dfrac{\ln 49}{\ln 9} = \dfrac{\ln 7}{\ln 3} \approx 1.7712$
+4. $9^x = 49 \Rightarrow$
+$$\begin{align*} x &= \log_9(49) \\ &= \dfrac{\ln 49}{\ln 9} = \dfrac{\ln 7}{\ln 3} \\ &\approx 1.7712 \end{align*}$$
 
-5. $2^x = 56 \Rightarrow x = \log_2(56) = \dfrac{\ln 56}{\ln 2} \approx 5.8074$
+5. $2^x = 56 \Rightarrow$
+$$\begin{align*} x &= \log_2(56) \\ &= \dfrac{\ln 56}{\ln 2} \\ &\approx 5.8074 \end{align*}$$
 
 6. $-2\log_5(7x) = 2 \Rightarrow \log_5(7x) = -1 \Rightarrow 7x = \dfrac{1}{5} \Rightarrow x = \dfrac{1}{35} \approx 0.0286$
 
-7. $\log_3(x-3) - 4 = 12 \Rightarrow \log_3(x-3) = 16 \Rightarrow x = 3^{16}+3 = 43{,}046{,}724$
+7. $\log_3(x-3) - 4 = 12 \Rightarrow \log_3(x-3) = 16 \Rightarrow$
+$$\begin{align*} x &= 3^{16}+3 \\ &= 43{,}046{,}724 \end{align*}$$
 
-8. $\log_2(x-1)+\log_2(x+5) = 4 \Rightarrow (x-1)(x+5) = 16 \Rightarrow x^2+4x-21=0 \Rightarrow x=3$ (reject $x=-7$, domain)
+8. $\log_2(x-1)+\log_2(x+5) = 4 \Rightarrow$
+$$\begin{align*} (x-1)(x+5) &= 16 \\ x^2+4x-21 &= 0 \\ x &= 3 \quad \text{(reject } x=-7 \text{, domain)} \end{align*}$$
 
-9. $e^{x-1}-5=5 \Rightarrow e^{x-1}=10 \Rightarrow x = 1+\ln(10) \approx 3.3026$
+9. $e^{x-1}-5=5 \Rightarrow e^{x-1}=10 \Rightarrow$
+$$\begin{align*} x &= 1+\ln(10) \\ &\approx 3.3026 \end{align*}$$
 
-10. $3(4^{2-5x})-7=8 \Rightarrow 4^{2-5x}=5 \Rightarrow 2-5x = \log_4(5) \Rightarrow x = \dfrac{2-\log_4(5)}{5} \approx 0.1678$
+10. $3(4^{2-5x})-7=8 \Rightarrow 4^{2-5x}=5 \Rightarrow$
+$$\begin{align*} 2-5x &= \log_4(5) \\ x &= \dfrac{2-\log_4(5)}{5} \\ &\approx 0.1678 \end{align*}$$
 
-11. $\ln(x+5)+\ln(x)=\ln(12x) \Rightarrow x(x+5)=12x \Rightarrow x^2-7x=0 \Rightarrow x=7$ (reject $x=0$, domain)
+11. $\ln(x+5)+\ln(x)=\ln(12x) \Rightarrow x(x+5)=12x \Rightarrow$
+$$\begin{align*} x^2-7x &= 0 \\ x &= 7 \quad \text{(reject } x=0 \text{, domain)} \end{align*}$$
 
 </details>
 
