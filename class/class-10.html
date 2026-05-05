@@ -599,6 +599,24 @@ window.Quarto = {
 <li><p><span class="math inline">\(3(4^{2-5x})-7=8\)</span></p></li>
 <li><p><span class="math inline">\(\ln(x+5) + \ln(x) = \ln(12x)\)</span></p></li>
 </ol>
+<details>
+<summary>
+Solutions
+</summary>
+<ol type="1">
+<li><p><span class="math inline">\(3^x = 17 \Rightarrow x = \log_3(17) = \dfrac{\ln 17}{\ln 3} \approx 2.5789\)</span></p></li>
+<li><p><span class="math inline">\(\ln(4x-2) = 5 \Rightarrow 4x-2 = e^5 \Rightarrow x = \dfrac{e^5+2}{4} \approx 37.6033\)</span></p></li>
+<li><p><span class="math inline">\(\log(5x-30) = 1 \Rightarrow 5x-30 = 10 \Rightarrow x = 8\)</span></p></li>
+<li><p><span class="math inline">\(9^x = 49 \Rightarrow x = \log_9(49) = \dfrac{\ln 49}{\ln 9} = \dfrac{\ln 7}{\ln 3} \approx 1.7712\)</span></p></li>
+<li><p><span class="math inline">\(2^x = 56 \Rightarrow x = \log_2(56) = \dfrac{\ln 56}{\ln 2} \approx 5.8074\)</span></p></li>
+<li><p><span class="math inline">\(-2\log_5(7x) = 2 \Rightarrow \log_5(7x) = -1 \Rightarrow 7x = \dfrac{1}{5} \Rightarrow x = \dfrac{1}{35} \approx 0.0286\)</span></p></li>
+<li><p><span class="math inline">\(\log_3(x-3) - 4 = 12 \Rightarrow \log_3(x-3) = 16 \Rightarrow x = 3^{16}+3 = 43{,}046{,}724\)</span></p></li>
+<li><p><span class="math inline">\(\log_2(x-1)+\log_2(x+5) = 4 \Rightarrow (x-1)(x+5) = 16 \Rightarrow x^2+4x-21=0 \Rightarrow x=3\)</span> (reject <span class="math inline">\(x=-7\)</span>, domain)</p></li>
+<li><p><span class="math inline">\(e^{x-1}-5=5 \Rightarrow e^{x-1}=10 \Rightarrow x = 1+\ln(10) \approx 3.3026\)</span></p></li>
+<li><p><span class="math inline">\(3(4^{2-5x})-7=8 \Rightarrow 4^{2-5x}=5 \Rightarrow 2-5x = \log_4(5) \Rightarrow x = \dfrac{2-\log_4(5)}{5} \approx 0.1678\)</span></p></li>
+<li><p><span class="math inline">\(\ln(x+5)+\ln(x)=\ln(12x) \Rightarrow x(x+5)=12x \Rightarrow x^2-7x=0 \Rightarrow x=7\)</span> (reject <span class="math inline">\(x=0\)</span>, domain)</p></li>
+</ol>
+</details>
 </section>
 <section id="activity---solving-exponential-and-log-equations-using-uniroot" class="level3">
 <h3 class="anchored" data-anchor-id="activity---solving-exponential-and-log-equations-using-uniroot">Activity - Solving Exponential and Log Equations using Uniroot</h3>
@@ -689,10 +707,10 @@ window.Quarto = {
 <summary>
 Intermediate Value Theorem (IVT)
 </summary>
-<p>If <span class="math inline">\(f(x)\)</span> is a continuous function on a closed interval $ [a, b] $, where <span class="math inline">\(f(a) \neq f(b)\)</span>, and <span class="math inline">\(y_0\)</span> is any <span class="math inline">\(y\)</span>-value strictly between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span>, then <span class="math inline">\(y_0 = f(x_0)\)</span> for some <span class="math inline">\(x\)</span>-value, <span class="math inline">\(x_0\)</span>, in $ [a, b] $.</p>
+<p>If <span class="math inline">\(f(x)\)</span> is a continuous function on a closed interval <span class="math inline">\([a, b]\)</span>, where <span class="math inline">\(f(a) \neq f(b)\)</span>, and <span class="math inline">\(y_0\)</span> is any <span class="math inline">\(y\)</span>-value strictly between <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span>, then <span class="math inline">\(y_0 = f(x_0)\)</span> for some <span class="math inline">\(x\)</span>-value, <span class="math inline">\(x_0\)</span>, in <span class="math inline">\([a, b]\)</span>.</p>
 <p>Note: While there is a rigorous mathematical definition for what it means to be a continuous function, for our purposes the following concept with suffice, a function is continuous on an interval if the graph of that function can be traced with a pencil without lifting the pencil from the page.</p>
 </details>
-<p>Consider the function <span class="math inline">\(f(x) = (-13 + 2x)e^{-0.05x}\)</span> and the interval $ [ 3, 50 ] $.</p>
+<p>Consider the function <span class="math inline">\(f(x) = (-13 + 2x)e^{-0.05x}\)</span> and the interval <span class="math inline">\([3, 50]\)</span>.</p>
 <ul>
 <li>What does the IVT say about this function over this interval?</li>
 </ul>
@@ -714,7 +732,7 @@ Expand for a plot of the function.
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="fu">f</span>(<span class="dv">50</span>),<span class="at">col=</span><span class="st">'blue'</span>,<span class="at">lty=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <ul>
-<li>We currently have <span class="math inline">\(f(x) = (-13 + 2x)e^{-0.05x}\)</span> with $ [a, b] = [ 3, 50 ] $, which means <span class="math inline">\(a = 3\)</span> and <span class="math inline">\(b = 50\)</span>.<br>
+<li>We currently have <span class="math inline">\(f(x) = (-13 + 2x)e^{-0.05x}\)</span> with <span class="math inline">\([a, b] = [3, 50]\)</span>, which means <span class="math inline">\(a = 3\)</span> and <span class="math inline">\(b = 50\)</span>.<br>
 </li>
 <li>We can compute know <span class="math inline">\(f(a) = f(3) \approx -6.024956\)</span> and <span class="math inline">\(f(b) = f(50) \approx 7.141395\)</span>. Note that <span class="math inline">\(f(3) \neq f(50)\)</span>.</li>
 <li>We can pick <span class="math inline">\(y_0 = 0\)</span> because we know <span class="math inline">\(f(a)&lt;0&lt;f(b)\)</span> (as <span class="math inline">\(-6.024956 &lt; 0 &lt; 7.141395\)</span>).</li>
